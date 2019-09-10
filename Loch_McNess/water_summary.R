@@ -1,18 +1,22 @@
+library(Hmsc)
 library(stringr)
 library(dplyr)
 library(knitr)
 library(corrplot)
+library(ggplot2)
 library(ggrepel)
 library(ggpubr)
+library(boral)
 library(data.table)
+library(plotly)
 library(lubridate)
 
 load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Refined_data.RData")
 
-wat.obs <- data.ls$'6162517'
+wat.obs <- data.ls$'6162564'
 
-pdf("Goollelal/water_level_plot.pdf")
-Site.GW.plots$gool.p
+pdf("Loch_McNess/water_level_plot.pdf")
+Site.GW.plots$mcness.p
 dev.off()
 
 # Water level summary
@@ -48,5 +52,5 @@ sw.l <- lapply(sw.l, function(x) {
 
 sw.sum <- lapply(sw.l, function(x) water_level_5yr_summary(x))
 sw.sum <- do.call(rbind, sw.sum)
-write.table(sw.sum, file = "Goollelal/5_yr_water_summary.txt", sep=",")
+write.table(sw.sum, file = "Loch_McNess/5_yr_water_summary.txt", sep=",")
 
