@@ -24,6 +24,8 @@ b.ele <- 18.849
 c.ele <- 20.275
 
 # 1. Build HMSC object
+Y <- Y[ Y$plot != "D", , drop=TRUE] # No plot elevation for plot D
+Y <- Y[ Y$year != 1996, , drop=TRUE] # No water data for 1996
 Y2 <- comm_prep(Y)
 studyDesign <- Y2[[2]]
 bor.study.design <- studyDesign
@@ -122,7 +124,7 @@ vegfit.mod3 <- boral(Y2,
                      save.model=TRUE,
                      model.name=NULL)
 
-save(vegfit.mod1, vegfit.mod2, vegfit.mod3, file="Joondalup/boral_models.RData")
+save(vegfit.mod1, vegfit.mod2, vegfit.mod3, file="Joondalup_Nth/boral_models.RData")
 
 sapply(colnames(vegfit.mod2$X), coefsplot, vegfit.mod2)
 sapply(colnames(vegfit.mod3$X), coefsplot, vegfit.mod3)
