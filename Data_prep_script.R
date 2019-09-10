@@ -64,7 +64,7 @@ data[,6] <- factor(data[,6])
 data <- data[!data[,1] %in% 	"616145", ] # Too few samples
 data <- data[!data[,1] %in% 	"6162623", ] # Not converging in GAMM model
 data <- data[!data[,1] %in% 	"6162629", ] # Most readings below staff gaugue or dry
-data[,3] <- excel_numeric_to_date(data[,3])
+#data[,3] <- excel_numeric_to_date(data[,3])
 data[,3] <- as.Date(data[,3], "%d %b %Y")
 data[,7] <- as.numeric(data[,7])
 data <- data[complete.cases(data),]
@@ -97,7 +97,7 @@ ctrl <- list(niterEM = 0, msVerbose = TRUE, optimMethod="L-BFGS-B")
 AHD.mod <- lapply(AHD, function(x){
   m1 <- gamm(AHD ~ s(Month_num, bs = "cc", k = 12) + 
                s(Time, k = 10),
-             data = x, correlation = corARMA(form = ~ 1|Year, p = 1),
+             data = x, correlation = corARMA(form = ~ 1|Year, p = 3),
              control = ctrl)
   return(m1)
 })
