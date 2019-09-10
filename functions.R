@@ -98,3 +98,21 @@ boral.plots <- function(b) {
   return(ord)
 }
 
+water_level_5yr_summary <- function(x) {
+  max <- mean(tapply(x$AHD, x$index, max))
+  min <- mean(tapply(x$AHD, x$index, min))
+  range <- mean(unlist(lapply( with(x, tapply(AHD, index, range)), diff)))
+  max.mth <- x[which.max(apply(data.frame(x$AHD),MARGIN=1,max)),7]
+  min.mth <- x[which.min(apply(data.frame(x$AHD),MARGIN=1,min)),7]
+  to.dry <- NULL
+  for(i in levels(x$index)){
+    tmp <- subset(x, index==i)
+    tmp <- tmp[which.min(tmp$AHD),3] - tmp[which.max(tmp$AHD),3]
+    if(is.null(to.dry)){to.dry<-tmp} else { to.dry<-rbind(to.dry,tmp)}
+  }
+  to.dry <- mean(as.numeric(to.dry$Date, units="days"))
+  hydro.sum <- cbind(max, min, range, max.mth, min.mth, to.dry)
+  return(hydro.sum)
+}
+
+
