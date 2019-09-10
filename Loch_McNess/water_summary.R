@@ -15,10 +15,6 @@ load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Ref
 
 wat.obs <- data.ls$'6162564'
 
-pdf("Loch_McNess/water_level_plot.pdf")
-Site.GW.plots$mcness.p
-dev.off()
-
 # Water level summary
 
 sw <- na.omit(wat.obs)

@@ -15,10 +15,6 @@ load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Ref
 
 wat.obs <- data.ls$'6162565'
 
-pdf("Yonderup/water_level_plot.pdf")
-Site.GW.plots$yond.p
-dev.off()
-
 # Water level summary
 
 sw <- na.omit(wat.obs)

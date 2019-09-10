@@ -11,10 +11,6 @@ load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Ref
 
 wat.obs <- data.ls$'6162517'
 
-pdf("Goollelal/water_level_plot.pdf")
-Site.GW.plots$gool.p
-dev.off()
-
 # Water level summary
 
 sw <- na.omit(wat.obs)

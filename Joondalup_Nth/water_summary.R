@@ -15,10 +15,6 @@ load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Ref
 
 wat.obs <- data.ls$'6162572'
 
-pdf("Joondalup_Nth/water_level_plot.pdf")
-Site.GW.plots$joon.p
-dev.off()
-
 # Water level summary
 
 sw <- na.omit(wat.obs)
