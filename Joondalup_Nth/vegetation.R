@@ -13,6 +13,8 @@ library(lubridate)
 
 load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Refined_data.RData")
 
+setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Joondalup_Nth")
+
 Y <- comm$Joondalup_Nth
 wat.obs <- data.ls$'6162572'
 ahd <- AHD.data.list$Joondalup.AHD
@@ -25,7 +27,6 @@ c.ele <- 20.275
 
 # 1. Build HMSC object
 Y <- Y[ Y$plot != "D", , drop=TRUE] # No plot elevation for plot D
-Y <- Y[ Y$year != 1996, , drop=TRUE] # No water data for 1996
 Y2 <- comm_prep(Y)
 studyDesign <- Y2[[2]]
 bor.study.design <- studyDesign
@@ -48,7 +49,7 @@ GW.levs <- rbind(GW.levs.a,GW.levs.b,GW.levs.c)
 XData <- subset(GW.levs, Year %in% studyDesign$Year)
 XData <- XData[with(XData, order(Year, Plot)),]
 rownames(XData) <- NULL
-XData <- XData
+XData <- merge(XData, bor.study.design[,c("Year", "Plot")], by.x=c("Year", "Plot"), by.y=c("Year", "Plot"))
 
 Traits <- determine_traits(Y2)
 
@@ -124,7 +125,7 @@ vegfit.mod3 <- boral(Y2,
                      save.model=TRUE,
                      model.name=NULL)
 
-save(vegfit.mod1, vegfit.mod2, vegfit.mod3, file="Joondalup_Nth/boral_models.RData")
+save(vegfit.mod1, vegfit.mod2, vegfit.mod3, file="boral_models.RData")
 
 sapply(colnames(vegfit.mod2$X), coefsplot, vegfit.mod2)
 sapply(colnames(vegfit.mod3$X), coefsplot, vegfit.mod3)
@@ -138,5 +139,6 @@ mod3.ext <- boral.extract(vegfit.mod3, XData)
 boral.plots(mod1.ext)
 boral.plots(mod3.ext)
 
+setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds")
 
 

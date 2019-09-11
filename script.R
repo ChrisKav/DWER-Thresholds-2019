@@ -29,9 +29,13 @@ dev.off()
 #                     n.thin = 50, seed=28041948)
 
 mcmc_control <- list(n.burnin = 10, n.iteration = 60, 
-                     n.thin = 5, seed=28041948)
+                       n.thin = 5, seed=28041948)
 
 source("Goollelal/vegetation.R")
+pdf("Goollelal/Vegetation/veg_ordination.pdf")
+ggarrange(boral.plots(mod1.ext), boral.plots(mod3.ext))
+dev.off()
+
 source("Loch_McNess/vegetation.R")
 source("Joondalup_Nth/vegetation.R")
 source("Yonderup/vegetation.R")

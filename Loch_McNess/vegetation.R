@@ -12,6 +12,7 @@ library(plotly)
 library(lubridate)
 
 load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Refined_data.RData")
+setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Loch_McNess")
 
 Y <- comm$Loch_McNess
 wat.obs <- data.ls$'6162564'
@@ -54,7 +55,7 @@ GW.levs <- rbind(GW.levs.a,GW.levs.b,GW.levs.c,GW.levs.d,GW.levs.z)
 XData <- subset(GW.levs, Year %in% studyDesign$Year)
 XData <- XData[with(XData, order(Year, Plot)),]
 rownames(XData) <- NULL
-XData <- XData
+XData <- merge(XData, bor.study.design[,c("Year", "Plot")], by.x=c("Year", "Plot"), by.y=c("Year", "Plot"))
 
 Traits <- determine_traits(Y2)
 
@@ -130,7 +131,7 @@ vegfit.mod3 <- boral(Y2,
                      save.model=TRUE,
                      model.name=NULL)
 
-save(vegfit.mod1, vegfit.mod2, vegfit.mod3, file="Loch_McNess/boral_models.RData")
+save(vegfit.mod1, vegfit.mod2, vegfit.mod3, file="boral_models.RData")
 
 sapply(colnames(vegfit.mod2$X), coefsplot, vegfit.mod2)
 sapply(colnames(vegfit.mod3$X), coefsplot, vegfit.mod3)
@@ -143,3 +144,5 @@ mod3.ext <- boral.extract(vegfit.mod3, XData)
 
 boral.plots(mod1.ext)
 boral.plots(mod3.ext)
+
+setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds")
