@@ -128,8 +128,6 @@ vegfit.mod3 <- boral(Y2,
                      save.model=TRUE,
                      model.name=NULL)
 
-save(vegfit.mod1, vegfit.mod2, vegfit.mod3, file="boral_models.RData")
-
 sapply(colnames(vegfit.mod2$X), coefsplot, vegfit.mod2)
 sapply(colnames(vegfit.mod3$X), coefsplot, vegfit.mod3)
 
@@ -141,6 +139,10 @@ mod3.ext <- boral.extract(vegfit.mod3, XData)
 
 veg.ord1 <- boral.plots(mod1.ext)
 veg.ord2 <- boral.plots(mod3.ext)
+
+ggsave("Vegetation/vege_ordination.pdf", ggarrange(veg.ord1, veg.ord2, ncol=2), device="pdf")
+
+save(vegfit.mod1, vegfit.mod2, vegfit.mod3, mod1.ext, mod3.ext,  veg.ord1, veg.ord2, file="boral_models.RData")
 
 #########################################                          
 #########################################
