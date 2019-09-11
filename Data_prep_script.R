@@ -66,6 +66,9 @@ data <- data[!data[,1] %in% 	"6162623", ] # Not converging in GAMM model
 data <- data[!data[,1] %in% 	"6162629", ] # Most readings below staff gaugue or dry
 #data[,3] <- excel_numeric_to_date(data[,3])
 data[,3] <- as.Date(data[,3], "%d %b %Y")
+data[,7] <- gsub("<", "", paste(data[,7]))
+data[,7] <- gsub("~", "", paste(data[,7]))
+data[,7] <- gsub(">", "", paste(data[,7]))
 data[,7] <- as.numeric(data[,7])
 data <- data[complete.cases(data),]
 data$Month <- format(data[,3],"%B")
@@ -77,6 +80,8 @@ data$Month <- as.character(data$Month)
 data$Month_num <- as.integer(data$Month_num)
 data$Site <- as.factor(as.character(data$Site))
 data.ls <- split(data, data$Site)
+
+
 
 AHD <- lapply(data.ls, function(x) {
   x <- x %>%
