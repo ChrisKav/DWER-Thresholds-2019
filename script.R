@@ -28,5 +28,9 @@ mcmc_control <- list(n.burnin = 10, n.iteration = 60,
                      n.thin = 5, seed=28041948)
 
 for (i in 1:length(wetlands)) {
-  source(paste0(wetlands[i], "/vegetation.R"))
+  if (file.exists(paste0(wetlands[i], "/vegetation.R"))) {
+    source(paste0(wetlands[i], "/vegetation.R"))
+  }
 }
+
+
