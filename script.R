@@ -84,12 +84,12 @@ source("Goollelal/vegetation.R")
 source("Loch_McNess/vegetation.R")
 source("Joondalup_Nth/vegetation.R")
 source("Yonderup/vegetation.R")
-source("Gwelup/vegetation.R")
+source("Gwelup/vegetation.R") # <- ERROR
 source("Jandabup/vegetation.R")
-source("Joondalup_Sth/vegetation.R")
+source("Joondalup_Sth/vegetation.R") # <- ERROR
 source("Lexia_186/vegetation.R")
-source("Mariginiup/vegetation.R")
+source("Mariginiup/vegetation.R") # <- ERROR
 source("Nowergup_Nth/vegetation.R")
 source("Nowergup_Sth/vegetation.R")
-source("Quin_Brook/vegetation.R")
+source("Quin_Brook/vegetation.R") # <- ERROR
 source("Wilgarup/vegetation.R")
