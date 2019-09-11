@@ -93,7 +93,7 @@ AHD <- lapply(data.ls, function(x) {
   x <- transform(x, Time=as.numeric(Date)/100)
   colnames(x)[3] <- "AHD"
   x <- x[order(as.Date(x$Date, format="%Y-%b-%d")),]
-  x <- x[x$Year %in% names(which(table(x$Year) > 2)), ]
+  x <- x[x$Year %in% names(which(table(x$Year) > 1)), ]
   return(x)
 }) # Makes Time dummy variable
 

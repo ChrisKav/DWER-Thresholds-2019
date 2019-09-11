@@ -13,17 +13,18 @@ library(lubridate)
 
 load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Refined_data.RData")
 
-setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Joondalup_Nth")
+setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Joondalup_Sth")
 
-Y <- comm$Joondalup_Nth
+Y <- comm$Joondalup_Sth
 wat.obs <- data.ls$'6162572'
 ahd <- AHD.data.list$Joondalup.AHD
 ahd.p <- Params.data.list$Joondalup.params
 WL_group <- "surface"
 gw.plot <- Site.GW.plots$joon.p
-a.ele <- 17.33
-b.ele <- 18.849
-c.ele <- 20.275
+a.ele <- 16.9
+b.ele <- 17.2
+c.ele <- 17.767
+d.ele <- 18.794
 
 # 1. Build HMSC object
 Y2 <- comm_prep(Y)
@@ -44,7 +45,10 @@ GW.levs.b$Plot <- "B"
 GW.levs.c <- GW.levs
 GW.levs.c$meanGW <- GW.levs.c$meanGW - c.ele
 GW.levs.c$Plot <- "C"
-GW.levs <- rbind(GW.levs.a,GW.levs.b,GW.levs.c)
+GW.levs.d <- GW.levs
+GW.levs.d$meanGW <- GW.levs.d$meanGW - d.ele
+GW.levs.d$Plot <- "D"
+GW.levs <- rbind(GW.levs.a,GW.levs.b,GW.levs.c,GW.levs.d)
 XData <- subset(GW.levs, Year %in% studyDesign$Year)
 XData <- XData[with(XData, order(Year, Plot)),]
 rownames(XData) <- NULL

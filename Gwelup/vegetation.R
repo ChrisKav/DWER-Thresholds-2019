@@ -26,6 +26,7 @@ b.ele <- 6.263
 c.ele <- 6.357
 
 # 1. Build HMSC object
+Y <- Y[ Y$plot != "D", , drop=TRUE] # No plot elevation for plot D
 Y2 <- comm_prep(Y)
 studyDesign <- Y2[[2]]
 bor.study.design <- studyDesign

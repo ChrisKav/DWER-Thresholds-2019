@@ -26,6 +26,8 @@ b.ele <- 41.812
 c.ele <- 41.864
 
 # 1. Build HMSC object
+Y <- Y[ Y$plot != "E", , drop=TRUE] # No plot elevation for plot E
+Y <- Y[ Y$plot != "D", , drop=TRUE] # No plot elevation for plot D
 Y2 <- comm_prep(Y)
 studyDesign <- Y2[[2]]
 bor.study.design <- studyDesign
@@ -44,10 +46,7 @@ GW.levs.b$Plot <- "B"
 GW.levs.c <- GW.levs
 GW.levs.c$meanGW <- GW.levs.c$meanGW - c.ele
 GW.levs.c$Plot <- "C"
-GW.levs.d <- GW.levs
-GW.levs.d$meanGW <- GW.levs.d$meanGW - d.ele
-GW.levs.d$Plot <- "D"
-GW.levs <- rbind(GW.levs.a,GW.levs.b,GW.levs.c, GW.levs.d)
+GW.levs <- rbind(GW.levs.a,GW.levs.b,GW.levs.c)
 XData <- subset(GW.levs, Year %in% studyDesign$Year)
 XData <- XData[with(XData, order(Year, Plot)),]
 rownames(XData) <- NULL
