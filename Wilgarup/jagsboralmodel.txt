@@ -1,4 +1,4 @@
-## JAGS model written for boral version 1.7 on 2019-09-12 11:39:23 ##
+## JAGS model written for boral version 1.7 on 2019-09-12 21:28:24 ##
 
  model {
 	 ## Data Level ## 
