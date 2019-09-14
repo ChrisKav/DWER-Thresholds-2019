@@ -6,8 +6,6 @@ Site.GW.plots
 dev.off()
 
 wetlands <- read.csv("wetlands.csv", header=FALSE)[,1]
-wetlands <- wetlands[7:22]
-wetlands <- droplevels(wetlands)
 
 ########################
 # WATER DATA - Summary #
@@ -34,5 +32,14 @@ for (i in 1:length(wetlands)) {
     source(paste0(wetlands[i], "/vegetation.R"))
   }
 }
-  
+
+####################
+# Vegetaton plots  #
+####################
+
+for (i in 1:length(wetlands)) {
+    if (file.exists(paste0(wetlands[i], "/Vegetation/Beta/Beta_Veg_boral.csv"))) {
+    source("Plot_Figures.R")
+  }
+}
 
