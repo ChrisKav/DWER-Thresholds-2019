@@ -203,7 +203,7 @@ mcmc.samp_standardised <- mcmc.samp
 
 # Not standardised
 
-beta.samp <- matrix(nrow = 10)
+beta.samp <- matrix(nrow = 1000)
 
 col.names <- vector()
 
@@ -211,14 +211,14 @@ for(i in species.id){ # species
   
   column.name <- sprintf("lv.coefs[%s,1]", i)  # 3 lines code to get species intercept samples
   col.names <- c(col.names, column.name) 
-  command <- sprintf('mcmc.samp[[1]][1:10,"%s"]', column.name)
+  command <- sprintf('mcmc.samp[[1]][1:1000,"%s"]', column.name)
   tmp <- eval(parse(text = command))
   
   for(j in Env.id){ # variables
     
     column.name2 <- sprintf("X.coefs[%s,%s]", i, j) # 3 lines code to get variables samples (by species)
     col.names <- c(col.names, column.name2)
-    command2 <- sprintf('mcmc.samp[[1]][1:10, "%s"]', column.name2)
+    command2 <- sprintf('mcmc.samp[[1]][1:1000, "%s"]', column.name2)
     tmp2 <- eval(parse(text = command2))
     
     tmp <- cbind(tmp, tmp2) # create entire matrix for one species
@@ -234,7 +234,7 @@ colnames(beta.samp) <- col.names # set column names
 
 # Standardised
 
-beta.samp_standardised <- matrix(nrow = 10)
+beta.samp_standardised <- matrix(nrow = 1000)
 
 col.names_standardised <- vector()
 
@@ -242,14 +242,14 @@ for(i in species.id){ # species
   
   column.name <- sprintf("lv.coefs[%s,1]", i)  # 3 lines code to get species intercept samples
   col.names_standardised <- c(col.names_standardised, column.name) 
-  command <- sprintf('mcmc.samp[[1]][1:10,"%s"]', column.name)
+  command <- sprintf('mcmc.samp[[1]][1:1000,"%s"]', column.name)
   tmp <- eval(parse(text = command))
   
   for(j in Env.id){ # variables
     
     column.name2 <- sprintf("X.coefs[%s,%s]", i, j) # 3 lines code to get variables samples (by species)
     col.names_standardised <- c(col.names_standardised, column.name2)
-    command2 <- sprintf('(mcmc.samp[[1]][1:10, "%s"])/dataset_sd[%s]', column.name2, j) # added sd correction
+    command2 <- sprintf('(mcmc.samp[[1]][1:1000, "%s"])/dataset_sd[%s]', column.name2, j) # added sd correction
     tmp2 <- eval(parse(text = command2))
     
     tmp <- cbind(tmp, tmp2) # create entire matrix for one species
@@ -488,6 +488,7 @@ rho.mean <- get.residual.cor.new(vegfit.mod3, est = "mean")$cor
 rho.sd <- get.residual.cor.new(vegfit.mod3, est = "sd")$cor
 rho.lower <- get.residual.cor.new(vegfit.mod3, est = "q_lower")$cor
 rho.upper <- get.residual.cor.new(vegfit.mod3, est = "q_upper")$cor
+
 
 ####################
 #### Write CSVs ####
