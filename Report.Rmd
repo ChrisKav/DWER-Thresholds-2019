@@ -1,0 +1,88 @@
+---
+title: "Review of Water Thresholds - Gnangara"
+author: "Christopher Kavazos, Grant Buller, Pierre Horwitz, Ray Froend"
+date: "16/09/2019"
+output: 
+  word_document: default
+fig_caption: yes
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(kableExtra)
+library(flextable)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+This report details an analysis that reviews the ecological impacts of revised proposed water level thresholds for wetlands in the Gnangara mound.
+
+Full analysis can be found [here] (https://github.com/ChrisKav/DWER-Thresholds-2019)
+
+# EMP 173
+
+
+```{r echo = FALSE, results = 'asis'}
+load("EMP_173/water_level.RData")
+
+autofit(flextable(sw.sum, col_keys = c("Period",
+                    "Mean max seasonal level (mAHD)",
+                    "Mean min seasonal level (mAHD)",
+                    "Mean seasonal change (m)",
+                    "Month of maximum",
+                    "Month of minimum",
+                    "Mean max to min (days)")))
+
+kable(sw.sum, digits=c(20,1,1,2,10,10,0), align='c', 
+      col.names = c("Period",
+                    "Mean max seasonal level (mAHD)",
+                    "Mean min seasonal level (mAHD)",
+                    "Mean seasonal change (m)",
+                    "Month of maximum",
+                    "Month of minimum",
+                    "Mean max to min (days)"),
+      row.names = FALSE,
+      format="pandoc", booktabs=TRUE) %>% 
+  kable_styling(latex_options="scale_down")
+
+```
+
+
+# EMP 78
+
+# Gingin
+
+# Goollelal
+
+# Gwelup
+
+# Jandabup
+
+# Joondalup
+
+# Lexia 186
+
+# Loch McNess
+
+# Mariginiup
+
+# MM59B
+
+# Nowergup
+
+# Pipidinny
+
+# PM9
+
+# Quin Brook
+
+# Wilgarup
+
+# WM1
+
+# WM2
+
+# WM8
+
+# Yonderup
