@@ -74,6 +74,7 @@ data <- data[complete.cases(data),]
 data$Month <- format(data[,3],"%B")
 data <- cbind(data[,1], data[,3, drop = FALSE], data[,2], data[,5], data[,7], data[,8],data[,4])
 colnames(data) <- c("Site", "Date", "Time", "Year", "AHD", "Month", "Month_num")
+data <- subset(data, Year >= 1980)
 data$AHD <- as.numeric(as.character(data$AHD))
 data$Year <- as.integer(data$Year)
 data$Month <- as.character(data$Month)
