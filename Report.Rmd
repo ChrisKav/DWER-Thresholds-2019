@@ -12,7 +12,8 @@ fig_caption: yes
 library(knitr)
 library(kableExtra)
 library(flextable)
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/',
+                      echo=FALSE, warning=FALSE, message=FALSE)
 ```
 
 # Introduction
@@ -31,6 +32,14 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r, echo=FALSE}
+load("Refined_data.RData")
+```
+
+```{r EMP173_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of EMP 173", results = 'asis'}
+Site.GW.plots$emp173.p
+
+```
 
 # EMP 78
 
@@ -38,6 +47,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 load("EMP_78/water_level.RData")
 
 set_caption(flextable(sw.sum), "Five year summaries of surface water level data at EMP 78")
+
+```
+
+```{r EMP78_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of EMP 78", results = 'asis'}
+Site.GW.plots$emp78.p
 
 ```
 
@@ -49,6 +63,11 @@ load("Gingin/water_level.RData")
 set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Gingin")
 
 ```
+
+```{r Gingin_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Gingin", results = 'asis'}
+Site.GW.plots$gin.p
+
+```
 # Goollelal
 
 ```{r Goollelal_water, echo = FALSE, results = 'asis'}
@@ -58,12 +77,21 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r Goollelal_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Goollelal", results = 'asis'}
+Site.GW.plots$gool.p
+
+```
 # Gwelup
 
 ```{r Gwelup_water, echo = FALSE, results = 'asis'}
 load("Gwelup/water_level.RData")
 
 set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Gwelup")
+
+```
+
+```{r Gwelup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Gwelup", results = 'asis'}
+Site.GW.plots$gwel.p
 
 ```
 
@@ -75,12 +103,21 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r Jandabup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Jandabup", results = 'asis'}
+Site.GW.plots$jand.p
+
+```
 # Joondalup
 
 ```{r Joondalup_Nth_water, echo = FALSE, results = 'asis'}
 load("Joondalup_Nth/water_level.RData")
 
 set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Lake Joondalup")
+
+```
+
+```{r Joondalup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Joondalup", results = 'asis'}
+Site.GW.plots$joon.p
 
 ```
 
@@ -93,12 +130,21 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r Lexia186_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Lexia 186", results = 'asis'}
+Site.GW.plots$lex186.p
+
+```
 # Loch McNess
 
 ```{r Loch_McNess_water, echo = FALSE, results = 'asis'}
 load("Loch_McNess/water_level.RData")
 
 set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Loch McNess")
+
+```
+
+```{r Loch_McNess_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Loch McNess", results = 'asis'}
+Site.GW.plots$mcness.p
 
 ```
 
@@ -111,6 +157,10 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r Mariginiup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Mariginiup", results = 'asis'}
+Site.GW.plots$marig.p
+
+```
 # MM59B
 
 ```{r MM59B_water, echo = FALSE, results = 'asis'}
@@ -120,6 +170,10 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r MM59B_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of MM59B", results = 'asis'}
+Site.GW.plots$MM59B.p
+
+```
 # Nowergup
 
 ```{r Nowergup_water, echo = FALSE, results = 'asis'}
@@ -129,12 +183,21 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r Nowergup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Nowergup", results = 'asis'}
+Site.GW.plots$nower.p
+
+```
 # Pipidinny
 
 ```{r Pipidinny_water, echo = FALSE, results = 'asis'}
 load("Pipidinny/water_level.RData")
 
 set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Pipidinny")
+
+```
+
+```{r Pipidinny_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Pipidinny", results = 'asis'}
+Site.GW.plots$pipi.p
 
 ```
 
@@ -147,6 +210,10 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r PM9_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of PM9", results = 'asis'}
+Site.GW.plots$PM9.p
+
+```
 # Quin Brook
 
 ```{r Quin_Brook_water, echo = FALSE, results = 'asis'}
@@ -156,6 +223,10 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r Quin_Brook_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Quin Brook", results = 'asis'}
+Site.GW.plots$quin.p
+
+```
 # Wilgarup
 
 ```{r Wilgarup_water, echo = FALSE, results = 'asis'}
@@ -165,6 +236,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+
+```{r Wilgarup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Wilgarup", results = 'asis'}
+Site.GW.plots$wilg.p
+
+```
 # WM1
 
 ```{r WM1_water, echo = FALSE, results = 'asis'}
@@ -174,6 +250,10 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r WM1_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of WM1", results = 'asis'}
+Site.GW.plots$WM1.p
+
+```
 # WM2
 
 ```{r WM2_water, echo = FALSE, results = 'asis'}
@@ -183,6 +263,10 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r WM2_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of WM2", results = 'asis'}
+Site.GW.plots$WM2.p
+
+```
 # WM8
 
 ```{r WM8_water, echo = FALSE, results = 'asis'}
@@ -192,10 +276,20 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```
 
+```{r WM8_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of WM8", results = 'asis'}
+Site.GW.plots$WM8.p
+
+```
+
 # Yonderup
 ```{r Yonderup_water, echo = FALSE, results = 'asis'}
 load("Yonderup/water_level.RData")
 
 set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Yonderup")
+
+```
+
+```{r Yoderup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Yonderup", results = 'asis'}
+Site.GW.plots$yond.p
 
 ```
