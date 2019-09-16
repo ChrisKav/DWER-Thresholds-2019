@@ -10,7 +10,6 @@ fig_caption: yes
 ```{r setup, include=FALSE}
 library(knitr)
 library(kableExtra)
-library(flextable)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -26,14 +25,6 @@ Full analysis can be found [here] (https://github.com/ChrisKav/DWER-Thresholds-2
 ```{r echo = FALSE, results = 'asis'}
 load("EMP_173/water_level.RData")
 
-autofit(flextable(sw.sum, col_keys = c("Period",
-                    "Mean max seasonal level (mAHD)",
-                    "Mean min seasonal level (mAHD)",
-                    "Mean seasonal change (m)",
-                    "Month of maximum",
-                    "Month of minimum",
-                    "Mean max to min (days)")))
-
 kable(sw.sum, digits=c(20,1,1,2,10,10,0), align='c', 
       col.names = c("Period",
                     "Mean max seasonal level (mAHD)",
@@ -42,10 +33,7 @@ kable(sw.sum, digits=c(20,1,1,2,10,10,0), align='c',
                     "Month of maximum",
                     "Month of minimum",
                     "Mean max to min (days)"),
-      row.names = FALSE,
-      format="pandoc", booktabs=TRUE) %>% 
-  kable_styling(latex_options="scale_down")
-
+      row.names = FALSE)
 ```
 
 
