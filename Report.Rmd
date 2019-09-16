@@ -14,7 +14,7 @@ library(kableExtra)
 library(flextable)
 library(ggplot2)
 library(ggpubr)
-knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/',
+knitr::opts_chunk$set(fig.width=6, fig.height=7, fig.path='Figs/',
                       echo=FALSE, warning=FALSE, message=FALSE)
 ```
 
@@ -87,7 +87,7 @@ Site.GW.plots$gin.p
 # Goollelal
 
 ```{r Goollelal_water, echo = FALSE, results = 'asis'}
-load("Goollelal/water_level.RData")
+  load("Goollelal/water_level.RData")
 
 set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Goollelal")
 ```
