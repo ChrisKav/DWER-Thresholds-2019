@@ -49,4 +49,5 @@ sw.l <- lapply(sw.l, function(x) {
 sw.sum <- lapply(sw.l, function(x) water_level_5yr_summary(x))
 sw.sum <- do.call(rbind, sw.sum)
 write.table(sw.sum, file = "Gwelup/5_yr_water_summary.txt", sep=",")
+save(sw, sw.l, sw.sum, file="Gwelup/water_level.RData")
 
