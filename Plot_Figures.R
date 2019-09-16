@@ -25,6 +25,7 @@ beta.plot <- ggplot(boral.df3, aes(x = Species, y = Posterior.Mean)) +
 
 file.name <- paste0(wetlands[i], "/Vegetation/Beta_", paste0(wetlands[i]), ".pdf", sep = "")
 ggsave(file.name, plot=beta.plot, units = "in", width = 7, height = 7)
+save(beta.plot, file=paste0(wetlands[i], "/Vegetation/beta_plot.RData"))
 
 #Rho
 
