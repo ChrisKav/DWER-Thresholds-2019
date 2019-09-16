@@ -51,5 +51,13 @@ sw.sum <- do.call(rbind, sw.sum)
 sw.sum$Period = c("08/1994 - 07/1999", "08/1999 - 07/2004", "08/2004 - 07/2009",
                   "08/2009 - 07/2014", "08/2014 - 07/2019")
 sw.sum <- sw.sum[,c(7,1:6)]
+colnames(sw.sum) <- c("Period",
+                      "Mean max seasonal level (mAHD)",
+                      "Mean min seasonal level (mAHD)",
+                      "Mean seasonal change (m)",
+                      "Month of maximum",
+                      "Month of minimum",
+                      "Mean max to min (days)")
+
 write.table(sw.sum, file = "Mariginiup/5_yr_water_summary.txt", sep=",")
 save(sw, sw.l, sw.sum, file="Mariginiup/water_level.RData")

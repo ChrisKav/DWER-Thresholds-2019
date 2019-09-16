@@ -2,14 +2,16 @@
 title: "Review of Water Thresholds - Gnangara"
 author: "Christopher Kavazos, Grant Buller, Pierre Horwitz, Ray Froend"
 date: "16/09/2019"
-output: 
+output:
   word_document: default
+  pdf_document: default
 fig_caption: yes
 ---
 
 ```{r setup, include=FALSE}
 library(knitr)
 library(kableExtra)
+library(flextable)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -22,55 +24,178 @@ Full analysis can be found [here] (https://github.com/ChrisKav/DWER-Thresholds-2
 # EMP 173
 
 
-```{r echo = FALSE, results = 'asis'}
+```{r EMP173_water, echo = FALSE, results = 'asis'}
 load("EMP_173/water_level.RData")
 
-kable(sw.sum, digits=c(20,1,1,2,10,10,0), align='c', 
-      col.names = c("Period",
-                    "Mean max seasonal level (mAHD)",
-                    "Mean min seasonal level (mAHD)",
-                    "Mean seasonal change (m)",
-                    "Month of maximum",
-                    "Month of minimum",
-                    "Mean max to min (days)"),
-      row.names = FALSE)
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at EMP 173")
+
 ```
 
 
 # EMP 78
 
+```{r EMP78_water, echo = FALSE, results = 'asis'}
+load("EMP_78/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at EMP 78")
+
+```
+
 # Gingin
 
+```{r Gingin_water, echo = FALSE, results = 'asis'}
+load("Gingin/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Gingin")
+
+```
 # Goollelal
+
+```{r Goollelal_water, echo = FALSE, results = 'asis'}
+load("Goollelal/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Goollelal")
+
+```
 
 # Gwelup
 
+```{r Gwelup_water, echo = FALSE, results = 'asis'}
+load("Gwelup/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Gwelup")
+
+```
+
 # Jandabup
+```{r Jandabup_water, echo = FALSE, results = 'asis'}
+load("Jandabup/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Jandabup")
+
+```
 
 # Joondalup
 
+```{r Joondalup_Nth_water, echo = FALSE, results = 'asis'}
+load("Joondalup_Nth/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Lake Joondalup")
+
+```
+
 # Lexia 186
+
+```{r Lexia186_water, echo = FALSE, results = 'asis'}
+load("Lexia_186/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Lexia 186")
+
+```
 
 # Loch McNess
 
+```{r Loch_McNess_water, echo = FALSE, results = 'asis'}
+load("Loch_McNess/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Loch McNess")
+
+```
+
 # Mariginiup
+
+```{r Mariginiup_water, echo = FALSE, results = 'asis'}
+load("Mariginiup/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Mariginiup")
+
+```
 
 # MM59B
 
+```{r MM59B_water, echo = FALSE, results = 'asis'}
+load("MM59B/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at MM59B")
+
+```
+
 # Nowergup
+
+```{r Nowergup_water, echo = FALSE, results = 'asis'}
+load("Nowergup_Nth/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Nowergup")
+
+```
 
 # Pipidinny
 
+```{r Pipidinny_water, echo = FALSE, results = 'asis'}
+load("Pipidinny/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Pipidinny")
+
+```
+
 # PM9
+
+```{r PM9_water, echo = FALSE, results = 'asis'}
+load("PM9/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at PM9")
+
+```
 
 # Quin Brook
 
+```{r Quin_Brook_water, echo = FALSE, results = 'asis'}
+load("Quin_Brook/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Quin Brook")
+
+```
+
 # Wilgarup
+
+```{r Wilgarup_water, echo = FALSE, results = 'asis'}
+load("Wilgarup/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Wilgarup")
+
+```
 
 # WM1
 
+```{r WM1_water, echo = FALSE, results = 'asis'}
+load("EMP_173/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at EMP 173")
+
+```
+
 # WM2
+
+```{r WM2_water, echo = FALSE, results = 'asis'}
+load("EMP_173/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at WM2")
+
+```
 
 # WM8
 
+```{r WM8_water, echo = FALSE, results = 'asis'}
+load("WM8/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at WM8")
+
+```
+
 # Yonderup
+```{r Yonderup_water, echo = FALSE, results = 'asis'}
+load("Yonderup/water_level.RData")
+
+set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Yonderup")
+
+```

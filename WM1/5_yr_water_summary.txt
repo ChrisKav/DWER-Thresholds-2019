@@ -1,4 +1,4 @@
-"Period","max","min","range","Month","Month","to.dry"
+"Period","Mean max seasonal level (mAHD)","Mean min seasonal level (mAHD)","Mean seasonal change (m)","Month of maximum","Month of minimum","Mean max to min (days)"
 "1","08/1994 - 07/1999",57.107,56.153,0.953999999999999,"November","April",216.6
 "2","08/1999 - 07/2004",56.467,55.609,0.858000000000001,"October","June",246.4
 "3","08/2004 - 07/2009",55.897,55.087,0.809999999999999,"October","July",200.4
