@@ -3,8 +3,8 @@ title: "Review of Water Thresholds - Gnangara"
 author: "Christopher Kavazos, Grant Buller, Pierre Horwitz, Ray Froend"
 date: "16/09/2019"
 output:
-  word_document: default
   pdf_document: default
+  word_document: default
 fig_caption: yes
 ---
 
