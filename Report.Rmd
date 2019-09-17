@@ -14,6 +14,7 @@ library(kableExtra)
 library(flextable)
 library(ggplot2)
 library(ggpubr)
+source("functions.R")
 knitr::opts_chunk$set(fig.width=6, fig.height=7, fig.path='Figs/',
                       echo=FALSE, warning=FALSE, message=FALSE)
 ```
@@ -40,6 +41,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 Site.GW.plots$emp173.p
 ```
 
+```{r EMP173_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("EMP_173/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
+```
+
 ```{r EMP173_ord, fig.cap="\\label{fig:II} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("EMP_173/boral_models.RData")
 ggarrange(veg.ord1, veg.ord2, ncol=2)
@@ -60,6 +66,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```{r EMP78_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of EMP 78", results = 'asis'}
 Site.GW.plots$emp78.p
+```
+
+```{r EMP78_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("EMP_78/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
 ```
 
 ```{r EMP78_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
@@ -96,6 +107,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 Site.GW.plots$gool.p
 ```
 
+```{r Goollelal_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Goollelal/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
+```
+
 ```{r Goollelal_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Goollelal/boral_models.RData")
 ggarrange(veg.ord1, veg.ord2, ncol=2)
@@ -116,6 +132,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```{r Gwelup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Gwelup", results = 'asis'}
 Site.GW.plots$gwel.p
+```
+
+```{r Gwelup_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Gwelup/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
 ```
 
 ```{r Gwelup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
@@ -140,6 +161,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 Site.GW.plots$jand.p
 ```
 
+```{r Jandabup_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Jandabup/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
+```
+
 ```{r Jandabup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Jandabup/boral_models.RData")
 ggarrange(veg.ord1, veg.ord2, ncol=2)
@@ -160,6 +186,17 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```{r Joondalup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Joondalup", results = 'asis'}
 Site.GW.plots$joon.p
+```
+
+```{r Joondalup_Nth, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Joondalup_Nth/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
+```
+
+
+```{r Joondalup_Sth_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Joondalup_Sth/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
 ```
 
 ```{r Joondalup_Nth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
@@ -194,6 +231,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 Site.GW.plots$lex186.p
 ```
 
+```{r Lexia186_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Lexia_186/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
+```
+
 ```{r Lexia186_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Lexia_186/boral_models.RData")
 ggarrange(veg.ord1, veg.ord2, ncol=2)
@@ -216,6 +258,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 Site.GW.plots$mcness.p
 ```
 
+```{r Loch_McNess_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Loch_McNess/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
+```
+
 ```{r Loch_McNess_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Loch_McNess/boral_models.RData")
 ggarrange(veg.ord1, veg.ord2, ncol=2)
@@ -236,6 +283,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```{r Mariginiup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Mariginiup", results = 'asis'}
 Site.GW.plots$marig.p
+```
+
+```{r Mariginiup_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Mariginiup/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
 ```
 
 ```{r Mariginiup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
@@ -270,6 +322,16 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```{r Nowergup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Nowergup", results = 'asis'}
 Site.GW.plots$nower.p
+```
+
+```{r Nowergup_Nth_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Nowergup_Nth/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
+```
+
+```{r Nowergup_Sth_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Nowergup_Sth/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
 ```
 
 ```{r Nowergup_Nth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
@@ -340,6 +402,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 Site.GW.plots$wilg.p
 ```
 
+```{r Wilgarup_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Wilgarup/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
+```
+
 ```{r Wilgarup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Wilgarup/boral_models.RData")
 ggarrange(veg.ord1, veg.ord2, ncol=2)
@@ -396,6 +463,11 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 
 ```{r Yoderup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Yonderup", results = 'asis'}
 Site.GW.plots$yond.p
+```
+
+```{r Yonderup_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+load("Yonderup/boral_models.RData")
+strat.plots <- stratiplotter(vegfit.mod3)
 ```
 
 ```{r Yonderup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}

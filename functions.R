@@ -194,3 +194,24 @@ get.residual.cor.new <- function (object, est = "median", prob = 0.95)
               cov = rescov.mat))
 }
 
+stratiplotter <- function(x) {
+  Y <- x$y
+  plot <- x$row.ids[,3]
+  Surv_Year <- x$row.ids[,2]
+  plot_stratiplot <- list()
+  comm <- data.frame(Y[ ,!grepl( "X" , colnames( Y ) ) ]) #remove exotics
+  df <- cbind(Surv_Year, plot, data.frame(comm))
+  df$plot <- factor(df$plot)
+  for (i in levels(df$plot)) {
+    df2 <- subset(df, plot==i)
+    df2$plot <- NULL
+    Year <- df2$Surv_Year
+    df2$Surv_Year <- NULL
+    df2 <- df2[, colSums(df2) > 4]
+    require(analogue)
+    plot_strat <- Stratiplot(Year ~ ., data = df2, type=c("h", "l", "g"), xlab="Cover abundance")
+    plot_stratiplot[[i]] <- plot_strat
+  }
+  return(plot_stratiplot)
+}
+
