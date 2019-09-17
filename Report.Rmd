@@ -178,6 +178,11 @@ beta.plot
 
 # Joondalup
 
+At 611.5 ha, Lake Joondalup is the largest GMEMP monitored wetland and is managed by the Department of Biodiversity, Conservation and Attractions.  The lake is an important habitat and drought refuge for water birds, and in conjunction with Lake Goollelal, is managed to support the full range of avian habitats (WAWA 1995). Other management objectives include the conservation of diverse wetland vegetation communities, including sedge beds, fringing woodlands and aquatic macrophytes, and the maintenance or enhancement of aquatic fauna in the lake. Lake Joondalup supports an important population of Pygmy Perch (Edelia vittata) and Swan River Goby (Pseudogobius olorum) and the fringing woodlands and bushland support a variety of significant mammal species.
+
+Lake Joondalup has remained permanently inundated at the staff gauge [HOW DO I FIND THIS OUT] since 1986 (REFERENCE Chapter 5 Horwitz et al). However, vast regions of the basin dry most summers. Historically, groundwater levels at monitoring bore 61610661 declined significantly from 19.3 to 18.1 mAHD from 1970 to 2002 (Figure 1). Currently, groundwater levels at this bore, as well as bore 61611423 (likely to better reflect lake surface water variation), have been increasing since 2015 to levels similar to the early 1990’s. Recent monitoring of surface water levels at the staff gauge 6162572 remained relatively stable from 2002 but have been increasing from 16.4 mAHD to approximately 17.2 mAHD in 2019. Five-year summaries of hydrological regimes at Lake Joondalup also reveal the higher mean minimum and maximum surface water levels in the latest period compared to earlier periods, as well as an increase in the number of days to reach seasonal minimum water levels (Table 1).
+
+
 ```{r Joondalup_Nth_water, echo = FALSE, results = 'asis'}
 load("Joondalup_Nth/water_level.RData")
 
@@ -188,16 +193,20 @@ set_caption(flextable(sw.sum), "Five year summaries of surface water level data 
 Site.GW.plots$joon.p
 ```
 
+The recent increases in surface water levels has increased the pH from 6.8 in 2016 to 8.4 in 2018 and increased alkalinity to 206 mg/L. Recent nutrient levels have been decreasing. [I NEED THIS DATA TO ANALYSE TRENDS]
+Vegetation surveys have been conducted along two transect at Lake Joondalup (Figure 2 and 3). Both the northern and southern transects were established in 1996 and were last surveyed in 2015. Melaleuca raphiophylla dominates the overstorey of plots in the northern transect while exotic species are abundant in the understory vegetation. There has been an increasing trend in cover abundance of the exotics Bromus diandrus, Ehrharta longiflora, Euphorbia terracina, Fumaria muralis and Peargonium capitatum in recent years. Fires in 2003 reduced the canopy condition and abundance of M. raphiophylla in the southern transect, and despite the slightly higher cover abundance of native species, native and exotic species richness is equal along the transect. The site also contains healthy stands of Baumea articulate and Centella asiatica in the submerged regions of the transect.
+
 ```{r Joondalup_Nth, fig.cap="\\label{fig:II} ", results = 'asis'}
 load("Joondalup_Nth/boral_models.RData")
 strat.plots <- stratiplotter(vegfit.mod3)
 ```
 
-
 ```{r Joondalup_Sth_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
 load("Joondalup_Sth/boral_models.RData")
 strat.plots <- stratiplotter(vegfit.mod3)
 ```
+
+All plots in both transects have displayed similar trends in community compositional change during the survey period. In the southern transect, latent model ordination reveals separation of the plots along the first axis, with a general increasing temporal trend along the second axis, except for a period around 2003 – 2006 where there was a hiatus (Figure 4). This hiatus in change would be associated with the 2003 bushfire and represents the recovery period. The trajectory for plot A is different, however, as the trend away from the original 1996 survey has reversed and the contemporary community is now becoming more like the 1996 communities. When the ordination model was re-run accounting for fluctuations in groundwater levels as a co-variate, the pattern of change in community trajectories remained unchanged, suggesting that these shifts have not been greatly influenced by groundwater levels. A similar temporal shift was observed in the northern transect, where the contemporary plot A has returned to a composition similar to the 1996 survey (Figure 5). Changes associated with groundwater fluctuations are also weak, with ordination accounting for groundwater levels displaying similar patterns to the full residual model. The proportion of native species has generally remained below 50% for both transects since 2009 (Figure 6 & 7).
 
 ```{r Joondalup_Nth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Joondalup_Nth/boral_models.RData")
@@ -218,6 +227,15 @@ beta.plot
 load("Joondalup_Sth/Vegetation/beta_plot.RData")
 beta.plot
 ```
+
+Aquatic invertebrates have been sampled from Lake Joondalup every year since 1996. During this period, 16-30 families of aquatic invertebrates have been recorded per sampling event, except for the latest round in 2018 where family richness was only nine. This exceptionally low family richness was likely due to the lack of insects and associated parasitic mites among the sampled communities. The phreatoicid isopod Amphisopus palustris was also absent in 2018 despite being collected every spring in Lake Joondalup (expect 2004). Furthermore, this reduced richness occurred during a period of relatively high surface water levels, suggesting other anthropogenic factors may be responsible for the decline of insect fauna within the lake. Otherwise, the lake hosts abundant populations of Ceinidae (amphipods), Palaemonetes australis (crustacean), Calanoid copepods and Cyprididae (ostracods).
+[ANALYSE INVERTS HERE]
+
+Future predictions
+[Insert plot of future changes in groundwater]
+
+The water levels in the vicinity of Lake Joondalup are expected to increase by 2.1m by 2030 from 2013 levels based on the revised groundwater allocations. This increase in water level will continue the increasing trend being observed in the lake’s surface water levels since 2015. Maintaining surface water levels above 16.2mAHD at staff 6162572 will ensure permanent water habitat for fauna and flora and the visual amenity of the area. The diverse macrophytes inhabiting plot A and B of both transects are likely to persist and continue to provide a rich habitat for aquatic vertebrates. Although important native macrophytes and wetland species are likely to continue at relatively high cover abundances under the future scenario, there is a high proportion of exotic taxonomic richness at these sites that the model presented here does not associate with groundwater levels. The contribution of exotic species is likely associated with climatic factors and landscape changes and under the 2030 proposed groundwater thresholds, they will likely to continue contributing a large proportion of the taxonomic richness to the Lake Joondalup vegetation community. Further vegetation monitoring is required at these transects to determine vegetation compositional changes since 2015 to understand if the trajectory in compositional change is continuing.
+
 
 # Lexia 186
 
