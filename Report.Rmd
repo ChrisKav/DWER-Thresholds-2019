@@ -48,7 +48,7 @@ strat.plots <- stratiplotter(vegfit.mod3)
 
 ```{r EMP173_ord, fig.cap="\\label{fig:II} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("EMP_173/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r EMP173_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
@@ -75,7 +75,7 @@ strat.plots <- stratiplotter(vegfit.mod3)
 
 ```{r EMP78_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("EMP_78/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r EMP78_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
@@ -122,7 +122,7 @@ Ordination reveals that Plot A has a distinct assemblage to the other plots but 
 
 ```{r Goollelal_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Goollelal/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r Goollelal_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
@@ -149,7 +149,7 @@ strat.plots <- stratiplotter(vegfit.mod3)
 
 ```{r Gwelup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Gwelup/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r Gwelup_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
@@ -176,7 +176,7 @@ strat.plots <- stratiplotter(vegfit.mod3)
 
 ```{r Jandabup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Jandabup/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r Jandabup_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
@@ -216,14 +216,14 @@ strat.plots <- stratiplotter(vegfit.mod3)
 
 All plots in both transects have displayed similar trends in community compositional change during the survey period. In the southern transect, latent model ordination reveals separation of the plots along the first axis, with a general increasing temporal trend along the second axis, except for a period around 2003 ? 2006 where there was a hiatus (Figure 4). This hiatus in change would be associated with the 2003 bushfire and represents the recovery period. The trajectory for plot A is different, however, as the trend away from the original 1996 survey has reversed and the contemporary community is now becoming more like the 1996 communities. When the ordination model was re-run accounting for fluctuations in groundwater levels as a co-variate, the pattern of change in community trajectories remained unchanged, suggesting that these shifts have not been greatly influenced by groundwater levels. A similar temporal shift was observed in the northern transect, where the contemporary plot A has returned to a composition similar to the 1996 survey (Figure 5). Changes associated with groundwater fluctuations are also weak, with ordination accounting for groundwater levels displaying similar patterns to the full residual model. The proportion of native species has generally remained below 50% for both transects since 2009 (Figure 6 & 7).
 
-```{r Joondalup_Nth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+```{r Joondalup_Nth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for at the northern Joondalup transect", results = 'asis'}
 load("Joondalup_Nth/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
-```{r Joondalup_Sth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+```{r Joondalup_Sth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for at the southern Joondalup transect", results = 'asis'}
 load("Joondalup_Sth/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r Joondalup_Nth_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
@@ -264,7 +264,7 @@ strat.plots <- stratiplotter(vegfit.mod3)
 
 ```{r Lexia186_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Lexia_186/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r Lexia186_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
@@ -291,7 +291,7 @@ strat.plots <- stratiplotter(vegfit.mod3)
 
 ```{r Loch_McNess_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Loch_McNess/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r Loch_McNess_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
@@ -318,7 +318,7 @@ strat.plots <- stratiplotter(vegfit.mod3)
 
 ```{r Mariginiup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Mariginiup/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r Mariginiup_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
@@ -362,7 +362,7 @@ strat.plots <- stratiplotter(vegfit.mod3)
 
 ```{r Nowergup_Nth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Nowergup_Nth/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r Nowergup_Sth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
@@ -435,7 +435,7 @@ strat.plots <- stratiplotter(vegfit.mod3)
 
 ```{r Wilgarup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Wilgarup/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r Wilgarup_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
@@ -498,7 +498,7 @@ strat.plots <- stratiplotter(vegfit.mod3)
 
 ```{r Yonderup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Yonderup/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+veg.ord1
 ```
 
 ```{r Yonderup_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
