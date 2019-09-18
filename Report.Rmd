@@ -35,7 +35,9 @@ load("Refined_data.RData")
 ```
 
 \pagebreak
-# EMP 173
+# Melaleuca Park 173
+
+Melaleuca Park 173 (EPP 173) is located within the Bassendean North Vegetataion Complex
 
 5 year summaries Table \ref{tab:EMP173water}
 
@@ -266,7 +268,7 @@ beta.plot
 \pagebreak
 # Joondalup
 
-At 611.5 ha, Lake Joondalup is the largest GMEMP monitored wetland and is managed by the Department of Biodiversity, Conservation and Attractions.  The lake is an important habitat and drought refuge for water birds, and in conjunction with Lake Goollelal, is managed to support the full range of avian habitats (WAWA 1995). Other management objectives include the conservation of diverse wetland vegetation communities, including sedge beds, fringing woodlands and aquatic macrophytes, and the maintenance or enhancement of aquatic fauna in the lake. Lake Joondalup supports an important population of Pygmy Perch (Edelia vittata) and Swan River Goby (Pseudogobius olorum) and the fringing woodlands and bushland support a variety of significant mammal species.
+At 611.5 ha, Lake Joondalup is the largest GMEMP monitored wetland and is managed by the Department of Biodiversity, Conservation and Attractions.  The lake is an important habitat and drought refuge for water birds, and in conjunction with Lake Goollelal, is managed to support the full range of avian habitats (WAWA 1995). Other management objectives include the conservation of diverse wetland vegetation communities, including sedge beds, fringing woodlands and aquatic macrophytes, and the maintenance or enhancement of aquatic fauna in the lake. Lake Joondalup supports an important population of Pygmy Perch (*Edelia vittata*) and Swan River Goby (*Pseudogobius olorum*) and the fringing woodlands and bushland support a variety of significant mammal species.
 
 ## Water levels
 
@@ -294,7 +296,7 @@ Site.GW.plots$joon.p
 ## Vegetation Dynamics
 
 The recent increases in surface water levels has increased the pH from 6.8 in 2016 to 8.4 in 2018 and increased alkalinity to 206 mg/L. Recent nutrient levels have been decreasing. [I NEED THIS DATA TO ANALYSE TRENDS]
-Vegetation surveys have been conducted along two transect at Lake Joondalup (Figure 2 and 3). Both the northern and southern transects were established in 1996 and were last surveyed in 2015. Melaleuca raphiophylla dominates the overstorey of plots in the northern transect while exotic species are abundant in the understory vegetation. There has been an increasing trend in cover abundance of the exotics Bromus diandrus, Ehrharta longiflora, Euphorbia terracina, Fumaria muralis and Peargonium capitatum in recent years. Fires in 2003 reduced the canopy condition and abundance of M. raphiophylla in the southern transect, and despite the slightly higher cover abundance of native species, native and exotic species richness is equal along the transect. The site also contains healthy stands of Baumea articulate and Centella asiatica in the submerged regions of the transect.
+Vegetation surveys have been conducted along two transect at Lake Joondalup (Figure 2 and 3). Both the northern and southern transects were established in 1996 and were last surveyed in 2015. *Melaleuca raphiophylla* dominates the overstorey of plots in the northern transect while exotic species are abundant in the understory vegetation. There has been an increasing trend in cover abundance of the exotics *Bromus diandrus*, *Ehrharta longiflora*, *Euphorbia terracina*, *Fumaria muralis* and *Peargonium capitatum* in recent years. Fires in 2003 reduced the canopy condition and abundance of *M. raphiophylla* in the southern transect, and despite the slightly higher cover abundance of native species, native and exotic species richness is equal along the transect. The site also contains healthy stands of *Baumea articulate* in the submerged regions of the transect.
 
 ```{r Joondalup_Nth, fig.cap="\\label{fig:II} ", results = 'asis'}
 load("Joondalup_Nth/boral_models.RData")
@@ -330,7 +332,7 @@ beta.plot
 
 ## Aquatic Invertebrates
 
-Aquatic invertebrates have been sampled from Lake Joondalup every year since 1996. During this period, 16-30 families of aquatic invertebrates have been recorded per sampling event, except for the latest round in 2018 where family richness was only nine. This exceptionally low family richness was likely due to the lack of insects and associated parasitic mites among the sampled communities. The phreatoicid isopod Amphisopus palustris was also absent in 2018 despite being collected every spring in Lake Joondalup (expect 2004). Furthermore, this reduced richness occurred during a period of relatively high surface water levels, suggesting other anthropogenic factors may be responsible for the decline of insect fauna within the lake. Otherwise, the lake hosts abundant populations of Ceinidae (amphipods), Palaemonetes australis (crustacean), Calanoid copepods and Cyprididae (ostracods).
+Aquatic invertebrates have been sampled from Lake Joondalup every year since 1996. During this period, 16-30 families of aquatic invertebrates have been recorded per sampling event, except for the latest round in 2018 where family richness was only nine. This exceptionally low family richness was likely due to the lack of insects and associated parasitic mites among the sampled communities. The phreatoicid isopod *Amphisopus palustris* was also absent in 2018 despite being collected every spring in Lake Joondalup (expect 2004). Furthermore, this reduced richness occurred during a period of relatively high surface water levels, suggesting other anthropogenic factors may be responsible for the decline of insect fauna within the lake. Otherwise, the lake hosts abundant populations of Ceinidae (amphipods), *Palaemonetes australis* (crustacean), *Calanoid copepods* and Cyprididae (ostracods).
 [ANALYSE INVERTS HERE]
 
 ## Revised water level threshold effects
@@ -343,7 +345,7 @@ The water levels in the vicinity of Lake Joondalup are expected to increase up t
 | :------------ | :----------- | :------: |
 | **Site values** |||
 | Water bird habitat and drought refuge | The proposed increases in groundwater levels around the lake will ensure the site remains an important water bird habitat. The proposed increases will also ensure the lake is permanently inundated, which will ensure the lake is a drought refuge for water birds. | Yes |
-| Diverse range of macrophytes    | The current diversity of macrophytes, including B. articulata, B. juncea, C. asiatica and L. longitudinale, will continue. There is the possibility of these species extending into current terrestrial regions of the lake. | Yes |
+| Diverse range of macrophytes    | The current diversity of macrophytes, including *B. articulata*, *B. juncea* and *L. longitudinale*, will continue. There is the possibility of these species extending into current terrestrial regions of the lake. | Yes |
 | **Site management objectives** |||
 |Conservation and public enjoyment of natural and modified landscapes | |Yes|
 |Conserve existing wetland vegetation, including sedge beds, fringing woodland and aquatic macrophytes | The predicted increases in groundwater levels will ensure the current wetland at a state similar to 2015. It is possible that sustained increases in groundwater levels will extend the range of these species around the lake by ‘migrating’ up slope. | Yes |
