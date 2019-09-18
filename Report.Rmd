@@ -1,7 +1,7 @@
 ---
 title: "Review of Water Thresholds - Gnangara"
 author: "Christopher Kavazos, Grant Buller, Pierre Horwitz, Ray Froend"
-date: "16/09/2019"
+date: "September 18 2019"
 output:
   pdf_document: default
   word_document: default
@@ -14,10 +14,15 @@ library(kableExtra)
 library(flextable)
 library(ggplot2)
 library(ggpubr)
+library(bookdown)
 source("functions.R")
 knitr::opts_chunk$set(fig.width=6, fig.height=7, fig.path='Figs/',
                       echo=FALSE, warning=FALSE, message=FALSE)
 ```
+
+\pagebreak
+\tableofcontents
+\pagebreak
 
 # Introduction
 
@@ -29,12 +34,23 @@ Full analysis can be found at (https://github.com/ChrisKav/DWER-Thresholds-2019)
 load("Refined_data.RData")
 ```
 
+\pagebreak
 # EMP 173
 
-```{r EMP173_water, echo = FALSE, results = 'asis'}
-load("EMP_173/water_level.RData")
+5 year summaries Table \ref{tab:EMP173water}
 
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at EMP 173")
+```{r EMP173water, echo = FALSE, results = 'asis'}
+load("EMP_173/water_level.RData")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at EMP 173") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r EMP173_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of EMP 173", results = 'asis'}
@@ -56,12 +72,21 @@ load("EMP_173/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+\pagebreak
 # EMP 78
 
-```{r EMP78_water, echo = FALSE, results = 'asis'}
+```{r EMP78water, echo = FALSE, results = 'asis'}
 load("EMP_78/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at EMP 78")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at EMP 78") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r EMP78_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of EMP 78", results = 'asis'}
@@ -83,42 +108,64 @@ load("EMP_78/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+\pagebreak
 # Gingin
 
-```{r Gingin_water, echo = FALSE, results = 'asis'}
+```{r Ginginwater, echo = FALSE, results = 'asis'}
 load("Gingin/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Gingin")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Gingin") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Gingin_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Gingin", results = 'asis'}
 Site.GW.plots$gin.p
 ```
 
+\pagebreak
 # Lake Goollelal
 
-Lake Goollelal, located within the Yellagonga Regional Park, is recognised as an important waterbird habitat and drought refuge (FROEND 2006) as well as habitat for the Swan River Goby (Pseudogobius olorum) and the Wetern Pygmy Perch (Edelia vittata) (WAWA 1995). The permanent deep waters found in the lake not only provides significant habitat for fauna and fringing vegetation, but also has significant value as a place of public enjoyment.
+Lake Goollelal, located within the Yellagonga Regional Park, is recognised as an important waterbird habitat and drought refuge (FROEND 2006) as well as habitat for the Swan River Goby (*Pseudogobius olorum*) and the Western Pygmy Perch (*Edelia vittata*) (WAWA 1995). The permanent deep waters found in the lake not only provides significant habitat for fauna and fringing vegetation, but also has significant value as a place of public enjoyment.
 
-Surface water levels recorded at Lake Goollelal reveal peak levels generally occur between September and November and lowest water levels between March and May. There has been a consistent range of about 0.7 m in annual water level during this period. There has been a general trend of decreasing water levels since 1995 although recent increases since 2016 show surface waters at a similar depth to 1990 levels. Surface water levels show similar trends to groundwater levels at a nearby bore () as the lake is largely fed by groundwaters. Although the preferred minnimum threshold of 26.2 mAHD has not been breached, it is likely the threshold is set too low as the acidification of waters entering the lake is a concern (Quintero Vasquez 2018).
+## Water levels
 
-```{r Goollelal_water, echo = FALSE, results = 'asis'}
-  load("Goollelal/water_level.RData")
+Surface water levels recorded at Lake Goollelal reveal peak levels generally occur between September and November and lowest water levels between March and May (Table \ref{tab:Goollelalwater}). There has been a consistent range of about 0.7 m in annual water level during this period. There has been a general trend of decreasing water levels since 1995 although recent increases since 2016 show surface waters at a similar depth to 1990 levels. Surface water levels show similar trends to groundwater levels at a nearby bore () as the lake is largely fed by groundwater. Although the preferred minimum threshold of 26.2 mAHD has not been breached, it is likely the threshold is set too low as the acidification of waters entering the lake is a concern (Quintero Vasquez 2018).
 
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Goollelal")
+```{r Goollelalwater, echo = FALSE, results = 'asis'}
+load("Goollelal/water_level.RData")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Goollelal") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Goollelal_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Goollelal", results = 'asis'}
 Site.GW.plots$gool.p
 ```
 
-The composition of vegetation at Lake Goollelal has been assesed 14 times between 1997 and 2014 at four plots [I NEED TO READ THE 2014 VEG REPORT]. Plot A represents fringing Melaleuca rhaphiophylla/Eucalyptus rudis complex and a stable community of the native sedges, Baumea articulata and Lepidosperma gladiatum. The Melaleuca rhaphiophylla/Eucalyptus rudis complex continues throughout the transect, which has also remained relatively stable in terms of cover abundance since 2002.
+## Vegetation dynamics
+
+The composition of vegetation at Lake Goollelal has been assessed 14 times between 1997 and 2014 at four plots [I NEED TO READ THE 2014 VEG REPORT]. Plot A represents fringing *Melaleuca rhaphiophylla*/*Eucalyptus rudis* complex and a stable community of the native sedges, *Baumea articulata* and *Lepidosperma gladiatum*. The *Melaleuca rhaphiophylla*/*Eucalyptus rudis* complex continues throughout the transect, which has also remained relatively stable in terms of cover abundance since 2002.
 
 ```{r Goollelal_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
 load("Goollelal/boral_models.RData")
 strat.plots <- stratiplotter(vegfit.mod3)
 ```
 
-Ordination reveals that Plot A has a distinct assemblage to the other plots but has displayed similay vegetation compositional changes. Shifts in compositional change has followed similar trajectories for each of the plots. All plots show an initial shift in community cover abundance from the 1997 survey and a return to 1997-like composition in the recent survey years. 
+Ordination reveals that Plot A has a distinct assemblage to the other plots but has displayed similar vegetation compositional changes. Shifts in compositional change has followed similar trajectories for each of the plots. All plots show an initial shift in community cover abundance from the 1997 survey and a return to 1997-like composition in the recent survey years. 
 
 ```{r Goollelal_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
 load("Goollelal/boral_models.RData")
@@ -130,12 +177,35 @@ load("Goollelal/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+|  | Likely effect of 2030 revised thresholds | Future Compliance |
+| :------------ | :----------- | :------: |
+| **Site values** |||
+|  Waterbird habitat and drought refuge | |  |
+| Supports good populations of native fish species, Swan River goby (*Pseudogobius olorum*) and the western pygmy perch (*Edelia vittata*) | |  |
+| **Site management objectives** |||
+|Conservation and public enjoyment of natural and modified landscapes|||
+|Protect and if possible enhance, fringing wetland vegetation including woodland and sedge vegetation|||
+|Maintain permanent, deep water for waterbird habitat and as a drought refuge|||
+|Maintain permanent water for fish and other dependent species|||
+|Maintain the landscape amenity values of the wetland|||
+
+Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives.
+
+\pagebreak
 # Gwelup
 
-```{r Gwelup_water, echo = FALSE, results = 'asis'}
+```{r Gwelupwater, echo = FALSE, results = 'asis'}
 load("Gwelup/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Gwelup")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Gwelup") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Gwelup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Gwelup", results = 'asis'}
@@ -157,12 +227,21 @@ load("Gwelup/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+\pagebreak
 # Jandabup
 
-```{r Jandabup_water, echo = FALSE, results = 'asis'}
+```{r Jandabupwater, echo = FALSE, results = 'asis'}
 load("Jandabup/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Jandabup")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Jandabup") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Jandabup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Jandabup", results = 'asis'}
@@ -184,22 +263,35 @@ load("Jandabup/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+\pagebreak
 # Joondalup
 
 At 611.5 ha, Lake Joondalup is the largest GMEMP monitored wetland and is managed by the Department of Biodiversity, Conservation and Attractions.  The lake is an important habitat and drought refuge for water birds, and in conjunction with Lake Goollelal, is managed to support the full range of avian habitats (WAWA 1995). Other management objectives include the conservation of diverse wetland vegetation communities, including sedge beds, fringing woodlands and aquatic macrophytes, and the maintenance or enhancement of aquatic fauna in the lake. Lake Joondalup supports an important population of Pygmy Perch (Edelia vittata) and Swan River Goby (Pseudogobius olorum) and the fringing woodlands and bushland support a variety of significant mammal species.
 
+## Water levels
+
 Lake Joondalup has remained permanently inundated at the staff gauge [HOW DO I FIND THIS OUT] since 1986 (REFERENCE Chapter 5 Horwitz et al). However, vast regions of the basin dry most summers. Historically, groundwater levels at monitoring bore 61610661 declined significantly from 19.3 to 18.1 mAHD from 1970 to 2002 (Figure 1). Currently, groundwater levels at this bore, as well as bore 61611423 (likely to better reflect lake surface water variation), have been increasing since 2015 to levels similar to the early 1990?s. Recent monitoring of surface water levels at the staff gauge 6162572 remained relatively stable from 2002 but have been increasing from 16.4 mAHD to approximately 17.2 mAHD in 2019. Five-year summaries of hydrological regimes at Lake Joondalup also reveal the higher mean minimum and maximum surface water levels in the latest period compared to earlier periods, as well as an increase in the number of days to reach seasonal minimum water levels (Table 1).
 
 
-```{r Joondalup_Nth_water, echo = FALSE, results = 'asis'}
+```{r Joondalupwater, echo = FALSE, results = 'asis'}
 load("Joondalup_Nth/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Lake Joondalup")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Joondalup") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Joondalup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Joondalup", results = 'asis'}
 Site.GW.plots$joon.p
 ```
+
+## Vegetation Dynamics
 
 The recent increases in surface water levels has increased the pH from 6.8 in 2016 to 8.4 in 2018 and increased alkalinity to 206 mg/L. Recent nutrient levels have been decreasing. [I NEED THIS DATA TO ANALYSE TRENDS]
 Vegetation surveys have been conducted along two transect at Lake Joondalup (Figure 2 and 3). Both the northern and southern transects were established in 1996 and were last surveyed in 2015. Melaleuca raphiophylla dominates the overstorey of plots in the northern transect while exotic species are abundant in the understory vegetation. There has been an increasing trend in cover abundance of the exotics Bromus diandrus, Ehrharta longiflora, Euphorbia terracina, Fumaria muralis and Peargonium capitatum in recent years. Fires in 2003 reduced the canopy condition and abundance of M. raphiophylla in the southern transect, and despite the slightly higher cover abundance of native species, native and exotic species richness is equal along the transect. The site also contains healthy stands of Baumea articulate and Centella asiatica in the submerged regions of the transect.
@@ -236,21 +328,46 @@ load("Joondalup_Sth/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+## Aquatic Invertebrates
+
 Aquatic invertebrates have been sampled from Lake Joondalup every year since 1996. During this period, 16-30 families of aquatic invertebrates have been recorded per sampling event, except for the latest round in 2018 where family richness was only nine. This exceptionally low family richness was likely due to the lack of insects and associated parasitic mites among the sampled communities. The phreatoicid isopod Amphisopus palustris was also absent in 2018 despite being collected every spring in Lake Joondalup (expect 2004). Furthermore, this reduced richness occurred during a period of relatively high surface water levels, suggesting other anthropogenic factors may be responsible for the decline of insect fauna within the lake. Otherwise, the lake hosts abundant populations of Ceinidae (amphipods), Palaemonetes australis (crustacean), Calanoid copepods and Cyprididae (ostracods).
 [ANALYSE INVERTS HERE]
 
-Future predictions
+## Revised water level threshold effects
+
 [Insert plot of future changes in groundwater]
 
-The water levels in the vicinity of Lake Joondalup are expected to increase by 2.1m by 2030 from 2013 levels based on the revised groundwater allocations. This increase in water level will continue the increasing trend being observed in the lake?s surface water levels since 2015. Maintaining surface water levels above 16.2mAHD at staff 6162572 will ensure permanent water habitat for fauna and flora and the visual amenity of the area. The diverse macrophytes inhabiting plot A and B of both transects are likely to persist and continue to provide a rich habitat for aquatic vertebrates. Although important native macrophytes and wetland species are likely to continue at relatively high cover abundances under the future scenario, there is a high proportion of exotic taxonomic richness at these sites that the model presented here does not associate with groundwater levels. The contribution of exotic species is likely associated with climatic factors and landscape changes and under the 2030 proposed groundwater thresholds, they will likely to continue contributing a large proportion of the taxonomic richness to the Lake Joondalup vegetation community. Further vegetation monitoring is required at these transects to determine vegetation compositional changes since 2015 to understand if the trajectory in compositional change is continuing.
+The water levels in the vicinity of Lake Joondalup are expected to increase up to 2.1m by 2030 from 2013 levels based on the revised groundwater allocations. This increase in water level will continue the increasing trend being observed in the lake?s surface water levels since 2015. Maintaining surface water levels above 16.2mAHD at staff 6162572 will ensure permanent water habitat for fauna and flora and the visual amenity of the area. The diverse macrophytes inhabiting plot A and B of both transects are likely to persist and continue to provide a rich habitat for aquatic vertebrates. Although important native macrophytes and wetland species are likely to continue at relatively high cover abundances under the future scenario, there is a high proportion of exotic taxonomic richness at these sites that the model presented here does not associate with groundwater levels. The contribution of exotic species is likely associated with climatic factors and landscape changes and under the 2030 proposed groundwater thresholds, they will likely to continue contributing a large proportion of the taxonomic richness to the Lake Joondalup vegetation community. Further vegetation monitoring is required at these transects to determine vegetation compositional changes since 2015 to understand if the trajectory in compositional change is continuing.
 
+|  | Likely effect of 2030 revised thresholds | Future Compliance |
+| :------------ | :----------- | :------: |
+| **Site values** |||
+| Water bird habitat and drought refuge | The proposed increases in groundwater levels around the lake will ensure the site remains an important water bird habitat. The proposed increases will also ensure the lake is permanently inundated, which will ensure the lake is a drought refuge for water birds. | Yes |
+| Diverse range of macrophytes    | The current diversity of macrophytes, including B. articulata, B. juncea, C. asiatica and L. longitudinale, will continue. There is the possibility of these species extending into current terrestrial regions of the lake. | Yes |
+| **Site management objectives** |||
+|Conservation and public enjoyment of natural and modified landscapes | |Yes|
+|Conserve existing wetland vegetation, including sedge beds, fringing woodland and aquatic macrophytes | The predicted increases in groundwater levels will ensure the current wetland at a state similar to 2015. It is possible that sustained increases in groundwater levels will extend the range of these species around the lake by ‘migrating’ up slope. | Yes |
+|Maintain and if possible, enhance the aquatic fauna of the lake | | |Yes|
+|In conjunction with Lake Goollelal, to support the full range of habitats for avian fauna | The maintenance of permanent surface water and wetland vegetation will continue to provide a diverse habitat for different avian species. [NEED TO COMMENT ON AQ INVERTS AS FOOD]  | Yes |
+|Ensure the landscape and amenity values of the lake are maintained, except under very low rainfall climatic conditions | | Yes|
 
+Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives.
+
+\pagebreak
 # Lexia 186
 
-```{r Lexia186_water, echo = FALSE, results = 'asis'}
+```{r Lexia186water, echo = FALSE, results = 'asis'}
 load("Lexia_186/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Lexia 186")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Lexia186") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Lexia186_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Lexia 186", results = 'asis'}
@@ -272,12 +389,21 @@ load("Lexia_186/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+\pagebreak
 # Loch McNess
 
-```{r Loch_McNess_water, echo = FALSE, results = 'asis'}
+```{r LochMcNesswater, echo = FALSE, results = 'asis'}
 load("Loch_McNess/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Loch McNess")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Loch McNess") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Loch_McNess_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Loch McNess", results = 'asis'}
@@ -299,12 +425,21 @@ load("Loch_McNess/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+\pagebreak
 # Mariginiup
 
-```{r Mariginiup_water, echo = FALSE, results = 'asis'}
+```{r Marigniupwater, echo = FALSE, results = 'asis'}
 load("Mariginiup/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Mariginiup")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Mariginiup") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Mariginiup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Mariginiup", results = 'asis'}
@@ -326,24 +461,42 @@ load("Mariginiup/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+\pagebreak
 # MM59B
 
-```{r MM59B_water, echo = FALSE, results = 'asis'}
+```{r MM59Bwater, echo = FALSE, results = 'asis'}
 load("MM59B/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at MM59B")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at MM59B") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r MM59B_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of MM59B", results = 'asis'}
 Site.GW.plots$MM59B.p
 ```
 
+\pagebreak
 # Nowergup
 
-```{r Nowergup_water, echo = FALSE, results = 'asis'}
+```{r Nowergupwater, echo = FALSE, results = 'asis'}
 load("Nowergup_Nth/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Nowergup")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Nowergup") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Nowergup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Nowergup", results = 'asis'}
@@ -380,48 +533,84 @@ load("Nowergup_Sth/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+\pagebreak
 # Pipidinny
 
-```{r Pipidinny_water, echo = FALSE, results = 'asis'}
+```{r Pipidinnywater, echo = FALSE, results = 'asis'}
 load("Pipidinny/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Pipidinny")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Pipidinny") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Pipidinny_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Pipidinny", results = 'asis'}
 Site.GW.plots$pipi.p
 ```
 
+\pagebreak
 # PM9
 
-```{r PM9_water, echo = FALSE, results = 'asis'}
+```{r PM9water, echo = FALSE, results = 'asis'}
 load("PM9/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at PM9")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at PM9") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r PM9_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of PM9", results = 'asis'}
 Site.GW.plots$PM9.p
 ```
 
+\pagebreak
 # Quin Brook
 
-```{r Quin_Brook_water, echo = FALSE, results = 'asis'}
+```{r QuinBrook, echo = FALSE, results = 'asis'}
 load("Quin_Brook/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Quin Brook")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Quin Brook") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Quin_Brook_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Quin Brook", results = 'asis'}
 Site.GW.plots$quin.p
 ```
 
+\pagebreak
 # Wilgarup
 
-```{r Wilgarup_water, echo = FALSE, results = 'asis'}
+```{r Wilgarupwater, echo = FALSE, results = 'asis'}
 load("Wilgarup/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Wilgarup")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Wilgarup") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Wilgarup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Wilgarup", results = 'asis'}
@@ -443,48 +632,84 @@ load("Wilgarup/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+\pagebreak
 # WM1
 
-```{r WM1_water, echo = FALSE, results = 'asis'}
-load("EMP_173/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at EMP 173")
+```{r WM1water, echo = FALSE, results = 'asis'}
+load("WM1/water_level.RData")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at WM1") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r WM1_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of WM1", results = 'asis'}
 Site.GW.plots$WM1.p
 ```
 
+\pagebreak
 # WM2
 
-```{r WM2_water, echo = FALSE, results = 'asis'}
-load("EMP_173/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at WM2")
+```{r WM2water, echo = FALSE, results = 'asis'}
+load("WM2/water_level.RData")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at WM2") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r WM2_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of WM2", results = 'asis'}
 Site.GW.plots$WM2.p
 ```
 
+\pagebreak
 # WM8
 
-```{r WM8_water, echo = FALSE, results = 'asis'}
+```{r WM8water, echo = FALSE, results = 'asis'}
 load("WM8/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at WM8")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at WM8") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r WM8_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of WM8", results = 'asis'}
 Site.GW.plots$WM8.p
 ```
 
+\pagebreak
 # Yonderup
 
-```{r Yonderup_water, echo = FALSE, results = 'asis'}
+```{r Yonderupwater, echo = FALSE, results = 'asis'}
 load("Yonderup/water_level.RData")
-
-set_caption(flextable(sw.sum), "Five year summaries of surface water level data at Yonderup")
+kable(sw.sum, digits = c(20,1,1,2,12,12,0),
+      format="latex",
+      booktabs= TRUE,
+      escape = FALSE,
+      col.names = linebreak(c("Period", "Mean max seasonal \n level (mAHD)", 
+                              "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
+                              "Month of \n maximum", "Month of \n minimum", 
+                              "Mean max to \n min (days)"), align="c"),
+      caption="Five year summaries of surface water level data at Yonderup") %>% 
+  kable_styling(latex_options="scale_down")
 ```
 
 ```{r Yoderup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Yonderup", results = 'asis'}
