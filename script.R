@@ -42,4 +42,3 @@ for (i in 1:length(wetlands)) {
     source("Plot_Figures.R")
   }
 }
-

@@ -208,7 +208,7 @@ stratiplotter <- function(x) {
   Y <- x$y
   plot <- x$row.ids[,3]
   year <- x$row.ids[,2]
-  Y <- Y[, colSums(Y) > 15]
+  Y <- Y[, colSums(Y) > 9]
   df <- cbind(year, plot, data.frame(Y))
   df$plot <- factor(df$plot)
   plot <- df$plot
