@@ -2,8 +2,13 @@
 title: "Review of Water Thresholds - Gnangara"
 author: "Christopher Kavazos, Grant Buller, Pierre Horwitz, Ray Froend"
 date: "September 18 2019"
+header-includes:
+- \usepackage{pdflscape}
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
 output:
   pdf_document: default
+  papersize: a4
   word_document: default
 fig_caption: yes
 ---
@@ -15,8 +20,9 @@ library(flextable)
 library(ggplot2)
 library(ggpubr)
 library(bookdown)
+library(dplyr)
 source("functions.R")
-knitr::opts_chunk$set(fig.width=6, fig.height=7, fig.path='Figs/',
+knitr::opts_chunk$set(fig.width=4, fig.height=4.67, fig.path='Figs/',
                       echo=FALSE, warning=FALSE, message=FALSE)
 ```
 
@@ -37,11 +43,17 @@ load("Refined_data.RData")
 \pagebreak
 # Melaleuca Park 173
 
-Melaleuca Park 173 (EPP 173) is located within the Bassendean North Vegetataion Complex
+Melaleuca Park 173 (EPP 173) is located within the Bassendean North Vegetataion Complex and represents a regionally significant wetland (HILL 1996) that is fed from a series of springs along the western margin of the basin. The waters supported a rich macroinvertebrate community and an endemic population of the black-striped minnow (*Galaxiella nigrostriata*). There have been dramatic decreases in surface and groundwater levels, to the point where the lake is almost dry during the summer months. Declining water levels are thought to be attributed to the local extinction of the black-striped minnow and degradation of fringing vegetation.
 
-5 year summaries Table \ref{tab:EMP173water}
+## Water levels
 
-```{r EMP173water, echo = FALSE, results = 'asis'}
+There has been a prolonged decline in surface water levels since 1990 that show similar trends with fluctuations in ground water levels (Figure \ref{fig:EMP173WaterPlot}). Since 2011, there has been a slight but non-significant increase in groundwater levels. Mean maximum and minimum water levels have decreased by 0.8 m and 0.5 m, respectively, since 1994 (Table \ref{tab:EMP173Water}). The latest 5 year period (20014-2019) suggests that groundwaters are reaching annual minimums earlier than previously.
+
+```{r EMP173WaterPlot, fig.cap="\\label{fig:EMP173WaterPlot}Ground and surface water levels recorded at bores and staff gauges in the vicinity of EMP 173", results = 'asis'}
+Site.GW.plots$emp173.p
+```
+
+```{r EMP173Water, echo = FALSE, results = 'asis'}
 load("EMP_173/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -51,20 +63,24 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at EMP 173") %>% 
+      caption="Five year summaries of ground water level data at EMP 173. Data is based from bore 61613213 due to many readings on surface water staff 6162628 being bellow the minimum reading.") %>% 
   kable_styling(latex_options="scale_down")
 ```
 
-```{r EMP173_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of EMP 173", results = 'asis'}
-Site.GW.plots$emp173.p
-```
+\newpage
 
-```{r EMP173_strat, fig.cap="\\label{fig:II} ", results = 'asis'}
+\blandscape
+
+```{r EMP173Strat, fig.cap="\\label{fig:EMP173Strat}Cover abundances for each species", results = 'asis', fig.width=10, fig.length=8}
 load("EMP_173/boral_models.RData")
-strat.plots <- stratiplotter(vegfit.mod3)
+stratiplotter(vegfit.mod3)
 ```
 
-```{r EMP173_ord, fig.cap="\\label{fig:II} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+\elandscape
+
+\newpage
+
+```{r EMP173_ord, fig.cap="\\label{fig:II} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis', eval=FALSE}
 load("EMP_173/boral_models.RData")
 veg.ord1
 ```

@@ -195,23 +195,34 @@ get.residual.cor.new <- function (object, est = "median", prob = 0.95)
 }
 
 stratiplotter <- function(x) {
+  require(ggplot2)
+  require(dplyr)
+  require(reshape2)
+  theme_new <- theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), # remove grids
+                     panel.background = element_blank(), axis.line = element_line(colour = "black"),
+                     strip.text.x = element_text(size=10, angle=90, vjust=0), # Taxa names
+                     strip.background = element_blank(),
+                     strip.text.y = element_text(angle = 0),
+                     legend.position="none",panel.border = element_blank(),
+                     axis.text.x=element_text(angle=45,hjust=1)) # Axis tick label angle
   Y <- x$y
   plot <- x$row.ids[,3]
-  Surv_Year <- x$row.ids[,2]
-  plot_stratiplot <- list()
-  comm <- data.frame(Y[ ,!grepl( "X" , colnames( Y ) ) ]) #remove exotics
-  df <- cbind(Surv_Year, plot, data.frame(comm))
+  year <- x$row.ids[,2]
+  Y <- Y[, colSums(Y) > 15]
+  df <- cbind(year, plot, data.frame(Y))
   df$plot <- factor(df$plot)
-  for (i in levels(df$plot)) {
-    df2 <- subset(df, plot==i)
-    df2$plot <- NULL
-    Year <- df2$Surv_Year
-    df2$Surv_Year <- NULL
-    df2 <- df2[, colSums(df2) > 4]
-    require(analogue)
-    plot_strat <- Stratiplot(Year ~ ., data = df2, type=c("h", "l", "g"), xlab="Cover abundance")
-    plot_stratiplot[[i]] <- plot_strat
-  }
-  return(plot_stratiplot)
-}
+  plot <- df$plot
+  df$plot <- recode(df$plot, '1' = "A", '2' = "B", '3' = "C", '4' = "D", '5' = "E")
+  df2 <- melt(df, id=c("year", "plot"))
 
+  strat_plot <- ggplot(df2) +
+    geom_line(aes(year,value)) +
+    geom_area(aes(year,value, fill=variable)) +
+    scale_x_reverse() +
+    scale_y_continuous(breaks =NULL) +
+    xlab("Year")+ylab("Cover Abundance") +
+    coord_flip() +
+    theme_new +
+    facet_grid(df2$plot~df2$variable) #,scales = "free") #space = "free")
+  return(strat_plot)
+}
