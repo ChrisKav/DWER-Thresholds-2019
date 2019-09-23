@@ -26,13 +26,15 @@ knitr::opts_chunk$set(fig.path='Figs/',
                       echo=FALSE, warning=FALSE, message=FALSE)
 ```
 
-\pagebreak
+\newpage
 
 # Executive Summary
 
-\pagebreak
+[SUMMARY TABLE OF OUTCOMES]
+
+\newpage
 \tableofcontents
-\pagebreak
+\newpage
 
 # Introduction
 
@@ -40,27 +42,51 @@ This report details an analysis that reviews the ecological impacts of revised p
 
 Full analysis can be found at (https://github.com/ChrisKav/DWER-Thresholds-2019)
 
+[OUTLINE OF REPORT STRUCTURE]
+
+[TABLE OF WETLANDS <- THE DUNE COMPLEX THEY BELONG TO, WHETHER VEG/INVERT MONITORING, COORDINATES ]
+
 ```{r, echo=FALSE}
 load("Refined_data.RData")
 ```
 
-\pagebreak
+\newpage
 
 # Methods
 
-\pagebreak
+[VEG MONITORING - LIST OF RECENT REPORTS]
+
+[INVERT MONITORING]
+
+[STATISTICAL METHODS USED IN THIS REPORT]
+
+\newpage
 
 # Individual wetland descriptions
 
 ## Melaleuca Park 173
 
-Melaleuca Park 173 (EPP 173) is located within the Bassendean North Vegetation Complex and represents a regionally significant wetland (HILL 1996) that is fed from a series of springs along the western margin of the basin. The waters supported a rich macro invertebrate community and an endemic population of the black-striped minnow (*Galaxiella nigrostriata*). There have been dramatic decreases in surface and groundwater levels, to the point where the lake is almost dry during the summer months. Declining water levels are thought to be attributed to the local extinction of the black-striped minnow and degradation of fringing vegetation.
+Melaleuca Park 173 (EPP 173) is located within the Bassendean North Vegetation Complex and represents a regionally significant wetland (HILL 1996). Normally, the site represents a permanently filled lake that is fed from a series of springs along the western margin of the basin [Invert REPORT & FROEND ref]. The waters supported a rich macro invertebrate community and an endemic population of the black-striped minnow (*Galaxiella nigrostriata*). There have been dramatic decreases in surface and groundwater levels in recent decades, to the point where the lake is almost dry during the summer months. Declining water levels are thought to be attributed to the local extinction of the black-striped minnow and degradation of fringing vegetation.
 
 ### Hydrology
 
-There has been a prolonged decline in surface water levels since 1990 that show similar trends with fluctuations in ground water levels (Figure \ref{fig:EMP173WaterPlot}). Since 2011, there has been a slight but non-significant increase in groundwater levels. Mean maximum and minimum water levels have decreased by 0.8 m and 0.5 m, respectively, since 1994 (Table \ref{tab:EMP173Water}). The latest 5 year period (20014-2019) suggests that ground waters are reaching annual minimums earlier than previously.
+There has been a prolonged decline in surface water levels since 1990 that show similar trends with fluctuations in ground water levels (Figure \ref{fig:EMP173WaterPlot}). Surface water level measurements are now unreliable at staff 6162628 due to water levels usually being below the minimum level of the staff. Since 2011, there has been a slight but non-significant increase in groundwater levels. Mean maximum and minimum water levels have decreased by 0.8 m and 0.5 m, respectively, since 1994 (Table \ref{tab:EMP173Water}). The latest 5 year period (2014-2019) suggests that ground waters are reaching annual minimums earlier in the year than in previous seasons.
 
-```{r EMP173WaterPlot, fig.cap="\\label{fig:EMP173WaterPlot}Ground and surface water levels recorded at bore 61613213 (red) and staff 6162628 (blue) for the Melaleuca Park 173 wetland", results = 'asis', fig.width=4, fig.height=3}
+### Vegetation dynamics
+
+Vegetation monitoring has been occurring at Melaleuca Park from 1997 to 2018. There has been marked changes in vegetation composition along the transect during this monitoring period (Figure \ref{fig:EMP173Strat}). In 2014, *Baumea articulata* was absent from the transect, however, due to a wet season which saw Plot A and B submerged in 2018, *B. articulata* was recorded in low abundance. Similar changes have been observed for *Astartea scoparia*, which prior to 2018 was recorded wither dead or in poor condition. Since 2018, many of the *A. scoparia* plants were observed with new shoots. Other important vegetation components in Plot A include *Lepidosperma longitudinale* and *Leptocarpus scariosus*, both of which are also present in Plot B, whilst the former is present throughout the transect.
+
+The long-term decline in water levels has had an adverse effect on the health of the *Melaleuca preissiana* population. Generally, this important canopy forming species has been declining in health, despite slight increases in plant health for 2018. The slight increase in *M. preissiana* health can be attributed to the recent stabilisation of ground water in levels.
+
+Ordination reveals distinct shifts in community composition since 1997 (Figure \ref{fig:EMP173Ord}). Although Plot A is distinct, in terms of vegetation cover abundances, to Plots B, C and D, all plots display an upwards trajectory along the second axis (LV2). For Plot A, this the shift in composition is likely due to the loss of *B. articulata* from the plot. Modeling compositional changes in vegetation with changes in groundwater levels suggests a number of species which are likely to increase in cover abundance with declining ground water levels (Figure \ref{fig:EMP173Post}). These species, such as *Xanthorrhoea preissii*, are likely to become abundant in Plot A under a scenario of continuing declining ground water levels.
+
+### Aquatic Invertebrates
+
+### Revised water level threshold effects
+
+COMMENT ON REVISED WATER THRESHOLDS HERE> WHAT ARE THE PREDICTIONS> HOW WILL IT IMPACT VEG AND INVERTS. OTHER IMPACTS. MANAGMENT OBJECTIVES?
+
+```{r EMP173WaterPlot, fig.cap="\\label{fig:EMP173WaterPlot}Ground and surface water levels for Melaleuca Park 173 recorded at bore 61613213 (red) and staff 6162628 (blue). The minimum recordable water level for the staff gaugue is 50.4 mAHD. Blue dots at 50.4 mAHD represent water levels below the minimum level measurable by the staff. Red segments on fitted line represent statistically significant periods of declining water levels.", results = 'asis', fig.width=4, fig.height=3}
 Site.GW.plots$emp173.p
 ```
 
@@ -74,21 +100,15 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of ground water level data at EMP 173. Data is based from bore 61613213 due to many readings on surface water staff 6162628 being below the minimum reading.") %>% 
+      caption="Five year summaries of ground water level data at Melaleuca Park 173. Data is based from bore 61613213 due to many readings on surface water staff 6162628 being below the minimum reading level of 50.4 mAHD.") %>% 
   kable_styling(latex_options="scale_down")
 ```
-
-### Vegetation dynamics
-
-Vegetation monitoring has been occurring at Melaleuca Park from 1997 to 2018. There has been marked changes in vegetation composition along the transect during this monitoring period (Figure \ref{fig:EMP173Strat}). In 2014, *Baumea articulata* was absent from the transect, however, due to a wet season which saw Plot A and B submerged in 2018, *B. articulata* was recorded in low abundance. Similar changes have been observed for *Astartea scoparia*, which prior to 2018 was recorded wither dead or in poor condition. Since 2018, many of the *A. scoparia* plants were observed with new shoots. Other important vegetation components in Plot A include *Lepidosperma longitudinale* and *Leptocarpus scariosus*, both of which are also present in Plot B, whilst the former is present throughout the transect.
-
-The long-term decline in water levels has had an adverse effect on the health of the *Melaleuca preissiana* population. Generally, this important canopy forming species has been declining in health, despite slight increases in plant health for 2018. The slight increase in *M. preissiana* health can be attributed to the recent stabilisation of ground water in levels.
 
 \newpage
 
 \blandscape
 
-```{r EMP173Strat, fig.cap="\\label{fig:EMP173Strat}Cover abundances for each species across the four plots (A, B, C, D) at the Melaleuca Park 173 transect. Invasive species are denoted by 'X'. Only the most common species are included.", results = 'asis', fig.width=10, fig.length=8}
+```{r EMP173Strat, fig.cap="\\label{fig:EMP173Strat}Cover abundances for each species across the four plots (A, B, C, D) at the Melaleuca Park 173 transect recorded for the survey period. Invasive species are denoted by 'X'. Only the most common species are included.", results = 'asis', fig.width=10, fig.length=32}
 load("EMP_173/boral_models.RData")
 stratiplotter(vegfit.mod3)
 ```
@@ -97,21 +117,15 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-Ordination reveals distinct shifts in community composition since 1997 (Figure \ref{fig:EMP173Ord}). Although Plot A is distinct, in terms of vegetation cover abundances, to Plots B, C and D, all plots display an upwards trajectory along the second axis (LV2). For Plot A, this the shift in composition is likely due to the loss of *B. articulata* from the plot. Modeling compositional changes in vegetation with changes in groundwater levels suggests a number of species which are likely to increase in cover abundance with declining ground water levels (Figure \ref{fig:EMP173Post}). These species, such as *Xanthorrhoea preissii*, are likely to become abundant in Plot A under a scenario of continuing declining ground water levels.
-
-```{r EMP173Ord, fig.cap="\\label{fig:EMP173Ord} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis', fig.width=4, fig.height=3}
+```{r EMP173Ord, fig.cap="\\label{fig:EMP173Ord}Unconstrained ordination based on the latent variable model for each surveyed year for Melaleuca Park 173. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis', fig.width=4, fig.height=3}
 load("EMP_173/boral_models.RData")
 veg.ord1
 ```
 
-```{r EMP173Post, fig.cap="\\label{fig:EMP173Post} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis', fig.width=4, fig.height=3}
+```{r EMP173Post, fig.cap="\\label{fig:EMP173Post}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Melaleuca Park 173 on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline. Only those species with coefficients significanlty different to zero are shown.", results = 'asis', fig.width=4, fig.height=3}
 load("EMP_173/Vegetation/beta_plot.RData")
 beta.plot
 ```
-
-### Aquatic Invertebrates
-
-### Revised water level threshold effects
 
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
@@ -127,17 +141,30 @@ beta.plot
 
 Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives.
 
-\pagebreak
+\newpage
 
-## EMP 78
+## Melaleuca Park 78
 
-Melaleuca Park 78 (also referred to as EPP 78 or Dampland 78) is located north-west of the Lexia wetlands in the southern area of Melaleuca Park. The site is approximately 6.7 ha in area and represents a regionally significant wetland (HILL 1996). Melaleuca Park 78 is classified as a Dampland habitat, meaning the basin has seasonally waterlogged soils that are not often innundated with surface waters [See Semeniuk & Semeniuk - The Geomorphic Classification of Wetlands in Hill et al 1996]. The site is an important habitat for a unique assemblage of phreatophytic vegetation which supports native populations of fauna.
+Melaleuca Park 78 (also referred to as EPP 78 or Dampland 78) is located north-west of the Lexia wetlands in the southern area of Melaleuca Park. The site is approximately 6.7 ha in area and represents a regionally significant wetland (HILL 1996). Melaleuca Park 78 is classified as a Dampland habitat, meaning the basin has seasonally waterlogged soils that are not often inundated with surface waters [See Semeniuk & Semeniuk - The Geomorphic Classification of Wetlands in Hill et al 1996]. The site is an important habitat for a unique assemblage of phreatophytic vegetation which provides important habitat for native populations of fauna.
 
 ### Hydrology
 
-Water levels at the site have been declining since the beginning of monitoring in 1999 until 2014, although absolute minimum levels were recorded in 2016. Bore 61613231 indicates that ground waters in the dampland may have declined by about 1.3 m since 1999, although there has been a recent increase in ground water levels since 2016 due to increased rainfall (Figure \ref{fig:EMP78WaterPlot}). Current 5 year mean maximum and minimum ground water levels in the bore are about 1 m lower than when monitoring began in 1999, with peak levels occuring in October/November and minimums occuring between April-May (Table \ref{tab:EMP78Water}).
+Water levels at the site have been declining since the beginning of monitoring in 1999 until 2014, although absolute minimum levels were recorded in 2016. Bore 61613231 indicates that ground waters in the dampland may have declined by about 1.3 m since 1999, although there has been a recent increase in ground water levels since 2016 due to increased rainfall (Figure \ref{fig:EMP78WaterPlot}). Current 5 year mean maximum and minimum ground water levels in the bore are about 1 m lower than when monitoring began in 1999, with peak levels occurring in October/November and minimums occurring between April-May (Table \ref{tab:EMP78Water}).
 
-```{r EMP78WaterPlot, fig.cap="\\label{fig:EMP78WaterPlot} Ground water levels recorded at bore 61613231 in the vicinity of the Melaleuca Park 78 wetland", results = 'asis', fig.width=4, fig.height=3}
+### Vegetation dynamics
+
+The vegetation transect has been monitored at Melaleuca Park 78 since 1997 and was last surveyed in 2018 (Figure \ref{fig:EMP78Strat}). The site is largely dominated by native species that include a dense understorey of *Beaufortia elegans*, *Pultenea reticulata* and *Kunzea glabrescens*. The overstorey is largely composed of *Melaleuca preissiana* throughout the transect and *Banksia attenuata*, *Banksia ilicifolia* and *Banksia menziesii* in the higher parts of the basin. In 2006, the transect was heavily affected by a fire but the vegetation has since made some recovery. *Baumea articulata* disappeared from the transect during this period. A number of tree deaths were reported following the fire but there is evidence of recovery, particularly for low-lying stands of *M. preissiana*. Trajectories of compositional change provide further evidence for post-fire recovery as recent plot assemblages are becoming more similar to those recorded before the fire (Figure \ref{fig:EMP78Ord}).
+
+Bayesian regression modelling revealed a number of species associated with low ground water levels (Figure \ref{fig:EMP78Post}). In particular, some natives, including *B. attenuata*, *Hibbertia subvaginata* and *M. preissiana*, are likely to increase in cover abundance under a scenario of further decreasing ground waters. The cover abundance of exotics, including *Aira caryophyllea*, *Briza maxima*, *Ehrharta calycina*, *Hypochaeris glabra*, *Poa annua*, *Sonchus oleraceus* and *Ursinia anthemoides*, are also likely to increase in cover abundance withd declining ground waters. It is also likely that the richness of exotic species will increase with ground water decline as the site is invaded by exotics not currently recorded at the site.
+
+### Aquatic invertebrates
+
+
+### Revised water level threshold effects
+
+Melaleuca Park 78 has been non-compliant with absolute minimum water level criteria since 2012.
+
+```{r EMP78WaterPlot, fig.cap="\\label{fig:EMP78WaterPlot} Ground water levels recorded at bore 61613231 in the vicinity of the Melaleuca Park 78 wetland. Red segments on fitted line represent statistically significant periods of decline and blue represent statistically significant periods of increasing water levels.", results = 'asis', fig.width=4, fig.height=3}
 Site.GW.plots$emp78.p
 ```
 
@@ -151,15 +178,9 @@ kable(sw.sum[2:nrow(sw.sum)], digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at EMP 78 recorded at the nearby bore 61613231") %>% 
+      caption="Five year summaries of ground water level data at Maleleuca Park 78 recorded at bore 61613231.") %>% 
   kable_styling(latex_options="scale_down")
 ```
-
-### Vegetation dynamics
-
-The vegetation transect has been monitored at Melaleuca Park 78 since 1997 and was last monitored in 2018 (Figure \ref{fig:EMP78Strat}). The site is largely dominated by native species that include a dense understorey og *Beaufortia elegans*, *Pultenea reticulata* and *Kunzea glabrescens*. The overstorey is largely composed of *Melaleuca preissiana* throughout and *Banksia attenuata*, *Banksia ilicifolia* and *Banksia menziesii* in the higher parts of the basin. In 2006, the transect was heavily affected by a fire, but has since made some recovery. *Baumea articulata* disappeared from the transect during this period. A number of tree deaths were reported following the fire but there is evidence of recovery, paritcualry for low-lying stands of *M. preissiana*. Trajectories of compositional change reflect the post-fire recovery as recent plot assemblages are becoming more similar to those recorded before the fire (Figure \ref{fig:EMP78Ord}).
-
-Modelling revealed a number of species associated with low ground water levels (Figure \ref{fig:EMP78Post}). In particular, these results suggest that the natives *B. attenuata*, *Hibbertia subvaginata* and *M. preissiana* are likely to increase in cover abundance under a scenario of further decreasing ground waters. The cover abundance of exotics, including *Aira caryophyllea*, *Briza maxima*, *Ehrharta calycina*, *Hypochaeris glabra*, *Poa annua*, *Sonchus oleraceus* and *Ursinia anthemoides* are also likely to increase in cover abundance. It is also likely that the richness of exotic species will increase as ground water levels decrease.
 
 \newpage
 
@@ -174,19 +195,15 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-```{r EMP78Ord, fig.cap="\\label{fig:EMP78Ord} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis', fig.width=4, fig.height=3}
+```{r EMP78Ord, fig.cap="\\label{fig:EMP78Ord}Unconstrained ordination based on the latent variable model for each surveyed year for Melaleuca Park 78. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis', fig.width=4, fig.height=3}
 load("EMP_78/boral_models.RData")
 veg.ord1
 ```
 
-```{r EMP78Post, fig.cap="\\label{fig:EMP78Post} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis', fig.width=4, fig.height=3}
+```{r EMP78Post, fig.cap="\\label{fig:EMP78Post}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Melaleuca Park 78 on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline. Only those species with coefficients significanlty different to zero are shown.", results = 'asis', fig.width=4, fig.height=3}
 load("EMP_78/Vegetation/beta_plot.RData")
 beta.plot
 ```
-
-### Revised water level threshold effects
-
-Melaleuca Park 78 has been non-compliant with absolute minimum water level criteria since 2012.
 
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
  :------------ |:----------- |:------:|
@@ -198,17 +215,17 @@ Melaleuca Park 78 has been non-compliant with absolute minimum water level crite
 
 Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives.
 
-\pagebreak
+\newpage
 
 ## Gingin Brook
 
-Gingin Brook is a new proposed in the Gingin water allocation plan (draft expected 2023). There is currently no baseline vegetation data for the site.
+Gingin Brook is a new proposed in the Gingin water allocation plan (draft expected 2023). There is currently no baseline vegetation data for the site. [WHAT IS THIS SITE? A DAMPLAND< SUPALND LAKE ETC? THERE MUST BE SOME MORE INFORMATION I CAN INCLUDE]
 
 ### Hydrology
 
-Ground waters at this site have significantly declined during the period between 1989 and 2015 by approximately 2.5 m (Figure \ref{fig:GinginWaterPlot}). Mean seasonal maximum and minimum ground water levels have also decreased by 1.8 since 1994, with current monthly minimums generally occuring earlier in the year than in between 1994 and 1999 (Table \ref{tab:GinginWater}).
+Ground waters at this site have significantly declined during the period between 1989 and 2015 by approximately 2.5 m (Figure \ref{fig:GinginWaterPlot}). Mean seasonal maximum and minimum ground water levels have also decreased by 1.8 since 1994, with current monthly minimums generally occurring earlier in the year than in between 1994 and 1999 (Table \ref{tab:GinginWater}).
 
-```{r GinginWaterPlot, fig.cap="\\label{fig:GinginWaterPlot} Ground water levels recorded at bore 61710078 in the vicinity of Gingin Brook", results = 'asis', fig.width=4, fig.height=3}
+```{r GinginWaterPlot, fig.cap="\\label{fig:GinginWaterPlot} Ground water levels recorded at bore 61710078 that represent fluctuations in ground waters at Gingin Brook. Red segments on fitted line represent statistically significant periods of declining ground water levels.", results = 'asis', fig.width=4, fig.height=3}
 Site.GW.plots$gin.p
 ```
 
@@ -222,18 +239,25 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at Gingin Brook recorded at bore 61710078.") %>% 
+      caption="Five year summaries of ground water level data at Gingin Brook recorded at bore 61710078.") %>% 
   kable_styling(latex_options="scale_down")
 ```
 
-\pagebreak
+\newpage
+
 ## Lake Goollelal
 
-Lake Goollelal, located within the Yellagonga Regional Park, is recognised as an important waterbird habitat and drought refuge (FROEND 2006) as well as habitat for the Swan River Goby (*Pseudogobius olorum*) and the Western Pygmy Perch (*Edelia vittata*) (WAWA 1995). The permanent deep waters found in the lake not only provides significant habitat for fauna and fringing vegetation, but also hold significant value as a place of public enjoyment.
+Lake Goollelal, located within the Yellagonga Regional Park, is recognised as an important waterbird habitat and drought refuge (FROEND 2006) as well as habitat for the Swan River Goby (*Pseudogobius olorum*) and the Western Pygmy Perch (*Edelia vittata*) (WAWA 1995). The permanent deep waters found in the lake not only provides significant habitat for fauna and fringing vegetation, but also hold significant value as a place of public enjoyment. [COMMENT ON SURROUNDING URBANISATION?]
 
 ### Hydrology
 
-Surface water levels recorded at Lake Goollelal reveal peak levels generally occur between September and November and lowest water levels between March and May (Table \ref{tab:GoollelalWater}). There has been a consistent range of about 0.7 m in annual water level during this period. There has been a general trend of decreasing surface water levels since 1995, although recent increases since 2016 show surface waters at a similar depth to 1990 levels. Surface water levels show similar trends to groundwater levels at a nearby bore (61611870) as the lake is largely fed by groundwater (Figure \ref{fig:GoollelalWaterPlot}). Although the preferred minimum threshold of 26.2 mAHD has not been breached, it is likely the threshold is set too low as the acidification of waters entering the lake is a concern (Quintero Vasquez 2018).
+Surface water levels recorded at Lake Goollelal reveal peak levels generally occur between September and November and lowest water levels between March and May (Table \ref{tab:GoollelalWater}). There has been a consistent range of about 0.7 m in annual water level during this period. There has been a general trend of decreasing surface water levels since 1995, although recent increases since 2016 show surface waters at a similar depth to 1990 levels. Surface water levels show similar trends to groundwater levels at a nearby bore (61611870) as the lake is largely fed by groundwater (Figure \ref{fig:GoollelalWaterPlot}). Although the preferred minimum threshold of 26.2 mAHD has not been breached, it is likely the threshold is set too low as acidification of waters in the lake is a concern (Quintero Vasquez 2018).
+
+### Vegetation dynamics
+
+The composition of vegetation at Lake Goollelal has been assessed 14 times between 1997 and 2014 at four plots along an established transect [I NEED TO READ THE 2014 VEG REPORT]. Plot A represents fringing *Melaleuca rhaphiophylla*/*Eucalyptus rudis* vegetation and a stable community of the native sedges, *Baumea articulata* and *Lepidosperma gladiatum*. The *M. rhaphiophylla*/*E. rudis* complex continues throughout the transect, which has also remained relatively stable in terms of cover abundance since 2002. There is a high richness of exotic vegetation species present at the lake. Generally, these exotic species have increased in abundance during the survey period (Figure \ref{fig:GoollelalStrat}).
+
+Ordination reveals that Plot A has a distinct assemblage to the other plots but has displayed similar shifts in vegetation composition during the monitoring period (Figure \ref{fig:GoollelalOrd}). All plots show an initial shift in community cover abundance from the 1997 survey and a return to 1997-like composition in the recent survey years. Plot D displays a different pattern, probably due to the record of *B. articulata* in 1997 [SHOULD CONFIRM THIS WITH GRANT] and the high cover abundance of exotic species. Bayesian regression analysis predicts many species to increase in cover abundance with declining surface water levels, while *B. articulata* is predicted to decrease significantly in cover abundance (Figure \ref{fig:GoollelalPost}). Native species thought to increase in cover abundance with declining surface water levels include *Pennisetum clandestinum*, and *Microtis media*, while cover abundance of *M. rhaphiophylla* and *E. rudis* will likely remain stable or only increase slightly. Many exotic species are likely to increases in cover abundance under a scenario of declining surface waters, including *Briza maxima*, *Fumaria capreolata*, *Setaria palmifolia* and *Sparaxis bulbifera*.
 
 ```{r GoollelalWater, echo = FALSE, results = 'asis'}
 load("Goollelal/water_level.RData")
@@ -249,15 +273,9 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
   kable_styling(latex_options="scale_down")
 ```
 
-```{r GoollelalWaterPlot, fig.cap="\\label{fig:GoollelalWaterPlot} Ground and surface water levels recorded at bore 61611870 (red) and staff 6162517 (blue) for Lake Goollelal", results = 'asis'}
+```{r GoollelalWaterPlot, fig.cap="\\label{fig:GoollelalWaterPlot} Ground and surface water levels recorded at bore 61611870 (red) and staff 6162517 (blue) for Lake Goollelal. Red segments on fitted line represent statistically significant periods of declining water levels and blue segments represent statistically significant periods of increasing water levels.", results = 'asis'}
 Site.GW.plots$gool.p
 ```
-
-### Vegetation dynamics
-
-The composition of vegetation at Lake Goollelal has been assessed 14 times between 1997 and 2014 at four plots [I NEED TO READ THE 2014 VEG REPORT]. Plot A represents fringing *Melaleuca rhaphiophylla*/*Eucalyptus rudis* complex and a stable community of the native sedges, *Baumea articulata* and *Lepidosperma gladiatum*. The *M. rhaphiophylla*/*E. rudis* complex continues throughout the transect, which has also remained relatively stable in terms of cover abundance since 2002. There is a high richness of exotic vegetation species present at the lake. Generally, these exotic species have increased in abundance during the survey period (Figure \ref{fig:GoollelalStrat}).
-
-Ordination reveals that Plot A has a distinct assemblage to the other plots but has displayed similar vegetation compositional changes (Figure \ref{fig:GoollelalOrd}). Shifts in compositional change have followed similar trajectories for each of the plots. All plots show an initial shift in community cover abundance from the 1997 survey and a return to 1997-like composition in the recent survey years. Plot D displays a different pattern, probably due to the record of *B. articulata* in 1997 [SHOULD CONFIRM THIS WITH GRANT] and the high cover abundance of exotic species. Many species are predicted to increase in cover abundance with declining surface water levels, while *B. articulata* is likely to increase in cover abundance (Figure \ref{fig:GoollelalPost}). Native species thought to increase in cover abudnace with declining surface water levels include *Pennisetum clandestinum*, and *Microtis media*, while cover abundance of *M. rhaphiophylla* and *E. rudis* will likely remain stable or decrease slightly. Many exotic species are likely to increasse in cover abundance under a scenario of declining surface waters, including *Briza maxima*, *Fumaria capreolata*, *Setaria palmifolia* and *Sparaxis bulbifera*. 
 
 \newpage
 
@@ -272,12 +290,12 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-```{r GoollelalOrd, fig.cap="\\label{fig:GoollelalOrd} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+```{r GoollelalOrd, fig.cap="\\label{fig:GoollelalOrd}Unconstrained ordination based on the latent variable model for each surveyed year for Lake Goollelal. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Goollelal/boral_models.RData")
 veg.ord1
 ```
 
-```{r GoollelalPost, fig.cap="\\label{fig:GoollelalPost} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+```{r GoollelalPost, fig.cap="\\label{fig:GoollelalPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Melaleuca Park 78 on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline while species with positive posterior values are likely to increase in cover abundance with increasing water levels. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Goollelal/Vegetation/beta_plot.RData")
 beta.plot
 ```
@@ -289,22 +307,22 @@ beta.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-|  Waterbird habitat and drought refuge | |  |
-| Supports good populations of native fish species, Swan River goby (*Pseudogobius olorum*) and the western pygmy perch (*Edelia vittata*) | |  |
+|* Waterbird habitat and drought refuge | |  |
+|* Supports good populations of native fish species, Swan River goby (*Pseudogobius olorum*) and the western pygmy perch (*Edelia vittata*) | |  |
 | **Site management objectives** |||
-|Conservation and public enjoyment of natural and modified landscapes|||
-|Protect and if possible enhance, fringing wetland vegetation including woodland and sedge vegetation|||
-|Maintain permanent, deep water for waterbird habitat and as a drought refuge|||
-|Maintain permanent water for fish and other dependent species|||
-|Maintain the landscape amenity values of the wetland|||
+|* Conservation and public enjoyment of natural and modified landscapes|||
+|* Protect and if possible enhance, fringing wetland vegetation including woodland and sedge vegetation|||
+|* Maintain permanent, deep water for waterbird habitat and as a drought refuge|||
+|* Maintain permanent water for fish and other dependent species|||
+|* Maintain the landscape amenity values of the wetland|||
 
 Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives.
 
-\pagebreak
+\newpage
 
-## Gwelup
+## Lake Gwelup
 
-```{r Gwelupwater, echo = FALSE, results = 'asis'}
+```{r GwelupWater, echo = FALSE, results = 'asis'}
 load("Gwelup/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -314,11 +332,11 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at Gwelup") %>% 
+      caption="Five year summaries of surface water level data at Lake Gwelup") %>% 
   kable_styling(latex_options="scale_down")
 ```
 
-```{r Gwelup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Gwelup", results = 'asis'}
+```{r GwelupWaterPlot, fig.cap="\\label{fig:GwelupWaterPlot}Ground and surface water levels for Lake Gwelup recorded at bore 61610032 (red) and staff 6162504 (blue). The minimum recordable water level for the staff gaugue is 5.0 mAHD. Blue dots at 5.0 mAHD represent water levels below the minimum level measurable by the staff. Red segments on fitted line represent statistically significant periods of decline and blue represent statistically significant periods of increasing water levels.", results = 'asis'}
 Site.GW.plots$gwel.p
 ```
 
@@ -335,20 +353,20 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-```{r Gwelup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+```{r GwelupOrd, fig.cap="\\label{fig:GwelupOrd}Unconstrained ordination based on the latent variable model for each surveyed year for Lake Gwelup. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Gwelup/boral_models.RData")
 veg.ord1
 ```
 
-```{r Gwelup_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+```{r Gwelup_post, fig.cap="\\label{fig:III}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Lake Gwelup on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Gwelup/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
-\pagebreak
-## Jandabup
+\newpage
+## Lake Jandabup
 
-```{r Jandabupwater, echo = FALSE, results = 'asis'}
+```{r JandabupWater, echo = FALSE, results = 'asis'}
 load("Jandabup/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -358,11 +376,11 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at Jandabup") %>% 
+      caption="Five year summaries of surface water level data at Lake Jandabup") %>% 
   kable_styling(latex_options="scale_down")
 ```
 
-```{r Jandabup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Jandabup", results = 'asis'}
+```{r JandabupWaterPlot, fig.cap="\\label{fig:JandabupWaterPlot} Ground and surface water levels for Lake Jandabup recorded at bore 61611850 (red) and staff 6162578 (blue). Red segments on fitted line represent statistically significant periods of declining water levels and blue segments represent periods of increasing water levels.", results = 'asis'}
 Site.GW.plots$jand.p
 ```
 
@@ -379,27 +397,40 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-```{r Jandabup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+```{r JandabupOrd, fig.cap="\\label{fig:JandabupOrd}Unconstrained ordination based on the latent variable model for each surveyed year for Lake Jandabup. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Jandabup/boral_models.RData")
 veg.ord1
 ```
 
-```{r Jandabup_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+```{r JandabupPost, fig.cap="\\label{fig:JandabupPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Lake Jandabup on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline while species with positive values are likely to increase in cover abundance as water levels increase. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Jandabup/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
-\pagebreak
+\newpage
 
-## Joondalup
+## Lake Joondalup
 
 At 611.5 ha, Lake Joondalup is the largest GMEMP monitored wetland and is managed by the Department of Biodiversity, Conservation and Attractions.  The lake is an important habitat and drought refuge for water birds, and in conjunction with Lake Goollelal, is managed to support the full range of avian habitats (WAWA 1995). Other management objectives include the conservation of diverse wetland vegetation communities, including sedge beds, fringing woodlands and aquatic macrophytes, and the maintenance or enhancement of aquatic fauna in the lake. Lake Joondalup supports an important population of Pygmy Perch (*Edelia vittata*) and Swan River Goby (*Pseudogobius olorum*) and the fringing woodlands and bushland support a variety of significant mammal species.
 
 ### Hydrology
 
-Lake Joondalup has remained permanently inundated at the staff gauge [HOW DO I FIND THIS OUT] since 1986 (REFERENCE Chapter 5 Horwitz et al). However, vast regions of the basin dry most summers. Historically, groundwater levels at monitoring bore 61610661 declined significantly from 19.3 to 18.1 mAHD from 1970 to 2002 (Figure 1). Currently, groundwater levels at this bore, as well as bore 61611423 (likely to better reflect lake surface water variation), have been increasing since 2015 to levels similar to the early 1990?s. Recent monitoring of surface water levels at the staff gauge 6162572 remained relatively stable from 2002 but have been increasing from 16.4 mAHD to approximately 17.2 mAHD in 2019. Five-year summaries of hydrological regimes at Lake Joondalup also reveal the higher mean minimum and maximum surface water levels in the latest period compared to earlier periods, as well as an increase in the number of days to reach seasonal minimum water levels (Table 1).
+Lake Joondalup has remained permanently inundated at the staff gauge [HOW DO I FIND THIS OUT] since 1986 (REFERENCE Chapter 5 Horwitz et al). However, vast regions of the basin dry most summers. Historically, groundwater levels at monitoring bore 61610661 declined significantly from 19.3 to 18.1 mAHD from 1970 to 2002 (Figure \ref{fig:JoondalupWaterPlot}). Currently, groundwater levels at this bore, as well as bore 61611423 (likely to better reflect lake surface water variation), have been increasing since 2015 to levels similar to the early 1990s. Recent monitoring of surface water levels at the staff gauge 6162572 remained relatively stable from 2002 but have been increasing from 16.4 mAHD to approximately 17.2 mAHD in 2019. Five-year summaries of hydrological regimes at Lake Joondalup also reveal the higher mean minimum and maximum surface water levels in the latest period compared to earlier periods, as well as an increase in the number of days to reach seasonal minimum water levels (Table \ref{tab:JoondalupWater}).
 
-```{r Joondalupwater, echo = FALSE, results = 'asis'}
+### Vegetation Dynamics
+
+The recent increases in surface water levels has increased the pH from 6.8 in 2016 to 8.4 in 2018 and increased alkalinity to 206 mg/L. Recent nutrient levels have been decreasing. [I NEED THIS DATA TO ANALYSE TRENDS]
+Vegetation surveys have been conducted along a northern (Figure \ref{fig:JoondalupNthStrat}) and southern (Figure \ref{fig:JoondalupSthStrat}) transect at Lake Joondalup. Both the northern and southern transects were established in 1996 and were last surveyed in 2015. *Melaleuca raphiophylla* dominates the overstorey of plots in the northern transect while exotic species are abundant in the understory vegetation. There has been an increasing trend in cover abundance of the exotics *Bromus diandrus*, *Ehrharta longiflora*, *Euphorbia terracina*, *Fumaria muralis* and *Peargonium capitatum* in recent years. Fires in 2003 reduced the canopy condition and abundance of *M. raphiophylla* in the southern transect, and despite the slightly higher cover abundance of native species, native and exotic species richness is equal along the transect. The site also contains healthy stands of *Baumea articulate* in the submerged regions of the transect.
+
+All plots in both transects have displayed similar trends in community compositional change during the survey periods (Figure \ref{fig:JoondalupOrd}). In the southern transect, latent model ordination reveals separation of the plots along the first axis, with a general temporal trend along the second axis, except for a period around 2003 - 2006 where there was a hiatus. This hiatus may be associated with the 2003 bushfire and represents a recovery period where species composition changed little. The trajectory for plot A is different, however, as the trend away from the original 1996 survey has reversed and the contemporary community is now becoming more like the 1996 communities. Similar patterns have been observed in the northern transect despite the transect not being impacted by the 2003 fire event.
+
+[DESCRIBE SPECIES ASSOCIATIONS WITH WATER LEVELS] (Figure \ref{fig:JoondalupPost})
+
+```{r JoondalupWaterPlot, fig.cap="\\label{fig:JoondalupWaterPlot} Ground and surface water levels recorded at bore 61610661 (red), bore 61611423 (green) and staff gauge 6162572 (blue) for Lake Joondalup.", results = 'asis'}
+Site.GW.plots$joon.p
+```
+
+```{r JoondalupWater, echo = FALSE, results = 'asis'}
 load("Joondalup_Nth/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -409,18 +440,9 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at Joondalup") %>% 
+      caption="Five year summaries of surface water level data at Lake Joondalup") %>% 
   kable_styling(latex_options="scale_down")
 ```
-
-```{r Joondalup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Joondalup", results = 'asis'}
-Site.GW.plots$joon.p
-```
-
-### Vegetation Dynamics
-
-The recent increases in surface water levels has increased the pH from 6.8 in 2016 to 8.4 in 2018 and increased alkalinity to 206 mg/L. Recent nutrient levels have been decreasing. [I NEED THIS DATA TO ANALYSE TRENDS]
-Vegetation surveys have been conducted along two transect at Lake Joondalup (Figure 2 and 3). Both the northern and southern transects were established in 1996 and were last surveyed in 2015. *Melaleuca raphiophylla* dominates the overstorey of plots in the northern transect while exotic species are abundant in the understory vegetation. There has been an increasing trend in cover abundance of the exotics *Bromus diandrus*, *Ehrharta longiflora*, *Euphorbia terracina*, *Fumaria muralis* and *Peargonium capitatum* in recent years. Fires in 2003 reduced the canopy condition and abundance of *M. raphiophylla* in the southern transect, and despite the slightly higher cover abundance of native species, native and exotic species richness is equal along the transect. The site also contains healthy stands of *Baumea articulate* in the submerged regions of the transect.
 
 \newpage
 
@@ -448,27 +470,22 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-
-All plots in both transects have displayed similar trends in community compositional change during the survey period. In the southern transect, latent model ordination reveals separation of the plots along the first axis, with a general increasing temporal trend along the second axis, except for a period around 2003 ? 2006 where there was a hiatus (Figure 4). This hiatus in change would be associated with the 2003 bushfire and represents the recovery period. The trajectory for plot A is different, however, as the trend away from the original 1996 survey has reversed and the contemporary community is now becoming more like the 1996 communities. When the ordination model was re-run accounting for fluctuations in groundwater levels as a co-variate, the pattern of change in community trajectories remained unchanged, suggesting that these shifts have not been greatly influenced by groundwater levels. A similar temporal shift was observed in the northern transect, where the contemporary plot A has returned to a composition similar to the 1996 survey (Figure 5). Changes associated with groundwater fluctuations are also weak, with ordination accounting for groundwater levels displaying similar patterns to the full residual model. The proportion of native species has generally remained below 50% for both transects since 2009 (Figure 6 & 7).
-
-```{r Joondalup_Nth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for at the northern Joondalup transect", results = 'asis'}
+```{r JoondalupOrd, fig.cap="\\label{fig:JoondalupOrd}Unconstrained ordination based on the latent variable model for each surveyed year for the northern (left) and southern (right) Lake Joondalup transects. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Joondalup_Nth/boral_models.RData")
-veg.ord1
-```
-
-```{r Joondalup_Sth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for at the southern Joondalup transect", results = 'asis'}
+Joon.Nth <- veg.ord1
 load("Joondalup_Sth/boral_models.RData")
-veg.ord1
+Joon.Sth <- veg.ord1
+
+ggarrange(Joon.Nth, Joon.Sth, ncol=2)
 ```
 
-```{r Joondalup_Nth_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+```{r JoondalupPost, fig.cap="\\label{fig:JoondalupPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at the northern (left) and southern (right) Lake Joondalup transects on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline and species with positive values are likely to increase in cover abundance when water levels increase. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Joondalup_Nth/Vegetation/beta_plot.RData")
-beta.plot
-```
-
-```{r Joondalup_Sth_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+Joon.Nth <- beta.plot
 load("Joondalup_Sth/Vegetation/beta_plot.RData")
-beta.plot
+Joon.Sth <- beta.plot
+
+ggarrange(Joon.Nth, Joon.Sth, ncol=2)
 ```
 
 ### Aquatic Invertebrates
@@ -480,7 +497,7 @@ Aquatic invertebrates have been sampled from Lake Joondalup every year since 199
 
 [Insert plot of future changes in groundwater]
 
-The water levels in the vicinity of Lake Joondalup are expected to increase up to 2.1m by 2030 from 2013 levels based on the revised groundwater allocations. This increase in water level will continue the increasing trend being observed in the lake?s surface water levels since 2015. Maintaining surface water levels above 16.2mAHD at staff 6162572 will ensure permanent water habitat for fauna and flora and the visual amenity of the area. The diverse macrophytes inhabiting plot A and B of both transects are likely to persist and continue to provide a rich habitat for aquatic vertebrates. Although important native macrophytes and wetland species are likely to continue at relatively high cover abundances under the future scenario, there is a high proportion of exotic taxonomic richness at these sites that the model presented here does not associate with groundwater levels. The contribution of exotic species is likely associated with climatic factors and landscape changes and under the 2030 proposed groundwater thresholds, they will likely to continue contributing a large proportion of the taxonomic richness to the Lake Joondalup vegetation community. Further vegetation monitoring is required at these transects to determine vegetation compositional changes since 2015 to understand if the trajectory in compositional change is continuing.
+The water levels in the vicinity of Lake Joondalup are expected to increase up to 2.1m by 2030 from 2013 levels based on the revised groundwater allocations. This increase in water level will continue the increasing trend being observed in the lake's surface water levels since 2015. Maintaining surface water levels above 16.2mAHD at staff 6162572 will ensure permanent water habitat for fauna and flora and the visual amenity of the area. The diverse macrophytes inhabiting plot A and B of both transects are likely to persist and continue to provide a rich habitat for aquatic vertebrates. Although important native macrophytes and wetland species are likely to continue at relatively high cover abundances under the future scenario, there is a high proportion of exotic taxonomic richness at these sites that the model presented here does not associate with groundwater levels. The contribution of exotic species is likely associated with climatic factors and landscape changes and under the 2030 proposed groundwater thresholds, they will likely to continue contributing a large proportion of the taxonomic richness to the Lake Joondalup vegetation community. Further vegetation monitoring is required at these transects to determine vegetation compositional changes since 2015 to understand if the trajectory in compositional change is continuing.
 
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
@@ -496,11 +513,11 @@ The water levels in the vicinity of Lake Joondalup are expected to increase up t
 
 Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives.
 
-\pagebreak
+\newpage
 
 ## Lexia 186
 
-```{r Lexia186water, echo = FALSE, results = 'asis'}
+```{r Lexia186Water, echo = FALSE, results = 'asis'}
 load("Lexia_186/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -510,11 +527,11 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at Lexia186") %>% 
+      caption="Five year summaries of surface water level data at Lexia 186") %>% 
   kable_styling(latex_options="scale_down")
 ```
 
-```{r Lexia186_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Lexia 186", results = 'asis'}
+```{r Lexia186WaterPlot, fig.cap="\\label{fig:Lexia186WaterPlot} Ground water levels recorded at bore 61613214 that represent water level fluctuations at Lexia 186. Red segments represent periods of significant decline in water levels while blue segments represent periods of significant increase in water levels.", results = 'asis'}
 Site.GW.plots$lex186.p
 ```
 
@@ -531,21 +548,21 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-```{r Lexia186_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+```{r Lexia186Ord, fig.cap="\\label{fig:Lexia186Ord}Unconstrained ordination based on the latent variable model for each surveyed year for Lexia 186. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Lexia_186/boral_models.RData")
 veg.ord1
 ```
 
-```{r Lexia186_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+```{r Lexia186Post, fig.cap="\\label{fig:Lexia186Post}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Lexia 186 on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Lexia_186/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
-\pagebreak
+\newpage
 
 ## Loch McNess
 
-```{r LochMcNesswater, echo = FALSE, results = 'asis'}
+```{r LochMcNessWater, echo = FALSE, results = 'asis'}
 load("Loch_McNess/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -559,7 +576,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
   kable_styling(latex_options="scale_down")
 ```
 
-```{r Loch_McNess_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Loch McNess", results = 'asis'}
+```{r McNessWaterPlot, fig.cap="\\label{fig:McNessWaterPlot} Ground and surface water levels recorded at bores 61612104 (red) and 61640108 (green) and staff gauge 6162564 (blue) that represent changes in water levels at Loch McNess. Segments in red represent periods of significant decline in water level.", results = 'asis'}
 Site.GW.plots$mcness.p
 ```
 
@@ -567,7 +584,7 @@ Site.GW.plots$mcness.p
 
 \blandscape
 
-```{r LochMcNessStrat, fig.cap="\\label{fig:LochMcNessStrat}Cover abundances for each species across the four plots (A, B, C, D) at the Loch McNess transect. Invasive species are denoted by 'X'. Only the most common species are included.", results = 'asis', fig.width=10, fig.length=8}
+```{r McNessStrat, fig.cap="\\label{fig:McNessStrat}Cover abundances for each species across the four plots (A, B, C, D) at the Loch McNess transect. Invasive species are denoted by 'X'. Only the most common species are included.", results = 'asis', fig.width=10, fig.length=8}
 load("Loch_McNess/boral_models.RData")
 stratiplotter(vegfit.mod3)
 ```
@@ -576,21 +593,21 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-```{r Loch_McNess_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+```{r McNessOrd, fig.cap="\\label{fig:McNessOrd}Unconstrained ordination based on the latent variable model for each surveyed year for Loch McNess. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Loch_McNess/boral_models.RData")
 veg.ord1
 ```
 
-```{r Loch_McNess_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+```{r McNessPost, fig.cap="\\label{fig:McNessPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Loch McNess on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline while species with positive values are predicted to increase in cover abundance with water increasing water levels. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Loch_McNess/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
-\pagebreak
+\newpage
 
-## Mariginiup
+## Lake Mariginiup
 
-```{r Marigniupwater, echo = FALSE, results = 'asis'}
+```{r MarigniupWater, echo = FALSE, results = 'asis'}
 load("Mariginiup/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -600,11 +617,11 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at Mariginiup") %>% 
+      caption="Five year summaries of surface water level data at Lake Mariginiup") %>% 
   kable_styling(latex_options="scale_down")
 ```
 
-```{r Mariginiup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Mariginiup", results = 'asis'}
+```{r MariginiupWaterPlot, fig.cap="\\label{fig:MariginiupWaterPlot} Ground and surface water levels recorded at bore 61610685 (red) and staff gauge 6162577 (blue) that represent changes in water levels at Lake Mariginiup.", results = 'asis'}
 Site.GW.plots$marig.p
 ```
 
@@ -621,21 +638,21 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-```{r Mariginiup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+```{r MariginiupOrd, fig.cap="\\label{fig:MariginiupOrd}Unconstrained ordination based on the latent variable model for each surveyed year for Lake Mariginiup. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Mariginiup/boral_models.RData")
 veg.ord1
 ```
 
-```{r Mariginiup_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+```{r MariginiupPost, fig.cap="\\label{fig:MariginiupPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Lake Mariginiup on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline and species with positive values are predicted to increae in cover abundance with increasing water levels. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Mariginiup/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
-\pagebreak
+\newpage
 
-## MM59B
+## MM59B - Whiteman Park East
 
-```{r MM59Bwater, echo = FALSE, results = 'asis'}
+```{r MM59BWater, echo = FALSE, results = 'asis'}
 load("MM59B/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -649,15 +666,15 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
   kable_styling(latex_options="scale_down")
 ```
 
-```{r MM59B_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of MM59B", results = 'asis'}
+```{r MM59BWaterPlot, fig.cap="\\label{fig:MM59BWaterPlot} Ground water levels recorded at bore 61610661 in the vicinity of MM59B. Red segments represent periods of significant decline in ground water level while blue segments represent periods of significant increase in ground water level.", results = 'asis'}
 Site.GW.plots$MM59B.p
 ```
 
-\pagebreak
+\newpage
 
-## Nowergup
+## Lake Nowergup
 
-```{r Nowergupwater, echo = FALSE, results = 'asis'}
+```{r NowergupWater, echo = FALSE, results = 'asis'}
 load("Nowergup_Nth/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -667,11 +684,11 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at Nowergup") %>% 
+      caption="Five year summaries of surface water level data at Lake Nowergup") %>% 
   kable_styling(latex_options="scale_down")
 ```
 
-```{r Nowergup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Nowergup", results = 'asis'}
+```{r NowergupWaterPlot, fig.cap="\\label{fig:NowergupWaterPlot} Ground and surface water levels for Lake Nowergup recorded at bores 61610601 (red) and 61611247 (green) and staff gauge 6162567 (blue). The minimum recordable water level for the staff gaugue is 16.0 mAHD. Blue dots at 16.0 mAHD represent water levels below the minimum level measurable at the staff gaufe. Red segments on fitted line represent statistically significant periods of declining water levels and blue segments represent periods of increasing water levels.", results = 'asis'}
 Site.GW.plots$nower.p
 ```
 
@@ -701,31 +718,29 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-```{r Nowergup_Nth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+```{r NowergupOrd, fig.cap="\\label{fig:NowergupOrd}Unconstrained ordination based on the latent variable model for each surveyed year for the northern (left) and southern (right) Lake Nowergup transects. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Nowergup_Nth/boral_models.RData")
-veg.ord1
-```
-
-```{r Nowergup_Sth_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+Nower.Nth <- veg.ord1
 load("Nowergup_Sth/boral_models.RData")
-ggarrange(veg.ord1, veg.ord2, ncol=2)
+Nower.Sth <- veg.ord1
+
+ggarrange(Nower.Nth, Nower.Sth, ncol=2)
 ```
 
-```{r Nowergup_Nth_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+```{r NowergupPost, fig.cap="\\label{fig:NowergupPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at the northern (left) and southern (right) Lake Nowergup transects on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline and species with positive values are likely to increase in cover abundance when water levels increase. Only those species with coefficients significantly different to zero are shown.", results = 'asis'}
 load("Nowergup_Nth/Vegetation/beta_plot.RData")
-beta.plot
-```
-
-```{r Nowergup_Sth_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+Nower.Nth <- beta.plot
 load("Nowergup_Sth/Vegetation/beta_plot.RData")
-beta.plot
+Nower.Sth <- beta.plot
+
+ggarrange(Nower.Nth, Nower.Sth, ncol=2)
 ```
 
-\pagebreak
+\newpage
 
-## Pipidinny
+## Pipidinny Swamp
 
-```{r Pipidinnywater, echo = FALSE, results = 'asis'}
+```{r PipidinnyWater, echo = FALSE, results = 'asis'}
 load("Pipidinny/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -735,17 +750,17 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at Pipidinny") %>% 
+      caption="Five year summaries of surface water level data at Pipidinny Swamp") %>% 
   kable_styling(latex_options="scale_down")
 ```
 
-```{r Pipidinny_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Pipidinny", results = 'asis'}
+```{r PipidinnyWaterPlot, fig.cap="\\label{fig:PipidinnyWaterPlot}Ground and surface water levels recorded at bore 61611872 (red) and staff gauge 6162624 (blue) that represent fluctuations in water levels at Pipidinny Swamp. Surface water levels were initially only recordable above 2 mAHD and later above 1 mAHD. Red segments of trend line represent periods of significant decline in water levels while blue segments represent periods of significant increases in water levels.", results = 'asis'}
 Site.GW.plots$pipi.p
 ```
 
-\pagebreak
+\newpage
 
-## PM9
+## PM9 - Pinjar North
 
 ```{r PM9water, echo = FALSE, results = 'asis'}
 load("PM9/water_level.RData")
@@ -761,15 +776,15 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
   kable_styling(latex_options="scale_down")
 ```
 
-```{r PM9_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of PM9", results = 'asis'}
+```{r PM9WaterPlot, fig.cap="\\label{fig:PM9WaterPlot}Ground water levels recorded at bore 61610804 in the vicinity of PM9. Red segments along trendline indicate preiods of significant decline in ground water levels.", results = 'asis'}
 Site.GW.plots$PM9.p
 ```
 
-\pagebreak
+\newpage
 
 ## Quin Brook
 
-```{r QuinBrook, echo = FALSE, results = 'asis'}
+```{r QuinBrookWater, echo = FALSE, results = 'asis'}
 load("Quin_Brook/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -783,15 +798,15 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
   kable_styling(latex_options="scale_down")
 ```
 
-```{r Quin_Brook_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Quin Brook", results = 'asis'}
+```{r QuinBrookWaterPlot, fig.cap="\\label{fig:QuinBrookWaterPlot}Ground water levels recorded at bore 61710060 in the vicinity of Quin Brook. Red segments along trendline indicate preiods of significant decline in ground water levels.", results = 'asis'}
 Site.GW.plots$quin.p
 ```
 
-\pagebreak
+\newpage
 
-## Wilgarup
+## Lake Wilgarup
 
-```{r Wilgarupwater, echo = FALSE, results = 'asis'}
+```{r WilgarupWater, echo = FALSE, results = 'asis'}
 load("Wilgarup/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -801,11 +816,11 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at Wilgarup") %>% 
+      caption="Five year summaries of surface water level data at Lake Wilgarup") %>% 
   kable_styling(latex_options="scale_down")
 ```
 
-```{r Wilgarup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Wilgarup", results = 'asis'}
+```{r WilgarupWaterPlot, fig.cap="\\label{fig:WilgarupWaterPlot}Ground water levels recorded at bore 61618500 in the vicinity of Lake Wilgarup. Red segments along trendline indicate preiods of significant decline in ground water levels.", results = 'asis'}
 Site.GW.plots$wilg.p
 ```
 
@@ -822,21 +837,21 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-```{r Wilgarup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+```{r WilgarupOrd, fig.cap="\\label{fig:WilgarupOrd}Unconstrained ordination based on the latent variable model for each surveyed year for Lake Wilgarup. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Wilgarup/boral_models.RData")
 veg.ord1
 ```
 
-```{r Wilgarup_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+```{r WilgarupPost, fig.cap="\\label{fig:WilgarupPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Lake Wilgarup on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Wilgarup/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
-\pagebreak
+\newpage
 
-## WM1
+## WM1 - Pinjar
 
-```{r WM1water, echo = FALSE, results = 'asis'}
+```{r WM1Water, echo = FALSE, results = 'asis'}
 load("WM1/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -850,15 +865,15 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
   kable_styling(latex_options="scale_down")
 ```
 
-```{r WM1_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of WM1", results = 'asis'}
+```{r WM1WaterPlot, fig.cap="\\label{fig:WM1WaterPlot}Ground water levels recorded at bore 61610833 in the vicinity of WM1. Red segments along trendline indicate preiods of significant decline in ground water levels and blue segments represent significant increases in ground water level.", results = 'asis'}
 Site.GW.plots$WM1.p
 ```
 
-\pagebreak
+\newpage
 
-## WM2
+## WM2 - Melaleuca Park North
 
-```{r WM2water, echo = FALSE, results = 'asis'}
+```{r WM2Water, echo = FALSE, results = 'asis'}
 load("WM2/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -872,15 +887,15 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
   kable_styling(latex_options="scale_down")
 ```
 
-```{r WM2_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of WM2", results = 'asis'}
+```{r WM2WaterPlot, fig.cap="\\label{fig:WM2WaterPlot}Ground water levels recorded at bore 61610908 in the vicinity of WM2. Red segments along trendline indicate preiods of significant decline in ground water levels and blue segments represent significant increases in ground water level.", results = 'asis'}
 Site.GW.plots$WM2.p
 ```
 
-\pagebreak
+\newpage
 
-## WM8
+## WM8 - Melaleuca Park
 
-```{r WM8water, echo = FALSE, results = 'asis'}
+```{r WM8Water, echo = FALSE, results = 'asis'}
 load("WM8/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -894,15 +909,15 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
   kable_styling(latex_options="scale_down")
 ```
 
-```{r WM8_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of WM8", results = 'asis'}
+```{r WM8WaterPlot, fig.cap="\\label{fig:WM8WaterPlot}Ground water levels recorded at bore 61610983 in the vicinity of WM8. Red segments along trendline indicate preiods of significant decline in ground water levels and blue segments represent significant increases in ground water level.", results = 'asis'}
 Site.GW.plots$WM8.p
 ```
 
-\pagebreak
+\newpage
 
-## Yonderup
+## Lake Yonderup
 
-```{r Yonderupwater, echo = FALSE, results = 'asis'}
+```{r YonderupWater, echo = FALSE, results = 'asis'}
 load("Yonderup/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
@@ -916,7 +931,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
   kable_styling(latex_options="scale_down")
 ```
 
-```{r Yoderup_water_plot, fig.cap="\\label{fig:I} Ground and surface water levels recorded at bores and staff gauges in the vicinity of Yonderup", results = 'asis'}
+```{r YoderupWaterPlot, fig.cap="\\label{fig:YoderupWaterPlot}Ground water levels recorded at bore 61611840 (red) and staff gauge 6162565 (blue) in the vicinity of Lake Yonderup. Red segments along trendline indicate preiods of significant decline in ground water levels and blue segments represent significant increases in ground water level.", results = 'asis'}
 Site.GW.plots$yond.p
 ```
 
@@ -933,12 +948,12 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-```{r Yonderup_ord, fig.cap="\\label{fig:I} Ordination plot with full residual model on the left and a model on the right showing residual variation after the effect of groundwater levels were accounted for", results = 'asis'}
+```{r YonderupOrd, fig.cap="\\label{fig:YonderupOrd}Unconstrained ordination based on the latent variable model for each surveyed year for Lake Yonderup. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Yonderup/boral_models.RData")
 veg.ord1
 ```
 
-```{r Yonderup_post, fig.cap="\\label{fig:III} Mean regression coefficients (dots) and 95% credible intervals (bars) for effect of groundwater level on vegetation species cover abundances. Only those species with coefficients significanlty different to zero are shown", results = 'asis'}
+```{r YonderupPost, fig.cap="\\label{fig:YonderupPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Lake Yonderup on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Yonderup/Vegetation/beta_plot.RData")
 beta.plot
 ```
@@ -957,4 +972,5 @@ beta.plot
 
 # References
 
-#AppendiX
+#Appendix
+
