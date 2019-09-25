@@ -322,6 +322,22 @@ Table: Ecological consequences of revised thresholds in terms of compliance of s
 
 ## Lake Gwelup
 
+Lake Gwelup is a shallow groundwater system located in the highly urbanised area of Gwelup/Karrinyup. The lake is permanently inundated and provides important habitat to a variety of fauna and fringing vegetation. The wetland is not currently a Ministerial criteria site.
+
+### Hydrology
+
+Lake water levels were first monitored in 1960, but regular monitoring has occurred between 1967 and 1988, and from 1999 until the present. Lake levels in the 1970s and 1980s were 1m to 2m higher than in the 2000s (Figure \ref{fig:GwelupWaterPlot}). They have risen again since 2013 following a reduction in nearby public water supply abstraction, and levels are currently similar to levels in the 1980s and 1990's (Table \ref{tab:GwelupWater}). Nearby bore 61610032 has been monitored since 1972. Water levels at the bore have declined by around 4 meters since the start of monitoring. Levels have been reasonably stable since the early 2000s and have trended slightly upwards since 2011.
+
+### Vegetation dynamics
+
+Vegetation monitoring at Lake Gwelup began in 2013 and was last conducted in 2017. The start of the transect was inundated by approximately 0.7 m of surface water during the 2017 survey. The wetland is dominated by exotic species such as *Cynodon dactylon* and *Ehrharta calycina* despite exotic cover abundance declining in the later surveys (Figure \ref{fig:GwelupStrat}). The overstorey is dominated by the natives *Eucalyptus rudis* and *Maleleuca rhaphiophyla* which is in good health (BULLER REPORT 2017). There was a dramatic shift in community composition between 2014 and 2017 due to inundation of the plots (Figure \ref{fig:GwelupOrd}). Bayesian regression analysis reveals that a number of exotic species will continue to decrease in cover abundances with the higher water levels (Figure \ref{fig:GwelupPost}).
+
+### Revised water level threshold effects
+
+```{r GwelupWaterPlot, fig.cap="\\label{fig:GwelupWaterPlot}Ground and surface water levels for Lake Gwelup recorded at bore 61610032 (red) and staff 6162504 (blue). The minimum recordable water level for the staff gaugue is 5.0 mAHD. Blue dots at 5.0 mAHD represent water levels below the minimum level measurable by the staff. Red segments on fitted line represent statistically significant periods of decline and blue represent statistically significant periods of increasing water levels.", results = 'asis'}
+Site.GW.plots$gwel.p
+```
+
 ```{r GwelupWater, echo = FALSE, results = 'asis'}
 load("Gwelup/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
@@ -334,10 +350,6 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean max to \n min (days)"), align="c"),
       caption="Five year summaries of surface water level data at Lake Gwelup") %>% 
   kable_styling(latex_options="scale_down")
-```
-
-```{r GwelupWaterPlot, fig.cap="\\label{fig:GwelupWaterPlot}Ground and surface water levels for Lake Gwelup recorded at bore 61610032 (red) and staff 6162504 (blue). The minimum recordable water level for the staff gaugue is 5.0 mAHD. Blue dots at 5.0 mAHD represent water levels below the minimum level measurable by the staff. Red segments on fitted line represent statistically significant periods of decline and blue represent statistically significant periods of increasing water levels.", results = 'asis'}
-Site.GW.plots$gwel.p
 ```
 
 \newpage
@@ -363,8 +375,31 @@ load("Gwelup/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+|  | Likely effect of 2030 revised thresholds | Future Compliance |
+| :------------ | :----------- | :------: |
+| **Site management objectives** |||
+|* To maintain permanent water for fauna habitat and for visual amenity, to maintain fringing vegetation.|||
+
+Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives.
+
 \newpage
 ## Lake Jandabup
+
+Lake Jandabup is an artificially watered wetland that supports the most diverse sedge and macrophyte vegetation communities in the Bassendean Dune wetlands (FROEND 2004). Low rainfall and groundwater abstraction impacts are thought to have caused an acidification event in 1998 and 1999 but restoration of water levels as returned the pH to normal levels (GMEMP 2019). Lake Jandabup has a high conservation value as it is one of the few 'eastern circular wetlands' to not be be permanently acidic. The waters usually have low levels of nutrients which and clear waters that supports a diverse aquatic invertebrate community. The abundance of invertebrates and fringing vegetation habitats also allow the wetland to support high numbers of resident and visiting water birds (BAMFORD AND BAMFORD 2003 - See chap 5).
+
+### Hydrology
+
+Surface water levels of Lake Jandabup have only declined slightly since 1980 (Figure \ref{fig:JandabupWaterPlot}). Mean maximum seasonal water levels are now 0.2m lower than in 1994-1999 but mean minimum seasonal water levels are 0.1m higher than 1994-1999 levels and since 2009, the period of annual maximum to minimum water levels has increased (Table \ref{tab:JandabupWater}).
+
+### Vegetation dynamics
+
+The Lake Jandabup wetland consists of a diverse community of native vegetation. In the 2017-2018 season, 43 native species were recorded with only 14% of the total cover abundance belonging to exotic species (BULLER 2018 VEG REPORT). There are four overstorey species present at the wetland, including *Banksia attenuata*, *Banksia ilicifolia*, *Banksia menziesii*, *Eucalyptus rudis* and *Maleleuca preissiana* (Figure \ref{fig:JandabupStrat}), all of which have been increasing in health. A dense understorey of *A. scoparia*, *B. elegans* and *H. angustifolium* exists at plots A and B.
+
+There has been a continual shift in community composition of Lake Jandabup throughout the monitoring period that reflects changes in invasive species cover abundances (Figure \ref{fig:JandabupOrd}). A number of species are predicted to increase in cover abundance with increasing water levels, particularly *Euchilopsis linearis* which is present in the lower parts of the basin (Figure \ref{fig:JandabupPost}). 
+
+### Aquatic invertebrates
+
+### Revised water level threshold effects
 
 ```{r JandabupWater, echo = FALSE, results = 'asis'}
 load("Jandabup/water_level.RData")
@@ -406,6 +441,22 @@ veg.ord1
 load("Jandabup/Vegetation/beta_plot.RData")
 beta.plot
 ```
+
+|  | Likely effect of 2030 revised thresholds | Future Compliance |
+| :------------ | :----------- | :------: |
+| **Site values** |||
+|* Most diverse sedge and macrophyte vegetation of all Bassendean dune wetlands, including unusual species | |  |
+|* Supports wide range of waterbirds, especially waders | |  |
+|* Extremely good water quality with low nutrients|||
+| **Site management objectives** |||
+|* Conservation of flora and fauna|||
+|* Maintenance of the current extent of wading bird habitat|||
+|* No expansion in the areas of sedge vegetation, but maintenance of existing areas|||
+|* Removal of mosquito fish from the lake|||
+|* Maintenance of high species richness of aquatic macroinvertebrates, macrophytes and sedge vegetation|||
+
+Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives.
+
 
 \newpage
 
@@ -517,6 +568,18 @@ Table: Ecological consequences of revised thresholds in terms of compliance of s
 
 ## Lexia 186
 
+The Lexia system of wetlands is composed of three separate wetlands, Lexia 86, Lexia 94 and Lexia 186. Lexia 186 was normally a seasonally waterlogged basin (Dampland), however, prolonged decline of ground water levels mean water levels are below the level of the basin all year. There has been dramatic shifts in fringing vegetation health and composition as the basin sediments dry and oxidise. The wetland is has a high conservation value (FROEND 2004).
+
+### Hydrology
+
+There has almost been a continual decline in ground water levels at Lexia 186 from 1996 to 2015 by approximately 1 m and a significant increases in water levels since 2015 by 0.5 m (Figure \ref{fig:Lexia186WaterPlot}). Nonetheless, current mean maximum and minimum water levels are 1.2 and 0.8 m below 1994-1999 levels and seasonally minimums are occurring earlier in the year (Table \ref{tab:Lexia186Water}).
+
+### Vegetation dynamics
+
+Vegetation monitoring has been occurring at Lexia 186 since 1997 with the last survey conducted in 2018 (Figure \ref{fig:Lexia186Strat}). Overall canopy health has remained stable with most *Melaleuca preissiana* in good or excellent condition and most *Banksia ilicifolia* with average condition (BULLER 2018 REPORT). Exotic richness is very low at Lexia 186 and natives account for approximately 90 % of total cover abundance at the transect. Ordination reveals similar trajectories in compositional change for each plot that reflect the continual changes in cover abundances of species (Figure \ref{fig:Lexia186Ord}). Regression analyses did not reveal significant effects of ground water levels on any of the species present at Lexia 186 (Figure \ref{fig:Lexia186Post}). This result suggests that community composition is changing due to other factors that are independent of ground water. This is surprising given the significant declines in ground water at the site. (NOT SURE IF THERE IS ANY Baumea AT THE SITE AND WHETHER IT HAS DECLINED OR DISAPPEARED - PERHAPS WORTH A COMMENT) (ARE THERE ANY OTHER DRAMTIC CHANGES WITH THE DECLINING WL?).
+
+### Revised water level threshold effects
+
 ```{r Lexia186Water, echo = FALSE, results = 'asis'}
 load("Lexia_186/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
@@ -558,9 +621,28 @@ load("Lexia_186/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+|  | Likely effect of 2030 revised thresholds | Future Compliance |
+| :------------ | :----------- | :------: |
+| **Site values** |||
+| * Undisturbed by typical impacts |  |  |
+| * Supports diverse vegetation    |  |  |
+| * Significant fauna habitat |||
+| **Site management objectives** |||
+| * Conserve ecological values | ||
+| * Protect vegetation assemblages in and fringing the wetland | |  |
+| * Protect invertebrate communities dependent on the wetland | | ||
+
+Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives.
+
 \newpage
 
 ## Loch McNess
+
+Loch McNess, located in Yanchep National Park, is a relatively undisturbed wetland with large areas of intact Herdsman Complex vegetation, relatively good water quality and important habitat for water birds and other aquatic fauna (FROEND 2004). Permanent water is required to support a local Rakali (*Hydromys chrysogaster*) population and resident and visiting populations of water birds and waders. Loch McNess is a wetland of high conservation value because of its intact vegetation, largely unaltered aquatic processes and important populations of fauna (FROEND 2004).]
+
+### Hydrology
+
+
 
 ```{r LochMcNessWater, echo = FALSE, results = 'asis'}
 load("Loch_McNess/water_level.RData")
@@ -602,6 +684,24 @@ veg.ord1
 load("Loch_McNess/Vegetation/beta_plot.RData")
 beta.plot
 ```
+
+|  | Likely effect of 2030 revised thresholds | Future Compliance |
+| :------------ | :----------- | :------: |
+| **Site values** |||
+| * Undisturbed wetland |  |  |
+| * Unusual hydrologic regime   |  |  |
+| * Rich aquatic fauna |||
+| * Vegetation largely intact, provides a range of habitat types |||
+| * Supports good populations of water birds and acts as a drought refuge |||
+| * Excellent water quality |||
+| **Site management objectives** |||
+| * Maintain the environmental quality of the lake | ||
+| * Maintain North Loch NcNess’ pristine state | |  |
+| * Continue to use south Loch McNess for low key recreation | | ||
+| * Maintain east Loch McNess in a natural state, to restore, where possible, natural flow |||
+| * Maintain the existing hydrological regime |||
+
+Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives.
 
 \newpage
 
