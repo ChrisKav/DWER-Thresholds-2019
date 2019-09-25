@@ -212,7 +212,7 @@ stratiplotter <- function(x) {
   df <- cbind(year, plot, data.frame(Y))
   df$plot <- factor(df$plot)
   plot <- df$plot
-  df$plot <- recode(df$plot, '1' = "A", '2' = "B", '3' = "C", '4' = "D", '5' = "E")
+  df$plot <- recode(df$plot, '1' = "A", '2' = "B", '3' = "C", '4' = "D", '5' = "E", '6' = "Z")
   df2 <- melt(df, id=c("year", "plot"))
 
   strat_plot <- ggplot(df2) +
