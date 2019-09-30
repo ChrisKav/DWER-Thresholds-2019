@@ -16,7 +16,7 @@ load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Ref
 setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Nowergup_Nth")
 
 Y <- comm$Nowergup_Nth
-wat.obs <- data.ls$'6162567'
+wat.obs <- data.ls$'61611247'
 ahd <- AHD.data.list$Nowergup.AHD
 ahd.p <- Params.data.list$Nowergup.params
 WL_group <- "surface"

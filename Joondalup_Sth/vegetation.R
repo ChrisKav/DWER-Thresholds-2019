@@ -16,7 +16,7 @@ load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Ref
 setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Joondalup_Sth")
 
 Y <- comm$Joondalup_Sth
-wat.obs <- data.ls$'6162572'
+wat.obs <- data.ls$'61611247'
 ahd <- AHD.data.list$Joondalup.AHD
 ahd.p <- Params.data.list$Joondalup.params
 WL_group <- "surface"

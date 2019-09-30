@@ -16,7 +16,7 @@ load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Ref
 setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Mariginiup")
 
 Y <- comm$Mariginiup
-wat.obs <- data.ls$'6162577'
+wat.obs <- data.ls$'61610684'
 ahd <- AHD.data.list$Marginup.AHD
 ahd.p <- Params.data.list$Mariginup.params
 WL_group <- "surface"
