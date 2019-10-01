@@ -6,6 +6,8 @@ Site.GW.plots
 dev.off()
 
 wetlands <- read.csv("wetlands.csv", header=FALSE)[,1]
+#wetlands <- wetlands[c(9,11)]
+#wetlands <- droplevels(wetlands)
 
 ########################
 # WATER DATA - Summary #
@@ -21,8 +23,8 @@ for (i in 1:length(wetlands)) {
 # Vegetaton analysis  #
 #######################
 # DONOT RUN - TAKES AGESSSSSSSS
-#mcmc_control <- list(n.burnin = 10000, n.iteration = 60000, 
-#                     n.thin = 50, seed=28041948)
+mcmc_control <- list(n.burnin = 10000, n.iteration = 60000, 
+                     n.thin = 50, seed=28041948)
 
 #Test
 #mcmc_control <- list(n.burnin = 10, n.iteration = 60, 
