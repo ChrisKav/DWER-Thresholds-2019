@@ -2,14 +2,16 @@
 title: "Review of Water Thresholds - Gnangara"
 author: "Christopher Kavazos, Grant Buller, Pierre Horwitz, Ray Froend"
 date: "September 18 2019"
+output:
+  html_document:
+    df_print: paged
+  papersize: a4
+  pdf_document: default
+  word_document: default
 header-includes:
 - \usepackage{pdflscape}
 - \newcommand{\blandscape}{\begin{landscape}}
 - \newcommand{\elandscape}{\end{landscape}}
-output:
-  pdf_document: default
-  papersize: a4
-  word_document: default
 fig_caption: yes
 ---
 
@@ -824,10 +826,19 @@ Site.GW.plots$MM59B.p
 
 Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives for MM59B.
 
-
 \newpage
 
 ## Lake Nowergup
+
+
+
+### Hydrology
+
+### Vegetation Dynamics
+
+### Macroinvertebrates Dynamic
+
+### Revised Thresholds
 
 ```{r NowergupWater, echo = FALSE, results = 'asis'}
 load("Nowergup_Nth/water_level.RData")
@@ -1040,7 +1051,7 @@ Ground water levels have been recorded at the nearby bore 61618500 since 1997 (F
 
 ### Vegetation dynamics
 
-A vegetation monitoring transect was established at Lake Wilgarup in 1997 and was last surveyed in 2012. Two additional sites were added to the transect in 2009 down-slope of Plot A. The sedges, *Baumea articulata*, *Baumea juncea* and *Baumea vaginalis* have all disappeared from the wetland during the monitoring period (Figure \ref{fig:WilgarupStrat}). Tuart trees (*Eucalyptus gomphocephala*) migrated downslope during the monitoring period and were recorded in Plot A in 2005. Plots A, B and C display similar shifts in community composition during the monitoring period, while Plot D displayed a significant change in composition in 2004-2005 in response to fire (Figure \ref{fig:WilgarupOrd}). Under a scenario of continuing groundwater decline, regressional analysis reveals that a number of exotic species, including *Ehrharta longiflora* and *Bromus diandrus*, are likely to increase in cover abundances (Figure \ref{fig:WilgarupPost}).
+A vegetation monitoring transect was established at Lake Wilgarup in 1997 and was last surveyed in 2012. Two additional sites were added to the transect in 2009 down-slope of Plot A. The sedges, *Baumea articulata*, *Baumea juncea* and *Baumea vaginalis* have all disappeared from the wetland during the monitoring period (Figure \ref{fig:WilgarupStrat}). Tuart trees (*Eucalyptus gomphocephala*) migrated down slope during the monitoring period and were recorded in Plot A in 2005. Plots A, B and C display similar shifts in community composition during the monitoring period, while Plot D displayed a significant change in composition in 2004-2005 in response to fire (Figure \ref{fig:WilgarupOrd}). Under a scenario of continuing groundwater decline, regressional analysis reveals that a number of exotic species, including *Ehrharta longiflora* and *Bromus diandrus*, are likely to increase in cover abundances (Figure \ref{fig:WilgarupPost}).
 
 ```{r WilgarupWater, echo = FALSE, results = 'asis'}
 load("Wilgarup/water_level.RData")
@@ -1099,6 +1110,16 @@ Table: Ecological consequences of revised thresholds in terms of compliance of s
 
 ## WM1 - Pinjar
 
+WM1 is located east of Lake Pinjar in the Chitty Road Bushland within the Bassendean north vegetation complex. Water levels at WM1 have been non-compliant since 2001.
+
+### Hydrology
+
+Ground water levels at WM1 have declined up to 4.0 m since 1980, although recent rainfall has increased levels from 54.4 to 55.5 mAHD since 2015 (Figure \ref{fig:WM1WaterPlot}). Current mean maximum and minimum water levels are 2.0 and 1.7 m lower than 1994-1999 levels (Table \ref{tab:WM1Water}). Maximum water levels generally occur in October and minimum water levels are now occurring later in the year than previously.
+
+### Vegetation
+
+There has been reported a number of dead *Banksia attenuata* and *Eucalyptus pauciflora* as well as a decline in the condition of *Banksia ilicifolia* and *Banksia menziesii* that has caused a thinning of the understorey (REPORT 86043 and 82392). Vegetation condition around the site has declined, probably due to water stress. *Eucalyptus todtiana* and *Corymbia calophylla* have also been reported to be declining in health in 2008 (REPORT 82392). Eleven years have passed since the last vegetation monitoring (REPORT 82392) at the site which has experienced a further decrease in ground water by 1.5 m. It is likely vegetation composition has shifted to species preferring drier conditions despite recent increases in ground water levels due to rainfall.
+
 ```{r WM1Water, echo = FALSE, results = 'asis'}
 load("WM1/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
@@ -1117,9 +1138,30 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 Site.GW.plots$WM1.p
 ```
 
+|  | Likely effect of 2030 revised thresholds | Future Compliance |
+| :------------ | :----------- | :------: |
+| **Site values** |||
+| * Selected to represent water levels over area of undisturbed phreatophytic vegetation|  |  |
+| * *Banksia* woodland <8m depth to groundwater |  |  |
+| **Site management objectives** |||
+| * To protect terrestrial vegetation | ||
+| * Maintain the existing extent and variety of wetland vegetation | |  |
+
+Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives for WM1.
+
 \newpage
 
 ## WM2 - Melaleuca Park North
+
+Located in Melaleuca Park in the Bassendean north vegetation complex, the area represents an area of undisturbed phreatophytic vegetation, including *Banksia* woodlands (REPORT 82392).
+
+### Hydrology
+
+There has been periods of significant decline in ground water levels from 68.8 mAHD in 1980 to 66.4 mAHD in 2014 (Figure \ref{fig:WM2WaterPlot}). Since 2015, there has been an increase in ground water to slightly above 67 mAHD. Mean maximum and minimum seasonal water levels are now 1.5 and 0.9 m lower than the period 1994-1999. Maximum levels have consistently been reached in October, on average (Table \ref{tab:WM2Water}). 
+
+### Vegetation dynamics
+
+There are reports of declining vegetation condition and density nearby the site in 2008 (REPORT 82392). Although current ground water levels are presently similar to 2008 levels, it is likely the vegetation was subjected to ground water levels up to 0.5 m lower than when the assessment was made. This suggests that vegetation in the region that is ground water dependent has deteriorated further since 2008.
 
 ```{r WM2Water, echo = FALSE, results = 'asis'}
 load("WM2/water_level.RData")
@@ -1139,9 +1181,26 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 Site.GW.plots$WM2.p
 ```
 
+|  | Likely effect of 2030 revised thresholds | Future Compliance |
+| :------------ | :----------- | :------: |
+| **Site values** |||
+| * Selected to represent water levels over area of undisturbed phreatophytic vegetation|  |  |
+| * *Banksia* woodland <8m depth to groundwater |  |  |
+| **Site management objectives** |||
+| * To protect terrestrial vegetation | ||
+| * Maintain the existing extent and variety of wetland vegetation | |  |
+
+Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives for WM2.
+
 \newpage
 
 ## WM8 - Melaleuca Park
+
+The WM8 monitoring bore is located in Melaleuca Park within the Bassendean north vegetation complex and represents native vegetation that may be affected by abstraction from the Lexia ground water scheme. There has been no reported change in vegetation at the site, although no monitoring or transects have been established here.
+
+### Hydrology
+
+Ground water levels began to decline in 2000 at WM8 from approximately 66 mAHD to 64.6 mAHD in 2015 (Figure \ref{fig:WM8WaterPlot}). Since 2015, there has been an increase in ground water levels to approximately 65.5 mAHD. Mean maximum and minimum seasonal water levels have declined by 1.3 and 1.0 m, respectively (Table \ref{tab:WM8Water}). Maximum levels are generally reached in December while minimum levels are reached in July.
 
 ```{r WM8Water, echo = FALSE, results = 'asis'}
 load("WM8/water_level.RData")
@@ -1160,6 +1219,17 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```{r WM8WaterPlot, fig.cap="\\label{fig:WM8WaterPlot}Ground water levels recorded at bore 61610983 in the vicinity of WM8. Red segments along trendline indicate preiods of significant decline in ground water levels and blue segments represent significant increases in ground water level.", results = 'asis'}
 Site.GW.plots$WM8.p
 ```
+
+|  | Likely effect of 2030 revised thresholds | Future Compliance |
+| :------------ | :----------- | :------: |
+| **Site values** |||
+| * Selected to represent water levels over area of undisturbed phreatophytic vegetation|  |  |
+| * *Banksia* woodland <8m depth to groundwater |  |  |
+| **Site management objectives** |||
+| * To protect terrestrial vegetation | ||
+| * Maintain the existing extent and variety of wetland vegetation | |  |
+
+Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives for WM8.
 
 \newpage
 
