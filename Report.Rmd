@@ -830,11 +830,19 @@ Table: Ecological consequences of revised thresholds in terms of compliance of s
 
 ## Lake Nowergup
 
-
+Lake Nowergup is one of the deepest permanent lakes on the Swan Coastal Plain and provides a permanent habitat for aquatic invertebrates and fish, as well as an important drought refuge for water birds. Despite the wetlands being artificially maintained since 1989, water levels have continued to decline. This decline has altered the fringing vegetation of the lake and reduced the area of permanent water.
 
 ### Hydrology
 
+(Remove bore 61610601 from plot - not adding any information)
+
+Since 2010, surface water levels in the lake have decline significantly to levels below the minimum reading on the staff gauge 6162567 (Figure \ref{fig:NowergupWaterPlot}). Ground water levels at the nearby bore 61611247 have shown similar trends as surface water levels. Between 2008 and 2014, ground water levels at the bore have declined by more than 1.0 m. A similar decline in surface waters is likely. Currently, ground water levels have increased to above 15 mAHD due to recent rainfall. At bore 61610601, mean seasonal maximum and minimum ground water levels have declined by 1.7 and 1.5 m, respectively from the 1994-1999 to 2014-2019 period (Table \ref{tab:NowergupWater}). Maximum  and minimum water levels now tend to occur earlier in the year than previously.
+
 ### Vegetation Dynamics
+
+There are two vegetation monitoring transects at Lake Nowergup, one in the northern part of the lake and one in the southern part. Both transects were established in 1996 and the northern one was last surveyed in 2016 while the southern one was last surveyed in 2018.
+
+("Lake Nowergup South transect was realigned in 2001 due to a lack of wetland species in upland plots and to encompass wetland vegetation at the lake end of the transect (Bertuch et al., 2004)") - WHAT ARE THE IMPLICATIONS? May need to re-run analyses excluding years before 2001. Don't know plot elevations before 2001.
 
 ### Macroinvertebrates Dynamic
 
@@ -850,7 +858,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
                               "Mean min seasonal \n level (mAHD)", "Mean seasonal change \n (m)",
                               "Month of \n maximum", "Month of \n minimum", 
                               "Mean max to \n min (days)"), align="c"),
-      caption="Five year summaries of surface water level data at Lake Nowergup") %>% 
+      caption="Five year summaries of ground water level data at Lake Nowergup based on bore 61611247") %>% 
   kable_styling(latex_options="scale_down")
 ```
 
@@ -1235,6 +1243,18 @@ Table: Ecological consequences of revised thresholds in terms of compliance of s
 
 ## Lake Yonderup
 
+Located in Yanchep National Park to the south of Loch McNess and north of Lake Wilgarup, Lake Yonderup has a high conservation value as it represented a largely undisturbed wetland with high macroinvertebrate richness and excellent water quality. The permanently filled lake is dependent on ground water to maintain habitats and biophysical processes (FROEND 2004 82422). Like other lakes in the region, Lake Yonderup has experienced a consistent decline in surface water levels that has affected the condition and health of fringing vegetation and aquatic processes. A fire affected the fringing vegetation in 2004/2005 (ROGAN et al 2006 - BULLER REPORT).
+
+Lake Yonderup has been non-compliant with minimum water level criterion since 2007-08. Previously stable water levels at the lake appear to have reached a ‘tipping point’ in summer 2010/11 and declined rapidly since, but have been relatively stable since 2016. Wetland vegetation has been monitored since 1997 at one transect and since 2007 at second, northern transect. Fire affected the lake’s vegetation in 2005. The range of M. raphiophylla, B. ilicifolia, and Baumea sedges on the transect has reduced at the wetter end.  Macroinvertebrate richness in 2017 & 2018 was the lowest on record. Yonderup has retained a characteristic assemblage but habitats have been lost or are being degraded as a direct result of low water levels. Assemblages are showing change. Nitrogen levels were the equal highest recorded in 2018, and there is a risk of acidification should water levels continue to decline.
+
+### Hydrology
+
+There has been a continual decline in surface water levels at staff gauge 6162565 since 1994. Prior to 1994, water levels were relatively stable at 6 mAHD but have since declined to approximately 5.3 mAHD (Figure \ref{fig:YoderupWaterPlot}). There has been no increase in surface water levels with recent high rainfall seasons. Mean maximum and minimum seasonal water levels have only declined 0.2 and 0.3 m, respectively from 1994-1999 levels (Table \ref{tab:YonderupWater}). There has been nearly a four fold increase in seasonal water level variation and waters are generally now in decline for more than 200 days a year. The bore 61611840 is located near the vegetation transects and represents the ground water levels in the superficial aquifer that the associated vegetation is utilising. There has been a similar decline in ground water levels at this bore until 2017, although observations have only been recorded since 2008. Therefore surface water levels are used to assess changes in vegetation as surface water is likely an expression of the superficial aquifer and show similar trends (FROEND 2004 REPORT). 
+
+### Vegetation dynamics
+
+The vegetation transect, established in 1997, is located 750 m south of the basin and is therefore not representative of vegetation at the wetland itself. The lake provides habitat for *Baumea articulata* although there is recent evidence of *Typha orientalis* invading the wetland. At the vegetation monitoring transects, the site was reported to have a rich exotic community already and this characteristic of the site has persisted. Currently, exotics account for 60% of the cover abundance and native richness has been declining (BULLER) (Figure \ref{fig:YonderupStrat}). The shifts in vegetation compositional at each plot changed dramatically since 1997 but largely stabilised in the late 2000's (Figure \ref{fig:YonderupOrd}). There was a dramatic shift in vegetation composition after the 2004/2005 fire. All the native species, including *Banksia attenuatta* and *Melaleuca preissiana*, are likely to decline in cover abundance under a scenario of further declining ground waters (Figure \ref{fig:YonderupPost}).
+
 ```{r YonderupWater, echo = FALSE, results = 'asis'}
 load("Yonderup/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
@@ -1275,6 +1295,20 @@ veg.ord1
 load("Yonderup/Vegetation/beta_plot.RData")
 beta.plot
 ```
+
+|  | Likely effect of 2030 revised thresholds | Future Compliance |
+| :------------ | :----------- | :------: |
+| **Site values** |||
+| * High ecological values due to undisturbed nature|  |  |
+| * Rich invertebrate fauna |||
+| * Excellent water quality |||
+| * Undisturbed hydrologic regime and lack of seasonal variation |||
+| * *Banksia* woodland <8m depth to groundwater |  |  |
+| **Site management objectives** |||
+| * Maintain the environmental quality of the lake | ||
+| * Maintain the existing hydrological regime | |  |
+
+Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives for Lake Yonderup.
 
 # Summary
 

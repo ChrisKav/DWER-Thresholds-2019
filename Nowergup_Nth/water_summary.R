@@ -13,7 +13,7 @@ library(lubridate)
 
 load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Refined_data.RData")
 
-wat.obs <- data.ls$'6162567'
+wat.obs <- data.ls$'61611247'
 
 # Water level summary
 
