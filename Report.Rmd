@@ -20,6 +20,7 @@ library(knitr)
 library(kableExtra)
 library(flextable)
 library(ggplot2)
+library(zoo)
 library(ggpubr)
 library(bookdown)
 library(dplyr)
@@ -53,6 +54,16 @@ load("Refined_data.RData")
 ```
 
 \newpage
+
+
+## Rainfall
+
+Annual rainfall for the region has been in decline since 1950 (Figure \ref{fig:RainfallPlot}). Since the mid 1990's rainfall has generally been below the longterm average.
+
+```{r RainfallPlot, fig.cap="\\label{fig:RainfallPlot}Annual rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018. Dotted line represent average annual rainfall for the entire period. Solid line represents a 5-year moving average of annual rainfall data.", results = 'asis'}
+load("rainfall_trends.RData")
+rain.plot
+```
 
 # Methods
 
@@ -1325,6 +1336,6 @@ Table: Ecological consequences of revised thresholds in terms of compliance of s
 
 (COMMENT ON MELALEUCA QUINQUENERVIA? MARIGINIUP)
 # References
-
+ 
 #Appendix
 
