@@ -35,4 +35,17 @@ rain.plot <- ggplot(rainAnn, aes(Year, Rainfall)) +
         panel.border = element_blank(),
         panel.background = element_blank()) 
 
-save(rain.plot, rain.raw, rain, rainAnn, file="rainfall_trends.RData")
+rain$Decade <- findInterval(rain$Year, seq(from = 1950, to = 2020, by = 10))
+
+rain.month <- ggplot(rain, aes(Month, Rainfall)) +
+  geom_boxplot() +
+  ylab("Monthly Rainfall (mm)") +
+  #facet_wrap( ~ Decade)
+  theme_bw() +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
+save(rain.plot, rain.month, rain.raw, rain, rainAnn, file="rainfall_trends.RData")
