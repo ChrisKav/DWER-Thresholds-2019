@@ -60,4 +60,60 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "Joondalup_Nth/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="Joondalup_Nth/water_level.RData")
+
+Joondalup.AHD <- list(AHD$'61610661', AHD$'6162572', AHD$'61611423')
+Joondalup.AHD[[1]]$group <- "ground"
+Joondalup.AHD[[2]]$group <- "surface"
+Joondalup.AHD[[3]]$group <- "ground2"
+Joondalup.AHD <- rbind(Joondalup.AHD[[1]], Joondalup.AHD[[2]], Joondalup.AHD[[3]])
+
+Joondalup.params <- list(AHD.params$'61610661', AHD.params$'6162572', AHD.params$'61611423')
+Joondalup.params[[1]]$group <- "ground"
+Joondalup.params[[2]]$group <- "surface"
+Joondalup.params[[3]]$group <- "ground2"
+Joondalup.params <- rbind(Joondalup.params[[1]], Joondalup.params[[2]], Joondalup.params[[3]])
+
+joon.p <- ggplot(Joondalup.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  geom_line(aes(colour=group)) +
+  geom_point(Joondalup.AHD, mapping=aes(x=Date, y=AHD, colour=group), size=1) +
+  geom_ribbon(Joondalup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                         group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(Joondalup.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(Joondalup.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(Joondalup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(15.8, 16.2), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("2018-01-01"), y = 16.2, vjust=-1, label = "Proposed") +
+  annotate("text", x = as.Date("2018-01-01"), y = 15.8, vjust=-1, label = "Current") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+
+Joondalup.AHD <- subset(Joondalup.AHD, group=="surface")
+Joondalup.params <- subset(Joondalup.params, group=="surface")
+
+joon.p <- ggplot(Joondalup.AHD, aes(x=Date, y=AHD)) +
+  theme_bw() +
+  geom_line(colour="deepskyblue1") +
+  geom_point(Joondalup.AHD, mapping=aes(x=Date, y=AHD), colour="deepskyblue1", size=1) +
+  geom_ribbon(Joondalup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                         group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(Joondalup.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(Joondalup.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(Joondalup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(15.8, 16.2), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("2018-01-01"), y = 16.2, vjust=-1, label = "Proposed") +
+  annotate("text", x = as.Date("2018-01-01"), y = 15.8, vjust=-1, label = "Current") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
+save(sw, sw.l, sw.sum, joon.p, file="Joondalup_Nth/water_level.RData")

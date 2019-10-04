@@ -60,4 +60,56 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "Loch_McNess/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="Loch_McNess/water_level.RData")
+
+McNess.AHD <- list(AHD$'6162564', AHD$'61640108')
+McNess.AHD[[1]]$group <- "surface"
+McNess.AHD[[2]]$group <- "ground"
+McNess.AHD <- rbind(McNess.AHD[[1]], McNess.AHD[[2]])
+
+McNess.params <- list(AHD.params$'6162564', AHD.params$'61640108')
+McNess.params[[1]]$group <- "surface"
+McNess.params[[2]]$group <- "ground"
+McNess.params <- rbind(McNess.params[[1]], McNess.params[[2]])
+
+mcness.p <- ggplot(McNess.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  geom_line(aes(colour=group)) +
+  geom_point(McNess.AHD, mapping=aes(x=Date, y=AHD, colour=group), size=1) +
+  geom_ribbon(McNess.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                            group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(McNess.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(McNess.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(McNess.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(6.95), linetype= c("dotted")) +
+  annotate("text", x = as.Date("2018-01-01"), y = 6.95, vjust=-1, label = "Current") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+
+McNess.AHD <- subset(McNess.AHD, group=="surface")
+McNess.params <- subset(McNess.params, group=="surface")
+
+mcness.p <- ggplot(McNess.AHD, aes(x=Date, y=AHD)) +
+  theme_bw() +
+  geom_line(colour="deepskyblue1") +
+  geom_point(McNess.AHD, mapping=aes(x=Date, y=AHD), colour="deepskyblue1", size=1) +
+  geom_ribbon(McNess.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                            group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(McNess.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(McNess.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(McNess.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(6.95), linetype= c("dotted")) +
+  annotate("text", x = as.Date("2018-01-01"), y = 6.95, vjust=-1, label = "Current") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
+save(sw, sw.l, sw.sum, mcness.p, file="Loch_McNess/water_level.RData")

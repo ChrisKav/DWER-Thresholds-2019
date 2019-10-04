@@ -60,4 +60,56 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "Yonderup/5_yr_water_summary.txt", sep=",")
+
+Yonderup.AHD <- list(AHD$'61611840', AHD$'6162565')
+Yonderup.AHD[[1]]$group <- "ground"
+Yonderup.AHD[[2]]$group <- "surface"
+Yonderup.AHD <- rbind(Yonderup.AHD[[1]], Yonderup.AHD[[2]])
+
+Yonderup.params <- list(AHD.params$'61611840', AHD.params$'6162565')
+Yonderup.params[[1]]$group <- "ground"
+Yonderup.params[[2]]$group <- "surface"
+Yonderup.params <- rbind(Yonderup.params[[1]], Yonderup.params[[2]])
+
+yond.p <- ggplot(Yonderup.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  geom_line(aes(colour=group)) +
+  geom_point(Yonderup.AHD, mapping=aes(x=Date, y=AHD, colour=group), size=1) +
+  geom_ribbon(Yonderup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                         group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(Yonderup.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(Yonderup.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(Yonderup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(5.9), linetype= c("dotted")) +
+  annotate("text", x = as.Date("2018-01-01"), y = 5.9, vjust=-1, label = "Current") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+
+Yonderup.AHD <- subset(Yonderup.AHD, group=="surface")
+Yonderup.params <- subset(Yonderup.params, group=="surface")
+
+yond.p <- ggplot(Yonderup.AHD, aes(x=Date, y=AHD)) +
+  theme_bw() +
+  geom_line(colour="deepskyblue1") +
+  geom_point(Yonderup.AHD, mapping=aes(x=Date, y=AHD), colour="deepskyblue1", size=1) +
+  geom_ribbon(Yonderup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                         group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(Yonderup.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(Yonderup.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(Yonderup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(5.9), linetype= c("dotted")) +
+  annotate("text", x = as.Date("2018-01-01"), y = 5.9, vjust=-1, label = "Current") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
 save(sw, sw.l, sw.sum, file="Yonderup/water_level.RData")

@@ -56,5 +56,32 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "Goollelal/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="Goollelal/water_level.RData")
+
+Goollelal.AHD <- AHD$'6162517'
+Goollelal.AHD$group <- "surface"
+
+Goollelal.params <- AHD.params$'6162517'
+Goollelal.params$group <- "surface"
+
+gool.p <- ggplot(Goollelal.AHD, aes(x=Date, y=AHD)) +
+  theme_bw() +
+  geom_line(colour="deepskyblue1") +
+  geom_point(Goollelal.AHD, mapping=aes(x=Date, y=AHD), colour="deepskyblue1", size=1) +
+  geom_ribbon(Goollelal.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                            group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(Goollelal.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(Goollelal.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(Goollelal.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(26, 26.2), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("2018-01-01"), y = 26.2, vjust=-1, label = "Proposed") +
+  annotate("text", x = as.Date("2018-01-01"), y = 26, vjust=-1, label = "Current") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
+save(sw, gool.p, sw.l, sw.sum, file="Goollelal/water_level.RData")
 
