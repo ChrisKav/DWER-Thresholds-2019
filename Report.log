@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.18)  5 OCT 2019 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.18)  5 OCT 2019 18:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -754,12 +754,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `Report.toc'.
 
 [5] [6]
-<Figs/RainfallPlot-1.pdf, id=477, 469.755pt x 325.215pt>
+<Figs/RainfallPlot-1.pdf, id=482, 469.755pt x 325.215pt>
 File: Figs/RainfallPlot-1.pdf Graphic file (type pdf)
 <use Figs/RainfallPlot-1.pdf>
 Package pdftex.def Info: Figs/RainfallPlot-1.pdf  used on input line 149.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/RainfallMonthPlot-1.pdf, id=478, 469.755pt x 325.215pt>
+<Figs/RainfallMonthPlot-1.pdf, id=483, 469.755pt x 325.215pt>
 File: Figs/RainfallMonthPlot-1.pdf Graphic file (type pdf)
 <use Figs/RainfallMonthPlot-1.pdf>
 Package pdftex.def Info: Figs/RainfallMonthPlot-1.pdf  used on input line 158.
@@ -778,1018 +778,1032 @@ nored
                                                   \fi \fi 
 l.181 \newpage
                <./Figs/RainfallMonthPlot-1.pdf>]
-<Figs/EMP173WaterPlot-1.pdf, id=515, 289.08pt x 216.81pt>
-File: Figs/EMP173WaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/EMP173WaterPlot-1.pdf>
-Package pdftex.def Info: Figs/EMP173WaterPlot-1.pdf  used on input line 267.
-(pdftex.def)             Requested size: 289.09251pt x 216.81938pt.
-[9] [10pdfTeX warning (ext4): destination with the same identifier (name{figure
-.3}) has been already used, duplicate ignored
+<Figs/SurveyPeriod-1.pdf, id=516, 469.755pt x 325.215pt>
+File: Figs/SurveyPeriod-1.pdf Graphic file (type pdf)
+<use Figs/SurveyPeriod-1.pdf>
+Package pdftex.def Info: Figs/SurveyPeriod-1.pdf  used on input line 192.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.294 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{table.1}) has been already used, duplicate ignored
+l.229 
+       <./Figs/SurveyPeriod-1.pdf>]
+<Figs/GoollelalWaterPlot-1.pdf, id=538, 469.755pt x 325.215pt>
+File: Figs/GoollelalWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/GoollelalWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/GoollelalWaterPlot-1.pdf  used on input line 285.
+
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[10pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.294 \newpage
-               <./Figs/EMP173WaterPlot-1.pdf>]
-<Figs/EMP173Strat-1.pdf, id=546, 722.7pt x 325.215pt>
-File: Figs/EMP173Strat-1.pdf Graphic file (type pdf)
-<use Figs/EMP173Strat-1.pdf>
-Package pdftex.def Info: Figs/EMP173Strat-1.pdf  used on input line 300.
+l.293 \newpage
+              ] [11pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.293 \newpage
+               <./Figs/GoollelalWaterPlot-1.pdf>]
+<Figs/GoollelalStrat-1.pdf, id=561, 722.7pt x 325.215pt>
+File: Figs/GoollelalStrat-1.pdf Graphic file (type pdf)
+<use Figs/GoollelalStrat-1.pdf>
+Package pdftex.def Info: Figs/GoollelalStrat-1.pdf  used on input line 299.
 (pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.307 \end{landscape}
-                      <./Figs/EMP173Strat-1.pdf>]
-<Figs/EMP173Ord-1.pdf, id=556, 289.08pt x 216.81pt>
-File: Figs/EMP173Ord-1.pdf Graphic file (type pdf)
-<use Figs/EMP173Ord-1.pdf>
-Package pdftex.def Info: Figs/EMP173Ord-1.pdf  used on input line 313.
-(pdftex.def)             Requested size: 289.09251pt x 216.81938pt.
-<Figs/EMP173Post-1.pdf, id=557, 289.08pt x 216.81pt>
-File: Figs/EMP173Post-1.pdf Graphic file (type pdf)
-<use Figs/EMP173Post-1.pdf>
-Package pdftex.def Info: Figs/EMP173Post-1.pdf  used on input line 322.
-(pdftex.def)             Requested size: 289.09251pt x 216.81938pt.
 [12pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.425 \newpage
-              
+l.306 \end{landscape}
+                      <./Figs/GoollelalStrat-1.pdf>]
+<Figs/GoollelalOrd-1.pdf, id=571, 469.755pt x 325.215pt>
+File: Figs/GoollelalOrd-1.pdf Graphic file (type pdf)
+<use Figs/GoollelalOrd-1.pdf>
+Package pdftex.def Info: Figs/GoollelalOrd-1.pdf  used on input line 312.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/GoollelalPost-1.pdf, id=572, 469.755pt x 325.215pt>
+File: Figs/GoollelalPost-1.pdf Graphic file (type pdf)
+<use Figs/GoollelalPost-1.pdf>
+Package pdftex.def Info: Figs/GoollelalPost-1.pdf  used on input line 321.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[13
 
 
- <./Figs/EMP173Ord-1.pdf>] [13pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.6}) has been already used, duplicate ignored
+] [14pdfTeX warning (ext4): destination with the same identifier (name{figure.6
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.474 
-       <./Figs/EMP173Post-1.pdf>]
-<Figs/EMP78WaterPlot-1.pdf, id=589, 289.08pt x 216.81pt>
-File: Figs/EMP78WaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/EMP78WaterPlot-1.pdf>
-Package pdftex.def Info: Figs/EMP78WaterPlot-1.pdf  used on input line 500.
-(pdftex.def)             Requested size: 289.09251pt x 216.81938pt.
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
- has been already used, duplicate ignored
+l.434 \newpage
+               <./Figs/GoollelalOrd-1.pdf>] [15pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.7}) has been already used, duplicate i
+gnored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.434 \newpage
+               <./Figs/GoollelalPost-1.pdf>]
+<Figs/McNessWaterPlot-1.pdf, id=605, 469.755pt x 325.215pt>
+File: Figs/McNessWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/McNessWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/McNessWaterPlot-1.pdf  used on input line 517.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[16pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.525 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{table.3}) has been already used, duplicate ignored
+              ] [17pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.525 \newpage
-               <./Figs/EMP78WaterPlot-1.pdf>]
-<Figs/EMP78Strat-1.pdf, id=608, 722.7pt x 325.215pt>
-File: Figs/EMP78Strat-1.pdf Graphic file (type pdf)
-<use Figs/EMP78Strat-1.pdf>
-Package pdftex.def Info: Figs/EMP78Strat-1.pdf  used on input line 531.
+               <./Figs/McNessWaterPlot-1.pdf>]
+<Figs/McNessStrat-1.pdf, id=632, 722.7pt x 325.215pt>
+File: Figs/McNessStrat-1.pdf Graphic file (type pdf)
+<use Figs/McNessStrat-1.pdf>
+Package pdftex.def Info: Figs/McNessStrat-1.pdf  used on input line 531.
 (pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.537 \end{landscape}
-                      <./Figs/EMP78Strat-1.pdf>]
-<Figs/EMP78Ord-1.pdf, id=618, 289.08pt x 216.81pt>
-File: Figs/EMP78Ord-1.pdf Graphic file (type pdf)
-<use Figs/EMP78Ord-1.pdf>
-Package pdftex.def Info: Figs/EMP78Ord-1.pdf  used on input line 543.
-(pdftex.def)             Requested size: 289.09251pt x 216.81938pt.
-<Figs/EMP78Post-1.pdf, id=619, 289.08pt x 216.81pt>
-File: Figs/EMP78Post-1.pdf Graphic file (type pdf)
-<use Figs/EMP78Post-1.pdf>
-Package pdftex.def Info: Figs/EMP78Post-1.pdf  used on input line 552.
-(pdftex.def)             Requested size: 289.09251pt x 216.81938pt.
-
-Overfull \hbox (84.41269pt too wide) in alignment at lines 562--570
- [] [] [] 
- []
+l.539 \end{landscape}
+                      <./Figs/McNessStrat-1.pdf>]
+<Figs/McNessOrd-1.pdf, id=642, 469.755pt x 325.215pt>
+File: Figs/McNessOrd-1.pdf Graphic file (type pdf)
+<use Figs/McNessOrd-1.pdf>
+Package pdftex.def Info: Figs/McNessOrd-1.pdf  used on input line 545.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/McNessPost-1.pdf, id=643, 469.755pt x 325.215pt>
+File: Figs/McNessPost-1.pdf Graphic file (type pdf)
+<use Figs/McNessPost-1.pdf>
+Package pdftex.def Info: Figs/McNessPost-1.pdf  used on input line 554.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[19
 
 
-Overfull \hbox (84.41269pt too wide) in alignment at lines 570--575
- [] [] [] 
- []
-
-
-Overfull \hbox (84.41269pt too wide) in alignment at lines 575--584
- [] [] [] 
- []
-
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
- has been already used, duplicate ignored
+] [20pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.586 \newpage
-              
-
-
- <./Figs/EMP78Ord-1.pdf>]
-<Figs/GinginWaterPlot-1.pdf, id=632, 289.08pt x 216.81pt>
-File: Figs/GinginWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/GinginWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/GinginWaterPlot-1.pdf  used on input line 608.
-(pdftex.def)             Requested size: 289.09251pt x 216.81938pt.
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.633 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{table.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.633 \newpage
-               <./Figs/EMP78Post-1.pdf>] [18pdfTeX warning (ext4): destination 
+l.686 \newpage
+               <./Figs/McNessOrd-1.pdf>] [21pdfTeX warning (ext4): destination 
 with the same identifier (name{figure.11}) has been already used, duplicate ign
 ored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.698 
-       <./Figs/GinginWaterPlot-1.pdf>]
-<Figs/GoollelalWaterPlot-1.pdf, id=670, 469.755pt x 325.215pt>
-File: Figs/GoollelalWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/GoollelalWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/GoollelalWaterPlot-1.pdf  used on input line 719.
-
+l.686 \newpage
+               <./Figs/McNessPost-1.pdf>]
+<Figs/YoderupWaterPlot-1.pdf, id=673, 469.755pt x 325.215pt>
+File: Figs/YoderupWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/YoderupWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/YoderupWaterPlot-1.pdf  used on input line 775.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[19pdfTeX warning (ext4): destination with the same identifier (name{table.6}) 
-has been already used, duplicate ignored
+[22] [23pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.727 \newpage
-              ] [20pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.12}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.727 \newpage
-               <./Figs/GoollelalWaterPlot-1.pdf>]
-<Figs/GoollelalStrat-1.pdf, id=691, 722.7pt x 325.215pt>
-File: Figs/GoollelalStrat-1.pdf Graphic file (type pdf)
-<use Figs/GoollelalStrat-1.pdf>
-Package pdftex.def Info: Figs/GoollelalStrat-1.pdf  used on input line 733.
-(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.740 \end{landscape}
-                      <./Figs/GoollelalStrat-1.pdf>]
-<Figs/GoollelalOrd-1.pdf, id=701, 469.755pt x 325.215pt>
-File: Figs/GoollelalOrd-1.pdf Graphic file (type pdf)
-<use Figs/GoollelalOrd-1.pdf>
-Package pdftex.def Info: Figs/GoollelalOrd-1.pdf  used on input line 746.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/GoollelalPost-1.pdf, id=702, 469.755pt x 325.215pt>
-File: Figs/GoollelalPost-1.pdf Graphic file (type pdf)
-<use Figs/GoollelalPost-1.pdf>
-Package pdftex.def Info: Figs/GoollelalPost-1.pdf  used on input line 755.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[22
-
-
-] [23pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.868 \newpage
-               <./Figs/GoollelalOrd-1.pdf>] [24pdfTeX warning (ext4): destinati
-on with the same identifier (name{figure.15}) has been already used, duplicate 
-ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.868 \newpage
-               <./Figs/GoollelalPost-1.pdf>]
-
-LaTeX Warning: Reference `fig:GwelupPost' on page 25 undefined on input line 90
-7.
-
-<Figs/GwelupWaterPlot-1.pdf, id=733, 469.755pt x 325.215pt>
-File: Figs/GwelupWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/GwelupWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/GwelupWaterPlot-1.pdf  used on input line 915.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[25pdfTeX warning (ext4): destination with the same identifier (name{table.8}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.943 \newpage
-              ] [26pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.16}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.943 \newpage
-               <./Figs/GwelupWaterPlot-1.pdf>]
-<Figs/GwelupStrat-1.pdf, id=760, 722.7pt x 325.215pt>
-File: Figs/GwelupStrat-1.pdf Graphic file (type pdf)
-<use Figs/GwelupStrat-1.pdf>
-Package pdftex.def Info: Figs/GwelupStrat-1.pdf  used on input line 949.
-(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.17}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.955 \end{landscape}
-                      <./Figs/GwelupStrat-1.pdf>]
-<Figs/GwelupOrd-1.pdf, id=770, 469.755pt x 325.215pt>
-File: Figs/GwelupOrd-1.pdf Graphic file (type pdf)
-<use Figs/GwelupOrd-1.pdf>
-Package pdftex.def Info: Figs/GwelupOrd-1.pdf  used on input line 961.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/Gwelup_post-1.pdf, id=771, 469.755pt x 325.215pt>
-File: Figs/Gwelup_post-1.pdf Graphic file (type pdf)
-<use Figs/Gwelup_post-1.pdf>
-Package pdftex.def Info: Figs/Gwelup_post-1.pdf  used on input line 970.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[28
-
-
-] [29pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-8}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1022 \newpage
-                <./Figs/GwelupOrd-1.pdf>] [30pdfTeX warning (ext4): destination
- with the same identifier (name{figure.19}) has been already used, duplicate ig
-nored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1022 \newpage
-                <./Figs/Gwelup_post-1.pdf>]
-<Figs/JandabupWaterPlot-1.pdf, id=801, 469.755pt x 325.215pt>
-File: Figs/JandabupWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/JandabupWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/JandabupWaterPlot-1.pdf  used on input line 1099.
-
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[31pdfTeX warning (ext4): destination with the same identifier (name{table.10})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1107 \newpage
-               ] [32pdfTeX warning (ext4): destination with the same identifier
- (name{figure.20}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1107 \newpage
-                <./Figs/JandabupWaterPlot-1.pdf>]
-<Figs/JandabupStrat-1.pdf, id=830, 722.7pt x 325.215pt>
-File: Figs/JandabupStrat-1.pdf Graphic file (type pdf)
-<use Figs/JandabupStrat-1.pdf>
-Package pdftex.def Info: Figs/JandabupStrat-1.pdf  used on input line 1113.
-(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[33pdfTeX warning (ext4): destination with the same identifier (name{figure.21}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1120 \end{landscape}
-                       <./Figs/JandabupStrat-1.pdf>]
-<Figs/JandabupOrd-1.pdf, id=841, 469.755pt x 325.215pt>
-File: Figs/JandabupOrd-1.pdf Graphic file (type pdf)
-<use Figs/JandabupOrd-1.pdf>
-Package pdftex.def Info: Figs/JandabupOrd-1.pdf  used on input line 1126.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/JandabupPost-1.pdf, id=842, 469.755pt x 325.215pt>
-File: Figs/JandabupPost-1.pdf Graphic file (type pdf)
-<use Figs/JandabupPost-1.pdf>
-Package pdftex.def Info: Figs/JandabupPost-1.pdf  used on input line 1135.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[34
-
-
-] [35pdfTeX warning (ext4): destination with the same identifier (name{figure.2
-2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1246 \newpage
-                <./Figs/JandabupOrd-1.pdf>] [36pdfTeX warning (ext4): destinati
-on with the same identifier (name{figure.23}) has been already used, duplicate 
-ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1246 \newpage
-                <./Figs/JandabupPost-1.pdf>]
-<Figs/JoondalupWaterPlot-1.pdf, id=872, 469.755pt x 325.215pt>
-File: Figs/JoondalupWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/JoondalupWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/JoondalupWaterPlot-1.pdf  used on input line 1324
-.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[37] [38pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.24}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1348 \newpage
-                <./Figs/JoondalupWaterPlot-1.pdf>] [39pdfTeX warning (ext4): de
-stination with the same identifier (name{table.12}) has been already used, dupl
-icate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1350 \begin{landscape}
-                        ]
-<Figs/JoondalupNthStrat-1.pdf, id=904, 722.7pt x 325.215pt>
-File: Figs/JoondalupNthStrat-1.pdf Graphic file (type pdf)
-<use Figs/JoondalupNthStrat-1.pdf>
-Package pdftex.def Info: Figs/JoondalupNthStrat-1.pdf  used on input line 1354.
-
-(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[40pdfTeX warning (ext4): destination with the same identifier (name{figure.25}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1361 \end{landscape}
-                       <./Figs/JoondalupNthStrat-1.pdf>]
-<Figs/JoondalupSthStrat-1.pdf, id=914, 722.7pt x 325.215pt>
-File: Figs/JoondalupSthStrat-1.pdf Graphic file (type pdf)
-<use Figs/JoondalupSthStrat-1.pdf>
-Package pdftex.def Info: Figs/JoondalupSthStrat-1.pdf  used on input line 1371.
-
-(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[41pdfTeX warning (ext4): destination with the same identifier (name{figure.26}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1378 \end{landscape}
-                       <./Figs/JoondalupSthStrat-1.pdf>]
-<Figs/JoondalupOrd-1.pdf, id=924, 469.755pt x 325.215pt>
-File: Figs/JoondalupOrd-1.pdf Graphic file (type pdf)
-<use Figs/JoondalupOrd-1.pdf>
-Package pdftex.def Info: Figs/JoondalupOrd-1.pdf  used on input line 1384.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/JoondalupPost-1.pdf, id=925, 469.755pt x 325.215pt>
-File: Figs/JoondalupPost-1.pdf Graphic file (type pdf)
-<use Figs/JoondalupPost-1.pdf>
-Package pdftex.def Info: Figs/JoondalupPost-1.pdf  used on input line 1394.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[42
-
-
-
-
-] [43] [44pdfTeX warning (ext4): destination with the same identifier (name{fig
-ure.27}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1556 \newpage
-                <./Figs/JoondalupOrd-1.pdf>] [45pdfTeX warning (ext4): destinat
-ion with the same identifier (name{figure.28}) has been already used, duplicate
- ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1556 \newpage
-                <./Figs/JoondalupPost-1.pdf>]
-<Figs/Lexia186WaterPlot-1.pdf, id=961, 469.755pt x 325.215pt>
-File: Figs/Lexia186WaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/Lexia186WaterPlot-1.pdf>
-Package pdftex.def Info: Figs/Lexia186WaterPlot-1.pdf  used on input line 1625.
-
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[46pdfTeX warning (ext4): destination with the same identifier (name{table.14})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1633 \newpage
-               ] [47pdfTeX warning (ext4): destination with the same identifier
- (name{figure.29}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1633 \newpage
-                <./Figs/Lexia186WaterPlot-1.pdf>]
-<Figs/Lexia186Strat-1.pdf, id=989, 722.7pt x 325.215pt>
-File: Figs/Lexia186Strat-1.pdf Graphic file (type pdf)
-<use Figs/Lexia186Strat-1.pdf>
-Package pdftex.def Info: Figs/Lexia186Strat-1.pdf  used on input line 1639.
-(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[48pdfTeX warning (ext4): destination with the same identifier (name{figure.30}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1645 \end{landscape}
-                       <./Figs/Lexia186Strat-1.pdf>]
-<Figs/Lexia186Ord-1.pdf, id=999, 469.755pt x 325.215pt>
-File: Figs/Lexia186Ord-1.pdf Graphic file (type pdf)
-<use Figs/Lexia186Ord-1.pdf>
-Package pdftex.def Info: Figs/Lexia186Ord-1.pdf  used on input line 1651.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/Lexia186Post-1.pdf, id=1000, 469.755pt x 325.215pt>
-File: Figs/Lexia186Post-1.pdf Graphic file (type pdf)
-<use Figs/Lexia186Post-1.pdf>
-Package pdftex.def Info: Figs/Lexia186Post-1.pdf  used on input line 1660.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-
-Overfull \hbox (70.32866pt too wide) in alignment at lines 1670--1678
- [] [] [] 
- []
-
-
-Overfull \hbox (70.32866pt too wide) in alignment at lines 1678--1683
- [] [] [] 
- []
-
-
-Overfull \hbox (70.32866pt too wide) in alignment at lines 1683--1695
- [] [] [] 
- []
-
-[49
-
-
-] [50pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1697 \newpage
-                <./Figs/Lexia186Ord-1.pdf>] [51pdfTeX warning (ext4): destinati
-on with the same identifier (name{figure.32}) has been already used, duplicate 
-ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1697 \newpage
-                <./Figs/Lexia186Post-1.pdf>]
-<Figs/McNessWaterPlot-1.pdf, id=1031, 469.755pt x 325.215pt>
-File: Figs/McNessWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/McNessWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/McNessWaterPlot-1.pdf  used on input line 1780.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[52pdfTeX warning (ext4): destination with the same identifier (name{table.16})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1788 \newpage
-               ] [53pdfTeX warning (ext4): destination with the same identifier
- (name{figure.33}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1788 \newpage
-                <./Figs/McNessWaterPlot-1.pdf>]
-<Figs/McNessStrat-1.pdf, id=1057, 722.7pt x 325.215pt>
-File: Figs/McNessStrat-1.pdf Graphic file (type pdf)
-<use Figs/McNessStrat-1.pdf>
-Package pdftex.def Info: Figs/McNessStrat-1.pdf  used on input line 1794.
-(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[54pdfTeX warning (ext4): destination with the same identifier (name{figure.34}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1802 \end{landscape}
-                       <./Figs/McNessStrat-1.pdf>]
-<Figs/McNessOrd-1.pdf, id=1067, 469.755pt x 325.215pt>
-File: Figs/McNessOrd-1.pdf Graphic file (type pdf)
-<use Figs/McNessOrd-1.pdf>
-Package pdftex.def Info: Figs/McNessOrd-1.pdf  used on input line 1808.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/McNessPost-1.pdf, id=1068, 469.755pt x 325.215pt>
-File: Figs/McNessPost-1.pdf Graphic file (type pdf)
-<use Figs/McNessPost-1.pdf>
-Package pdftex.def Info: Figs/McNessPost-1.pdf  used on input line 1817.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[55
-
-
-] [56pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1949 \newpage
-                <./Figs/McNessOrd-1.pdf>] [57pdfTeX warning (ext4): destination
- with the same identifier (name{figure.36}) has been already used, duplicate ig
-nored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1949 \newpage
-                <./Figs/McNessPost-1.pdf>]
-
-LaTeX Warning: Reference `tab:MariginiupWater' on page 58 undefined on input li
-ne 1973.
-
-<Figs/MariginiupWaterPlot-1.pdf, id=1097, 469.755pt x 325.215pt>
-File: Figs/MariginiupWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/MariginiupWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/MariginiupWaterPlot-1.pdf  used on input line 202
-7.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[58pdfTeX warning (ext4): destination with the same identifier (name{table.18})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2033 \newpage
-               ] [59pdfTeX warning (ext4): destination with the same identifier
- (name{figure.37}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2033 \newpage
-                <./Figs/MariginiupWaterPlot-1.pdf>]
-<Figs/MariginiupStrat-1.pdf, id=1124, 722.7pt x 325.215pt>
-File: Figs/MariginiupStrat-1.pdf Graphic file (type pdf)
-<use Figs/MariginiupStrat-1.pdf>
-Package pdftex.def Info: Figs/MariginiupStrat-1.pdf  used on input line 2039.
-(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[60pdfTeX warning (ext4): destination with the same identifier (name{figure.38}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2046 \end{landscape}
-                       <./Figs/MariginiupStrat-1.pdf>]
-<Figs/MariginiupOrd-1.pdf, id=1134, 469.755pt x 325.215pt>
-File: Figs/MariginiupOrd-1.pdf Graphic file (type pdf)
-<use Figs/MariginiupOrd-1.pdf>
-Package pdftex.def Info: Figs/MariginiupOrd-1.pdf  used on input line 2052.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/MariginiupPost-1.pdf, id=1135, 469.755pt x 325.215pt>
-File: Figs/MariginiupPost-1.pdf Graphic file (type pdf)
-<use Figs/MariginiupPost-1.pdf>
-Package pdftex.def Info: Figs/MariginiupPost-1.pdf  used on input line 2061.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-
-Overfull \hbox (126.49576pt too wide) in alignment at lines 2073--2081
- [] [] [] 
- []
-
-
-Overfull \hbox (126.49576pt too wide) in alignment at lines 2081--2086
- [] [] [] 
- []
-
-
-Overfull \hbox (126.49576pt too wide) in alignment at lines 2086--2101
- [] [] [] 
- []
-
-[61
-
-
-] [62pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-9}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2103 \newpage
-                <./Figs/MariginiupOrd-1.pdf>] [63pdfTeX warning (ext4): destina
-tion with the same identifier (name{figure.40}) has been already used, duplicat
+l.783 \newpage
+               <./Figs/YoderupWaterPlot-1.pdf>] [24pdfTeX warning (ext4): desti
+nation with the same identifier (name{table.5}) has been already used, duplicat
 e ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2103 \newpage
-                <./Figs/MariginiupPost-1.pdf>]
-<Figs/MM59BWaterPlot-1.pdf, id=1163, 469.755pt x 325.215pt>
-File: Figs/MM59BWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/MM59BWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/MM59BWaterPlot-1.pdf  used on input line 2144.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[64pdfTeX warning (ext4): destination with the same identifier (name{table.20})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2214 \newpage
-               ] [65pdfTeX warning (ext4): destination with the same identifier
- (name{figure.41}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2214 \newpage
-                <./Figs/MM59BWaterPlot-1.pdf>]
-<Figs/NowergupWaterPlot-1.pdf, id=1188, 469.755pt x 325.215pt>
-File: Figs/NowergupWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/NowergupWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/NowergupWaterPlot-1.pdf  used on input line 2284.
-
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[66pdfTeX warning (ext4): destination with the same identifier (name{table.22})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2295 \newpage
-               ] [67pdfTeX warning (ext4): destination with the same identifier
- (name{figure.42}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2295 \newpage
-                <./Figs/NowergupWaterPlot-1.pdf>]
-<Figs/NowergupNthStrat-1.pdf, id=1215, 722.7pt x 325.215pt>
-File: Figs/NowergupNthStrat-1.pdf Graphic file (type pdf)
-<use Figs/NowergupNthStrat-1.pdf>
-Package pdftex.def Info: Figs/NowergupNthStrat-1.pdf  used on input line 2301.
+l.785 \begin{landscape}
+                       ]
+<Figs/YonderupStrat-1.pdf, id=703, 722.7pt x 325.215pt>
+File: Figs/YonderupStrat-1.pdf Graphic file (type pdf)
+<use Figs/YonderupStrat-1.pdf>
+Package pdftex.def Info: Figs/YonderupStrat-1.pdf  used on input line 789.
 (pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[68pdfTeX warning (ext4): destination with the same identifier (name{figure.43}
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2308 \end{landscape}
-                       <./Figs/NowergupNthStrat-1.pdf>]
-<Figs/NowergupSthStrat-1.pdf, id=1226, 722.7pt x 325.215pt>
-File: Figs/NowergupSthStrat-1.pdf Graphic file (type pdf)
-<use Figs/NowergupSthStrat-1.pdf>
-Package pdftex.def Info: Figs/NowergupSthStrat-1.pdf  used on input line 2318.
-(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[69pdfTeX warning (ext4): destination with the same identifier (name{figure.44}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2325 \end{landscape}
-                       <./Figs/NowergupSthStrat-1.pdf>]
-<Figs/NowergupOrd-1.pdf, id=1237, 469.755pt x 325.215pt>
-File: Figs/NowergupOrd-1.pdf Graphic file (type pdf)
-<use Figs/NowergupOrd-1.pdf>
-Package pdftex.def Info: Figs/NowergupOrd-1.pdf  used on input line 2331.
+l.796 \end{landscape}
+                      <./Figs/YonderupStrat-1.pdf>]
+<Figs/YonderupOrd-1.pdf, id=714, 469.755pt x 325.215pt>
+File: Figs/YonderupOrd-1.pdf Graphic file (type pdf)
+<use Figs/YonderupOrd-1.pdf>
+Package pdftex.def Info: Figs/YonderupOrd-1.pdf  used on input line 802.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/NowergupPost-1.pdf, id=1238, 469.755pt x 325.215pt>
-File: Figs/NowergupPost-1.pdf Graphic file (type pdf)
-<use Figs/NowergupPost-1.pdf>
-Package pdftex.def Info: Figs/NowergupPost-1.pdf  used on input line 2341.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[70
-
-
-
-
-] [71pdfTeX warning (ext4): destination with the same identifier (name{figure.4
-5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2460 \newpage
-                <./Figs/NowergupOrd-1.pdf>] [72pdfTeX warning (ext4): destinati
-on with the same identifier (name{figure.46}) has been already used, duplicate 
-ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2460 \newpage
-                <./Figs/NowergupPost-1.pdf>]
-<Figs/PipidinnyWaterPlot-1.pdf, id=1267, 469.755pt x 325.215pt>
-File: Figs/PipidinnyWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/PipidinnyWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/PipidinnyWaterPlot-1.pdf  used on input line 2508
-.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[73pdfTeX warning (ext4): destination with the same identifier (name{table.24})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2575 \newpage
-               ] [74pdfTeX warning (ext4): destination with the same identifier
- (name{figure.47}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2575 \newpage
-                <./Figs/PipidinnyWaterPlot-1.pdf>]
-<Figs/PM9WaterPlot-1.pdf, id=1293, 469.755pt x 325.215pt>
-File: Figs/PM9WaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/PM9WaterPlot-1.pdf>
-Package pdftex.def Info: Figs/PM9WaterPlot-1.pdf  used on input line 2632.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[75pdfTeX warning (ext4): destination with the same identifier (name{table.26})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2638 \newpage
-               ] [76pdfTeX warning (ext4): destination with the same identifier
- (name{figure.48}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2638 \newpage
-                <./Figs/PM9WaterPlot-1.pdf>]
-
-LaTeX Warning: Reference `tab:QuinBrookWaterPlot' on page 77 undefined on input
- line 2663.
-
-<Figs/QuinBrookWaterPlot-1.pdf, id=1320, 469.755pt x 325.215pt>
-File: Figs/QuinBrookWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/QuinBrookWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/QuinBrookWaterPlot-1.pdf  used on input line 2708
-.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[77pdfTeX warning (ext4): destination with the same identifier (name{table.27})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2715 \newpage
-               ] [78pdfTeX warning (ext4): destination with the same identifier
- (name{figure.49}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2715 \newpage
-                <./Figs/QuinBrookWaterPlot-1.pdf>]
-<Figs/QuinStrat-1.pdf, id=1346, 722.7pt x 325.215pt>
-File: Figs/QuinStrat-1.pdf Graphic file (type pdf)
-<use Figs/QuinStrat-1.pdf>
-Package pdftex.def Info: Figs/QuinStrat-1.pdf  used on input line 2721.
-(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[79pdfTeX warning (ext4): destination with the same identifier (name{figure.50}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2727 \end{landscape}
-                       <./Figs/QuinStrat-1.pdf>]
-<Figs/QuinOrd-1.pdf, id=1357, 469.755pt x 325.215pt>
-File: Figs/QuinOrd-1.pdf Graphic file (type pdf)
-<use Figs/QuinOrd-1.pdf>
-Package pdftex.def Info: Figs/QuinOrd-1.pdf  used on input line 2733.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/QuinPost-1.pdf, id=1358, 469.755pt x 325.215pt>
-File: Figs/QuinPost-1.pdf Graphic file (type pdf)
-<use Figs/QuinPost-1.pdf>
-Package pdftex.def Info: Figs/QuinPost-1.pdf  used on input line 2742.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/WilgarupWaterPlot-1.pdf, id=1364, 469.755pt x 325.215pt>
-File: Figs/WilgarupWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/WilgarupWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/WilgarupWaterPlot-1.pdf  used on input line 2819.
-
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[80pdfTeX warning (ext4): destination with the same identifier (name{table.28})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2826 \newpage
-               
-
-
-] [81pdfTeX warning (ext4): destination with the same identifier (name{figure.5
-1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2826 \newpage
-                <./Figs/QuinOrd-1.pdf>] [82pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.52}) has been already used, duplicate igno
-red
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2826 \newpage
-                <./Figs/QuinPost-1.pdf>] [83pdfTeX warning (ext4): destination 
-with the same identifier (name{figure.53}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2826 \newpage
-                <./Figs/WilgarupWaterPlot-1.pdf>]
-<Figs/WilgarupStrat-1.pdf, id=1408, 722.7pt x 325.215pt>
-File: Figs/WilgarupStrat-1.pdf Graphic file (type pdf)
-<use Figs/WilgarupStrat-1.pdf>
-Package pdftex.def Info: Figs/WilgarupStrat-1.pdf  used on input line 2832.
-(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[84pdfTeX warning (ext4): destination with the same identifier (name{figure.54}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2839 \end{landscape}
-                       <./Figs/WilgarupStrat-1.pdf>]
-<Figs/WilgarupOrd-1.pdf, id=1418, 469.755pt x 325.215pt>
-File: Figs/WilgarupOrd-1.pdf Graphic file (type pdf)
-<use Figs/WilgarupOrd-1.pdf>
-Package pdftex.def Info: Figs/WilgarupOrd-1.pdf  used on input line 2845.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/WilgarupPost-1.pdf, id=1419, 469.755pt x 325.215pt>
-File: Figs/WilgarupPost-1.pdf Graphic file (type pdf)
-<use Figs/WilgarupPost-1.pdf>
-Package pdftex.def Info: Figs/WilgarupPost-1.pdf  used on input line 2854.
+<Figs/YonderupPost-1.pdf, id=715, 469.755pt x 325.215pt>
+File: Figs/YonderupPost-1.pdf Graphic file (type pdf)
+<use Figs/YonderupPost-1.pdf>
+Package pdftex.def Info: Figs/YonderupPost-1.pdf  used on input line 811.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 
-Overfull \hbox (98.63426pt too wide) in alignment at lines 2864--2872
+Overfull \hbox (74.49538pt too wide) in alignment at lines 821--829
  [] [] [] 
  []
 
 
-Overfull \hbox (98.63426pt too wide) in alignment at lines 2872--2877
+Overfull \hbox (74.49538pt too wide) in alignment at lines 829--834
  [] [] [] 
  []
 
 
-Overfull \hbox (98.63426pt too wide) in alignment at lines 2877--2889
+Overfull \hbox (74.49538pt too wide) in alignment at lines 834--847
  [] [] [] 
  []
 
-[85
+[26
 
 
-] [86pdfTeX warning (ext4): destination with the same identifier (name{figure.5
-5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2891 \newpage
-                <./Figs/WilgarupOrd-1.pdf>] [87pdfTeX warning (ext4): destinati
-on with the same identifier (name{figure.56}) has been already used, duplicate 
-ignored
+] [27pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2891 \newpage
-                <./Figs/WilgarupPost-1.pdf>]
-<Figs/WM1WaterPlot-1.pdf, id=1447, 469.755pt x 325.215pt>
-File: Figs/WM1WaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/WM1WaterPlot-1.pdf>
-Package pdftex.def Info: Figs/WM1WaterPlot-1.pdf  used on input line 2947.
+l.907 A
+       ll plots in both transects have displayed similar trends in community <.
+/Figs/YonderupOrd-1.pdf>] [28pdfTeX warning (ext4): destination with the same i
+dentifier (name{figure.15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.907 A
+       ll plots in both transects have displayed similar trends in community <.
+/Figs/YonderupPost-1.pdf>]
+<Figs/JoondalupWaterPlot-1.pdf, id=753, 469.755pt x 325.215pt>
+File: Figs/JoondalupWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/JoondalupWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/JoondalupWaterPlot-1.pdf  used on input line 925.
+
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[88pdfTeX warning (ext4): destination with the same identifier (name{table.30})
- has been already used, duplicate ignored
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3024 \newpage
-               ] [89pdfTeX warning (ext4): destination with the same identifier
- (name{figure.57}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3024 \newpage
-                <./Figs/WM1WaterPlot-1.pdf>]
-<Figs/WM2WaterPlot-1.pdf, id=1473, 469.755pt x 325.215pt>
-File: Figs/WM2WaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/WM2WaterPlot-1.pdf>
-Package pdftex.def Info: Figs/WM2WaterPlot-1.pdf  used on input line 3075.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[90pdfTeX warning (ext4): destination with the same identifier (name{table.32})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3152 \newpage
-               ] [91pdfTeX warning (ext4): destination with the same identifier
- (name{figure.58}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3152 \newpage
-                <./Figs/WM2WaterPlot-1.pdf>]
-<Figs/WM8WaterPlot-1.pdf, id=1500, 469.755pt x 325.215pt>
-File: Figs/WM8WaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/WM8WaterPlot-1.pdf>
-Package pdftex.def Info: Figs/WM8WaterPlot-1.pdf  used on input line 3194.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[92pdfTeX warning (ext4): destination with the same identifier (name{table.34})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3271 \newpage
-               ] [93pdfTeX warning (ext4): destination with the same identifier
- (name{figure.59}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3271 \newpage
-                <./Figs/WM8WaterPlot-1.pdf>]
-<Figs/YoderupWaterPlot-1.pdf, id=1528, 469.755pt x 325.215pt>
-File: Figs/YoderupWaterPlot-1.pdf Graphic file (type pdf)
-<use Figs/YoderupWaterPlot-1.pdf>
-Package pdftex.def Info: Figs/YoderupWaterPlot-1.pdf  used on input line 3360.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[94] [95pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.60}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3368 \newpage
-                <./Figs/YoderupWaterPlot-1.pdf>] [96pdfTeX warning (ext4): dest
-ination with the same identifier (name{table.36}) has been already used, duplic
+l.949 \newpage
+               <./Figs/JoondalupWaterPlot-1.pdf>] [30pdfTeX warning (ext4): des
+tination with the same identifier (name{table.7}) has been already used, duplic
 ate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3370 \begin{landscape}
-                        ]
-<Figs/YonderupStrat-1.pdf, id=1559, 722.7pt x 325.215pt>
-File: Figs/YonderupStrat-1.pdf Graphic file (type pdf)
-<use Figs/YonderupStrat-1.pdf>
-Package pdftex.def Info: Figs/YonderupStrat-1.pdf  used on input line 3374.
+l.951 \begin{landscape}
+                       ]
+<Figs/JoondalupNthStrat-1.pdf, id=773, 722.7pt x 325.215pt>
+File: Figs/JoondalupNthStrat-1.pdf Graphic file (type pdf)
+<use Figs/JoondalupNthStrat-1.pdf>
+Package pdftex.def Info: Figs/JoondalupNthStrat-1.pdf  used on input line 955.
 (pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
-[97pdfTeX warning (ext4): destination with the same identifier (name{figure.61}
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.17}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3381 \end{landscape}
-                       <./Figs/YonderupStrat-1.pdf>]
-<Figs/YonderupOrd-1.pdf, id=1570, 469.755pt x 325.215pt>
-File: Figs/YonderupOrd-1.pdf Graphic file (type pdf)
-<use Figs/YonderupOrd-1.pdf>
-Package pdftex.def Info: Figs/YonderupOrd-1.pdf  used on input line 3387.
+l.962 \end{landscape}
+                      <./Figs/JoondalupNthStrat-1.pdf>]
+<Figs/JoondalupSthStrat-1.pdf, id=784, 722.7pt x 325.215pt>
+File: Figs/JoondalupSthStrat-1.pdf Graphic file (type pdf)
+<use Figs/JoondalupSthStrat-1.pdf>
+Package pdftex.def Info: Figs/JoondalupSthStrat-1.pdf  used on input line 972.
+(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.18}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.979 \end{landscape}
+                      <./Figs/JoondalupSthStrat-1.pdf>]
+<Figs/JoondalupOrd-1.pdf, id=794, 469.755pt x 325.215pt>
+File: Figs/JoondalupOrd-1.pdf Graphic file (type pdf)
+<use Figs/JoondalupOrd-1.pdf>
+Package pdftex.def Info: Figs/JoondalupOrd-1.pdf  used on input line 985.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/YonderupPost-1.pdf, id=1571, 469.755pt x 325.215pt>
-File: Figs/YonderupPost-1.pdf Graphic file (type pdf)
-<use Figs/YonderupPost-1.pdf>
-Package pdftex.def Info: Figs/YonderupPost-1.pdf  used on input line 3396.
+<Figs/JoondalupPost-1.pdf, id=795, 469.755pt x 325.215pt>
+File: Figs/JoondalupPost-1.pdf Graphic file (type pdf)
+<use Figs/JoondalupPost-1.pdf>
+Package pdftex.def Info: Figs/JoondalupPost-1.pdf  used on input line 995.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[33
+
+
+
+
+] [34] [35pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.19}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1157 \newpage
+                <./Figs/JoondalupOrd-1.pdf>] [36pdfTeX warning (ext4): destinat
+ion with the same identifier (name{figure.20}) has been already used, duplicate
+ ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1157 \newpage
+                <./Figs/JoondalupPost-1.pdf>]
+
+LaTeX Warning: Reference `tab:MariginiupWater' on page 37 undefined on input li
+ne 1181.
+
+<Figs/MariginiupWaterPlot-1.pdf, id=828, 469.755pt x 325.215pt>
+File: Figs/MariginiupWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/MariginiupWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/MariginiupWaterPlot-1.pdf  used on input line 123
+5.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[37pdfTeX warning (ext4): destination with the same identifier (name{table.9}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1241 \newpage
+               ] [38pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.21}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1241 \newpage
+                <./Figs/MariginiupWaterPlot-1.pdf>]
+<Figs/MariginiupStrat-1.pdf, id=857, 722.7pt x 325.215pt>
+File: Figs/MariginiupStrat-1.pdf Graphic file (type pdf)
+<use Figs/MariginiupStrat-1.pdf>
+Package pdftex.def Info: Figs/MariginiupStrat-1.pdf  used on input line 1247.
+(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
+[39pdfTeX warning (ext4): destination with the same identifier (name{figure.22}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1254 \end{landscape}
+                       <./Figs/MariginiupStrat-1.pdf>]
+<Figs/MariginiupOrd-1.pdf, id=867, 469.755pt x 325.215pt>
+File: Figs/MariginiupOrd-1.pdf Graphic file (type pdf)
+<use Figs/MariginiupOrd-1.pdf>
+Package pdftex.def Info: Figs/MariginiupOrd-1.pdf  used on input line 1260.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/MariginiupPost-1.pdf, id=868, 469.755pt x 325.215pt>
+File: Figs/MariginiupPost-1.pdf Graphic file (type pdf)
+<use Figs/MariginiupPost-1.pdf>
+Package pdftex.def Info: Figs/MariginiupPost-1.pdf  used on input line 1269.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 
-Overfull \hbox (74.49538pt too wide) in alignment at lines 3406--3414
+Overfull \hbox (126.49576pt too wide) in alignment at lines 1281--1289
  [] [] [] 
  []
 
 
-Overfull \hbox (74.49538pt too wide) in alignment at lines 3414--3419
+Overfull \hbox (126.49576pt too wide) in alignment at lines 1289--1294
  [] [] [] 
  []
 
 
-Overfull \hbox (74.49538pt too wide) in alignment at lines 3419--3432
+Overfull \hbox (126.49576pt too wide) in alignment at lines 1294--1309
  [] [] [] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3457.
-[98
+[40
 
 
-] [99pdfTeX warning (ext4): destination with the same identifier (name{figure.6
+] [41pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1311 \newpage
+                <./Figs/MariginiupOrd-1.pdf>] [42pdfTeX warning (ext4): destina
+tion with the same identifier (name{figure.24}) has been already used, duplicat
+e ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1311 \newpage
+                <./Figs/MariginiupPost-1.pdf>]
+<Figs/JandabupWaterPlot-1.pdf, id=898, 469.755pt x 325.215pt>
+File: Figs/JandabupWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/JandabupWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/JandabupWaterPlot-1.pdf  used on input line 1388.
+
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[43pdfTeX warning (ext4): destination with the same identifier (name{table.11})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1396 \newpage
+               ] [44pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.25}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1396 \newpage
+                <./Figs/JandabupWaterPlot-1.pdf>]
+<Figs/JandabupStrat-1.pdf, id=927, 722.7pt x 325.215pt>
+File: Figs/JandabupStrat-1.pdf Graphic file (type pdf)
+<use Figs/JandabupStrat-1.pdf>
+Package pdftex.def Info: Figs/JandabupStrat-1.pdf  used on input line 1402.
+(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
+[45pdfTeX warning (ext4): destination with the same identifier (name{figure.26}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1409 \end{landscape}
+                       <./Figs/JandabupStrat-1.pdf>]
+<Figs/JandabupOrd-1.pdf, id=937, 469.755pt x 325.215pt>
+File: Figs/JandabupOrd-1.pdf Graphic file (type pdf)
+<use Figs/JandabupOrd-1.pdf>
+Package pdftex.def Info: Figs/JandabupOrd-1.pdf  used on input line 1415.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/JandabupPost-1.pdf, id=938, 469.755pt x 325.215pt>
+File: Figs/JandabupPost-1.pdf Graphic file (type pdf)
+<use Figs/JandabupPost-1.pdf>
+Package pdftex.def Info: Figs/JandabupPost-1.pdf  used on input line 1424.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[46
+
+
+] [47pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1535 \newpage
+                <./Figs/JandabupOrd-1.pdf>] [48pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.28}) has been already used, duplicate 
+ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1535 \newpage
+                <./Figs/JandabupPost-1.pdf>]
+<Figs/NowergupWaterPlot-1.pdf, id=964, 469.755pt x 325.215pt>
+File: Figs/NowergupWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/NowergupWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/NowergupWaterPlot-1.pdf  used on input line 1605.
+
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[49pdfTeX warning (ext4): destination with the same identifier (name{table.13})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1616 \newpage
+               ] [50pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.29}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1616 \newpage
+                <./Figs/NowergupWaterPlot-1.pdf>]
+<Figs/NowergupNthStrat-1.pdf, id=991, 722.7pt x 325.215pt>
+File: Figs/NowergupNthStrat-1.pdf Graphic file (type pdf)
+<use Figs/NowergupNthStrat-1.pdf>
+Package pdftex.def Info: Figs/NowergupNthStrat-1.pdf  used on input line 1622.
+(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
+[51pdfTeX warning (ext4): destination with the same identifier (name{figure.30}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1629 \end{landscape}
+                       <./Figs/NowergupNthStrat-1.pdf>]
+<Figs/NowergupSthStrat-1.pdf, id=1002, 722.7pt x 325.215pt>
+File: Figs/NowergupSthStrat-1.pdf Graphic file (type pdf)
+<use Figs/NowergupSthStrat-1.pdf>
+Package pdftex.def Info: Figs/NowergupSthStrat-1.pdf  used on input line 1639.
+(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
+[52pdfTeX warning (ext4): destination with the same identifier (name{figure.31}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1646 \end{landscape}
+                       <./Figs/NowergupSthStrat-1.pdf>]
+<Figs/NowergupOrd-1.pdf, id=1013, 469.755pt x 325.215pt>
+File: Figs/NowergupOrd-1.pdf Graphic file (type pdf)
+<use Figs/NowergupOrd-1.pdf>
+Package pdftex.def Info: Figs/NowergupOrd-1.pdf  used on input line 1652.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/NowergupPost-1.pdf, id=1014, 469.755pt x 325.215pt>
+File: Figs/NowergupPost-1.pdf Graphic file (type pdf)
+<use Figs/NowergupPost-1.pdf>
+Package pdftex.def Info: Figs/NowergupPost-1.pdf  used on input line 1662.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[53
+
+
+
+
+] [54pdfTeX warning (ext4): destination with the same identifier (name{figure.3
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3457 \end{document}
-                      <./Figs/YonderupOrd-1.pdf>] [100pdfTeX warning (ext4): de
-stination with the same identifier (name{figure.63}) has been already used, dup
-licate ignored
+l.1781 \newpage
+                <./Figs/NowergupOrd-1.pdf>] [55pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.33}) has been already used, duplicate 
+ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3457 \end{document}
-                      <./Figs/YonderupPost-1.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3457.
+l.1781 \newpage
+                <./Figs/NowergupPost-1.pdf>]
+<Figs/WilgarupWaterPlot-1.pdf, id=1046, 469.755pt x 325.215pt>
+File: Figs/WilgarupWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/WilgarupWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/WilgarupWaterPlot-1.pdf  used on input line 1846.
+
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[56pdfTeX warning (ext4): destination with the same identifier (name{table.15})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1853 \newpage
+               ] [57pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.34}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1853 \newpage
+                <./Figs/WilgarupWaterPlot-1.pdf>]
+<Figs/WilgarupStrat-1.pdf, id=1072, 722.7pt x 325.215pt>
+File: Figs/WilgarupStrat-1.pdf Graphic file (type pdf)
+<use Figs/WilgarupStrat-1.pdf>
+Package pdftex.def Info: Figs/WilgarupStrat-1.pdf  used on input line 1859.
+(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
+[58pdfTeX warning (ext4): destination with the same identifier (name{figure.35}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1866 \end{landscape}
+                       <./Figs/WilgarupStrat-1.pdf>]
+<Figs/WilgarupOrd-1.pdf, id=1082, 469.755pt x 325.215pt>
+File: Figs/WilgarupOrd-1.pdf Graphic file (type pdf)
+<use Figs/WilgarupOrd-1.pdf>
+Package pdftex.def Info: Figs/WilgarupOrd-1.pdf  used on input line 1872.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/WilgarupPost-1.pdf, id=1083, 469.755pt x 325.215pt>
+File: Figs/WilgarupPost-1.pdf Graphic file (type pdf)
+<use Figs/WilgarupPost-1.pdf>
+Package pdftex.def Info: Figs/WilgarupPost-1.pdf  used on input line 1881.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+
+Overfull \hbox (98.63426pt too wide) in alignment at lines 1891--1899
+ [] [] [] 
+ []
+
+
+Overfull \hbox (98.63426pt too wide) in alignment at lines 1899--1904
+ [] [] [] 
+ []
+
+
+Overfull \hbox (98.63426pt too wide) in alignment at lines 1904--1916
+ [] [] [] 
+ []
+
+[59
+
+
+] [60pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1918 \newpage
+                <./Figs/WilgarupOrd-1.pdf>] [61pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.37}) has been already used, duplicate 
+ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1918 \newpage
+                <./Figs/WilgarupPost-1.pdf>]
+<Figs/PipidinnyWaterPlot-1.pdf, id=1112, 469.755pt x 325.215pt>
+File: Figs/PipidinnyWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/PipidinnyWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/PipidinnyWaterPlot-1.pdf  used on input line 1966
+.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[62pdfTeX warning (ext4): destination with the same identifier (name{table.17})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2033 \newpage
+               ] [63pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.38}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2033 \newpage
+                <./Figs/PipidinnyWaterPlot-1.pdf>]
+<Figs/Lexia186WaterPlot-1.pdf, id=1140, 469.755pt x 325.215pt>
+File: Figs/Lexia186WaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/Lexia186WaterPlot-1.pdf>
+Package pdftex.def Info: Figs/Lexia186WaterPlot-1.pdf  used on input line 2102.
+
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[64pdfTeX warning (ext4): destination with the same identifier (name{table.19})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2110 \newpage
+               ] [65pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.39}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2110 \newpage
+                <./Figs/Lexia186WaterPlot-1.pdf>]
+<Figs/Lexia186Strat-1.pdf, id=1167, 722.7pt x 325.215pt>
+File: Figs/Lexia186Strat-1.pdf Graphic file (type pdf)
+<use Figs/Lexia186Strat-1.pdf>
+Package pdftex.def Info: Figs/Lexia186Strat-1.pdf  used on input line 2116.
+(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
+[66pdfTeX warning (ext4): destination with the same identifier (name{figure.40}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2122 \end{landscape}
+                       <./Figs/Lexia186Strat-1.pdf>]
+<Figs/Lexia186Ord-1.pdf, id=1177, 469.755pt x 325.215pt>
+File: Figs/Lexia186Ord-1.pdf Graphic file (type pdf)
+<use Figs/Lexia186Ord-1.pdf>
+Package pdftex.def Info: Figs/Lexia186Ord-1.pdf  used on input line 2128.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/Lexia186Post-1.pdf, id=1178, 469.755pt x 325.215pt>
+File: Figs/Lexia186Post-1.pdf Graphic file (type pdf)
+<use Figs/Lexia186Post-1.pdf>
+Package pdftex.def Info: Figs/Lexia186Post-1.pdf  used on input line 2137.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+
+Overfull \hbox (70.32866pt too wide) in alignment at lines 2147--2155
+ [] [] [] 
+ []
+
+
+Overfull \hbox (70.32866pt too wide) in alignment at lines 2155--2160
+ [] [] [] 
+ []
+
+
+Overfull \hbox (70.32866pt too wide) in alignment at lines 2160--2172
+ [] [] [] 
+ []
+
+[67
+
+
+] [68pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2174 \newpage
+                <./Figs/Lexia186Ord-1.pdf>] [69pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.42}) has been already used, duplicate 
+ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2174 \newpage
+                <./Figs/Lexia186Post-1.pdf>]
+<Figs/EMP173WaterPlot-1.pdf, id=1208, 469.755pt x 325.215pt>
+File: Figs/EMP173WaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/EMP173WaterPlot-1.pdf>
+Package pdftex.def Info: Figs/EMP173WaterPlot-1.pdf  used on input line 2253.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[70] [71pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.43}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2280 \newpage
+                <./Figs/EMP173WaterPlot-1.pdf>] [72pdfTeX warning (ext4): desti
+nation with the same identifier (name{table.21}) has been already used, duplica
+te ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2282 \begin{landscape}
+                        ]
+<Figs/EMP173Strat-1.pdf, id=1241, 722.7pt x 325.215pt>
+File: Figs/EMP173Strat-1.pdf Graphic file (type pdf)
+<use Figs/EMP173Strat-1.pdf>
+Package pdftex.def Info: Figs/EMP173Strat-1.pdf  used on input line 2286.
+(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
+[73pdfTeX warning (ext4): destination with the same identifier (name{figure.44}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2293 \end{landscape}
+                       <./Figs/EMP173Strat-1.pdf>]
+<Figs/EMP173Ord-1.pdf, id=1252, 469.755pt x 325.215pt>
+File: Figs/EMP173Ord-1.pdf Graphic file (type pdf)
+<use Figs/EMP173Ord-1.pdf>
+Package pdftex.def Info: Figs/EMP173Ord-1.pdf  used on input line 2299.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/EMP173Post-1.pdf, id=1253, 469.755pt x 325.215pt>
+File: Figs/EMP173Post-1.pdf Graphic file (type pdf)
+<use Figs/EMP173Post-1.pdf>
+Package pdftex.def Info: Figs/EMP173Post-1.pdf  used on input line 2308.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[74
+
+
+] [75pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2411 \newpage
+                <./Figs/EMP173Ord-1.pdf>] [76pdfTeX warning (ext4): destination
+ with the same identifier (name{figure.46}) has been already used, duplicate ig
+nored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2411 \newpage
+                <./Figs/EMP173Post-1.pdf>]
+<Figs/EMP78WaterPlot-1.pdf, id=1282, 469.755pt x 325.215pt>
+File: Figs/EMP78WaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/EMP78WaterPlot-1.pdf>
+Package pdftex.def Info: Figs/EMP78WaterPlot-1.pdf  used on input line 2486.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[77pdfTeX warning (ext4): destination with the same identifier (name{table.23})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2511 \newpage
+               ] [78pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.47}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2511 \newpage
+                <./Figs/EMP78WaterPlot-1.pdf>]
+<Figs/EMP78Strat-1.pdf, id=1310, 722.7pt x 325.215pt>
+File: Figs/EMP78Strat-1.pdf Graphic file (type pdf)
+<use Figs/EMP78Strat-1.pdf>
+Package pdftex.def Info: Figs/EMP78Strat-1.pdf  used on input line 2517.
+(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
+[79pdfTeX warning (ext4): destination with the same identifier (name{figure.48}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2523 \end{landscape}
+                       <./Figs/EMP78Strat-1.pdf>]
+<Figs/EMP78Ord-1.pdf, id=1321, 469.755pt x 325.215pt>
+File: Figs/EMP78Ord-1.pdf Graphic file (type pdf)
+<use Figs/EMP78Ord-1.pdf>
+Package pdftex.def Info: Figs/EMP78Ord-1.pdf  used on input line 2529.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/EMP78Post-1.pdf, id=1322, 469.755pt x 325.215pt>
+File: Figs/EMP78Post-1.pdf Graphic file (type pdf)
+<use Figs/EMP78Post-1.pdf>
+Package pdftex.def Info: Figs/EMP78Post-1.pdf  used on input line 2538.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+
+Overfull \hbox (84.41269pt too wide) in alignment at lines 2548--2556
+ [] [] [] 
+ []
+
+
+Overfull \hbox (84.41269pt too wide) in alignment at lines 2556--2561
+ [] [] [] 
+ []
+
+
+Overfull \hbox (84.41269pt too wide) in alignment at lines 2561--2570
+ [] [] [] 
+ []
+
+[80
+
+
+] [81pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2572 \newpage
+                <./Figs/EMP78Ord-1.pdf>] [82pdfTeX warning (ext4): destination 
+with the same identifier (name{figure.50}) has been already used, duplicate ign
+ored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2572 \newpage
+                <./Figs/EMP78Post-1.pdf>]
+<Figs/MM59BWaterPlot-1.pdf, id=1349, 469.755pt x 325.215pt>
+File: Figs/MM59BWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/MM59BWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/MM59BWaterPlot-1.pdf  used on input line 2613.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[83pdfTeX warning (ext4): destination with the same identifier (name{table.25})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2683 \newpage
+               ] [84pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.51}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2683 \newpage
+                <./Figs/MM59BWaterPlot-1.pdf>]
+<Figs/PM9WaterPlot-1.pdf, id=1374, 469.755pt x 325.215pt>
+File: Figs/PM9WaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/PM9WaterPlot-1.pdf>
+Package pdftex.def Info: Figs/PM9WaterPlot-1.pdf  used on input line 2740.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[85pdfTeX warning (ext4): destination with the same identifier (name{table.27})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2746 \newpage
+               ] [86pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.52}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2746 \newpage
+                <./Figs/PM9WaterPlot-1.pdf>]
+<Figs/WM1WaterPlot-1.pdf, id=1399, 469.755pt x 325.215pt>
+File: Figs/WM1WaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/WM1WaterPlot-1.pdf>
+Package pdftex.def Info: Figs/WM1WaterPlot-1.pdf  used on input line 2802.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[87pdfTeX warning (ext4): destination with the same identifier (name{table.28})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2879 \newpage
+               ] [88pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.53}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2879 \newpage
+                <./Figs/WM1WaterPlot-1.pdf>]
+<Figs/WM2WaterPlot-1.pdf, id=1425, 469.755pt x 325.215pt>
+File: Figs/WM2WaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/WM2WaterPlot-1.pdf>
+Package pdftex.def Info: Figs/WM2WaterPlot-1.pdf  used on input line 2930.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[89pdfTeX warning (ext4): destination with the same identifier (name{table.30})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3007 \newpage
+               ] [90pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.54}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3007 \newpage
+                <./Figs/WM2WaterPlot-1.pdf>]
+<Figs/WM8WaterPlot-1.pdf, id=1452, 469.755pt x 325.215pt>
+File: Figs/WM8WaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/WM8WaterPlot-1.pdf>
+Package pdftex.def Info: Figs/WM8WaterPlot-1.pdf  used on input line 3049.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[91pdfTeX warning (ext4): destination with the same identifier (name{table.32})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3126 \newpage
+               ] [92pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.55}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3126 \newpage
+                <./Figs/WM8WaterPlot-1.pdf>]
+
+LaTeX Warning: Reference `fig:GwelupPost' on page 93 undefined on input line 31
+65.
+
+<Figs/GwelupWaterPlot-1.pdf, id=1480, 469.755pt x 325.215pt>
+File: Figs/GwelupWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/GwelupWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/GwelupWaterPlot-1.pdf  used on input line 3173.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[93pdfTeX warning (ext4): destination with the same identifier (name{table.34})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3201 \newpage
+               ] [94pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.56}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3201 \newpage
+                <./Figs/GwelupWaterPlot-1.pdf>]
+<Figs/GwelupStrat-1.pdf, id=1506, 722.7pt x 325.215pt>
+File: Figs/GwelupStrat-1.pdf Graphic file (type pdf)
+<use Figs/GwelupStrat-1.pdf>
+Package pdftex.def Info: Figs/GwelupStrat-1.pdf  used on input line 3207.
+(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
+[95pdfTeX warning (ext4): destination with the same identifier (name{figure.57}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3213 \end{landscape}
+                       <./Figs/GwelupStrat-1.pdf>]
+<Figs/GwelupOrd-1.pdf, id=1516, 469.755pt x 325.215pt>
+File: Figs/GwelupOrd-1.pdf Graphic file (type pdf)
+<use Figs/GwelupOrd-1.pdf>
+Package pdftex.def Info: Figs/GwelupOrd-1.pdf  used on input line 3219.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/Gwelup_post-1.pdf, id=1517, 469.755pt x 325.215pt>
+File: Figs/Gwelup_post-1.pdf Graphic file (type pdf)
+<use Figs/Gwelup_post-1.pdf>
+Package pdftex.def Info: Figs/Gwelup_post-1.pdf  used on input line 3228.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[96
+
+
+] [97pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3280 \newpage
+                <./Figs/GwelupOrd-1.pdf>] [98pdfTeX warning (ext4): destination
+ with the same identifier (name{figure.59}) has been already used, duplicate ig
+nored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3280 \newpage
+                <./Figs/Gwelup_post-1.pdf>]
+
+LaTeX Warning: Reference `tab:QuinBrookWaterPlot' on page 99 undefined on input
+ line 3305.
+
+<Figs/QuinBrookWaterPlot-1.pdf, id=1547, 469.755pt x 325.215pt>
+File: Figs/QuinBrookWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/QuinBrookWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/QuinBrookWaterPlot-1.pdf  used on input line 3350
+.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[99pdfTeX warning (ext4): destination with the same identifier (name{table.36})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3357 \newpage
+               ] [100pdfTeX warning (ext4): destination with the same identifie
+r (name{figure.60}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3357 \newpage
+                <./Figs/QuinBrookWaterPlot-1.pdf>]
+<Figs/QuinStrat-1.pdf, id=1574, 722.7pt x 325.215pt>
+File: Figs/QuinStrat-1.pdf Graphic file (type pdf)
+<use Figs/QuinStrat-1.pdf>
+Package pdftex.def Info: Figs/QuinStrat-1.pdf  used on input line 3363.
+(pdftex.def)             Requested size: 650.43501pt x 292.69576pt.
+[101pdfTeX warning (ext4): destination with the same identifier (name{figure.61
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3369 \end{landscape}
+                       <./Figs/QuinStrat-1.pdf>]
+<Figs/QuinOrd-1.pdf, id=1584, 469.755pt x 325.215pt>
+File: Figs/QuinOrd-1.pdf Graphic file (type pdf)
+<use Figs/QuinOrd-1.pdf>
+Package pdftex.def Info: Figs/QuinOrd-1.pdf  used on input line 3375.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/QuinPost-1.pdf, id=1585, 469.755pt x 325.215pt>
+File: Figs/QuinPost-1.pdf Graphic file (type pdf)
+<use Figs/QuinPost-1.pdf>
+Package pdftex.def Info: Figs/QuinPost-1.pdf  used on input line 3384.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Figs/GinginWaterPlot-1.pdf, id=1588, 469.755pt x 325.215pt>
+File: Figs/GinginWaterPlot-1.pdf Graphic file (type pdf)
+<use Figs/GinginWaterPlot-1.pdf>
+Package pdftex.def Info: Figs/GinginWaterPlot-1.pdf  used on input line 3418.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[102pdfTeX warning (ext4): destination with the same identifier (name{table.37}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3443 \newpage
+               
+
+
+] [103pdfTeX warning (ext4): destination with the same identifier (name{figure.
+62}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3443 \newpage
+                <./Figs/QuinOrd-1.pdf>] [104pdfTeX warning (ext4): destination 
+with the same identifier (name{figure.63}) has been already used, duplicate ign
+ored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3443 \newpage
+                <./Figs/QuinPost-1.pdf>] [105pdfTeX warning (ext4): destination
+ with the same identifier (name{figure.64}) has been already used, duplicate ig
+nored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3443 \newpage
+                <./Figs/GinginWaterPlot-1.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3471.
+[106]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3471.
 (./Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3457.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3457.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3471.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3471.
 
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 53FFA35ADD0D51EE009D4D6D10BD18B3;12640.
+(rerunfilecheck)             Checksum: 2323DAF3A58D121B63E187B15FE33E70;12736.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3457.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3471.
  ) 
 Here is how much of TeX's memory you used:
- 12929 strings out of 494553
- 187299 string characters out of 6177720
- 285937 words of memory out of 5000000
- 16027 multiletter control sequences out of 15000+600000
+ 12945 strings out of 494553
+ 187559 string characters out of 6177720
+ 286044 words of memory out of 5000000
+ 16034 multiletter control sequences out of 15000+600000
  46283 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  28i,18n,35p,718b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1800,10 +1814,10 @@ footbushman/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/barefoot
 bushman/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></home/barefootbush
 man/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></home/barefootbushman
 /.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on Report.pdf (100 pages, 1475228 bytes).
+Output written on Report.pdf (106 pages, 1485180 bytes).
 PDF statistics:
- 1707 PDF objects out of 1728 (max. 8388607)
- 1458 compressed objects within 15 object streams
- 376 named destinations out of 1000 (max. 500000)
- 1012 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1748 PDF objects out of 2073 (max. 8388607)
+ 1491 compressed objects within 15 object streams
+ 385 named destinations out of 1000 (max. 500000)
+ 1025 words of extra memory for PDF output out of 10000 (max. 10000000)
 
