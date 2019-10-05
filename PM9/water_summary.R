@@ -60,4 +60,33 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "PM9/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="PM9/water_level.RData")
+
+PM9.AHD <- list(AHD$'61610804')
+PM9.AHD[[1]]$group <- "ground"
+PM9.AHD <- rbind(PM9.AHD[[1]])
+
+PM9.params <- list(AHD.params$'61610804')
+PM9.params[[1]]$group <- "ground"
+PM9.params <- rbind(PM9.params[[1]])
+
+pm9.p <- ggplot(PM9.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  geom_line(aes(colour=group)) +
+  geom_point(PM9.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
+  geom_ribbon(PM9.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                           group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(PM9.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(PM9.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(PM9.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(56.3), linetype= c("dotted")) +
+  annotate("text", x = as.Date("2015-01-01"), y = 56.3, vjust=+1.5, label = "Current") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
+save(sw, sw.l, sw.sum, pm9.p, file="PM9/water_level.RData")

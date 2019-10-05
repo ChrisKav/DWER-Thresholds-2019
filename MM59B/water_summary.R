@@ -13,7 +13,7 @@ library(lubridate)
 
 load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Refined_data.RData")
 
-wat.obs <- data.ls$'61610661'
+wat.obs <- data.ls$'61611025'
 
 # Water level summary
 
@@ -60,4 +60,34 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "MM59B/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="MM59B/water_level.RData")
+
+MM59B.AHD <- list(AHD$'61611025')
+MM59B.AHD[[1]]$group <- "ground"
+MM59B.AHD <- rbind(MM59B.AHD[[1]])
+
+MM59B.params <- list(AHD.params$'61611025')
+MM59B.params[[1]]$group <- "ground"
+MM59B.params <- rbind(MM59B.params[[1]])
+
+mm59b.p <- ggplot(MM59B.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  geom_line(aes(colour=group)) +
+  geom_point(MM59B.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
+  geom_ribbon(MM59B.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                           group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(MM59B.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(MM59B.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(MM59B.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(36.3,36.2), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("1981-01-01"), y = 36.3, vjust=-1.0, label = "Current") + 
+  annotate("text", x = as.Date("1981-01-01"), y = 36.2, vjust=+2, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
+save(sw, sw.l, sw.sum, mm59b.p, file="MM59B/water_level.RData")

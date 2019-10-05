@@ -108,8 +108,8 @@ joon.p <- ggplot(Joondalup.AHD, aes(x=Date, y=AHD)) +
   geom_line(Joondalup.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(15.8, 16.2), linetype= c("dotted", "dashed")) +
-  annotate("text", x = as.Date("2018-01-01"), y = 16.2, vjust=-1, label = "Proposed") +
-  annotate("text", x = as.Date("2018-01-01"), y = 15.8, vjust=-1, label = "Current") + 
+  annotate("text", x = as.Date("1982-01-01"), y = 16.2, vjust=+1.5, label = "Proposed") +
+  annotate("text", x = as.Date("1982-01-01"), y = 15.8, vjust=-1, label = "Current") + 
   theme(axis.line = element_line(colour = "black"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),

@@ -60,5 +60,37 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "EMP_173/5_yr_water_summary.txt", sep=",")
+
+EMP173.AHD <- list(AHD$'61613213', AHD$'6162628')
+EMP173.AHD[[1]]$group <- "ground"
+EMP173.AHD[[2]]$group <- "surface"
+EMP173.AHD <- rbind(EMP173.AHD[[1]], EMP173.AHD[[2]])
+
+EMP173.params <- list(AHD.params$'61613213', AHD.params$'6162628')
+EMP173.params[[1]]$group <- "ground"
+EMP173.params[[2]]$group <- "surface"
+EMP173.params <- rbind(EMP173.params[[1]], EMP173.params[[2]])
 save(sw, sw.l, sw.sum, file="EMP_173/water_level.RData")
 
+emp173.p <- ggplot(EMP173.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  geom_line(aes(colour=group)) +
+  geom_point(EMP173.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
+  geom_ribbon(EMP173.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                           group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(EMP173.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(EMP173.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(EMP173.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(50.2, 48.5), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("2020-01-01"), y = 50.2, vjust=-1.0, label = "Current") + 
+  annotate("text", x = as.Date("2019-01-01"), y = 48.5, vjust=-1.0, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
+save(sw, sw.l, sw.sum, wilg.p, emp173.p, file="EMP_173/water_level.RData")

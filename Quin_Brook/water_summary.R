@@ -59,5 +59,31 @@ colnames(sw.sum) <- c("Period",
                       "Month of minimum",
                       "Mean max to min (days)")
 
+QuinBrook.AHD <- list(AHD$'61710060')
+QuinBrook.AHD[[1]]$group <- "ground"
+QuinBrook.AHD <- rbind(QuinBrook.AHD[[1]])
+
+QuinBrook.params <- list(AHD.params$'61710060')
+QuinBrook.params[[1]]$group <- "ground"
+QuinBrook.params <- rbind(QuinBrook.params[[1]])
+
+quin.p <- ggplot(QuinBrook.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  geom_line(aes(colour=group)) +
+  geom_point(QuinBrook.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
+  geom_ribbon(QuinBrook.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                         group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(QuinBrook.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(QuinBrook.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(QuinBrook.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
 write.table(sw.sum, file = "Quin_Brook/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="Quin_Brook/water_level.RData")
+save(sw, sw.l, sw.sum, quin.p, file="Quin_Brook/water_level.RData")

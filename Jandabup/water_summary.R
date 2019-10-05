@@ -60,5 +60,41 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "Jandabup/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="Jandabup/water_level.RData")
+
+Jandabup.AHD <- list(AHD$'61611850', AHD$'6162578')
+Jandabup.AHD[[1]]$group <- "ground"
+Jandabup.AHD[[2]]$group <- "surface"
+Jandabup.AHD <- rbind(Jandabup.AHD[[1]], Jandabup.AHD[[2]])
+
+Jandabup.params <- list(AHD.params$'61611850', AHD.params$'6162578')
+Jandabup.params[[1]]$group <- "ground"
+Jandabup.params[[2]]$group <- "surface"
+Jandabup.params <- rbind(Jandabup.params[[1]], Jandabup.params[[2]])
+
+Jandabup.AHD <- subset(Jandabup.AHD, group == "surface")
+Jandabup.params <- subset(Jandabup.params, group == "surface")
+
+jand.p <- ggplot(Jandabup.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  geom_line(aes(colour=group), colour="deepskyblue1") +
+  geom_point(Jandabup.AHD, mapping=aes(x=Date, y=AHD, colour=group), colour="deepskyblue1") +
+  geom_ribbon(Jandabup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                            group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(Jandabup.params, mapping=aes(x=Date, y=p3, group=group)) +
+  geom_line(Jandabup.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(Jandabup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(44.2, 44.3), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("2023-01-01"), y = 44.2, vjust=+1.5, label = "Current") + 
+  annotate("text", x = as.Date("2023-01-01"), y = 44.3, vjust=-1, label = "Proposed") +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  xlim(c(as.Date("1980-01-01"), as.Date("2025-01-01")))
+
+save(sw, sw.l, sw.sum, jand.p, file="Jandabup/water_level.RData")
 

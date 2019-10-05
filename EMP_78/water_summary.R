@@ -60,5 +60,35 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "EMP_78/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="EMP_78/water_level.RData")
+
+EMP78.AHD <- list(AHD$'61613231')
+EMP78.AHD[[1]]$group <- "ground"
+EMP78.AHD <- rbind(EMP78.AHD[[1]])
+
+EMP78.params <- list(AHD.params$'61613231')
+EMP78.params[[1]]$group <- "ground"
+EMP78.params <- rbind(EMP78.params[[1]])
+
+emp78.p <- ggplot(EMP78.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  geom_line(aes(colour=group)) +
+  geom_point(EMP78.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
+  geom_ribbon(EMP78.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                           group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(EMP78.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(EMP78.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(EMP78.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(65.1, 64.7), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("2000-01-01"), y = 64.7, vjust=-1, label = "Proposed") +
+  annotate("text", x = as.Date("2000-01-01"), y = 65.1, vjust=+1.5, label = "Current") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
+save(sw, sw.l, sw.sum, emp78.p, file="EMP_78/water_level.RData")
 

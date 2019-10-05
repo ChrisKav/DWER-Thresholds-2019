@@ -60,4 +60,44 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "Nowergup_Nth/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="Nowergup_Nth/water_level.RData")
+
+Nowergup.AHD <- list(AHD$'61610601', AHD$'6162567', AHD$'61611247')
+Nowergup.AHD[[1]]$group <- "ground"
+Nowergup.AHD[[2]]$group <- "surface"
+Nowergup.AHD[[3]]$group <- "ground2"
+Nowergup.AHD <- rbind(Nowergup.AHD[[1]], Nowergup.AHD[[2]], Nowergup.AHD[[3]])
+
+Nowergup.params <- list(AHD.params$'61610601', AHD.params$'6162567', AHD.params$'61611247')
+Nowergup.params[[1]]$group <- "ground"
+Nowergup.params[[2]]$group <- "surface"
+Nowergup.params[[3]]$group <- "ground2"
+Nowergup.params <- rbind(Nowergup.params[[1]], Nowergup.params[[2]], Nowergup.params[[3]])
+
+Nowergup.AHD <- subset(Nowergup.AHD, group==c("surface", "ground"))
+Nowergup.params <- subset(Nowergup.params, group==c("surface", "ground"))
+
+nower.p <- ggplot(Nowergup.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  geom_line(aes(colour=group)) +
+  geom_point(Nowergup.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
+  geom_ribbon(Nowergup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                            group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(Nowergup.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(Nowergup.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(Nowergup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(16.8, 16.0, 18), linetype= c("dotted", "dashed", "dashed")) +
+  annotate("text", x = as.Date("2021-01-01"), y = 16, vjust=-0.8, label = "Proposed") +
+  annotate("text", x = as.Date("2021-01-01"), y = 18, vjust=-1, label = "Proposed") +
+  annotate("text", x = as.Date("2021-01-01"), y = 16.8, vjust=+2, label = "Current") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+    xlim(c(as.Date("1980-01-01"), as.Date("2022-01-01")))
+
+
+save(sw, sw.l, sw.sum, nower.p, file="Nowergup_Nth/water_level.RData")

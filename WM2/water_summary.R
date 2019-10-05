@@ -60,4 +60,34 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "WM2/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="WM2/water_level.RData")
+
+WM2.AHD <- list(AHD$'61610908')
+WM2.AHD[[1]]$group <- "ground"
+WM2.AHD <- rbind(WM2.AHD[[1]])
+
+WM2.params <- list(AHD.params$'61610908')
+WM2.params[[1]]$group <- "ground"
+WM2.params <- rbind(WM2.params[[1]])
+
+WM2.p <- ggplot(WM2.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  geom_line(aes(colour=group)) +
+  geom_point(WM2.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
+  geom_ribbon(WM2.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                           group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(WM2.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(WM2.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(WM2.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(66.5,64.7), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("2019-01-01"), y = 66.5, vjust=+1.5, label = "Current") + 
+  annotate("text", x = as.Date("2019-01-01"), y = 64.7, vjust=+1.5, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
+save(sw, sw.l, sw.sum, WM2.p, file="WM2/water_level.RData")

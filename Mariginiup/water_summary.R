@@ -60,4 +60,36 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "Mariginiup/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="Mariginiup/water_level.RData")
+
+Mariginup.AHD <- list(AHD$'61610685', AHD$'6162577')
+Mariginup.AHD[[1]]$group <- "ground"
+Mariginup.AHD[[2]]$group <- "surface"
+Mariginup.AHD <- rbind(Mariginup.AHD[[1]], Mariginup.AHD[[2]])
+
+Mariginup.params <- list(AHD.params$'61610685', AHD.params$'6162577')
+Mariginup.params[[1]]$group <- "ground"
+Mariginup.params[[2]]$group <- "surface"
+Mariginup.params <- rbind(Mariginup.params[[1]], Mariginup.params[[2]])
+
+mari.p <- ggplot(Mariginup.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  geom_line(aes(colour=group)) +
+  geom_point(Mariginup.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
+  geom_ribbon(Mariginup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                           group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(Mariginup.params, mapping=aes(x=Date, y=p3, group=group)) +
+  geom_line(Mariginup.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(Mariginup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(41.5, 42.1), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("2018-01-01"), y = 41.5, vjust=-2, label = "Current") + 
+  annotate("text", x = as.Date("2018-01-01"), y = 42.1, vjust=-1, label = "Proposed") +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
+save(sw, sw.l, sw.sum, mari.p, file="Mariginiup/water_level.RData")

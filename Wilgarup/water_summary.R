@@ -60,4 +60,34 @@ colnames(sw.sum) <- c("Period",
                       "Mean max to min (days)")
 
 write.table(sw.sum, file = "Wilgarup/5_yr_water_summary.txt", sep=",")
-save(sw, sw.l, sw.sum, file="Wilgarup/water_level.RData")
+
+Wilgarup.AHD <- list(AHD$'61618500')
+Wilgarup.AHD[[1]]$group <- "ground"
+Wilgarup.AHD <- rbind(Wilgarup.AHD[[1]])
+
+Wilgarup.params <- list(AHD.params$'61618500')
+Wilgarup.params[[1]]$group <- "ground"
+Wilgarup.params <- rbind(Wilgarup.params[[1]])
+
+wilg.p <- ggplot(Wilgarup.AHD, aes(x=Date, y=AHD, group=group)) +
+  theme_bw() +
+  theme(legend.position = "none") +
+  geom_line(aes(colour=group)) +
+  geom_point(Wilgarup.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
+  geom_ribbon(Wilgarup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+                                           group=group), alpha=0.2,
+              inherit.aes=FALSE, fill="black") +
+  geom_line(Wilgarup.params, mapping=aes(x=Date, y=p3)) +
+  geom_line(Wilgarup.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(Wilgarup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
+  geom_hline(yintercept = c(4.5, 3.9), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("2018-01-01"), y = 3.9, vjust=-1, label = "Proposed") +
+  annotate("text", x = as.Date("2018-01-01"), y = 4.5, vjust=+1.5, label = "Current") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+
+save(sw, sw.l, sw.sum, wilg.p, file="Wilgarup/water_level.RData")

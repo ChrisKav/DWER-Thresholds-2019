@@ -74,8 +74,8 @@ gool.p <- ggplot(Goollelal.AHD, aes(x=Date, y=AHD)) +
   geom_line(Goollelal.params, mapping=aes(x=Date, y=incr2), color="blue") +
   geom_line(Goollelal.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
-  geom_hline(yintercept = c(26, 26.2), linetype= c("dotted", "dashed")) +
-  annotate("text", x = as.Date("2018-01-01"), y = 26.2, vjust=-1, label = "Proposed") +
+  geom_hline(yintercept = c(26, 26.4), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("2018-01-01"), y = 26.4, vjust=-1, label = "Proposed") +
   annotate("text", x = as.Date("2018-01-01"), y = 26, vjust=-1, label = "Current") + 
   theme(axis.line = element_line(colour = "black"),
         panel.grid.major = element_blank(),

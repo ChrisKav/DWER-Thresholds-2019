@@ -104,12 +104,13 @@ yond.p <- ggplot(Yonderup.AHD, aes(x=Date, y=AHD)) +
   geom_line(Yonderup.params, mapping=aes(x=Date, y=incr2), color="blue") +
   geom_line(Yonderup.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
-  geom_hline(yintercept = c(5.9), linetype= c("dotted")) +
-  annotate("text", x = as.Date("2018-01-01"), y = 5.9, vjust=-1, label = "Current") + 
+  geom_hline(yintercept = c(5.9, 5.7), linetype= c("dotted", "dashed")) +
+  annotate("text", x = as.Date("1988-01-01"), y = 5.9, vjust=+1.5, label = "Current") + 
+  annotate("text", x = as.Date("1988-01-01"), y = 5.7, vjust=+1.5, label = "Proposed") + 
   theme(axis.line = element_line(colour = "black"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
         panel.border = element_blank(),
         panel.background = element_blank()) 
 
-save(sw, sw.l, sw.sum, file="Yonderup/water_level.RData")
+save(sw, sw.l, sw.sum, yond.p, file="Yonderup/water_level.RData")

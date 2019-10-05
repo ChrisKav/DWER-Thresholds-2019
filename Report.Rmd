@@ -108,7 +108,8 @@ Ordination reveals distinct shifts in community composition since 1997 (Figure \
 COMMENT ON REVISED WATER THRESHOLDS HERE> WHAT ARE THE PREDICTIONS> HOW WILL IT IMPACT VEG AND INVERTS. OTHER IMPACTS. MANAGMENT OBJECTIVES?
 
 ```{r EMP173WaterPlot, fig.cap="\\label{fig:EMP173WaterPlot}Ground and surface water levels for Melaleuca Park 173 recorded at bore 61613213 (red) and staff 6162628 (blue). The minimum recordable water level for the staff gaugue is 50.4 mAHD. Blue dots at 50.4 mAHD represent water levels below the minimum level measurable by the staff. Red segments on fitted line represent statistically significant periods of declining water levels.", results = 'asis', fig.width=4, fig.height=3}
-Site.GW.plots$emp173.p
+load("EMP_173/water_level.RData")
+emp173.p
 ```
 
 ```{r EMP173Water, echo = FALSE, results = 'asis'}
@@ -186,7 +187,8 @@ Bayesian regression modelling revealed a number of species associated with low g
 Melaleuca Park 78 has been non-compliant with absolute minimum water level criteria since 2012.
 
 ```{r EMP78WaterPlot, fig.cap="\\label{fig:EMP78WaterPlot} Ground water levels recorded at bore 61613231 in the vicinity of the Melaleuca Park 78 wetland. Red segments on fitted line represent statistically significant periods of decline and blue represent statistically significant periods of increasing water levels.", results = 'asis', fig.width=4, fig.height=3}
-Site.GW.plots$emp78.p
+load("EMP_78/water_level.RData")
+emp78.p
 ```
 
 ```{r EMP78Water, echo = FALSE, results = 'asis'}
@@ -247,7 +249,8 @@ Gingin Brook is a new proposed in the Gingin water allocation plan (draft expect
 Ground waters at this site have significantly declined during the period between 1989 and 2015 by approximately 2.5 m (Figure \ref{fig:GinginWaterPlot}). Mean seasonal maximum and minimum ground water levels have also decreased by 1.8 since 1994, with current monthly minimums generally occurring earlier in the year than in between 1994 and 1999 (Table \ref{tab:GinginWater}).
 
 ```{r GinginWaterPlot, fig.cap="\\label{fig:GinginWaterPlot} Ground water levels recorded at bore 61710078 that represent fluctuations in ground waters at Gingin Brook. Red segments on fitted line represent statistically significant periods of declining ground water levels.", results = 'asis', fig.width=4, fig.height=3}
-Site.GW.plots$gin.p
+load("Gingin/water_level.RData")
+gin.p
 ```
 
 ```{r GinginWater, echo = FALSE, results = 'asis'}
@@ -295,7 +298,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r GoollelalWaterPlot, fig.cap="\\label{fig:GoollelalWaterPlot} Ground and surface water levels recorded at bore 61611870 (red) and staff 6162517 (blue) for Lake Goollelal. Red segments on fitted line represent statistically significant periods of declining water levels and blue segments represent statistically significant periods of increasing water levels.", results = 'asis'}
-Site.GW.plots$gool.p
+gool.p
 ```
 
 \newpage
@@ -437,7 +440,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r JandabupWaterPlot, fig.cap="\\label{fig:JandabupWaterPlot} Ground and surface water levels for Lake Jandabup recorded at bore 61611850 (red) and staff 6162578 (blue). Red segments on fitted line represent statistically significant periods of declining water levels and blue segments represent periods of increasing water levels.", results = 'asis'}
-Site.GW.plots$jand.p
+jand.p
 ```
 
 \newpage
@@ -499,11 +502,11 @@ All plots in both transects have displayed similar trends in community compositi
 [DESCRIBE SPECIES ASSOCIATIONS WITH WATER LEVELS] (Figure \ref{fig:JoondalupPost})
 
 ```{r JoondalupWaterPlot, fig.cap="\\label{fig:JoondalupWaterPlot} Ground and surface water levels recorded at bore 61610661 (red), bore 61611423 (green) and staff gauge 6162572 (blue) for Lake Joondalup.", results = 'asis'}
-Site.GW.plots$joon.p
+load("Joondalup_Nth/water_level.RData")
+joon.p
 ```
 
 ```{r JoondalupWater, echo = FALSE, results = 'asis'}
-load("Joondalup_Nth/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
       format="latex",
       booktabs= TRUE,
@@ -616,7 +619,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r Lexia186WaterPlot, fig.cap="\\label{fig:Lexia186WaterPlot} Ground water levels recorded at bore 61613214 that represent water level fluctuations at Lexia 186. Red segments represent periods of significant decline in water levels while blue segments represent periods of significant increase in water levels.", results = 'asis'}
-Site.GW.plots$lex186.p
+lex186.p
 ```
 
 \newpage
@@ -686,7 +689,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r McNessWaterPlot, fig.cap="\\label{fig:McNessWaterPlot} Ground and surface water levels recorded at bores 61612104 (red) and 61640108 (green) and staff gauge 6162564 (blue) that represent changes in water levels at Loch McNess. Segments in red represent periods of significant decline in water level.", results = 'asis'}
-Site.GW.plots$mcness.p
+mcness.p
 ```
 
 \newpage
@@ -763,7 +766,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r MariginiupWaterPlot, fig.cap="\\label{fig:MariginiupWaterPlot} Ground and surface water levels recorded at bore 61610685 (red) and staff gauge 6162577 (blue) that represent changes in water levels at Lake Mariginiup.", results = 'asis'}
-Site.GW.plots$marig.p
+mari.p
 ```
 
 \newpage
@@ -807,7 +810,7 @@ Table: Ecological consequences of revised thresholds in terms of compliance of s
 
 ## MM59B - Whiteman Park East
 
-(I DON"T KNOW ANYTHING ABOUT THIS SITE)
+(I DON"T KNOW ANYTHING ABOUT THIS SITE) RE WRITE HYDROLOGY, BASED ON WRONG BORE!
 
 ### Hydrology
 
@@ -828,7 +831,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r MM59BWaterPlot, fig.cap="\\label{fig:MM59BWaterPlot} Ground water levels recorded at bore 61610661 in the vicinity of MM59B. Red segments represent periods of significant decline in ground water level while blue segments represent periods of significant increase in ground water level.", results = 'asis'}
-Site.GW.plots$MM59B.p
+mm59b.p
 ```
 
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
@@ -878,7 +881,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r NowergupWaterPlot, fig.cap="\\label{fig:NowergupWaterPlot} Ground and surface water levels for Lake Nowergup recorded at bores 61610601 (red) and 61611247 (green) and staff gauge 6162567 (blue). The minimum recordable water level for the staff gaugue is 16.0 mAHD. Blue dots at 16.0 mAHD represent water levels below the minimum level measurable at the staff gaufe. Red segments on fitted line represent statistically significant periods of declining water levels and blue segments represent periods of increasing water levels.", results = 'asis'}
-Site.GW.plots$nower.p
+nower.p
 ```
 
 \newpage
@@ -965,7 +968,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r PipidinnyWaterPlot, fig.cap="\\label{fig:PipidinnyWaterPlot}Ground and surface water levels recorded at bore 61611872 (red) and staff gauge 6162624 (blue) that represent fluctuations in water levels at Pipidinny Swamp. Surface water levels were initially only recordable above 2 mAHD and later above 1 mAHD. Red segments of trend line represent periods of significant decline in water levels while blue segments represent periods of significant increases in water levels.", results = 'asis'}
-Site.GW.plots$pipi.p
+pipi.p
 ```
 
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
@@ -1004,7 +1007,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r PM9WaterPlot, fig.cap="\\label{fig:PM9WaterPlot}Ground water levels recorded at bore 61610804 in the vicinity of PM9. Red segments along trendline indicate preiods of significant decline in ground water levels.", results = 'asis'}
-Site.GW.plots$PM9.p
+pm9.p
 ```
 
 \newpage
@@ -1036,7 +1039,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r QuinBrookWaterPlot, fig.cap="\\label{fig:QuinBrookWaterPlot}Ground water levels recorded at bore 61710060 in the vicinity of Quin Brook. Red segments along trendline indicate preiods of significant decline in ground water levels.", results = 'asis'}
-Site.GW.plots$quin.p
+quin.p
 ```
 
 \newpage
@@ -1091,7 +1094,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r WilgarupWaterPlot, fig.cap="\\label{fig:WilgarupWaterPlot}Ground water levels recorded at bore 61618500 in the vicinity of Lake Wilgarup. Red segments along trendline indicate preiods of significant decline in ground water levels.", results = 'asis'}
-Site.GW.plots$wilg.p
+wilg.p
 ```
 
 \newpage
@@ -1158,7 +1161,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r WM1WaterPlot, fig.cap="\\label{fig:WM1WaterPlot}Ground water levels recorded at bore 61610833 in the vicinity of WM1. Red segments along trendline indicate preiods of significant decline in ground water levels and blue segments represent significant increases in ground water level.", results = 'asis'}
-Site.GW.plots$WM1.p
+wm1.p
 ```
 
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
@@ -1201,7 +1204,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r WM2WaterPlot, fig.cap="\\label{fig:WM2WaterPlot}Ground water levels recorded at bore 61610908 in the vicinity of WM2. Red segments along trendline indicate preiods of significant decline in ground water levels and blue segments represent significant increases in ground water level.", results = 'asis'}
-Site.GW.plots$WM2.p
+WM2.p
 ```
 
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
@@ -1240,7 +1243,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r WM8WaterPlot, fig.cap="\\label{fig:WM8WaterPlot}Ground water levels recorded at bore 61610983 in the vicinity of WM8. Red segments along trendline indicate preiods of significant decline in ground water levels and blue segments represent significant increases in ground water level.", results = 'asis'}
-Site.GW.plots$WM8.p
+WM8.p
 ```
 
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
@@ -1285,7 +1288,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ```
 
 ```{r YoderupWaterPlot, fig.cap="\\label{fig:YoderupWaterPlot}Ground water levels recorded at bore 61611840 (red) and staff gauge 6162565 (blue) in the vicinity of Lake Yonderup. Red segments along trendline indicate preiods of significant decline in ground water levels and blue segments represent significant increases in ground water level.", results = 'asis'}
-Site.GW.plots$yond.p
+yond.p
 ```
 
 \newpage
