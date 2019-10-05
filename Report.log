@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.18)  5 OCT 2019 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.18)  5 OCT 2019 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1016,12 +1016,12 @@ Package pdftex.def Info: Figs/GwelupStrat-1.pdf  used on input line 949.
                                                   \fi \fi 
 l.955 \end{landscape}
                       <./Figs/GwelupStrat-1.pdf>]
-<Figs/GwelupOrd-1.pdf, id=774, 469.755pt x 325.215pt>
+<Figs/GwelupOrd-1.pdf, id=770, 469.755pt x 325.215pt>
 File: Figs/GwelupOrd-1.pdf Graphic file (type pdf)
 <use Figs/GwelupOrd-1.pdf>
 Package pdftex.def Info: Figs/GwelupOrd-1.pdf  used on input line 961.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/Gwelup_post-1.pdf, id=775, 469.755pt x 325.215pt>
+<Figs/Gwelup_post-1.pdf, id=771, 469.755pt x 325.215pt>
 File: Figs/Gwelup_post-1.pdf Graphic file (type pdf)
 <use Figs/Gwelup_post-1.pdf>
 Package pdftex.def Info: Figs/Gwelup_post-1.pdf  used on input line 970.
@@ -1043,7 +1043,7 @@ nored
                                                   \fi \fi 
 l.1022 \newpage
                 <./Figs/Gwelup_post-1.pdf>]
-<Figs/JandabupWaterPlot-1.pdf, id=805, 469.755pt x 325.215pt>
+<Figs/JandabupWaterPlot-1.pdf, id=801, 469.755pt x 325.215pt>
 File: Figs/JandabupWaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/JandabupWaterPlot-1.pdf>
 Package pdftex.def Info: Figs/JandabupWaterPlot-1.pdf  used on input line 1099.
@@ -1062,7 +1062,7 @@ l.1107 \newpage
                                                   \fi \fi 
 l.1107 \newpage
                 <./Figs/JandabupWaterPlot-1.pdf>]
-<Figs/JandabupStrat-1.pdf, id=835, 722.7pt x 325.215pt>
+<Figs/JandabupStrat-1.pdf, id=830, 722.7pt x 325.215pt>
 File: Figs/JandabupStrat-1.pdf Graphic file (type pdf)
 <use Figs/JandabupStrat-1.pdf>
 Package pdftex.def Info: Figs/JandabupStrat-1.pdf  used on input line 1113.
@@ -1074,12 +1074,12 @@ Package pdftex.def Info: Figs/JandabupStrat-1.pdf  used on input line 1113.
                                                   \fi \fi 
 l.1120 \end{landscape}
                        <./Figs/JandabupStrat-1.pdf>]
-<Figs/JandabupOrd-1.pdf, id=845, 469.755pt x 325.215pt>
+<Figs/JandabupOrd-1.pdf, id=841, 469.755pt x 325.215pt>
 File: Figs/JandabupOrd-1.pdf Graphic file (type pdf)
 <use Figs/JandabupOrd-1.pdf>
 Package pdftex.def Info: Figs/JandabupOrd-1.pdf  used on input line 1126.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/JandabupPost-1.pdf, id=846, 469.755pt x 325.215pt>
+<Figs/JandabupPost-1.pdf, id=842, 469.755pt x 325.215pt>
 File: Figs/JandabupPost-1.pdf Graphic file (type pdf)
 <use Figs/JandabupPost-1.pdf>
 Package pdftex.def Info: Figs/JandabupPost-1.pdf  used on input line 1135.
@@ -1101,7 +1101,7 @@ ignored
                                                   \fi \fi 
 l.1246 \newpage
                 <./Figs/JandabupPost-1.pdf>]
-<Figs/JoondalupWaterPlot-1.pdf, id=876, 469.755pt x 325.215pt>
+<Figs/JoondalupWaterPlot-1.pdf, id=872, 469.755pt x 325.215pt>
 File: Figs/JoondalupWaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/JoondalupWaterPlot-1.pdf>
 Package pdftex.def Info: Figs/JoondalupWaterPlot-1.pdf  used on input line 1324
@@ -1121,7 +1121,7 @@ icate ignored
                                                   \fi \fi 
 l.1350 \begin{landscape}
                         ]
-<Figs/JoondalupNthStrat-1.pdf, id=908, 722.7pt x 325.215pt>
+<Figs/JoondalupNthStrat-1.pdf, id=904, 722.7pt x 325.215pt>
 File: Figs/JoondalupNthStrat-1.pdf Graphic file (type pdf)
 <use Figs/JoondalupNthStrat-1.pdf>
 Package pdftex.def Info: Figs/JoondalupNthStrat-1.pdf  used on input line 1354.
@@ -1134,7 +1134,7 @@ Package pdftex.def Info: Figs/JoondalupNthStrat-1.pdf  used on input line 1354.
                                                   \fi \fi 
 l.1361 \end{landscape}
                        <./Figs/JoondalupNthStrat-1.pdf>]
-<Figs/JoondalupSthStrat-1.pdf, id=918, 722.7pt x 325.215pt>
+<Figs/JoondalupSthStrat-1.pdf, id=914, 722.7pt x 325.215pt>
 File: Figs/JoondalupSthStrat-1.pdf Graphic file (type pdf)
 <use Figs/JoondalupSthStrat-1.pdf>
 Package pdftex.def Info: Figs/JoondalupSthStrat-1.pdf  used on input line 1371.
@@ -1147,12 +1147,12 @@ Package pdftex.def Info: Figs/JoondalupSthStrat-1.pdf  used on input line 1371.
                                                   \fi \fi 
 l.1378 \end{landscape}
                        <./Figs/JoondalupSthStrat-1.pdf>]
-<Figs/JoondalupOrd-1.pdf, id=928, 469.755pt x 325.215pt>
+<Figs/JoondalupOrd-1.pdf, id=924, 469.755pt x 325.215pt>
 File: Figs/JoondalupOrd-1.pdf Graphic file (type pdf)
 <use Figs/JoondalupOrd-1.pdf>
 Package pdftex.def Info: Figs/JoondalupOrd-1.pdf  used on input line 1384.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/JoondalupPost-1.pdf, id=929, 469.755pt x 325.215pt>
+<Figs/JoondalupPost-1.pdf, id=925, 469.755pt x 325.215pt>
 File: Figs/JoondalupPost-1.pdf Graphic file (type pdf)
 <use Figs/JoondalupPost-1.pdf>
 Package pdftex.def Info: Figs/JoondalupPost-1.pdf  used on input line 1394.
@@ -1176,7 +1176,7 @@ ion with the same identifier (name{figure.28}) has been already used, duplicate
                                                   \fi \fi 
 l.1556 \newpage
                 <./Figs/JoondalupPost-1.pdf>]
-<Figs/Lexia186WaterPlot-1.pdf, id=966, 469.755pt x 325.215pt>
+<Figs/Lexia186WaterPlot-1.pdf, id=961, 469.755pt x 325.215pt>
 File: Figs/Lexia186WaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/Lexia186WaterPlot-1.pdf>
 Package pdftex.def Info: Figs/Lexia186WaterPlot-1.pdf  used on input line 1625.
@@ -1195,7 +1195,7 @@ l.1633 \newpage
                                                   \fi \fi 
 l.1633 \newpage
                 <./Figs/Lexia186WaterPlot-1.pdf>]
-<Figs/Lexia186Strat-1.pdf, id=993, 722.7pt x 325.215pt>
+<Figs/Lexia186Strat-1.pdf, id=989, 722.7pt x 325.215pt>
 File: Figs/Lexia186Strat-1.pdf Graphic file (type pdf)
 <use Figs/Lexia186Strat-1.pdf>
 Package pdftex.def Info: Figs/Lexia186Strat-1.pdf  used on input line 1639.
@@ -1207,12 +1207,12 @@ Package pdftex.def Info: Figs/Lexia186Strat-1.pdf  used on input line 1639.
                                                   \fi \fi 
 l.1645 \end{landscape}
                        <./Figs/Lexia186Strat-1.pdf>]
-<Figs/Lexia186Ord-1.pdf, id=1003, 469.755pt x 325.215pt>
+<Figs/Lexia186Ord-1.pdf, id=999, 469.755pt x 325.215pt>
 File: Figs/Lexia186Ord-1.pdf Graphic file (type pdf)
 <use Figs/Lexia186Ord-1.pdf>
 Package pdftex.def Info: Figs/Lexia186Ord-1.pdf  used on input line 1651.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/Lexia186Post-1.pdf, id=1004, 469.755pt x 325.215pt>
+<Figs/Lexia186Post-1.pdf, id=1000, 469.755pt x 325.215pt>
 File: Figs/Lexia186Post-1.pdf Graphic file (type pdf)
 <use Figs/Lexia186Post-1.pdf>
 Package pdftex.def Info: Figs/Lexia186Post-1.pdf  used on input line 1660.
@@ -1249,7 +1249,7 @@ ignored
                                                   \fi \fi 
 l.1697 \newpage
                 <./Figs/Lexia186Post-1.pdf>]
-<Figs/McNessWaterPlot-1.pdf, id=1035, 469.755pt x 325.215pt>
+<Figs/McNessWaterPlot-1.pdf, id=1031, 469.755pt x 325.215pt>
 File: Figs/McNessWaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/McNessWaterPlot-1.pdf>
 Package pdftex.def Info: Figs/McNessWaterPlot-1.pdf  used on input line 1780.
@@ -1267,7 +1267,7 @@ l.1788 \newpage
                                                   \fi \fi 
 l.1788 \newpage
                 <./Figs/McNessWaterPlot-1.pdf>]
-<Figs/McNessStrat-1.pdf, id=1061, 722.7pt x 325.215pt>
+<Figs/McNessStrat-1.pdf, id=1057, 722.7pt x 325.215pt>
 File: Figs/McNessStrat-1.pdf Graphic file (type pdf)
 <use Figs/McNessStrat-1.pdf>
 Package pdftex.def Info: Figs/McNessStrat-1.pdf  used on input line 1794.
@@ -1279,12 +1279,12 @@ Package pdftex.def Info: Figs/McNessStrat-1.pdf  used on input line 1794.
                                                   \fi \fi 
 l.1802 \end{landscape}
                        <./Figs/McNessStrat-1.pdf>]
-<Figs/McNessOrd-1.pdf, id=1071, 469.755pt x 325.215pt>
+<Figs/McNessOrd-1.pdf, id=1067, 469.755pt x 325.215pt>
 File: Figs/McNessOrd-1.pdf Graphic file (type pdf)
 <use Figs/McNessOrd-1.pdf>
 Package pdftex.def Info: Figs/McNessOrd-1.pdf  used on input line 1808.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/McNessPost-1.pdf, id=1072, 469.755pt x 325.215pt>
+<Figs/McNessPost-1.pdf, id=1068, 469.755pt x 325.215pt>
 File: Figs/McNessPost-1.pdf Graphic file (type pdf)
 <use Figs/McNessPost-1.pdf>
 Package pdftex.def Info: Figs/McNessPost-1.pdf  used on input line 1817.
@@ -1310,7 +1310,7 @@ l.1949 \newpage
 LaTeX Warning: Reference `tab:MariginiupWater' on page 58 undefined on input li
 ne 1973.
 
-<Figs/MariginiupWaterPlot-1.pdf, id=1101, 469.755pt x 325.215pt>
+<Figs/MariginiupWaterPlot-1.pdf, id=1097, 469.755pt x 325.215pt>
 File: Figs/MariginiupWaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/MariginiupWaterPlot-1.pdf>
 Package pdftex.def Info: Figs/MariginiupWaterPlot-1.pdf  used on input line 202
@@ -1329,7 +1329,7 @@ l.2033 \newpage
                                                   \fi \fi 
 l.2033 \newpage
                 <./Figs/MariginiupWaterPlot-1.pdf>]
-<Figs/MariginiupStrat-1.pdf, id=1128, 722.7pt x 325.215pt>
+<Figs/MariginiupStrat-1.pdf, id=1124, 722.7pt x 325.215pt>
 File: Figs/MariginiupStrat-1.pdf Graphic file (type pdf)
 <use Figs/MariginiupStrat-1.pdf>
 Package pdftex.def Info: Figs/MariginiupStrat-1.pdf  used on input line 2039.
@@ -1341,12 +1341,12 @@ Package pdftex.def Info: Figs/MariginiupStrat-1.pdf  used on input line 2039.
                                                   \fi \fi 
 l.2046 \end{landscape}
                        <./Figs/MariginiupStrat-1.pdf>]
-<Figs/MariginiupOrd-1.pdf, id=1138, 469.755pt x 325.215pt>
+<Figs/MariginiupOrd-1.pdf, id=1134, 469.755pt x 325.215pt>
 File: Figs/MariginiupOrd-1.pdf Graphic file (type pdf)
 <use Figs/MariginiupOrd-1.pdf>
 Package pdftex.def Info: Figs/MariginiupOrd-1.pdf  used on input line 2052.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/MariginiupPost-1.pdf, id=1139, 469.755pt x 325.215pt>
+<Figs/MariginiupPost-1.pdf, id=1135, 469.755pt x 325.215pt>
 File: Figs/MariginiupPost-1.pdf Graphic file (type pdf)
 <use Figs/MariginiupPost-1.pdf>
 Package pdftex.def Info: Figs/MariginiupPost-1.pdf  used on input line 2061.
@@ -1383,7 +1383,7 @@ e ignored
                                                   \fi \fi 
 l.2103 \newpage
                 <./Figs/MariginiupPost-1.pdf>]
-<Figs/MM59BWaterPlot-1.pdf, id=1167, 469.755pt x 325.215pt>
+<Figs/MM59BWaterPlot-1.pdf, id=1163, 469.755pt x 325.215pt>
 File: Figs/MM59BWaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/MM59BWaterPlot-1.pdf>
 Package pdftex.def Info: Figs/MM59BWaterPlot-1.pdf  used on input line 2144.
@@ -1401,7 +1401,7 @@ l.2214 \newpage
                                                   \fi \fi 
 l.2214 \newpage
                 <./Figs/MM59BWaterPlot-1.pdf>]
-<Figs/NowergupWaterPlot-1.pdf, id=1192, 469.755pt x 325.215pt>
+<Figs/NowergupWaterPlot-1.pdf, id=1188, 469.755pt x 325.215pt>
 File: Figs/NowergupWaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/NowergupWaterPlot-1.pdf>
 Package pdftex.def Info: Figs/NowergupWaterPlot-1.pdf  used on input line 2284.
@@ -1420,7 +1420,7 @@ l.2295 \newpage
                                                   \fi \fi 
 l.2295 \newpage
                 <./Figs/NowergupWaterPlot-1.pdf>]
-<Figs/NowergupNthStrat-1.pdf, id=1219, 722.7pt x 325.215pt>
+<Figs/NowergupNthStrat-1.pdf, id=1215, 722.7pt x 325.215pt>
 File: Figs/NowergupNthStrat-1.pdf Graphic file (type pdf)
 <use Figs/NowergupNthStrat-1.pdf>
 Package pdftex.def Info: Figs/NowergupNthStrat-1.pdf  used on input line 2301.
@@ -1432,7 +1432,7 @@ Package pdftex.def Info: Figs/NowergupNthStrat-1.pdf  used on input line 2301.
                                                   \fi \fi 
 l.2308 \end{landscape}
                        <./Figs/NowergupNthStrat-1.pdf>]
-<Figs/NowergupSthStrat-1.pdf, id=1230, 722.7pt x 325.215pt>
+<Figs/NowergupSthStrat-1.pdf, id=1226, 722.7pt x 325.215pt>
 File: Figs/NowergupSthStrat-1.pdf Graphic file (type pdf)
 <use Figs/NowergupSthStrat-1.pdf>
 Package pdftex.def Info: Figs/NowergupSthStrat-1.pdf  used on input line 2318.
@@ -1444,12 +1444,12 @@ Package pdftex.def Info: Figs/NowergupSthStrat-1.pdf  used on input line 2318.
                                                   \fi \fi 
 l.2325 \end{landscape}
                        <./Figs/NowergupSthStrat-1.pdf>]
-<Figs/NowergupOrd-1.pdf, id=1241, 469.755pt x 325.215pt>
+<Figs/NowergupOrd-1.pdf, id=1237, 469.755pt x 325.215pt>
 File: Figs/NowergupOrd-1.pdf Graphic file (type pdf)
 <use Figs/NowergupOrd-1.pdf>
 Package pdftex.def Info: Figs/NowergupOrd-1.pdf  used on input line 2331.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/NowergupPost-1.pdf, id=1242, 469.755pt x 325.215pt>
+<Figs/NowergupPost-1.pdf, id=1238, 469.755pt x 325.215pt>
 File: Figs/NowergupPost-1.pdf Graphic file (type pdf)
 <use Figs/NowergupPost-1.pdf>
 Package pdftex.def Info: Figs/NowergupPost-1.pdf  used on input line 2341.
@@ -1473,7 +1473,7 @@ ignored
                                                   \fi \fi 
 l.2460 \newpage
                 <./Figs/NowergupPost-1.pdf>]
-<Figs/PipidinnyWaterPlot-1.pdf, id=1271, 469.755pt x 325.215pt>
+<Figs/PipidinnyWaterPlot-1.pdf, id=1267, 469.755pt x 325.215pt>
 File: Figs/PipidinnyWaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/PipidinnyWaterPlot-1.pdf>
 Package pdftex.def Info: Figs/PipidinnyWaterPlot-1.pdf  used on input line 2508
@@ -1492,7 +1492,7 @@ l.2575 \newpage
                                                   \fi \fi 
 l.2575 \newpage
                 <./Figs/PipidinnyWaterPlot-1.pdf>]
-<Figs/PM9WaterPlot-1.pdf, id=1297, 469.755pt x 325.215pt>
+<Figs/PM9WaterPlot-1.pdf, id=1293, 469.755pt x 325.215pt>
 File: Figs/PM9WaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/PM9WaterPlot-1.pdf>
 Package pdftex.def Info: Figs/PM9WaterPlot-1.pdf  used on input line 2632.
@@ -1514,7 +1514,7 @@ l.2638 \newpage
 LaTeX Warning: Reference `tab:QuinBrookWaterPlot' on page 77 undefined on input
  line 2663.
 
-<Figs/QuinBrookWaterPlot-1.pdf, id=1324, 469.755pt x 325.215pt>
+<Figs/QuinBrookWaterPlot-1.pdf, id=1320, 469.755pt x 325.215pt>
 File: Figs/QuinBrookWaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/QuinBrookWaterPlot-1.pdf>
 Package pdftex.def Info: Figs/QuinBrookWaterPlot-1.pdf  used on input line 2708
@@ -1533,7 +1533,7 @@ l.2715 \newpage
                                                   \fi \fi 
 l.2715 \newpage
                 <./Figs/QuinBrookWaterPlot-1.pdf>]
-<Figs/QuinStrat-1.pdf, id=1350, 722.7pt x 325.215pt>
+<Figs/QuinStrat-1.pdf, id=1346, 722.7pt x 325.215pt>
 File: Figs/QuinStrat-1.pdf Graphic file (type pdf)
 <use Figs/QuinStrat-1.pdf>
 Package pdftex.def Info: Figs/QuinStrat-1.pdf  used on input line 2721.
@@ -1545,17 +1545,17 @@ Package pdftex.def Info: Figs/QuinStrat-1.pdf  used on input line 2721.
                                                   \fi \fi 
 l.2727 \end{landscape}
                        <./Figs/QuinStrat-1.pdf>]
-<Figs/QuinOrd-1.pdf, id=1361, 469.755pt x 325.215pt>
+<Figs/QuinOrd-1.pdf, id=1357, 469.755pt x 325.215pt>
 File: Figs/QuinOrd-1.pdf Graphic file (type pdf)
 <use Figs/QuinOrd-1.pdf>
 Package pdftex.def Info: Figs/QuinOrd-1.pdf  used on input line 2733.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/QuinPost-1.pdf, id=1362, 469.755pt x 325.215pt>
+<Figs/QuinPost-1.pdf, id=1358, 469.755pt x 325.215pt>
 File: Figs/QuinPost-1.pdf Graphic file (type pdf)
 <use Figs/QuinPost-1.pdf>
 Package pdftex.def Info: Figs/QuinPost-1.pdf  used on input line 2742.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/WilgarupWaterPlot-1.pdf, id=1368, 469.755pt x 325.215pt>
+<Figs/WilgarupWaterPlot-1.pdf, id=1364, 469.755pt x 325.215pt>
 File: Figs/WilgarupWaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/WilgarupWaterPlot-1.pdf>
 Package pdftex.def Info: Figs/WilgarupWaterPlot-1.pdf  used on input line 2819.
@@ -1591,7 +1591,7 @@ ored
                                                   \fi \fi 
 l.2826 \newpage
                 <./Figs/WilgarupWaterPlot-1.pdf>]
-<Figs/WilgarupStrat-1.pdf, id=1412, 722.7pt x 325.215pt>
+<Figs/WilgarupStrat-1.pdf, id=1408, 722.7pt x 325.215pt>
 File: Figs/WilgarupStrat-1.pdf Graphic file (type pdf)
 <use Figs/WilgarupStrat-1.pdf>
 Package pdftex.def Info: Figs/WilgarupStrat-1.pdf  used on input line 2832.
@@ -1603,12 +1603,12 @@ Package pdftex.def Info: Figs/WilgarupStrat-1.pdf  used on input line 2832.
                                                   \fi \fi 
 l.2839 \end{landscape}
                        <./Figs/WilgarupStrat-1.pdf>]
-<Figs/WilgarupOrd-1.pdf, id=1422, 469.755pt x 325.215pt>
+<Figs/WilgarupOrd-1.pdf, id=1418, 469.755pt x 325.215pt>
 File: Figs/WilgarupOrd-1.pdf Graphic file (type pdf)
 <use Figs/WilgarupOrd-1.pdf>
 Package pdftex.def Info: Figs/WilgarupOrd-1.pdf  used on input line 2845.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/WilgarupPost-1.pdf, id=1423, 469.755pt x 325.215pt>
+<Figs/WilgarupPost-1.pdf, id=1419, 469.755pt x 325.215pt>
 File: Figs/WilgarupPost-1.pdf Graphic file (type pdf)
 <use Figs/WilgarupPost-1.pdf>
 Package pdftex.def Info: Figs/WilgarupPost-1.pdf  used on input line 2854.
@@ -1645,7 +1645,7 @@ ignored
                                                   \fi \fi 
 l.2891 \newpage
                 <./Figs/WilgarupPost-1.pdf>]
-<Figs/WM1WaterPlot-1.pdf, id=1451, 469.755pt x 325.215pt>
+<Figs/WM1WaterPlot-1.pdf, id=1447, 469.755pt x 325.215pt>
 File: Figs/WM1WaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/WM1WaterPlot-1.pdf>
 Package pdftex.def Info: Figs/WM1WaterPlot-1.pdf  used on input line 2947.
@@ -1663,7 +1663,7 @@ l.3024 \newpage
                                                   \fi \fi 
 l.3024 \newpage
                 <./Figs/WM1WaterPlot-1.pdf>]
-<Figs/WM2WaterPlot-1.pdf, id=1477, 469.755pt x 325.215pt>
+<Figs/WM2WaterPlot-1.pdf, id=1473, 469.755pt x 325.215pt>
 File: Figs/WM2WaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/WM2WaterPlot-1.pdf>
 Package pdftex.def Info: Figs/WM2WaterPlot-1.pdf  used on input line 3075.
@@ -1681,7 +1681,7 @@ l.3152 \newpage
                                                   \fi \fi 
 l.3152 \newpage
                 <./Figs/WM2WaterPlot-1.pdf>]
-<Figs/WM8WaterPlot-1.pdf, id=1504, 469.755pt x 325.215pt>
+<Figs/WM8WaterPlot-1.pdf, id=1500, 469.755pt x 325.215pt>
 File: Figs/WM8WaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/WM8WaterPlot-1.pdf>
 Package pdftex.def Info: Figs/WM8WaterPlot-1.pdf  used on input line 3194.
@@ -1699,7 +1699,7 @@ l.3271 \newpage
                                                   \fi \fi 
 l.3271 \newpage
                 <./Figs/WM8WaterPlot-1.pdf>]
-<Figs/YoderupWaterPlot-1.pdf, id=1532, 469.755pt x 325.215pt>
+<Figs/YoderupWaterPlot-1.pdf, id=1528, 469.755pt x 325.215pt>
 File: Figs/YoderupWaterPlot-1.pdf Graphic file (type pdf)
 <use Figs/YoderupWaterPlot-1.pdf>
 Package pdftex.def Info: Figs/YoderupWaterPlot-1.pdf  used on input line 3360.
@@ -1718,7 +1718,7 @@ ate ignored
                                                   \fi \fi 
 l.3370 \begin{landscape}
                         ]
-<Figs/YonderupStrat-1.pdf, id=1563, 722.7pt x 325.215pt>
+<Figs/YonderupStrat-1.pdf, id=1559, 722.7pt x 325.215pt>
 File: Figs/YonderupStrat-1.pdf Graphic file (type pdf)
 <use Figs/YonderupStrat-1.pdf>
 Package pdftex.def Info: Figs/YonderupStrat-1.pdf  used on input line 3374.
@@ -1730,12 +1730,12 @@ Package pdftex.def Info: Figs/YonderupStrat-1.pdf  used on input line 3374.
                                                   \fi \fi 
 l.3381 \end{landscape}
                        <./Figs/YonderupStrat-1.pdf>]
-<Figs/YonderupOrd-1.pdf, id=1574, 469.755pt x 325.215pt>
+<Figs/YonderupOrd-1.pdf, id=1570, 469.755pt x 325.215pt>
 File: Figs/YonderupOrd-1.pdf Graphic file (type pdf)
 <use Figs/YonderupOrd-1.pdf>
 Package pdftex.def Info: Figs/YonderupOrd-1.pdf  used on input line 3387.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Figs/YonderupPost-1.pdf, id=1575, 469.755pt x 325.215pt>
+<Figs/YonderupPost-1.pdf, id=1571, 469.755pt x 325.215pt>
 File: Figs/YonderupPost-1.pdf Graphic file (type pdf)
 <use Figs/YonderupPost-1.pdf>
 Package pdftex.def Info: Figs/YonderupPost-1.pdf  used on input line 3396.
@@ -1800,10 +1800,10 @@ footbushman/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/barefoot
 bushman/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></home/barefootbush
 man/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></home/barefootbushman
 /.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on Report.pdf (100 pages, 1519564 bytes).
+Output written on Report.pdf (100 pages, 1475228 bytes).
 PDF statistics:
- 1711 PDF objects out of 1728 (max. 8388607)
- 1462 compressed objects within 15 object streams
+ 1707 PDF objects out of 1728 (max. 8388607)
+ 1458 compressed objects within 15 object streams
  376 named destinations out of 1000 (max. 500000)
  1012 words of extra memory for PDF output out of 10000 (max. 10000000)
 
