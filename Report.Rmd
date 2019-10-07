@@ -120,7 +120,7 @@ Lake Goollelal, located within the Yellagonga Regional Park, is recognised as an
 
 ### Hydrology
 
-Surface water levels recorded at Lake Goollelal reveal peak levels generally occur between September and November and lowest water levels between March and May (Table \ref{tab:GoollelalWater}). There has been a consistent range of about 0.7 m in annual water level during this period. There has been a general trend of decreasing surface water levels since 1995, although recent increases since 2016 show surface waters at a similar depth to 1990 levels (Figure \ref{fig:GoollelalWaterPlot}). Surface water levels show similar trends to groundwater levels at a nearby bore (61611870) as the lake is largely fed by groundwater. Although the preferred minimum threshold of 26.0 mAHD has not been breached, it is likely the threshold is set too low as acidification of waters in the lake is a concern (Quintero Vasquez 2018). Proposed changes to the Ministerial Criteria include adopting a higher threshold level of 26.4 mAHD.
+Surface water levels recorded at Lake Goollelal reveal peak levels generally occur between September and November and lowest water levels between March and May (Table \ref{tab:GoollelalWater}). There has been a consistent range of about 0.7 m in annual water level during this period. There has been a general trend of decreasing surface water levels since 1995, although recent increases since 2016 show surface waters at a similar depth to 1990 levels (Figure \ref{fig:GoollelalWaterPlot}). Surface water levels show similar trends to groundwater levels at a nearby bore (61611870) as the lake is largely fed by groundwater. Although the preferred minimum threshold of 26.0 mAHD has not been breached, it is likely the threshold is set too low as acidification of waters in the lake is a concern (Quintero Vasquez 2018). Proposed changes to the Ministerial Criteria include adopting a higher threshold level of 26.4 mAHD. The proposed threshold can be met at 2030 based on modelling (Can we reference their model?).
 
 ### Vegetation dynamics
 
@@ -142,7 +142,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
   kable_styling(latex_options="scale_down")
 ```
 
-```{r GoollelalWaterPlot, fig.cap="\\label{fig:GoollelalWaterPlot} Ground and surface water levels recorded at bore 61611870 (red) and staff 6162517 (blue) for Lake Goollelal. Red segments on fitted line represent statistically significant periods of declining water levels and blue segments represent statistically significant periods of increasing water levels.", results = 'asis'}
+```{r GoollelalWaterPlot, fig.cap="\\label{fig:GoollelalWaterPlot} Ground and surface water levels recorded at staff 6162517 for Lake Goollelal. Red segments on fitted line represent statistically significant periods of declining water levels and blue segments represent statistically significant periods of increasing water levels. Dotted line is the current ministerial absolute minimum water levels. Dashed line is the proposed 2030 minimum threshold level.", results = 'asis'}
 gool.p
 ```
 
@@ -173,39 +173,43 @@ beta.plot
 
 ### Revised water level threshold effects
 
+Revised thresholds will likely maintain ecological conditions similar to present (Table \ref{tab:GoollelalCompliance}).
+
+```{r GoollelalCompliance, echo=FALSE, results='asis'}
+  cat(' Table: \\label{tab:GoollelalCompliance}Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives at Lake Goollelal.
+  
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-|* Waterbird habitat and drought refuge | |  |
-|* Supports good populations of native fish species, Swan River goby (*Pseudogobius olorum*) and the western pygmy perch (*Edelia vittata*) | |  |
+|* Waterbird habitat and drought refuge | | Yes |
+|* Supports good populations of native fish species, Swan River goby (*Pseudogobius olorum*) and the western pygmy perch (*Edelia vittata*) | | Yes  |
 | **Site management objectives** |||
-|* Conservation and public enjoyment of natural and modified landscapes|||
-|* Protect and if possible enhance, fringing wetland vegetation including woodland and sedge vegetation|||
-|* Maintain permanent, deep water for waterbird habitat and as a drought refuge|||
-|* Maintain permanent water for fish and other dependent species|||
-|* Maintain the landscape amenity values of the wetland|||
-
-Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives at Lake Goollelal.
+|* Conservation and public enjoyment of natural and modified landscapes||Yes|
+|* Protect and if possible enhance, fringing wetland vegetation including woodland and sedge vegetation||Yes|
+|* Maintain permanent, deep water for waterbird habitat and as a drought refuge||Yes|
+|* Maintain permanent water for fish and other dependent species||Yes|
+|* Maintain the landscape amenity values of the wetland||Yes|
+')
+  
+```
 
 \newpage
 
-
-
-
-
 ## Loch McNess
 
-Loch McNess, located in Yanchep National Park, is a relatively undisturbed wetland with large areas of intact Herdsman Complex vegetation, relatively good water quality and important habitat for water birds and other aquatic fauna (FROEND 2004). Permanent water is required to support a local Rakali (*Hydromys chrysogaster*) population and resident and visiting populations of water birds and waders. The southern lake at Loch McNess is one of the few wetlands known to contain the nightfish *Bostokia porosa* and has one of the most rich aquatic macroinvertebrate communities of the Swan Coastal Plain. Loch McNess is a wetland of high conservation value because of its intact vegetation, largely unaltered aquatic processes and important populations of fauna (FROEND 2004).]
+Loch McNess, located in Yanchep National Park, is a relatively undisturbed wetland with large areas of intact Herdsman Complex vegetation. THe lake has had relatively good water quality and provides an important habitat for water birds and other aquatic fauna (FROEND 2004). Permanent water is required to support a local Rakali (*Hydromys chrysogaster*) population and resident as well as visiting populations of water birds and waders. The southern lake at Loch McNess is one of the few wetlands known to contain the nightfish *Bostokia porosa* and has one of the most rich aquatic macroinvertebrate communities of the Swan Coastal Plain. Loch McNess is a wetland of high conservation value because of its intact vegetation, largely unaltered aquatic processes and important populations of fauna (FROEND 2004).]
 
 ### Hydrology
 
-Since early 2011, readings for the staff gauge at Loch McNess have frequently been below the gauge's limit. It is therefore likely the decline in surface water levels have continued pasted the levels shown in Figure \ref{fig:McNessWaterPlot}. Nonetheless, surface water, which were remarkably stable before 2003 at 7 mAHD, have declined at least 1.5 m to present levels. These declines have been mirrored in surrounding bores (Figure \ref{fig:McNessWaterPlot}). Mean maximum and minimum seasonal water levels have decline by 0.9 m since 1994-2004 levels (Table \ref{tab:LochMcNessWater}). Changes in seasonal patterns are difficult to interpret due to staff gauge 6162564 being mostly dry since 2014, but during the period 2009-2014, minimum water levels were not being reached until May, compared to March in the decade 1994-2004 before water levels began to decline. A recent increase in water level, as seen in surrounding wetlands during the last few seasons, has not been observed at Loch McNess (GMEMP 2019 REPORT). The dramatic decline in water levels is causing the terrestrialisation of the lake as much of the lake bed is now undergoing recruitment by fringing vegetation. 
+Since early 2011, readings for the staff gauge at Loch McNess have frequently been below the gauge's limit. It is therefore likely the decline in surface water levels have continued pasted the levels shown in Figure \ref{fig:McNessWaterPlot}. Nonetheless, surface water, which were remarkably stable before 2003 at 7 mAHD, have declined at least 1.5 m to present levels. These declines have been mirrored in surrounding bores (Figure \ref{fig:McNessWaterPlot}). Mean maximum and minimum seasonal water levels have decline by 0.9 m since 1994-2004 levels (Table \ref{tab:LochMcNessWater}). Changes in seasonal patterns are difficult to interpret due to staff gauge 6162564 being mostly dry since 2014, but during the period 2009-2014, minimum water levels were not being reached until May, compared to March in the decade 1994-2004 before water levels began to decline. A recent increase in water level, as seen in surrounding wetlands during the last few seasons, has not been observed at Loch McNess. The dramatic decline in water levels is causing the terrestrialisation of the lake as much of the lake bed is now undergoing recruitment by fringing vegetation.
+
+The lake has been ncon-compliant with ministerial water levels since 2003 and water levels are now approximatley 1.0 m below this threshold. Modelling of ground water levels under proposed abstraction reductions will not provide sufficient increases in ground water to make this wetland compliant with exsisting thresholds. Under the new plan, a proposed threshold of 8.0 mAHD at bore 61612104 will satisfy the proposed threshold of surface waters in the lake at 6.2 mAHD (0.75 m below exsisting threshold).
 
 ### Vegetation dynamics
 
-A vegetation ,monitoring transect was established in 2004 with three plots (A, B, and C) with an additional up-slope plot in 2009 (Plot D) and a plot down-slope of Plot A in 2010 (Plot E; Figure \ref{fig:McNessStrat}). The fringing vegetation is largely comprised of a *Melaleuca rhaphiophylla*/*Eucalyptus rudis* complex. Most trees are in average to good health (BULLER 2019). *Baumea juncea* is found in Plots A -D at relatively constant cover abundance. *Baumea articulata*, however, disappeared from Plot A in 2005 and was present in the new down-slop plot (Plot E) until 2014. (REASON FOR DISAPEARANCE?)
+A vegetation monitoring transect was established in 2004 with three plots (A, B, and C) plus an additional up-slope plot in 2009 (Plot D) and a plot down-slope of Plot A in 2010 (Plot E; Figure \ref{fig:McNessStrat}). The fringing vegetation is largely comprised of a *Melaleuca rhaphiophylla*/*Eucalyptus rudis* complex. Most trees are in average to good health (BULLER 2019). *Baumea juncea* is found in Plots A -D at relatively constant cover abundance. *Baumea articulata*, however, disappeared from Plot A in 2005 and was present in the new down-slop plot (Plot E) until 2014. (REASON FOR DISAPEARANCE?)
 
-Plots A and B have shifted in community composition dramatically during the monitoring period as the vegetation responds to lower surface water levels in the lake and the impact of fire in 2004 and 2009 (BULLER 2018 REPORT) (Figure \ref{fig:McNessOrd}). Regressional analysis reveal that the exotic *Avena barbata* and the native *Tricoryne elatior* will increase the most as water levels in the lake decline (Figure \ref{fig:McNessPost}). The natives, *Carex fascicularis* and *Triglochin centrocarpa* are most likely to decline dramatically at the wetland under a scenario of continuing declining water levels.
+Plots A and B have shifted in community composition dramatically during the monitoring period as the vegetation responds to lower surface water levels in the lake and the impact of fire in 2004 and 2009 (BULLER 2018 REPORT) (Figure \ref{fig:McNessOrd}). Regressional analysis reveal that the exotic *Avena barbata* and the native *Tricoryne elatior* will increase the most as water levels in the lake decline (Figure \ref{fig:McNessPost}). The natives, *Carex fascicularis* and *Triglochin centrocarpa* are most likely to decline dramatically at the wetland under a scenario of continuing declining water levels. It is also likely that *M. rhaphiophylla* will decrease in cover abundance with continued declines in water levels.
 
 ```{r LochMcNessWater, echo = FALSE, results = 'asis'}
 load("Loch_McNess/water_level.RData")
@@ -221,7 +225,7 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
   kable_styling(latex_options="scale_down")
 ```
 
-```{r McNessWaterPlot, fig.cap="\\label{fig:McNessWaterPlot} Ground and surface water levels recorded at bores 61612104 (red) and 61640108 (green) and staff gauge 6162564 (blue) that represent changes in water levels at Loch McNess. Segments in red represent periods of significant decline in water level.", results = 'asis'}
+```{r McNessWaterPlot, fig.cap="\\label{fig:McNessWaterPlot} Ground and surface water levels recorded at bores 61612104 (red) and staff gauge 6162564 (blue) that represent changes in water levels at Loch McNess. Segments in red represent periods of significant decline in water level. Dotted line is the current ministerial threshold water level for surface waters at the staff gauge. Dashed lines are proposed ministerial thresholds for the staff gauge and bore.", results = 'asis'}
 mcness.p
 ```
 
