@@ -16,13 +16,6 @@ library(janitor)
 
 options(stringsAsFactors=F)
 
-read_excel_allsheets <- function(filename) {
-  sheets <- readxl::excel_sheets(filename)
-  x <- lapply(sheets, function(X) readxl::read_excel(filename, sheet = X))
-  names(x) <- sheets
-  x
-}
-
 tmpf <- tempfile()
 download.file("https://gist.github.com/gavinsimpson/e73f011fdaaab4bb5a30/raw/82118ee30c9ef1254795d2ec6d356a664cc138ab/Deriv.R",
               tmpf, method = "wget")

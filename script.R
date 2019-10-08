@@ -46,3 +46,13 @@ for (i in 1:length(wetlands)) {
     source("Plot_Figures.R")
   }
 }
+
+######################
+# Invertebrate data  #
+######################
+
+mcmc_control <- list(n.burnin = 10000, n.iteration = 60000, 
+                     n.thin = 50, seed=28041948)
+
+# Prep and entire data ordination
+source("invertebrate_analysis.R") # Will take a long time with full mcmc
