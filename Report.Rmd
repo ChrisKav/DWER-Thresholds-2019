@@ -112,6 +112,14 @@ ggplot(survey.yrs, aes(Last, wetland)) +
   
 ```
 
+Macroinvertebrate communities have shifted during the study period, with some wetlands on similar trajectories (Figure \ref{fig:InvertOrd}).
+
+```{r InvertOrd, fig.cap="\\label{fig:InvertOrd}Ordination plot of all samples collect at each wetland during the survey period (1996-2018). Arrows represnt change from first survey to last survey. Wetlands include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Lake Mariginiup (MAR), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON).", results = 'asis'}
+load("invertebrate_data.RData")
+complete.invert.plot
+```
+
+
 # Individual wetland descriptions
 
 ## Lake Goollelal
@@ -150,7 +158,7 @@ gool.p
 
 \blandscape
 
-```{r GoollelalStrat, fig.cap="\\label{fig:GoollelalStrat}Cover abundances for each species across the four plots (A, B, C, D) at the Lake Goollelal transect. Invasive species are denoted by 'X'. Only the most common species are included.", results = 'asis', fig.width=10, fig.length=8}
+```{r GoollelalStrat, fig.cap="\\label{fig:GoollelalStrat}Cover abundances for each species across the four plots (A, B, C, D) at the Lake Goollelal transect. Invasive species are denoted by 'X'. Only the most common species are included.", results = 'asis'}
 load("Goollelal/boral_models.RData")
 stratiplotter(vegfit.mod3)
 ```
