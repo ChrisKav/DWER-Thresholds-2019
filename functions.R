@@ -50,6 +50,25 @@ boral.extract <- function(b, d) {
   return <- res
 }
 
+boral.extract2 <- function(b, d) {
+  alpha <- 0.5 
+  testcov <- b$lv.median %*% t(b$lv.coefs.median[, 2:3])
+  do.svd <- svd(testcov, b$num.lv, b$num.lv)
+  choose.lvs <- scale(do.svd$u *matrix(do.svd$d[1:b$num.lv]^alpha,
+                                       nrow = b$n, ncol = 2, byrow = T),
+                      center = T, scale = F)
+  choose.lv.coefs <- scale(do.svd$v * 
+                             matrix(do.svd$d[1:b$num.lv]^(1 -alpha),
+                                    nrow = b$p, ncol = 2, byrow = T), center = T,
+                           scale = F)
+  choose.lv <- data.frame(choose.lvs, d$Year)
+  colnames(choose.lv)[1:3] <- c("LV1", "LV2", "Year")
+  rownames(choose.lv.coefs) <- colnames(b$y)
+  res <- list(choose.lv, choose.lv.coefs)
+  names(res) <- c("lv", "coefs")
+  return <- res
+}
+
 bor.summary.plot <- function(b, Y, d) {
   BigEffs <- b$ssvs.indcoefs.mean > (0.8)
   GWPostPs <- b$ssvs.indcoefs.mean[BigEffs]
@@ -89,6 +108,31 @@ boral.plots <- function(b) {
     geom_path(aes(group=Plot), linetype="solid")+
     geom_text_repel(data=subset(b$lv, Year == yr.min | Year == yr.max)
                     , aes(label=Year))# +
+  #geom_point(data=sp.coef, aes(x=LV1, y=LV2), inherit.aes = FALSE)# +
+  #geom_label_repel(data=sp.coef, aes(x=LV1, y=LV2, label=sp.coef$Species), 
+  #box.padding = 0.35,
+  #point.padding=0.5,
+  #segment.color="grey50",
+  #inherit.aes = FALSE)
+  return(ord)
+}
+
+boral.plots2 <- function(b) {
+  #sp.coef <- data.frame(subset(b$coefs, rownames(b$coefs) %in% rownames(s)))
+  yr.min <- min(as.numeric(levels(b$lv$Year)))
+  yr.max <- max(as.numeric(levels(b$lv$Year)))
+  sp.coef <- data.frame(b$coefs)
+  colnames(sp.coef) <- c("LV1", "LV2")
+  sp.coef$Species <- rownames(sp.coef)
+  ord <- ggplot() +
+    theme_bw() +
+    geom_point(data = b$lv, aes(x=LV1, y=LV2, colour=Year), size =3, show.legend = FALSE) +
+    geom_path(data = b$lv, aes(x=LV1, y=LV2), linetype="dotted") +
+    geom_text_repel(data=subset(b$lv, Year == yr.min | Year == yr.max)
+                    , aes(x=LV1, y=LV2, label=Year))+
+    theme(panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          panel.background = element_blank())# +
   #geom_point(data=sp.coef, aes(x=LV1, y=LV2), inherit.aes = FALSE)# +
   #geom_label_repel(data=sp.coef, aes(x=LV1, y=LV2, label=sp.coef$Species), 
   #box.padding = 0.35,
@@ -224,6 +268,36 @@ stratiplotter <- function(x) {
     coord_flip() +
     theme_new +
     facet_grid(df2$plot~df2$variable) #,scales = "free") #space = "free")
+  return(strat_plot)
+}
+
+stratiplotter2 <- function(x) {
+  require(ggplot2)
+  require(dplyr)
+  require(reshape2)
+  theme_new <- theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), # remove grids
+                     panel.background = element_blank(), axis.line = element_line(colour = "black"),
+                     strip.text.x = element_text(size=10, angle=90, vjust=0), # Taxa names
+                     strip.background = element_blank(),
+                     strip.text.y = element_text(angle = 0),
+                     legend.position="none",panel.border = element_blank(),
+                     axis.text.x=element_text(angle=45,hjust=1)) # Axis tick label angle
+  Y <- x$y
+  year <- x$row.ids[,1]
+  Y <- Y[, colSums(Y) > 1]
+  df <- cbind(year, data.frame(Y))
+  df2 <- melt(df, id=c("year"))
+  df2$year <- as.numeric(as.character(df2$year))
+  
+  strat_plot <- ggplot(df2) +
+    geom_line(aes(year,value)) +
+    geom_area(aes(year,value, fill=variable)) +
+    scale_x_reverse() +
+    scale_y_continuous(breaks =NULL) +
+    xlab("Year")+ylab("Abundance") +
+    coord_flip() +
+    theme_new +
+    facet_grid(~df2$variable)
   return(strat_plot)
 }
 

@@ -3,10 +3,10 @@ title: "Review of Water Thresholds - Gnangara"
 author: "Christopher Kavazos, Grant Buller, Pierre Horwitz, Ray Froend"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
-  pdf_document: default
-  papersize: a4
   html_document:
     df_print: paged
+  papersize: a4
+  pdf_document: default
   word_document: default
 header-includes:
 - \usepackage{pdflscape}
@@ -119,7 +119,6 @@ load("invertebrate_data.RData")
 complete.invert.plot
 ```
 
-
 # Individual wetland descriptions
 
 ## Lake Goollelal
@@ -135,6 +134,12 @@ Surface water levels recorded at Lake Goollelal reveal peak levels generally occ
 The composition of vegetation at Lake Goollelal has been assessed 14 times between 1997 and 2014 at four plots along an established transect [I NEED TO READ THE 2014 VEG REPORT]. Plot A represents fringing *Melaleuca rhaphiophylla*/*Eucalyptus rudis* vegetation and a stable community of the native sedges, *Baumea articulata* and *Lepidosperma gladiatum*. The *M. rhaphiophylla*/*E. rudis* complex continues throughout the transect, which has also remained relatively stable in terms of cover abundance since 2002. There is a high richness of exotic vegetation species present at the lake. Generally, these exotic species have increased in abundance during the survey period (Figure \ref{fig:GoollelalStrat}).
 
 Ordination reveals that Plot A has a distinct assemblage to the other plots but has displayed similar shifts in vegetation composition during the monitoring period (Figure \ref{fig:GoollelalOrd}). All plots show an initial shift in community cover abundance from the 1997 survey and a return to 1997-like composition in the recent survey years. Plot D displays a different pattern, probably due to the record of *B. articulata* in 1997 [SHOULD CONFIRM THIS WITH GRANT] and the high cover abundance of exotic species. Bayesian regression analysis predicts many species to increase in cover abundance with declining surface water levels, while *B. articulata* is predicted to decrease significantly in cover abundance (Figure \ref{fig:GoollelalPost}). Native species thought to increase in cover abundance with declining surface water levels include *Pennisetum clandestinum*, and *Microtis media*, while cover abundance of *M. rhaphiophylla* and *E. rudis* will likely remain stable or only increase slightly. Many exotic species are likely to increases in cover abundance under a scenario of declining surface waters, including *Briza maxima*, *Fumaria capreolata*, *Setaria palmifolia* and *Sparaxis bulbifera*.
+
+### Aquatic invertebrates
+
+### Revised water level threshold effects
+
+Revised thresholds will likely maintain ecological conditions similar to present (Table \ref{tab:GoollelalCompliance}).
 
 ```{r GoollelalWater, echo = FALSE, results = 'asis'}
 load("Goollelal/water_level.RData")
@@ -176,12 +181,6 @@ veg.ord1
 load("Goollelal/Vegetation/beta_plot.RData")
 beta.plot
 ```
-
-### Aquatic invertebrates
-
-### Revised water level threshold effects
-
-Revised thresholds will likely maintain ecological conditions similar to present (Table \ref{tab:GoollelalCompliance}).
 
 ```{r GoollelalCompliance, echo=FALSE, results='asis'}
   cat(' Table: \\label{tab:GoollelalCompliance}Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives at Lake Goollelal.

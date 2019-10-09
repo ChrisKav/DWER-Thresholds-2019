@@ -56,3 +56,14 @@ mcmc_control <- list(n.burnin = 10000, n.iteration = 60000,
 
 # Prep and entire data ordination
 source("invertebrate_analysis.R") # Will take a long time with full mcmc
+
+# Run model for each wetland
+wetlands <- read.csv("wetlands.csv", header=FALSE)[,1]
+wetlands <- wetlands[c(1,2,4,5,8,9,10,15)]
+wetlands <- droplevels(wetlands)
+
+for (i in 1:length(wetlands)) {
+  if (file.exists(paste0(wetlands[i], "/invertebrates.R"))) {
+    source(paste0(wetlands[i], "/invertebrates.R"))
+  }
+}
