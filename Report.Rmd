@@ -3,10 +3,10 @@ title: "Review of Water Thresholds - Gnangara"
 author: "Christopher Kavazos, Grant Buller, Pierre Horwitz, Ray Froend"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
+  pdf_document: default
+  papersize: a4
   html_document:
     df_print: paged
-  papersize: a4
-  pdf_document: default
   word_document: default
 header-includes:
 - \usepackage{pdflscape}
@@ -172,7 +172,7 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
-```{r GoollelalOrd, fig.cap="\\label{fig:GoollelalOrd}Unconstrained ordination based on the latent variable model for each surveyed year for Lake Goollelal. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
+```{r GoollelalOrd, fig.cap="\\label{fig:GoollelalOrd}Unconstrained ordination based on vegetation data for each surveyed year for Lake Goollelal. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Goollelal/boral_models.RData")
 veg.ord1
 ```
@@ -180,6 +180,45 @@ veg.ord1
 ```{r GoollelalPost, fig.cap="\\label{fig:GoollelalPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Melaleuca Park 78 on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline while species with positive posterior values are likely to increase in cover abundance with increasing water levels. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Goollelal/Vegetation/beta_plot.RData")
 beta.plot
+```
+
+\newpage
+
+\blandscape
+
+```{r GoollelalStratInv, fig.cap="\\label{fig:GoollelalStratInv}Cover abundances for each aquatic macroinvertebrate familiy at Lake Goollelal.", results = 'asis'}
+load("Goollelal/Invert_analysis.RData")
+strat.plot
+```
+
+\elandscape
+
+\newpage
+
+```{r GoollelalRichInv, fig.cap="\\label{fig:GoollelalRichInv}Richness of aquatic invertebrate families for each year at Lake Goollelal. Line is a moving 3-year averavge.", results = 'asis'}
+load("invertebrate_data.RData")
+rich <- data.frame(richness[[1]])
+colnames(rich)[[1]] <- "Year"
+
+rich.plot <- ggplot(rich, aes(Year, richness)) + 
+  geom_point(position=position_jitter(1,3), pch=21, fill="#FF0000AA") +
+  geom_line(aes(y=rollmean(richness, 3, na.pad=TRUE))) +
+  geom_hline(yintercept = mean(rich$richness), linetype="dotted") +
+  scale_x_continuous(breaks = round(seq(min(rich$Year), 2018, by = 2),0)) +
+  scale_y_continuous() +
+  ylab("Family richness") +
+  theme_bw() +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+rich.plot
+```
+
+```{r GoollelalOrdInv, fig.cap="\\label{fig:GoollelalOrdInv}Unconstrained ordination based on invertebrate data for each surveyed year for Lake Goollelal. Consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
+load("Goollelal/Invert_analysis.RData")
+ord.plot
 ```
 
 ```{r GoollelalCompliance, echo=FALSE, results='asis'}
@@ -257,6 +296,44 @@ veg.ord1
 ```{r McNessPost, fig.cap="\\label{fig:McNessPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Loch McNess on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline while species with positive values are predicted to increase in cover abundance with water increasing water levels. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Loch_McNess/Vegetation/beta_plot.RData")
 beta.plot
+```
+\newpage
+
+\blandscape
+
+```{r McNessStratInv, fig.cap="\\label{fig:McNessStratInv}Cover abundances for each aquatic macroinvertebrate familiy at Loch McNess.", results = 'asis'}
+load("Loch_McNess/Invert_analysis.RData")
+strat.plot
+```
+
+\elandscape
+
+\newpage
+
+```{r McNessRichInv, fig.cap="\\label{fig:McNessRichInv}Richness of aquatic invertebrate families for each year. Line is a moving 3-year averavge at Loch McNess.", results = 'asis'}
+load("invertebrate_data.RData")
+rich <- data.frame(richness[[5]])
+colnames(rich)[[1]] <- "Year"
+
+rich.plot <- ggplot(rich, aes(Year, richness)) + 
+  geom_point(position=position_jitter(1,3), pch=21, fill="#FF0000AA") +
+  geom_line(aes(y=rollmean(richness, 3, na.pad=TRUE))) +
+  geom_hline(yintercept = mean(rich$richness), linetype="dotted") +
+  scale_x_continuous(breaks = round(seq(min(rich$Year), 2018, by = 2),0)) +
+  scale_y_continuous() +
+  ylab("Family richness") +
+  theme_bw() +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+rich.plot
+```
+
+```{r McNessOrdInv, fig.cap="\\label{fig:McNessOrdInv}Unconstrained ordination based on invertebrate data for each surveyed year for Loch McNess. Consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
+load("Loch_McNess/Invert_analysis.RData")
+ord.plot
 ```
 
 ### Revised water level threshold effects
@@ -342,6 +419,45 @@ veg.ord1
 ```{r YonderupPost, fig.cap="\\label{fig:YonderupPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Lake Yonderup on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Yonderup/Vegetation/beta_plot.RData")
 beta.plot
+```
+
+\newpage
+
+\blandscape
+
+```{r YonderupStratInv, fig.cap="\\label{fig:YonderupStratInv}Cover abundances for each aquatic macroinvertebrate familiy at Lake Yonderup.", results = 'asis'}
+load("Yonderup/Invert_analysis.RData")
+strat.plot
+```
+
+\elandscape
+
+\newpage
+
+```{r YonderupRichInv, fig.cap="\\label{fig:YonderupRichInv}Richness of aquatic invertebrate families for each year at Lake Yonderup. Line is a moving 3-year averavge.", results = 'asis'}
+load("invertebrate_data.RData")
+rich <- data.frame(richness[[4]])
+colnames(rich)[[1]] <- "Year"
+
+rich.plot <- ggplot(rich, aes(Year, richness)) + 
+  geom_point(position=position_jitter(1,3), pch=21, fill="#FF0000AA") +
+  geom_line(aes(y=rollmean(richness, 3, na.pad=TRUE))) +
+  geom_hline(yintercept = mean(rich$richness), linetype="dotted") +
+  scale_x_continuous(breaks = round(seq(min(rich$Year), 2018, by = 2),0)) +
+  scale_y_continuous() +
+  ylab("Family richness") +
+  theme_bw() +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+rich.plot
+```
+
+```{r YonderupOrdInv, fig.cap="\\label{fig:YonderupOrdInv}Unconstrained ordination based on invertebrate data for each surveyed year for Lake Yonderup. Consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
+load("Yonderup/Invert_analysis.RData")
+ord.plot
 ```
 
 ```{r YonderupCompliance, echo=FALSE, results='asis'}
@@ -448,6 +564,45 @@ Joon.Sth <- beta.plot
 ggarrange(Joon.Nth, Joon.Sth, ncol=2)
 ```
 
+\newpage
+
+\blandscape
+
+```{r JoondalupStratInv, fig.cap="\\label{fig:JoondalupStratInv}Cover abundances for each aquatic macroinvertebrate familiy at Lake Joondalup.", results = 'asis'}
+load("Joondalup_Nth/Invert_analysis.RData")
+strat.plot
+```
+
+\elandscape
+
+\newpage
+
+```{r JoondalupRichInv, fig.cap="\\label{fig:JoondalupRichInv}Richness of aquatic invertebrate families for each year at Lake Joondalup. Line is a moving 3-year averavge.", results = 'asis'}
+load("invertebrate_data.RData")
+rich <- data.frame(richness[[2]])
+colnames(rich)[[1]] <- "Year"
+
+rich.plot <- ggplot(rich, aes(Year, richness)) + 
+  geom_point(position=position_jitter(1,3), pch=21, fill="#FF0000AA") +
+  geom_line(aes(y=rollmean(richness, 3, na.pad=TRUE))) +
+  geom_hline(yintercept = mean(rich$richness), linetype="dotted") +
+  scale_x_continuous(breaks = round(seq(min(rich$Year), 2018, by = 2),0)) +
+  scale_y_continuous() +
+  ylab("Family richness") +
+  theme_bw() +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+rich.plot
+```
+
+```{r JoondalupOrdInv, fig.cap="\\label{fig:JoondalupOrdInv}Unconstrained ordination based on invertebrate data for each surveyed year for Lake Joondalup. Consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
+load("Joondalup_Nth/Invert_analysis.RData")
+ord.plot
+```
+
 ```{r JoondalupCompliance, echo=FALSE, results='asis'}
   cat(' Table: \\label{tab:JoondalupCompliance}Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives at Lake Joondalup.
 
@@ -527,6 +682,45 @@ load("Mariginiup/Vegetation/beta_plot.RData")
 beta.plot
 ```
 
+\newpage
+
+\blandscape
+
+```{r MariginiupStratInv, fig.cap="\\label{fig:MariginiupStratInv}Cover abundances for each aquatic macroinvertebrate familiy at Lake Mariginiup.", results = 'asis'}
+load("Mariginiup/Invert_analysis.RData")
+strat.plot
+```
+
+\elandscape
+
+\newpage
+
+```{r MariginiupRichInv, fig.cap="\\label{fig:MariginiupRichInv}Richness of aquatic invertebrate families for each year at Lake Mariginiup. Line is a moving 3-year averavge.", results = 'asis'}
+load("invertebrate_data.RData")
+rich <- data.frame(richness[[6]])
+colnames(rich)[[1]] <- "Year"
+
+rich.plot <- ggplot(rich, aes(Year, richness)) + 
+  geom_point(position=position_jitter(1,3), pch=21, fill="#FF0000AA") +
+  geom_line(aes(y=rollmean(richness, 3, na.pad=TRUE))) +
+  geom_hline(yintercept = mean(rich$richness), linetype="dotted") +
+  scale_x_continuous(breaks = round(seq(min(rich$Year), 2018, by = 2),0)) +
+  scale_y_continuous() +
+  ylab("Family richness") +
+  theme_bw() +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+rich.plot
+```
+
+```{r MariginiupOrdInv, fig.cap="\\label{fig:MariginiupOrdInv}Unconstrained ordination based on invertebrate data for each surveyed year for Lake Mariginiup. Consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
+load("Mariginiup/Invert_analysis.RData")
+ord.plot
+```
+
 ```{r MariginiupCompliance, echo=FALSE, results='asis'}
   cat(' Table: \\label{tab:MariginiupCompliance}Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives at Lake Mariginiup.
 
@@ -602,6 +796,45 @@ veg.ord1
 ```{r JandabupPost, fig.cap="\\label{fig:JandabupPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Lake Jandabup on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline while species with positive values are likely to increase in cover abundance as water levels increase. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("Jandabup/Vegetation/beta_plot.RData")
 beta.plot
+```
+
+\newpage
+
+\blandscape
+
+```{r JandabupStratInv, fig.cap="\\label{fig:JandabupStratInv}Cover abundances for each aquatic macroinvertebrate familiy at Lake Jandabup.", results = 'asis'}
+load("Jandabup/Invert_analysis.RData")
+strat.plot
+```
+
+\elandscape
+
+\newpage
+
+```{r JandabupRichInv, fig.cap="\\label{fig:JandabupRichInv}Richness of aquatic invertebrate families for each year at Lake Jandabup. Line is a moving 3-year averavge.", results = 'asis'}
+load("invertebrate_data.RData")
+rich <- data.frame(richness[[7]])
+colnames(rich)[[1]] <- "Year"
+
+rich.plot <- ggplot(rich, aes(Year, richness)) + 
+  geom_point(position=position_jitter(1,3), pch=21, fill="#FF0000AA") +
+  geom_line(aes(y=rollmean(richness, 3, na.pad=TRUE))) +
+  geom_hline(yintercept = mean(rich$richness), linetype="dotted") +
+  scale_x_continuous(breaks = round(seq(min(rich$Year), 2018, by = 2),0)) +
+  scale_y_continuous() +
+  ylab("Family richness") +
+  theme_bw() +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+rich.plot
+```
+
+```{r JandabupOrdInv, fig.cap="\\label{fig:JandabupOrdInv}Unconstrained ordination based on invertebrate data for each surveyed year for Lake Jandabup. Consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
+load("Jandabup/Invert_analysis.RData")
+ord.plot
 ```
 
 ```{r JandabupCompliance, echo=FALSE, results='asis'}
@@ -705,6 +938,45 @@ load("Nowergup_Sth/Vegetation/beta_plot.RData")
 Nower.Sth <- beta.plot
 
 ggarrange(Nower.Nth, Nower.Sth, ncol=2)
+```
+
+\newpage
+
+\blandscape
+
+```{r NowergupStratInv, fig.cap="\\label{fig:NowergupStratInv}Cover abundances for each aquatic macroinvertebrate familiy at Lake Nowergup.", results = 'asis'}
+load("Nowergup_Nth/Invert_analysis.RData")
+strat.plot
+```
+
+\elandscape
+
+\newpage
+
+```{r NowergupRichInv, fig.cap="\\label{fig:NowergupRichInv}Richness of aquatic invertebrate families for each year at Lake Nowergup. Line is a moving 3-year averavge.", results = 'asis'}
+load("invertebrate_data.RData")
+rich <- data.frame(richness[[3]])
+colnames(rich)[[1]] <- "Year"
+
+rich.plot <- ggplot(rich, aes(Year, richness)) + 
+  geom_point(position=position_jitter(1,3), pch=21, fill="#FF0000AA") +
+  geom_line(aes(y=rollmean(richness, 3, na.pad=TRUE))) +
+  geom_hline(yintercept = mean(rich$richness), linetype="dotted") +
+  scale_x_continuous(breaks = round(seq(min(rich$Year), 2018, by = 2),0)) +
+  scale_y_continuous() +
+  ylab("Family richness") +
+  theme_bw() +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+rich.plot
+```
+
+```{r NowergupOrdInv, fig.cap="\\label{fig:NowergupOrdInv}Unconstrained ordination based on invertebrate data for each surveyed year for Lake Nowergup. Consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
+load("Nowergup_Nth/Invert_analysis.RData")
+ord.plot
 ```
 
 ```{r NowergupCompliance, echo=FALSE, results='asis'}
@@ -978,6 +1250,45 @@ veg.ord1
 ```{r EMP173Post, fig.cap="\\label{fig:EMP173Post}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Melaleuca Park 173 on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
 load("EMP_173/Vegetation/beta_plot.RData")
 beta.plot
+```
+
+\newpage
+
+\blandscape
+
+```{r Melaleuca Park 173StratInv, fig.cap="\\label{fig:Melaleuca Park 173StratInv}Cover abundances for each aquatic macroinvertebrate familiy at Lake Melaleuca Park 173.", results = 'asis'}
+load("EMP_173/Invert_analysis.RData")
+strat.plot
+```
+
+\elandscape
+
+\newpage
+
+```{r Melaleuca Park 173RichInv, fig.cap="\\label{fig:Melaleuca Park 173RichInv}Richness of aquatic invertebrate families for each year at Lake Melaleuca Park 173. Line is a moving 3-year averavge.", results = 'asis'}
+load("invertebrate_data.RData")
+rich <- data.frame(richness[[8]])
+colnames(rich)[[1]] <- "Year"
+
+rich.plot <- ggplot(rich, aes(Year, richness)) + 
+  geom_point(position=position_jitter(1,3), pch=21, fill="#FF0000AA") +
+  geom_line(aes(y=rollmean(richness, 3, na.pad=TRUE))) +
+  geom_hline(yintercept = mean(rich$richness), linetype="dotted") +
+  scale_x_continuous(breaks = round(seq(min(rich$Year), 2018, by = 2),0)) +
+  scale_y_continuous() +
+  ylab("Family richness") +
+  theme_bw() +
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) 
+rich.plot
+```
+
+```{r Melaleuca Park 173OrdInv, fig.cap="\\label{fig:Melaleuca Park 173OrdInv}Unconstrained ordination based on invertebrate data for each surveyed year for Lake Melaleuca Park 173. Consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
+load("EMP_173/Invert_analysis.RData")
+ord.plot
 ```
 
 ```{r EMP173Compliance, echo=FALSE, results='asis'}
@@ -1286,7 +1597,8 @@ Vegetation monitoring at Lake Gwelup began in 2013 and was last conducted in 201
 ### Revised water level threshold effects
 
 ```{r GwelupWaterPlot, fig.cap="\\label{fig:GwelupWaterPlot}Ground and surface water levels for Lake Gwelup recorded at bore 61610032 (red) and staff 6162504 (blue). The minimum recordable water level for the staff gaugue is 5.0 mAHD. Blue dots at 5.0 mAHD represent water levels below the minimum level measurable by the staff. Red segments on fitted line represent statistically significant periods of decline and blue represent statistically significant periods of increasing water levels.", results = 'asis'}
-Site.GW.plots$gwel.p
+load("Gwelup/water_level.RData")
+gwel.p
 ```
 
 ```{r GwelupWater, echo = FALSE, results = 'asis'}
