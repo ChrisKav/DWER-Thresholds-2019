@@ -125,9 +125,11 @@ complete.invert.plot
 
 Lake Goollelal, located within the Yellagonga Regional Park, is recognised as an important waterbird habitat and drought refuge (FROEND 2006) as well as habitat for the Swan River Goby (*Pseudogobius olorum*) and the Western Pygmy Perch (*Edelia vittata*) (WAWA 1995). The permanent deep waters found in the lake not only provides significant habitat for fauna and fringing vegetation, but also hold significant value as a place of public enjoyment. [COMMENT ON SURROUNDING URBANISATION?]
 
-### Hydrology
+### Hydrology and water quality
 
 Surface water levels recorded at Lake Goollelal reveal peak levels generally occur between September and November and lowest water levels between March and May (Table \ref{tab:GoollelalWater}). There has been a consistent range of about 0.7 m in annual water level during this period. There has been a general trend of decreasing surface water levels since 1995, although recent increases since 2016 show surface waters at a similar depth to 1990 levels (Figure \ref{fig:GoollelalWaterPlot}). Surface water levels show similar trends to groundwater levels at a nearby bore (61611870) as the lake is largely fed by groundwater. Although the preferred minimum threshold of 26.0 mAHD has not been breached, it is likely the threshold is set too low as acidification of waters in the lake is a concern (Quintero Vasquez 2018). Proposed changes to the Ministerial Criteria include adopting a higher threshold level of 26.4 mAHD. The proposed threshold can be met at 2030 based on modelling (Can we reference their model?).
+
+Lake Gollelal has stable water quality (REFERENCE GMEMP 2019). Water pH, normally around 7.5, has only been recorded below 7 in 2007 while the risk of acidification remains low due to declining chloride:sulphate. Currently, the lake is experienceing increasing levels of nitrogen, although levels are still below long-term averages, and low phosphorous.
 
 ### Vegetation dynamics
 
@@ -136,6 +138,8 @@ The composition of vegetation at Lake Goollelal has been assessed 14 times betwe
 Ordination reveals that Plot A has a distinct assemblage to the other plots but has displayed similar shifts in vegetation composition during the monitoring period (Figure \ref{fig:GoollelalOrd}). All plots show an initial shift in community cover abundance from the 1997 survey and a return to 1997-like composition in the recent survey years. Plot D displays a different pattern, probably due to the record of *B. articulata* in 1997 [SHOULD CONFIRM THIS WITH GRANT] and the high cover abundance of exotic species. Bayesian regression analysis predicts many species to increase in cover abundance with declining surface water levels, while *B. articulata* is predicted to decrease significantly in cover abundance (Figure \ref{fig:GoollelalPost}). Native species thought to increase in cover abundance with declining surface water levels include *Pennisetum clandestinum*, and *Microtis media*, while cover abundance of *M. rhaphiophylla* and *E. rudis* will likely remain stable or only increase slightly. Many exotic species are likely to increases in cover abundance under a scenario of declining surface waters, including *Briza maxima*, *Fumaria capreolata*, *Setaria palmifolia* and *Sparaxis bulbifera*.
 
 ### Aquatic invertebrates
+
+The mean family richness of aquatic invertebrates is 22 for Lake Goollelal (Figure \ref{fig:GoollelalRichInv}). Since 2008, family richness has mostly been stable and above the longterm average. There are stable populations of Amphisopidae, Calanoida, Ceinidae, Chironominae, Corixidae, Cyprididae and Amphisopidae at the lake (Figure \ref{fig:GoollelalStratInv}). Other taxa are not currently recorded in the lake include Ceratopogonidae, Chydoridae, Oligochaeta and Pionidae. The absence of the Chydoridae (Cladocera) is notable given the abundance in early monitoring years. There was a major shift in the assemblage composition in 2006-2007, with ordination revealing two main groups of annual data; those collected pre 2007, and those collected post 2007 (Figure \ref{fig:GoollelalOrdInv}). However, recent high water levels and low nutrients appear to shifting the assemblages back towards pre-2007 compositions (see GMEMP 2019).
 
 ### Revised water level threshold effects
 
@@ -245,17 +249,27 @@ ord.plot
 
 Loch McNess, located in Yanchep National Park, is a relatively undisturbed wetland with large areas of intact Herdsman Complex vegetation. The lake has had relatively good water quality and provides an important habitat for water birds and other aquatic fauna (FROEND 2004). Permanent water is required to support a local Rakali (*Hydromys chrysogaster*) population and resident as well as visiting populations of water birds and waders. The southern lake at Loch McNess is one of the few wetlands known to contain the nightfish *Bostokia porosa* and has one of the most rich aquatic macroinvertebrate communities of the Swan Coastal Plain. Loch McNess is a wetland of high conservation value because of its intact vegetation, largely unaltered aquatic processes and important populations of fauna (FROEND 2004).
 
-### Hydrology
+### Hydrology and water quality
 
 Since early 2011, readings for the staff gauge at Loch McNess have frequently been below the gauge's limit. It is therefore likely the decline in surface water levels have continued pasted the levels shown in Figure \ref{fig:McNessWaterPlot}. Nonetheless, surface water, which were remarkably stable before 2003 at 7 mAHD, have declined at least 1.5 m to present levels. These declines have been mirrored in surrounding bores (Figure \ref{fig:McNessWaterPlot}). Mean maximum and minimum seasonal water levels have decline by 0.9 m since 1994-2004 levels (Table \ref{tab:LochMcNessWater}). Changes in seasonal patterns are difficult to interpret due to staff gauge 6162564 being mostly dry since 2014, but during the period 2009-2014, minimum water levels were not being reached until May, compared to March in the decade 1994-2004. A recent increase in water level, as seen in surrounding wetlands during the last few seasons, has not been observed at Loch McNess. The dramatic decline in water levels is causing the terrestrialisation of the lake as much of the lake bed is now undergoing recruitment by fringing vegetation.
 
 The lake has been ncon-compliant with ministerial water levels since 2003 and water levels are now approximatley 1.0 m below this threshold. Modelling of ground water levels under proposed abstraction reductions will not provide sufficient increases in ground water to make this wetland compliant with exsisting thresholds. Under the new plan, a proposed threshold of 8.0 mAHD at bore 61612104 will satisfy the proposed threshold of surface waters in the lake at 6.2 mAHD (0.75 m below exsisting threshold).
+
+Water quality at Loch McNess appears to have stabalised in the past couple of years. Normal pH is thought to be over 8.0 but has been below 8.0 since 2010. Current monitoring seggest a pH of 7.8, the highest since 2010 (GMEMP 2019 REP). Chloride:sulphate and alaklinity observations suggest that acidification is not a concern at the wetland. There has been a trend of increasing nitrogen levels in the wetland since 2010, but this trend has not continued for 2017-2018 despite current levels being double 1997-2007 levels. Current phosphate levels are an order of magnitude reater than 1999-2004 levels and require close monitoring.
 
 ### Vegetation dynamics
 
 A vegetation monitoring transect was established in 2004 with three plots (A, B, and C) plus an additional up-slope plot in 2009 (Plot D) and a plot down-slope of Plot A in 2010 (Plot E; Figure \ref{fig:McNessStrat}). The fringing vegetation is largely comprised of a *Melaleuca rhaphiophylla*/*Eucalyptus rudis* complex. Most trees are in average to good health (BULLER 2019). *Baumea juncea* is found in Plots A -D at relatively constant cover abundance. *Baumea articulata*, however, disappeared from Plot A in 2005 and was present in the new down-slop plot (Plot E) until 2014. (REASON FOR DISAPEARANCE?)
 
 Plots A and B have shifted in community composition dramatically during the monitoring period as the vegetation responds to lower surface water levels in the lake and the impact of fire in 2004 and 2009 (BULLER 2018 REPORT) (Figure \ref{fig:McNessOrd}). Regressional analysis reveals that the exotic *Avena barbata* and the native *Tricoryne elatior* will increase the most in cover abundance as water levels in the lake remain low or decline further (Figure \ref{fig:McNessPost}). The natives, *Carex fascicularis*, *Triglochin centrocarpa* and *M. rhaphiophylla* are most likely to decline dramatically at the wetland under a scenario of continued low water levels.
+
+### Aquatic macroinvertebrates
+
+Loch McNess is the most taxonomically rich of the Spearwood Dune wetlands, with about 27 macroinvertebrate families regularly found there (Figure \ref{fig:McNessRichInv}). However, the composition of the community is shifting (Figure \ref{fig:McNessOrdInv}). The communities were relatively stable in terms of composition until 2008 when water levels began to decline significantly (Figure \ref{fig:McNessWaterPlot}). The current trajectory suggests the dissimilairty between pre-2008 and contempory communities will continue. The site is now dominated by common taxa of the Swan Coastal Plain such as Amphisopidae, Chironomidae larvae, Corixidae, Culicidae larvae, Cyclopoida (*Daphnia*), Dytiscidae, Notonectidae and Pionidae (Figure \ref{fig:McNessStratInv}). Some of these, namely Chironomidae and Culicidae larvae, are considered nuisence species. The Amphipod, Ceinidae, has not been collected in the lake since 2014 and the shrimp *Palamonetes australis* not recorded since 2010. This shift in macroinvertebrate assemblage indicates serious changes in ecological processes as the wetland transitions towards anutrient enriched shallow lake.
+
+### Revised water level threshold effects
+
+Managing the lake at the proposed thresholds will continue the deterioration of site values at Loch McNess (Table \ref{tab:McNessCompliance}).
 
 ```{r LochMcNessWater, echo = FALSE, results = 'asis'}
 load("Loch_McNess/water_level.RData")
@@ -336,10 +350,6 @@ load("Loch_McNess/Invert_analysis.RData")
 ord.plot
 ```
 
-### Revised water level threshold effects
-
-Managing the lake at the proposed thresholds will continue the deterioration of site values at Loch McNess (Table \ref{tab:McNessCompliance}).
-
 ```{r McNessCompliance, echo=FALSE, results='asis'}
   cat(' Table: \\label{tab:McNessCompliance}Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives at Loch McNess.
 
@@ -368,13 +378,19 @@ Managing the lake at the proposed thresholds will continue the deterioration of 
 
 Located to the south of Loch McNess and north of Lake Wilgarup in Yanchep National Park, Lake Yonderup has a high conservation value as it represents a largely undisturbed wetland with high macroinvertebrate richness and excellent water quality. The permanently filled lake is dependent on ground water to maintain habitats and biophysical processes (FROEND 2004 82422). Like other lakes in the region, Lake Yonderup has experienced a consistent decline in surface water levels that has affected the condition and health of fringing vegetation and aquatic processes. A fire effected the fringing vegetation in 2004/2005 (ROGAN et al 2006 - BULLER REPORT).
 
-### Hydrology
+### Hydrology and water quality
 
 There has been a continual decline in surface water levels at staff gauge 6162565 since 1994. Prior to 1994, water levels were relatively stable at 6 mAHD but have since declined to approximately 5.3 mAHD (Figure \ref{fig:YoderupWaterPlot}). There has been no increase in surface water levels with recent high rainfall seasons. Mean maximum and minimum seasonal water levels have only declined 0.2 and 0.3 m, respectively from 1994-1999 levels (Table \ref{tab:YonderupWater}). There has been nearly a four fold increase in seasonal water level variation and waters are generally now in decline for more than 200 days a year. The bore 61611840 is located near the vegetation transects and represents the ground water levels in the superficial aquifer that the vegetation at the transect is utilising. There has been a similar decline in ground water levels at this bore until 2017, although observations have only been recorded since 2008. Therefore surface water levels are used to assess changes in vegetation as surface water is likely an expression of the superficial aquifer and show similar trends (FROEND 2004 REPORT). 
+
+Lake Yonderup has the lowest nutrient levels of all the monitored wetlands on the Gnangara Mound (GMEMP 2019), however, the most recent observations for 2018 indicate that total nitrogen levels may be increasing. Otherwise, the water chemistry of the lake has remained relatively stable. Stable alkalinity and a pH that consistently remains above 7.0 suggests there is little risk of acidification.
 
 ### Vegetation dynamics
 
 The vegetation transect, established in 1997, is located 750 m south of the basin and is therefore not representative of vegetation at the wetland itself. The lake provides habitat for *Baumea articulata* although there is recent evidence of *Typha orientalis* invading the wetland (SIMONS REPROT). At the vegetation monitoring transects, the site was reported to have a rich exotic community before monitoring began in 1997 and this characteristic of the site has persisted. Currently, exotics account for 60% of the cover abundance and native richness has been declining (BULLER) (Figure \ref{fig:YonderupStrat}). The shifts in vegetation composition at each plot changed dramatically since 1997 but largely stabilised in the late 2000's (Figure \ref{fig:YonderupOrd}). There was a dramatic shift in vegetation composition after the 2004/2005 fire. All the native species, including *Banksia attenuatta* and *Melaleuca preissiana*, are likely to decline in cover abundance under a scenario of sustain low water levels or further declining ground waters (Figure \ref{fig:YonderupPost}).
+
+### Aquatic macroinvertebrate community
+
+Taxonomic richness of the macroinvertebrate assemblage in Lake Yonderup has been declining since 2012 (Figure \ref{fig:YonderupRichInv}). Richness is now lower than previous records and the trend may suggests some shifts in ecological processes due to declining water levels. The composition of the Lake Yonderup macroinvertebrate community is variable (Figure \ref{fig:YonderupOrdInv}). Many taxa are not recorded every year, or are absent for periods, such as Ceinidae, Oligochaeta and Orthocladiinae. Other taxa have declined, or perhsp become locally extinct, including Dytiscidae and Hydrophilidae. Chironominae, Cyclopoida, Cyprididae and Leptoceridae have been recorded in nearly every sampling event at Lake Yonderup.
 
 ### Revised water level threshold effects
 
@@ -467,9 +483,9 @@ ord.plot
 | :------------ | :----------- | :------: |
 | **Site values** |||
 | * High ecological values due to undisturbed nature|  |  |
-| * Rich invertebrate fauna |||
-| * Excellent water quality |||
-| * Undisturbed hydrologic regime and lack of seasonal variation |||
+| * Rich invertebrate fauna || No |
+| * Excellent water quality || At risk |
+| * Undisturbed hydrologic regime and lack of seasonal variation |Seasonal variation has increased with declining water levels|No|
 | * *Banksia* woodland <8m depth to groundwater |  |  |
 | **Site management objectives** |||
 | * Maintain the environmental quality of the lake | ||
@@ -1754,4 +1770,3 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 # References
  
 #Appendix
-
