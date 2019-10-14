@@ -126,4 +126,47 @@ complete.invert.plot <- plot.data %>%
         panel.background = element_blank()) +
   labs(colour="Wetland")
 
-save(invert, richness, Y, Y2, inv.mod, complete.invert.plot, file="invertebrate_data.RData")
+extc.data <- cbind(Y2, complete.meta)
+extc.data <- subset(extc.data, ! wetland==c("MAR"))
+extc.data <- subset(extc.data, ! wetland==c("MEL")) # remove Mariginiup and EMP173 due to inadequate sampling years
+extc.data$year <- as.numeric(extc.data$year)
+extc.data <- extc.data[with(extc.data, !(year %in% 2001:2013)), ]
+period1 <- extc.data[with(extc.data, (year %in% 1996:2000)), ]
+period2 <- extc.data[with(extc.data, (year %in% 2014:2018)), ]
+period1 <- aggregate(period1[,1:74 ], by=list(Wetland=period1$wetland), FUN=sum)
+period2 <- aggregate(period2[,1:74 ], by=list(Wetland=period2$wetland), FUN=sum)
+period1$richness <- as.numeric(rowSums(period1[,1:74] >0 ))
+period2$richness <- as.numeric(rowSums(period2[,1:74] >0 ))
+ext.plot.data <- data.frame(cbind(period1$Wetland,period1$richness,period2$richness))
+ext.plot.data$X2 <- as.numeric(levels(ext.plot.data$X2))[ext.plot.data$X2]
+ext.plot.data$X3 <- as.numeric(levels(ext.plot.data$X3))[ext.plot.data$X3]
+
+extc.rich <- ggplot(data=ext.plot.data, aes(x=X2, y=X3), group=X1) +
+  geom_point() +
+  geom_abline(intercept=0, slope=1, linetype="dashed") +
+  scale_x_continuous(name= "1996-2000 Family Richness", limits=c(24,32), breaks=seq(24,32,1)) +
+  scale_y_continuous(name= "2014-2018 Family Richness",limits=c(22,32), breaks=seq(22,32,1)) +
+  theme_bw() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank()) +
+  annotate("text", x = 24, y = 28, vjust=+1.25, hjust=-0.25, label = "GOO") + 
+  annotate("text", x = 31, y = 25, vjust=+1.25, hjust=+1.25, label = "JAN")  +
+  annotate("text", x = 31, y = 30, vjust=+1.25, hjust=+1.25, label = "JOO") + 
+  annotate("text", x = 28, y = 32, vjust=+1.25, hjust=+1.25, label = "MCS") +
+  annotate("text", x = 32, y = 22, vjust=+1.25, hjust=+1.25, label = "NOW") + 
+  annotate("text", x = 30, y = 25, vjust=+1.25, hjust=+1.25, label = "YON")
+
+period1$Wetland <- NULL
+period1$richness <- NULL
+period2$Wetland <- NULL
+period2$richness <- NULL
+
+setdiff(colnames(period1[,colSums(period1) > 0]),
+  colnames(period2[,colSums(period2) > 0]))
+
+setdiff(colnames(period2[,colSums(period2) > 0]),
+        colnames(period1[,colSums(period1) > 0]))
+
+
+save(invert, richness, Y, Y2, inv.mod, complete.invert.plot, extc.rich, file="invertebrate_data.RData")

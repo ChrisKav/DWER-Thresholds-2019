@@ -114,10 +114,59 @@ ggplot(survey.yrs, aes(Last, wetland)) +
 
 Macroinvertebrate communities have shifted during the study period, with some wetlands on similar trajectories (Figure \ref{fig:InvertOrd}).
 
+Most wetlands have lost families since the period 1996-2000, with the exception of Lake Goollelal and Loch McNess (Figure \ref{fig:InvertRich}). There are 20 families of aquatic macroinvertebrates that are now locally extinct from the monitored wetlands and seven families that were not recorded in the initial 1996-2000 (Table \ref{tab:ExtinctTab}).
+
 ```{r InvertOrd, fig.cap="\\label{fig:InvertOrd}Ordination plot of all samples collect at each wetland during the survey period (1996-2018). Arrows represnt change from first survey to last survey. Wetlands include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Lake Mariginiup (MAR), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON).", results = 'asis'}
 load("invertebrate_data.RData")
 complete.invert.plot
 ```
+
+```{r InvertRich, fig.cap="\\label{fig:InvertRich}Comparison of aquatic macroinvertebrate family richness of six wetlands between 5 year periods 1996-2000 and 2014-2018. Wetlands include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON). Dashed line equals null model where family richness has not changed. Wetlands above dashed line have increased family richness since the 1996-2000 period. Wetlands below dashed line have lower richness compared to 1996-2000.", results = 'asis'}
+load("invertebrate_data.RData")
+extc.rich
+```
+
+<div style= "float:left;position: relative; top: -80px;">
+
+```{r ExtinctTab, echo=FALSE, results='asis'}
+  cat(' Table: \\label{tab:ExtinctTab}Families of aquatic macroinvertebrates that have been lost in the last 5 years (2018-2014) compared to the first five year period (1996-2000).
+  
+|  Gained | |Lost |
+| :------------: |:-----------:| :-----------: | 
+||**Mollusca**||
+|Ancylidae||Sphaeriidae|
+||**Acarina**||
+|||Hydrachnidae|
+|||Limnocharidae|
+|||Limnesiidae|
+|||Oribatida|
+|||Oxidae|
+|||Unioncolidae|
+||**Isopoda**||
+|||Janiridae|
+||**Decpoda**||
+|||Parastacidae|
+||**Insecta**||
+|Curculionidae||Cordulidae|
+|Sisyridae||Ecnomidae|
+|Stratiomyidae||Empididae|
+|Veliidae||Haliplidae|
+|||Limnichidae|
+|||Mesoveliidae|
+|||Simulidae|
+|||Tipulidae|
+||**Copepoda**||
+|Harpacticoida|||
+||**Ostracoda**||
+|||Gomphodellidae|
+|||Notodromadidae|
+||**Cladocera**||
+|Moinidae||Macrothricidae|
+')
+  
+```
+
+</div>
 
 # Individual wetland descriptions
 
@@ -764,7 +813,7 @@ Lake Jandabup is an artificially watered wetland that supports the most diverse 
 
 ### Hydrology and water quality
 
-Surface water levels of Lake Jandabup have only declined slightly since 1980 (Figure \ref{fig:JandabupWaterPlot}). Mean maximum seasonal water levels are now 0.2m lower than in 1994-1999 but mean minimum seasonal water levels are 0.1m higher than 1994-1999 levels and since 2009, the period of annual maximum to minimum water levels has increased (Table \ref{tab:JandabupWater}). Projected surface water levels are predicted to increase by 3.4 m in 2030 due to proposed changes in abstraction. It is unlikely surface waters will need to be sustained artificially and that an increased threshold level can be proposed.
+Surface water levels of Lake Jandabup have only declined slightly since 1980 (Figure \ref{fig:JandabupWaterPlot}). Mean maximum seasonal water levels are now 0.2 m lower than in 1994-1999 but mean minimum seasonal water levels are 0.1 m higher than 1994-1999 levels and since 2009, the period of annual maximum to minimum water levels has increased (Table \ref{tab:JandabupWater}). Projected surface water levels are predicted to increase by 3.4 m in 2030 due to proposed changes in abstraction. It is unlikely surface waters will need to be sustained artificially and that an increased threshold level can be proposed.
 
 The pH of Lake Jandabup has not exceeded 7.0 since 2011 and is currently between 6.1 anmd 6.6. Low water levels expose sediments at Lake Jandabup, making it susceptable to acidification. Alkalinity is currently very low, suggesting that the lake may be loosing its capacity to buffer pH changes. Deterioration of the chloride:sulphate ratio is also concerning. Maintaining high water levels may be essential to preventing the drying of sediments around the lake margin and subsequent acidification of this wetland. Typically, Lake Jandabup is a low nutrient wetland, however current total nitrogen and phosphorus levels are currently the highest recorded for the monitoring period.
 
@@ -883,11 +932,11 @@ ord.plot
 
 Lake Nowergup is one of the deepest permanent lakes on the Swan Coastal Plain and provides a permanent habitat for aquatic invertebrates and fish, as well as an important drought refuge for water birds. Despite the wetlands being artificially maintained since 1989, water levels have continued to decline. This decline has altered the fringing vegetation of the lake and reduced the area of permanent water.
 
-### Hydrology
+### Hydrology and water quality
 
-Since 2010, surface water levels in the lake have decline significantly to levels that are currently below the minimum reading on the staff gauge 6162567 (Figure \ref{fig:NowergupWaterPlot}). Ground water levels at the nearby bore 61611247 have shown similar trends as surface water levels. Between 2008 and 2014, ground water levels at the bore have declined by more than 1.0 m. A similar decline in surface waters is likely and measurments from this bore have been used in the vegetation analysis. Currently, ground water levels have increased to above 15 mAHD due to recent rainfall. At bore 61611247, mean seasonal maximum and minimum ground water levels have declined by 1.7 and 1.5 m, respectively from the 1994-1999 to 2014-2019 period (Table \ref{tab:NowergupWater}). Maximum  and minimum water levels now tend to occur earlier in the year than previously.
+Since 2010, surface water levels in the lake have decline significantly to levels that are currently below the minimum reading on the staff gauge 6162567 (Figure \ref{fig:NowergupWaterPlot}). Ground water levels at the nearby bore 61611247 have shown similar trends as surface water levels. Between 2008 and 2014, ground water levels at the bore have declined by more than 1.0 m. A similar decline in surface waters is likely and measurments from this bore have been used in the vegetation analysis. Currently, ground water levels have increased to above 15 mAHD due to recent rainfall. At bore 61611247, mean seasonal maximum and minimum ground water levels have declined by 1.7 and 1.5 m, respectively from the 1994-1999 to 2014-2019 period (Table \ref{tab:NowergupWater}). Maximum  and minimum water levels now tend to occur earlier in the year than previously. Proposed threshold levels will apply to bore 61610601, where under proposed reduction in abstraction a threshold at 18.0 mAHD should be achievable. This is likely to correspond to threshold level of 16.0 mAHD at the staff gauge, 0.8 m lower than the current threshold.
 
-Proposed threshold levels will apply to bore 61610601, where under proposed reduction in abstraction a threshold at 18.0 mAHD should be achievable. This is likely to correspond to threshold level of 16.0 mAHD at the staff gauge, 0.8 m lower than the current threshold.
+Water quality in Lake Nowergup is remarkably stable given the declines in surface waters and associated ground waters. Acidity is usually low and alkalinity high, indicating that the lake has sufficient capacity to buffer against acidification. A pH abive 9 is not unusual for this system. Recent monitoring suggests the lake currently has high nutrient levels, with current total nitrogen and total phosphorus at record high concentrations for the lake, and among the highest for all Spearwood Dune wetlands. Current nitrogen levels are twice the mean levels. Stock has recently been able to access the lake bed and may be the cause fo eleveated nutrients.
 
 ### Vegetation Dynamics
 
@@ -896,6 +945,8 @@ There are two vegetation monitoring transects at Lake Nowergup, one in the north
 ("Lake Nowergup South transect was realigned in 2001 due to a lack of wetland species in upland plots and to encompass wetland vegetation at the lake end of the transect (Bertuch et al., 2004)") - WHAT ARE THE IMPLICATIONS? May need to re-run analyses excluding years before 2001. Don't know plot elevations before 2001. Will write up once we have made a decision.
 
 ### Macroinvertebrates Dynamic
+
+Aquatic invertebrate richness has been below average for Lake Nowergup since 2010, with 19 families detected for the last three sampling occasions (Figure \ref{fig:NowergupRichInv}). There is currently a trend of declining richness since 2008. This decline in richness is likely due to the loss of fringing macrophytes due to declining water levels and submerged macrophytes in thecenter of the lake which have also disappeared (GMEMP 2018). Loss of macrohpytic habitat has coincided with elevated utrient levels which would have also altered ecological processes and invertebrate assembalges. Ordination reveals a marked change in assemblage composition from 1996 to 2018 (Figure \ref{fig:NowergupOrdInv}). Communities appeared to shifted most dramatically from 2002 to 2006 which coincides with supplimentation of surface waters by artificial watering. The current shift away from the 1996 community may be driven by the high nutrients being experienced at the lake. Changes can be associated to loss of Ceinidae, Amphisopidae, Notodromadidae and Chydoridae (Figure \ref{fig:NowergupStratInv}). As stated in GMEMP 2019 REPORT [ADD REF] "*The macroinvertebrate monitoring undertaken in 2018 confirms the trends of reduced richness and changing assemblages. The artificial maintenance regime at this wetland was clearly inadequate to maintain ecological integrity and has failed to prevent a loss of habitats, the consequence of lowered water levels. The resulting change in invertebrate assemblages may well be irreversible and steps to restore more representative assemblages must involve more than maintenance of minimum water levels.*"
 
 ### Revised water level threshold effects
 
@@ -1215,11 +1266,11 @@ load("Lexia_186/Vegetation/beta_plot.RData")
 
 Melaleuca Park 173 (EPP 173) is located within the Bassendean North Vegetation Complex and represents a regionally significant wetland (HILL 1996). Normally, the site represents a permanently filled lake that is fed from a series of springs along the western margin of the basin [Invert REPORT & FROEND ref]. The waters supported a rich macroinvertebrate community and an endemic population of the black-striped minnow (*Galaxiella nigrostriata*). There have been dramatic decreases in surface and groundwater levels in recent decades, to the point where the lake is almost dry during the summer months. Declining water levels are thought to have caused the local extinction of the black-striped minnow and degradation of fringing vegetation.
 
-### Hydrology
+### Hydrology and water quality
 
-There has been a prolonged decline in surface water levels since 1990 that show similar trends with fluctuations in ground water levels (bore 61613213; Figure \ref{fig:EMP173WaterPlot}). Surface water level measurements are now unreliable at staff 6162628 due to water levels usually being below the minimum level of the staff. Since 2011, ground water levels have been stable. Mean maximum and minimum water levels have decreased by 0.8 m and 0.5 m, respectively, since 1994 (Table \ref{tab:EMP173Water}). The latest 5 year period (2014-2019) suggests that ground waters are reaching annual minimums earlier in the year than in previous seasons.
+There has been a prolonged decline in surface water levels since 1990 that show similar trends with fluctuations in ground water levels (bore 61613213; Figure \ref{fig:EMP173WaterPlot}). Surface water level measurements are now unreliable at staff 6162628 due to water levels usually being below the minimum level of the staff. Since 2011, ground water levels have been stable. Mean maximum and minimum water levels have decreased by 0.8 m and 0.5 m, respectively, since 1994 (Table \ref{tab:EMP173Water}). The latest 5 year period (2014-2019) suggests that ground waters are reaching annual minimums earlier in the year than in previous seasons. Ground water levels have been non-compliant during the monitoring period. The proposed threshold level of 48.5 mAHD is 1.7 m lower than the current threshold. Managing the wetland to these levels may result in further declines in water levels.
 
-Ground water levels have been non-compliant during the monitoring period. The proposed threshold level of 48.5 mAHD is 1.7 m lower than the current threshold. Managing the wetland to these levels may result in further declines in water levels. 
+Melaleuca Park 173 is the only monitored wetland to show organic acidity (GMEMP 2019). The waters are dark and have high gilvin levels (94.7 FTU). The acidic water have a pH between 3.4 and 5.1. Recent monitoring suggests current pH is low (3.7). The lake usually has total nitrogen levels between 2000 and 2800 $\mu$g/L.
 
 ### Vegetation dynamics
 
@@ -1228,6 +1279,8 @@ Vegetation monitoring has been occurring at Melaleuca Park from 1997 to 2018. Th
 Ordination reveals distinct shifts in community composition since 1997 (Figure \ref{fig:EMP173Ord}). Although Plot A is distinct, in terms of vegetation cover abundances, to Plots B, C and D, all plots display an upwards trajectory along the second axis (LV2). For Plot A, this the shift in composition is likely due to the loss of *B. articulata* from the plot. Modeling compositional changes in vegetation with changes in groundwater levels suggests a number of species which are likely to increase in cover abundance with declining ground water levels (Figure \ref{fig:EMP173Post}). These species, such as *Xanthorrhoea preissii* and *Dielsia stenostachya*, are likely to increase in cover abundance in lower areas of the basin under a scenario of continuing declining ground water levels.
 
 ### Aquatic Invertebrates
+
+Aquatic macroinvertebrate family richness has been declining since the late 2000's when water levels began declining (Figure \ref{fig:EMP173RichInv}). As water chemistry has changed little during this period, the decline in richness is likely due to the degradation of habitats caused by the lower surface waters and extended dry periods during summer (GMEMP 2019). Macroinvertebrate assemblage composition has shifted since the initial 2000 survey (Figure \ref{fig:EMP173OrdInv}). Since 2011, assemblage composition has been shifting away from the 2000 community, suggesting further shifts in composition are likely due to sustained low water levels. Taxa that have disappeared from the wetland include Chydoridae, Leptoceridae, Orthocladiinae and Unioncolidae (Figure \ref{fig:EMP173StratInv}).
 
 ### Revised water level threshold effects
 
