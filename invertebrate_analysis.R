@@ -162,11 +162,11 @@ period1$richness <- NULL
 period2$Wetland <- NULL
 period2$richness <- NULL
 
-setdiff(colnames(period1[,colSums(period1) > 0]),
-  colnames(period2[,colSums(period2) > 0]))
+setdiff(colnames(period1[,colSums(period1) > 1]),
+  colnames(period2[,colSums(period2) > 1]))
 
-setdiff(colnames(period2[,colSums(period2) > 0]),
-        colnames(period1[,colSums(period1) > 0]))
+setdiff(colnames(period2[,colSums(period2) > 1]),
+        colnames(period1[,colSums(period1) > 1]))
 
 
 save(invert, richness, Y, Y2, inv.mod, complete.invert.plot, extc.rich, file="invertebrate_data.RData")

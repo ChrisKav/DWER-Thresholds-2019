@@ -55,20 +55,6 @@ load("Refined_data.RData")
 
 \newpage
 
-## Rainfall
-
-Annual rainfall for the region has been in decline since 1950 (Figure \ref{fig:RainfallPlot}). Since the mid 1990's rainfall has generally been below the longterm average. June to August represent the wettest months of the year and December to March usually with little rainfall (Figure \ref{fig:RainfallMonthPlot}).
-
-```{r RainfallPlot, fig.cap="\\label{fig:RainfallPlot}Annual rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018. Dotted line represent average annual rainfall for the entire period. Solid line represents a 5-year moving average of annual rainfall data.", results = 'asis'}
-load("rainfall_trends.RData")
-rain.plot
-```
-
-```{r RainfallMonthPlot, fig.cap="\\label{fig:RainfallMonthPlot}Monthly rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018.", results = 'asis'}
-load("rainfall_trends.RData")
-rain.month
-```
-
 # Methods
 
 ## Vegetation monitoring
@@ -82,6 +68,21 @@ rain.month
 \newpage
 
 # General observations
+
+
+## Rainfall
+
+Annual rainfall for the region has been in decline since 1950 (Figure \ref{fig:RainfallPlot}). Since the mid 1990's rainfall has generally been below the longterm average. June to August represent the wettest months of the year and December to March usually with little rainfall (Figure \ref{fig:RainfallMonthPlot}).
+
+```{r RainfallPlot, fig.cap="\\label{fig:RainfallPlot}Annual rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018. Dotted line represent average annual rainfall for the entire period. Solid line represents a 5-year moving average of annual rainfall data.", results = 'asis'}
+load("rainfall_trends.RData")
+rain.plot
+```
+
+```{r RainfallMonthPlot, fig.cap="\\label{fig:RainfallMonthPlot}Monthly rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018.", results = 'asis'}
+load("rainfall_trends.RData")
+rain.month
+```
 
 Vegetation transects have been monitored at wetlands since 1996 to 2018, although not all wetlands have been monitored every year (Figure \ref{fig:SurveyPeriod})
 
@@ -112,9 +113,9 @@ ggplot(survey.yrs, aes(Last, wetland)) +
   
 ```
 
-Macroinvertebrate communities have shifted during the study period, with some wetlands on similar trajectories (Figure \ref{fig:InvertOrd}).
+The aquatic invertebrate assemblages form three distinct groups based on the dunal system of the wetland (Figure \ref{fig:InvertOrd}). The Spearwood Dunes (Lake Goollelal, Lake Jonndalup, Loch McNess, Lake Nowergup and Lake Yonderup) form the most diverse group, while the Bassendean Dunes Wetlands (Melaleuca Park 173) and East Wanneroo Interdunal Wetlands (Lake Jandabup and Lake Mariginiup) have different assemblages to each other. Generally, the Bassendean Dunes and East Wanneroo Interdunal Dunes wetlands are becoming more similar with each other, although such conclusions are based on a very limited set of wetlands. The Spearwood Dunes contain wetlands with two distinct trajectories, those migrating towards initial Lake Joondalup compositions (Loch McNess, Lake Goollelal and Lake Nowergup), and those migrating towards initial Loch McNess compositions (Lake Joondalup and Lake Yonderup). Nontheless, each wetland has a distinct assemblage of macroinvertebrates but, aquatic macroinvertebrate communities have shifted during the monitoring period. Recent monitoring suggests that Loch McNess and Melaleuca Park 173  are becoming more similar to others wetlands. For instance, Loch McNess has shifted dramatically towards early Lake Joondalup composition. Lake Goollelal has displayed a similar, although not as dramatic, shift in composition. During the monitoring period, Melaleuca Park 173 is becoming increasingly similar to the assemblages at Lake Jandabup and Lake Mariginiup, which are also shifting towards Melaleuca Park 173. The communities at Lake Joondalup and Lake Yonderup have been shifting towards the early communities of Loch McNess. Lake Nowergup has shown some variation in community composition, but the curent trajectory shows little change to the 1996 assmeblage.
 
-Most wetlands have lost families since the period 1996-2000, with the exception of Lake Goollelal and Loch McNess (Figure \ref{fig:InvertRich}). There are 20 families of aquatic macroinvertebrates that are now locally extinct from the monitored wetlands and seven families that were not recorded in the initial 1996-2000 (Table \ref{tab:ExtinctTab}).
+Most wetlands have lost families since the period 1996-2000, with the exception of Lake Goollelal and Loch McNess (Figure \ref{fig:InvertRich}). The richness of the Lake Joondalup assemblage has not dramatically declined either. There are 11 families of aquatic macroinvertebrates that have not been recorded from the monitored wetlands in the past 5 years and seven families currently present that were not recorded in the initial 1996-2000 (exckuding singletons; Table \ref{tab:ExtinctTab}). The richness of Acari (mites and ticks) has declined by 4 families while the Coleopteran Haliplidae and the Hemipteran Mesoveliidae are no absent from Lake Joondalup and Lake Yonderup. The Mollusc Sphaeriidae, probably a regionally endemic species (REPORT 85167), has been absent from Lake Nowergup since 1998, while Ancylidae has become abundant (possibly due to augmentation - see REPORT 85167). The insects, Corduliidae (Odonata), Ecnomidae (Trichoptera), Haliplidae (Coleoptera) and Mesoveliidae (Hemiptera) are all species with widespread distributions in the Swan Coastal Plain (REPORT 85167), but are now not found in the monitored wetlands reported here.
 
 ```{r InvertOrd, fig.cap="\\label{fig:InvertOrd}Ordination plot of all samples collect at each wetland during the survey period (1996-2018). Arrows represnt change from first survey to last survey. Wetlands include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Lake Mariginiup (MAR), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON).", results = 'asis'}
 load("invertebrate_data.RData")
@@ -126,47 +127,25 @@ load("invertebrate_data.RData")
 extc.rich
 ```
 
-<div style= "float:left;position: relative; top: -80px;">
-
 ```{r ExtinctTab, echo=FALSE, results='asis'}
-  cat(' Table: \\label{tab:ExtinctTab}Families of aquatic macroinvertebrates that have been lost in the last 5 years (2018-2014) compared to the first five year period (1996-2000).
+  cat(' Table: \\label{tab:ExtinctTab}Families of aquatic macroinvertebrates that have been lost in the last 5 years (2018-2014) compared to the first five year period (1996-2000). Singletons have been excluded.
   
-|  Gained | |Lost |
-| :------------: |:-----------:| :-----------: | 
-||**Mollusca**||
-|Ancylidae||Sphaeriidae|
-||**Acarina**||
-|||Hydrachnidae|
-|||Limnocharidae|
-|||Limnesiidae|
+|  Taxa | Gained | Lost |
+| :------------: |:------------: |:-----------:|
+|**Mollusca**|Ancylidae|Sphaeriidae|
+|**Acarina**||Limnesiidae|
 |||Oribatida|
 |||Oxidae|
 |||Unioncolidae|
-||**Isopoda**||
-|||Janiridae|
-||**Decpoda**||
-|||Parastacidae|
-||**Insecta**||
-|Curculionidae||Cordulidae|
-|Sisyridae||Ecnomidae|
-|Stratiomyidae||Empididae|
-|Veliidae||Haliplidae|
-|||Limnichidae|
+|**Insecta**|Veliidae|Corduliidae|
+||Scirtidae|Ecnomidae|
+|||Haliplidae|
 |||Mesoveliidae|
-|||Simulidae|
-|||Tipulidae|
-||**Copepoda**||
-|Harpacticoida|||
-||**Ostracoda**||
-|||Gomphodellidae|
-|||Notodromadidae|
-||**Cladocera**||
-|Moinidae||Macrothricidae|
+|**Ostracoda**||Notodromadidae|
+|**Cladocera**|Moinidae|Macrothricidae|
 ')
   
 ```
-
-</div>
 
 # Individual wetland descriptions
 
