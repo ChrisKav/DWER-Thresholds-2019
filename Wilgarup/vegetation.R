@@ -148,7 +148,7 @@ veg.ord2 <- boral.plots(mod3.ext)
 
 ggsave("Vegetation/vege_ordination.pdf", ggarrange(veg.ord1, veg.ord2, ncol=2), device="pdf")
 
-save(vegfit.mod1, vegfit.mod2, vegfit.mod3, mod1.ext, mod3.ext, veg.ord1, veg.ord2, file="boral_models.RData")
+save(XData, vegfit.mod1, vegfit.mod2, vegfit.mod3, mod1.ext, mod3.ext, veg.ord1, veg.ord2, file="boral_models.RData")
 
 #########################################                          
 #########################################

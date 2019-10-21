@@ -24,6 +24,7 @@ library(zoo)
 library(ggpubr)
 library(bookdown)
 library(dplyr)
+library(ggrepel)
 source("functions.R")
 knitr::opts_chunk$set(fig.path='Figs/',
                       echo=FALSE, warning=FALSE, message=FALSE)
@@ -1099,7 +1100,8 @@ stratiplotter(vegfit.mod3)
 
 ```{r WilgarupOrd, fig.cap="\\label{fig:WilgarupOrd}Unconstrained ordination based on the latent variable model for each surveyed year for Lake Wilgarup. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Wilgarup/boral_models.RData")
-veg.ord1
+mod1.ext <- boral.extract(vegfit.mod1, XData)
+boral.plots(mod1.ext)
 ```
 
 ```{r WilgarupPost, fig.cap="\\label{fig:WilgarupPost}Estimated mean regression coefficients (dots) and 95% credible intervals (bars) for effect of ground water levels at Lake Wilgarup on vegetation species cover abundances based on Bayesian Regression Analysis (HUI REF 2015). Species with a negative mean posterior value are likely to increase in cover abundance as water levels decline. Only those species with coefficients significanlty different to zero are shown.", results = 'asis'}
