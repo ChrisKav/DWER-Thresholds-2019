@@ -7,8 +7,8 @@ Site.GW.plots
 dev.off()
 
 wetlands <- read.csv("wetlands.csv", header=FALSE)[,1]
-#wetlands <- wetlands[c(9,11)]
-#wetlands <- droplevels(wetlands)
+wetlands <- wetlands[c(14)]
+wetlands <- droplevels(wetlands)
 
 ########################
 # WATER DATA - Summary #
@@ -31,11 +31,11 @@ mcmc_control <- list(n.burnin = 10000, n.iteration = 60000,
 #mcmc_control <- list(n.burnin = 10, n.iteration = 60, 
 #                     n.thin = 5, seed=28041948)
 
-#for (i in 1:length(wetlands)) {
-#  if (file.exists(paste0(wetlands[i], "/vegetation.R"))) {
-#    source(paste0(wetlands[i], "/vegetation.R"))
-#  }
-#}
+for (i in 1:length(wetlands)) {
+  if (file.exists(paste0(wetlands[i], "/vegetation.R"))) {
+    source(paste0(wetlands[i], "/vegetation.R"))
+  }
+}
 
 ####################
 # Vegetaton plots  #

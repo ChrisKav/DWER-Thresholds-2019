@@ -75,8 +75,6 @@ data$Month_num <- as.integer(data$Month_num)
 data$Site <- as.factor(as.character(data$Site))
 data.ls <- split(data, data$Site)
 
-
-
 AHD <- lapply(data.ls, function(x) {
   x <- x %>%
     group_by(Year, Month) %>%

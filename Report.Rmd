@@ -69,7 +69,6 @@ load("Refined_data.RData")
 
 # General observations
 
-
 ## Rainfall
 
 Annual rainfall for the region has been in decline since 1950 (Figure \ref{fig:RainfallPlot}). Since the mid 1990's rainfall has generally been below the longterm average. June to August represent the wettest months of the year and December to March usually with little rainfall (Figure \ref{fig:RainfallMonthPlot}).
@@ -1107,6 +1106,7 @@ veg.ord1
 load("Wilgarup/Vegetation/beta_plot.RData")
 beta.plot
 ```
+
 ```{r WilgarupCompliance, echo=FALSE, results='asis'}
   cat(' Table: \\label{tab:WilgarupCompliance}Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives at Lake Wilgarup.
 
@@ -1125,13 +1125,17 @@ beta.plot
 
 ## Pipidinny Swamp
 
-Vegetation damaged by a fire in 2005. Macroinvertebrate and water quality monitoring occurred in the 2000s but ceased in 2011 as the wetland was atypical and had little water.
+Vegetation damaged by a fire in 2005. Macroinvertebrate and water quality monitoring occurred in the 2000s but ceased in 2011 as the wetland was atypical and had little water. A single vegetation survey has been conducted in September 2019 and the results presented here.
 
 ### Hydrology
 
 There has been at least a 2 m decline in surface water levels at Pipidinny Swamp since the mid 1990's, although measurements at the staff gauge were frequently below the minimum recordable level in the mid-late 2000's to 2019 despite the gauge being moved in 2010 (Figure \ref{fig:PipidinnyWaterPlot}). Mean maximum seasonal surface waters are at least 1.2 m lower now than in the 1994-1999 seasons (Table \ref{tab:PipidinnyWater}). Records of minimum levels are difficult to interpret due to the water levels frequently being below the staff gauge. Ground water levels at the nearby bore 61611872 suggest that water levels at the swamp are no longer in decline, however this conclusion assumes ground water levels at the bore and surface water levels at the staff gauge are related (Figure \ref{fig:PipidinnyWaterPlot}). It is not possible to verify this assumption as ground water measurements have only been made while the surface water levels have been below detection limits for the staff gauge.
 
 It is likely that water levels in Yanchep National Park will increase under the proposed 2030 changes in ground water abstraction. The proposed threshold level of 1.1 m at bore 61611872 is likely to slightly increase or stabalise surface water levels in Pipidinny Swamp.
+
+### Vegetation character
+
+The transect at Pipidinny Swamp consists of a series of depressions/swamps interspersed with tracks and grassy banks. The transect was established close to the bore but is only 20 m in length due to the terrain. Subsequently, only four *Melaleuca* trees could be included. Species richness and diversity on and around the transect was low, with *Acacia saligna* the dominant overstorey species, although *Melaleuca rhaphiophylla* appeared in good health (both on and around the transect). *Baumea articulata* was present, albeit in low abundance, several metres upslope from the surface water, and was in moderate health with a couple of dead stems present. No recruitment was recorded. The location's potential value as important habitat was indicated by the presence of a south west carpet python in amongst the *Typha*. A number of exotic species are abundant at the site, including *Bromus diandrus*, *Ehrharta longiflora* and *Typha orientalis*.
 
 ### Revised water level threshold effects
 
@@ -1153,6 +1157,28 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 
 ```{r PipidinnyWaterPlot, fig.cap="\\label{fig:PipidinnyWaterPlot}Ground and surface water levels recorded at bore 61611872 (red) and staff gauge 6162624 (blue) that represent fluctuations in water levels at Pipidinny Swamp. Surface water levels were initially only recordable above 2 mAHD and later above 1 mAHD. Red segments of trend line represent periods of significant decline in water levels while blue segments represent periods of significant increases in water levels.", results = 'asis'}
 pipi.p
+```
+
+```{r PipidinnyVegetation, echo=FALSE, results='asis'}
+  cat(' Table: \\label{tab:PipidinnyVegetation}Vegetation cover abundance at the two plots established at Pipidinny Swamp in September 2019.
+
+| Species | Plot A | Plot B   |Status|
+| :------------ | :-------: | :------: |:----:|
+|*Bromus diandrus*|4|9|Exotic|
+|*Cirsium vulgare*|2|0|Exotic|
+|*Ehrharta longiflora*|7|9|Exotic|
+|*Euphorbia sp.*|0|1|Exotic|
+|*Fumaria muralis*|2|3|Exotic|
+|*Pelargonium capitatum*|2|2|Exotic|
+|*Sonchus oleraceus*|2|1|Exotic|
+|*Symphiotrichum squamatum*|1|0|Exotic|
+|*Typha orientalis*|6|0|Exotic|
+|*Acacia saligna*|6|10|Native|
+|*Baumea articulata*|2|0|Native|
+|*Melaleuca rhaphiophylla*|4|0|Native|
+|*Myoporum caprarioides*|3|2|Native|
+|*Rhagodia baccata*|3|4|Native|
+|*Spyridium globulosum*|3|3|Native|')
 ```
 
 ```{r PipidinnyCompliance, echo=FALSE, results='asis'}
@@ -1445,11 +1471,13 @@ beta.plot
 
 ## MM59B - Whiteman Park East
 
-(I DON"T KNOW ANYTHING ABOUT THIS SITE) RE WRITE HYDROLOGY, BASED ON WRONG BORE!
-
 ### Hydrology
 
-Ground water levels at MM59B have fluctuated between 18 and 19 mAHD since 1980. There was a significant decline in groundwater levels in the early 1990's from 19.1 mAHD to approximately 18.2 mAHD in 2000 (Figure \ref{fig:MM59BWaterPlot}). Since 2000, ground water levels have steadily increased to similar levels to 1980-1990. Mean maximum water levels are currently similar to 19994-1999 levels while mean minimum levels are currently 0.4 m higher (Table \ref{tab:MM59BWater}). Highest water levels generally occur between September and October.
+Ground water levels at Whiteman Park East have been declining since 1980, although this decline seems to have stabilised since 2010 (Figure \ref{fig:MM59BWaterPlot}). Current 5-year mean maximum and minimum sesaonal water levels are 0.9 and 0.6 m lower than 1994-1999 levels, respectively (Table \ref{tab:MM59BWater}). Minimum water levels occur in June, while maximums are usually reached in October.
+
+### Vegetation
+
+The site contains a fairly sparse understorey and open mixed woodland canopy consisting of *Banksia* spp, *Allocasuarina fraseriana*, *Nuytsia floribunda* and *Eucalyptus todtiana*. *Banksia* species found at the site include *B. attenuata*, *B. ilicifolia* and *B. menziesii*. Vegetation is slightly degraded with signs of rabbits evident. Species richness and diversity are notably less than some of the other Pinjar sites and more exotic species, such as *Ursinia anthemoides*, are present at high cover abundances. Predominant native understorey species include *Scholtzia involucrata*, *Calytrix* spp. and *Patersonia occidentalis*. *Banksia* spp. health was mostly good, although some *B. attenuata* appeared to be approaching senescence, and a number of dead *Banksia* are also present. Recruitment was present but low.
 
 ```{r MM59BWater, echo = FALSE, results = 'asis'}
 load("MM59B/water_level.RData")
@@ -1469,18 +1497,19 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 mm59b.p
 ```
 
+```{r MM59BCompliance, echo=FALSE, results='asis'}
+  cat(' Table: \\label{tab:MM59BCompliance}Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives for MM59B.
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
 | * Selected to represent water levels over area of undisturbed phreatophytic vegetation |  |  |
 | * Banksia woodland <8m depth to groundwater |  |  |
 | **Site management objectives** |||
-| * To protect terrestrial vegetation | ||
+| * To protect terrestrial vegetation | ||')
 
-Table: Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives for MM59B.
+```
 
 \newpage
-
 
 ## PM9 - Pinjar North
 
@@ -1520,9 +1549,9 @@ WM1 is located east of Lake Pinjar in the Chitty Road Bushland within the Bassen
 
 Ground water levels at WM1 have declined up to 4.0 m since 1980, although recent rainfall has increased levels from 54.4 to 55.5 mAHD since 2015 (Figure \ref{fig:WM1WaterPlot}). Current mean maximum and minimum water levels are 2.0 and 1.7 m lower than 1994-1999 levels (Table \ref{tab:WM1Water}). Maximum water levels generally occur in October and minimum water levels are now occurring later in the year than previously.
 
-### Vegetation
+### Vegetation character
 
-There has been reported a number of dead *Banksia attenuata* and *Eucalyptus pauciflora* as well as a decline in the condition of *Banksia ilicifolia* and *Banksia menziesii* that has caused a thinning of the understorey (REPORT 86043 and 82392). Vegetation condition around the site has declined, probably due to water stress. *Eucalyptus todtiana* and *Corymbia calophylla* have also been reported to be declining in health in 2008 (REPORT 82392). Eleven years have passed since the last vegetation monitoring (REPORT 82392) at the site which has experienced a further decrease in ground water by 1.5 m. It is likely vegetation composition has shifted to species preferring drier conditions despite recent increases in ground water levels due to rainfall.
+The area has been affected by fire in the past (sometime between early Jan 2015 and late February 2015) and some of the older *Banksias* on the transect have old fire scars. Vegetation structure and community compositon oof he site is typical *Banksia* woodland, consisting of overstorey species *B. attenuata*, *B. menziesii* and *B. ilicifolia* and a typically diverse dryland understorey of *Acacia pulchella*, *Adenanthos cygnorum*, *Jacksonia* spp and *Xanthorrhoea preissii*. Although not recorded in the transect, *Melaleuca preissiana* has been noted nearby. In general, *Banksia* health appears good despite several individuals having significant insect damage and yellow leaves. Previous reports have document the decline of vegetation at this site due to declining ground water levels (REPORT 86043 and 82392). The trends included a general thinning of the understory, *B. attenuata* deaths, declining condition of *B. ilicifolia* and *B. menziessi*. *Eucalyptus todtiana* and *Corymbia calophylla* have also been reported to be declining in health in 2008 (REPORT 82392).
 
 ```{r WM1Water, echo = FALSE, results = 'asis'}
 load("WM1/water_level.RData")
@@ -1563,9 +1592,9 @@ Located in Melaleuca Park in the Bassendean north vegetation complex, the area r
 
 There has been periods of significant decline in ground water levels from 68.8 mAHD in 1980 to 66.4 mAHD in 2014 (Figure \ref{fig:WM2WaterPlot}). Since 2015, there has been an increase in ground water to slightly above 67 mAHD. Mean maximum and minimum seasonal water levels are now 1.5 and 0.9 m lower than the period 1994-1999. Maximum levels have consistently been reached in October, on average (Table \ref{tab:WM2Water}). 
 
-### Vegetation dynamics
+### Vegetation character
 
-There are reports of declining vegetation condition and density nearby the site in 2008 (REPORT 82392). Although current ground water levels are presently similar to 2008 levels, it is likely the vegetation was subjected to ground water levels up to 0.5 m lower than when the assessment was made. This suggests that vegetation in the region that is ground water dependent has deteriorated further since 2008.
+The vegetation around monitoring bore WM2 has imilar vegetation composition as WM1. The vegetation also appears to have been affected by fire in the summer of 2014/2015. The undestorey is highly diverse, with *Acacia pulchella*, *Adenanthos cygnorum* and *Xanthorrhoea preissii* common. Canopy cover is quite open, with several mature *Banksias* present. Most *Banksias* were resprouts and/or young trees between 1 and 3 m tall. Several mature trees bore significant epicormic growth. New *Banksia* recruitment (mainly very small seedlings) for *Banksia attenuata* and *Banksia menziessi* has been observed, operhaps in response to recent increases in ground water levels.
 
 ```{r WM2Water, echo = FALSE, results = 'asis'}
 load("WM2/water_level.RData")
@@ -1604,7 +1633,12 @@ The WM8 monitoring bore is located in Melaleuca Park within the Bassendean north
 
 ### Hydrology
 
-Ground water levels began to decline in 2000 at WM8 from approximately 66 mAHD to 64.6 mAHD in 2015 (Figure \ref{fig:WM8WaterPlot}). Since 2015, there has been an increase in ground water levels to approximately 65.5 mAHD. Mean maximum and minimum seasonal water levels have declined by 1.3 and 1.0 m, respectively (Table \ref{tab:WM8Water}). Maximum levels are generally reached in December while minimum levels are reached in July.
+Ground water levels began to decline in 2000 at WM8 from approximately 66.0 mAHD to 64.6 mAHD in 2015 (Figure \ref{fig:WM8WaterPlot}). Since 2015, there has been an increase in ground water levels to approximately 65.5 mAHD. Mean maximum and minimum seasonal water levels have declined by 1.3 and 1.0 m, respectively (Table \ref{tab:WM8Water}). Maximum levels are generally reached in December while minimum levels are reached in July.
+
+### Vegetation character
+
+The vegetation community at WM8 is typical of *Banksia* woodland. There is a sparse understorey composed predominately of *Lyginia barbata*, *Scholtzia involucrata* and *Eremaea pauciflora*. The canopy is open and consists predominately of *Banksia attenuata* and *B. menziesii*. Tree health at the site was good although a number of dead mature *Banksias* were present. There is evidence of recent *Banksia attenuata* recruitment, mainly in the form of small seedlings. *Jacksonia floribunda* in notably poorer health than at the other Pinjar sites (WM1 nd WM2). 
+
 
 ```{r WM8Water, echo = FALSE, results = 'asis'}
 load("WM8/water_level.RData")
