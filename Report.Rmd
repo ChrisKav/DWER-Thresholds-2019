@@ -13,6 +13,9 @@ header-includes:
 - \newcommand{\blandscape}{\begin{landscape}}
 - \newcommand{\elandscape}{\end{landscape}}
 fig_caption: yes
+bibliography: References.bib
+csl: iso690-author-date-fr-no-abstract.csl
+link-citations: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -56,23 +59,17 @@ load("Refined_data.RData")
 
 \newpage
 
-# Methods
+## Study area
 
-## Vegetation monitoring
+The Gnangara Groundwater System is located on the Swan Coastal Plain in south-western Australia. The system covers an area of 220 000 ha, extending from the Swan River in the south to the Moore River and Gingin Brook in the north and from the Darling Scarp in the east to the Indian Ocean in the west (Figure \ref{fig:Map}). The system consists of three major aquifers: the Superficial aquifer, Leedervilee aquifer and the Yarragadee aquifer. The Gnangara Mound is an expression of the Superficial aquifer, an unconfined aquifer composed of Quaternary-Tertiary sediments of the Swan Coastal Plan that is in direct connection with the lower Leederville aquifer at locations where the Osborne Formation has eroded [@Salama1991]. The underlying confined Leederville aquifer supplies Perth with up to 60 % of its drinking water supply. The Superficial aquifer consists mainly of sand, silt and clay sediments up to 100 m thick with different soils types distributed parrallel to the coastline. These soils consist of Guilford Clay in the east, the Bassendean Dune System and Spearwood Dune Systems in the middle and the Quindalup Dune System along the west coast [@McArthur1960], with the distribution of vegetation and aquatic invertebrates largely determined by the underlying soil type, landform and depth to ground water [@Heddle1980].
 
-## Aquatic invertebrate monitoring
+Recharge of the Gnangara Mound has been declining due to disruptions of water balances. Major users of ground water in the Gnangara Mound include native vegetation, pine forest plantations, market gardens and wetlands [@Salama1991]. Clearing of native vegetation for pine plantations potentially reduces the recharge of ground water as pines transpire more than the native plants they replace as well as they directly access deeper levels of the water table. Agriculture abstraction of ground water is also causing declines in water levels. Ground water recharge has also been hampered by declining rainfall for the south west region of Australia. It is estimated rainfall has been declining by approximately 12 mm/year since the 1970's [@England2006]. Since the mid 1990's rainfall has generally been below the longterm average (Figure \ref{fig:RainfallPlot}). The combined effects of ground water abstraction, changes in vegetation and declining annual rainfall have contributed to longterm declines in ground water of the Gnangara Mound [@Yesertener2008].
 
-## Statistical analyses and monitoring
+The region experiences a Mediterranean-type climate with hot  dry summers and cooller wet winters. June to August represent the wettest months of the year and December to March usually have little rainfall (Figure \ref{fig:RainfallMonthPlot}). Although declining rainfall has contributed to decreasing ground water levels in the Gnangara Mound, abstraction of ground water from private wells, market gardens, pine plantations and drinking water have cummulatively driven the decline. Nonetheless, up to 20 % less rainfall and 64 % less runoff occured in the region between 1997 and 2003 compared to 1911 and 1974 [@Yesertener2008]. Drawdown of ground water effects the mortality and health of plant communities that depend on ground water access [@Groom2000] and the composition of aquatic invertebrate communities that inhabit the surface waters of wetlands that frequent the Gnangara Mound [@Horwitz2008; @Horwitz2009].
 
-## Managerial obligation assessment
-
-\newpage
-
-# General observations
-
-## Rainfall
-
-Annual rainfall for the region has been in decline since 1950 (Figure \ref{fig:RainfallPlot}). Since the mid 1990's rainfall has generally been below the longterm average. June to August represent the wettest months of the year and December to March usually with little rainfall (Figure \ref{fig:RainfallMonthPlot}).
+```{r Map, fig.cap="\\label{fig:Map}Location of Gnangara Mound and wetland and terrestrial sites investigated in this report.", results = 'asis'}
+knitr::include_graphics('map.png')
+```
 
 ```{r RainfallPlot, fig.cap="\\label{fig:RainfallPlot}Annual rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018. Dotted line represent average annual rainfall for the entire period. Solid line represents a 5-year moving average of annual rainfall data.", results = 'asis'}
 load("rainfall_trends.RData")
@@ -84,7 +81,23 @@ load("rainfall_trends.RData")
 rain.month
 ```
 
-Vegetation transects have been monitored at wetlands since 1996 to 2018, although not all wetlands have been monitored every year (Figure \ref{fig:SurveyPeriod})
+# Methods
+
+## Vegetation monitoring
+
+## Aquatic invertebrate monitoring
+
+## Statistical analyses
+
+## Managerial obligation assessment
+
+\newpage
+
+# General observations
+
+## Wetland vegetation
+
+Vegetation transects have been monitored at wetlands since 1996 to 2018, although not all wetlands have been monitored every year (Figure \ref{fig:SurveyPeriod}). 
 
 ```{r SurveyPeriod, fig.cap="\\label{fig:SurveyPeriod} Period of survey for each wetland.", results = 'asis'}
 wetlands <- data.frame(read.csv("wetlands.csv", header=FALSE)[,1])
@@ -112,6 +125,8 @@ ggplot(survey.yrs, aes(Last, wetland)) +
                                 "EMP_173", "EMP_78", "Gwelup", "Quin_Brook")))
   
 ```
+
+## Aquatic invertebrate communities
 
 The aquatic invertebrate assemblages form three distinct groups based on the dunal system of the wetland (Figure \ref{fig:InvertOrd}). The Spearwood Dunes (Lake Goollelal, Lake Jonndalup, Loch McNess, Lake Nowergup and Lake Yonderup) form the most diverse group, while the Bassendean Dunes Wetlands (Melaleuca Park 173) and East Wanneroo Interdunal Wetlands (Lake Jandabup and Lake Mariginiup) have different assemblages to each other. Generally, the Bassendean Dunes and East Wanneroo Interdunal Dunes wetlands are becoming more similar with each other, although such conclusions are based on a very limited set of wetlands. The Spearwood Dunes contain wetlands with two distinct trajectories, those migrating towards initial Lake Joondalup compositions (Loch McNess, Lake Goollelal and Lake Nowergup), and those migrating towards initial Loch McNess compositions (Lake Joondalup and Lake Yonderup). Nontheless, each wetland has a distinct assemblage of macroinvertebrates but, aquatic macroinvertebrate communities have shifted during the monitoring period. Recent monitoring suggests that Loch McNess and Melaleuca Park 173  are becoming more similar to others wetlands. For instance, Loch McNess has shifted dramatically towards early Lake Joondalup composition. Lake Goollelal has displayed a similar, although not as dramatic, shift in composition. During the monitoring period, Melaleuca Park 173 is becoming increasingly similar to the assemblages at Lake Jandabup and Lake Mariginiup, which are also shifting towards Melaleuca Park 173. The communities at Lake Joondalup and Lake Yonderup have been shifting towards the early communities of Loch McNess. Lake Nowergup has shown some variation in community composition, but the curent trajectory shows little change to the 1996 assmeblage.
 
@@ -146,6 +161,7 @@ extc.rich
 ')
   
 ```
+
 
 # Individual wetland descriptions
 
@@ -1843,5 +1859,3 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 (COMMENT ON MELALEUCA QUINQUENERVIA? MARIGINIUP)
 
 # References
- 
-#Appendix
