@@ -16,6 +16,7 @@ comm_prep <- function(Y) {
 }
 
 determine_traits <- function(Y) {
+  require(stringr)
   Traits <- data.frame(colnames(Y))
   colnames(Traits) <- "Species"
   nat <- Traits %>%
@@ -96,6 +97,8 @@ bor.summary.year <- function(b, Y, d) {
 }
 
 boral.plots <- function(b) {
+  require(ggrepel)
+  require(ggplot2)
   #sp.coef <- data.frame(subset(b$coefs, rownames(b$coefs) %in% rownames(s)))
   yr.min <- min(as.numeric(levels(b$lv$Year)))
   yr.max <- max(as.numeric(levels(b$lv$Year)))
