@@ -3,9 +3,12 @@ library(lubridate)
 library(ggplot2)
 library(boral)
 library(data.table)
-library(compare)
+library(corrplot)
 
 load("Refined_data.RData")
+
+setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/All_vegetation")
+
 lst <- comm
 
 lst <- list(lst[['Goolelal']] , lst[['Loch_McNess']], lst[['Yonderup']], lst[['Joondalup_Nth']], 
@@ -222,6 +225,7 @@ df$wetland <- recode(df$wetland, "Joondalup_Sth" = "Joondalup")
 df$wetland <- recode(df$wetland, "Nowergup_Nth" = "Nowergup")
 df$wetland <- recode(df$wetland, "Nowergup_Sth" = "Nowergup")
 df <- aggregate(.~wetland+year, df, mean)
+df <- df[-c(4,13),] #Remove Dampland_78 97 and 98 due to lack of WL data
 df.meta <- df[,1:2]
 df[,1:2] <- NULL
 df <- round(df,0)
@@ -233,7 +237,7 @@ uncon.mod <- boral(df,
               lv.control = list(num.lv = 2),
               mcmc.control = mcmc_control,
               row.ids = cbind(1:nrow(df), df.meta),
-              save.model=TRUE,
+              save.model=FALSE,
               model.name=NULL)
 
 lvsplot(uncon.mod, ind.spp = 20)
@@ -302,8 +306,6 @@ complete.invert.plot <- plot.data %>%
         panel.background = element_blank()) +
   labs(colour="Wetland")
 
-setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/All_vegetation")
-
 ############################ ALL water data
 
 AHD.levels <- list(Params.data.list$EMP78.params, Params.data.list$EMP173.params, Params.data.list$Goollelal.params,
@@ -342,9 +344,7 @@ all.ahd[is.na(all.ahd)] <- 0
 all.ahd$combine = as.character(interaction(all.ahd$wetland, all.ahd$year))
 df.meta$combine = as.character(interaction(df.meta$wetland, df.meta$year))
 all.ahd <- merge(all.ahd, df.meta, by = "combine")
-dplyr::setdiff(df.meta$combine, all.ahd$combine)
 
-all.ahd <- all.ahd[,c(2,3,4)]
 colnames(all.ahd) <- c("wetland", "year", "mAHD")
 XData <- data.frame(all.ahd$mAHD)
 all.ahd <- all.ahd[,c(1:2)]
@@ -357,8 +357,6 @@ con.mod <- boral(df,
                    row.ids = cbind(1:nrow(df), all.ahd),
                    save.model=TRUE,
                    model.name=NULL)
-
-
 
 #########################################                          
 #########################################
@@ -709,4 +707,85 @@ write.csv(rho.lower, "Vegetation/Rho/Rho_lower_Veg_boral.csv")
 write.csv(rho.upper, "Vegetation/Rho/Rho_upper_Veg_boral.csv")
 write.csv(rho.sd, "Vegetation/Rho/Rho_sd_Veg_boral.csv")
 
+#Beta
+
+boral.df <- read.csv("Vegetation/Beta/Beta_Veg_boral.csv")
+boral.df <- boral.df[,-c(1,6:10)]
+colnames(boral.df) <- c("Coefficient", "Posterior.Mean", "Lower", "Upper", "Model", "Species")
+boral.df$Coefficient <- factor(boral.df$Coefficient, levels = c("intercept", "meanGW"))
+boral.df2 <- subset(boral.df, Coefficient=="meanGW")
+i1 <- (rowSums(boral.df2[,3:4] > 0)) & (rowSums(boral.df2[,3:4] < 0))
+boral.df3 <- boral.df2[!i1,]
+
+beta.plot <- ggplot(boral.df3, aes(x = Species, y = Posterior.Mean)) + 
+  geom_point() +
+  geom_errorbar(aes(ymax=Upper,ymin=Lower), position=position_dodge(width=0.5)) +
+  theme_bw() +
+  ylab("Posterior Mean") + 
+  xlab("Species") +
+  coord_flip() +
+  geom_hline(yintercept = 0, linetype="dashed")
+
+file.name <- paste0("Vegetation/Beta_all_plot", ".pdf", sep = "")
+ggsave(file.name, plot=beta.plot, units = "in", width = 7, height = 7)
+save(beta.plot, file="Vegetation/beta_plot.RData")
+
+#Rho
+
+boral_Rho_Mean <- read.csv("Vegetation/Rho/Rho_mean_Veg_boral.csv")
+rownames(boral_Rho_Mean) <- boral_Rho_Mean[,1]
+boral_Rho_Mean <- boral_Rho_Mean[,-1]
+boral_Rho_Mean <- as.matrix(boral_Rho_Mean)
+colnames(boral_Rho_Mean) <- rownames(boral_Rho_Mean) <- 1:ncol(boral_Rho_Mean)
+
+boral_Rho_Lower <- read.csv("Vegetation/Rho/Rho_lower_Veg_boral.csv")
+rownames(boral_Rho_Lower) <- boral_Rho_Lower[,1]
+boral_Rho_Lower <- boral_Rho_Lower[,-1]
+boral_Rho_Lower <- as.matrix(boral_Rho_Lower)
+colnames(boral_Rho_Lower) <- rownames(boral_Rho_Lower) <- 1:ncol(boral_Rho_Lower)
+
+boral_Rho_upper <- read.csv("Vegetation/Rho/Rho_upper_Veg_boral.csv")
+rownames(boral_Rho_upper) <- boral_Rho_upper[,1]
+boral_Rho_upper <- boral_Rho_upper[,-1]
+boral_Rho_upper <- as.matrix(boral_Rho_upper)
+colnames(boral_Rho_upper) <- rownames(boral_Rho_upper) <- 1:ncol(boral_Rho_upper)
+
+Uncertainty_boral <- boral_Rho_upper - boral_Rho_Lower
+colnames(Uncertainty_boral) <- rownames(Uncertainty_boral) <- 1:ncol(Uncertainty_boral)
+Uncertainty_boral <- as.matrix(Uncertainty_boral)
+
+pdf(file = "Vegetation/All_veg_Correlation Plot Vegetation.pdf", 
+    width = 14, height = 5.5)
+par(mfrow = c(1,2), mar = c(4,2,4,2), oma = c(0.5,3,0,3))
+
+corrplot(boral_Rho_Mean,
+         type = "upper",
+         method = "color",
+         tl.col = "black",
+         tl.srt = 0,
+         tl.cex = 1.2,
+         tl.offset = 0.6,
+         diag = F,
+         outline = T,
+         cl.cex = 1,
+         cl.align.text = "l",
+         cl.pos = "n")
+
+corrplot(Uncertainty_boral, 
+         is.corr = F,
+         type = "upper",
+         method = "color",
+         tl.col = "black",
+         tl.srt = 0,
+         tl.cex = 1.2,
+         tl.offset = 0.6,
+         diag = F,
+         cl.lim = c(0,2),
+         outline = T,
+         cl.cex = 1,
+         cl.align.text = "l",
+         cl.pos = "n")
+dev.off()
+
+save(wetland.height.plot, uncon.mod, complete.invert.plot, con.mod, file = "Complete_veg_analysis.RData")
 setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds")
