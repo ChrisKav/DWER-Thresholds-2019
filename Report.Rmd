@@ -158,13 +158,25 @@ A multivariate analysis was used to explore the effects of ground/surface water 
 
 ## Wetland vegetation
 
+Add some description of the results presented in Figure \ref{fig:Allvegheight} and Figure \ref{fig:AllVegOrd}.
+
+```{r Allvegheight, fig.cap="\\label{fig:Allvegheight}Range of depth to water level experienced by some plant species at a few sites with reliable water monitoring during the survey period.", results = 'asis'}
+load("All_vegetation/Complete_veg_analysis.RData")
+wetland.height.plot
+```
+
+```{r AllVegOrd, fig.cap="\\label{fig:AllVegOrd}Unconstrained ordination plot of all vegetation surveys at each wetland site during the survey period (1996-2018). Arrows represnt change from first survey to last survey.", results = 'asis'}
+load("All_vegetation/Complete_veg_analysis.RData")
+complete.invert.plot
+```
+
 ## Aquatic invertebrate communities
 
 The aquatic invertebrate assemblages form three distinct groups based on the dunal system of the wetland (Figure \ref{fig:InvertOrd}). The Spearwood Dunes (Lake Goollelal, Lake Joondalup, Loch McNess, Lake Nowergup and Lake Yonderup) form the most diverse group, while the Bassendean Dunes Wetlands (Melaleuca Park 173) and East Wanneroo Interdunal Wetlands (Lake Jandabup and Lake Mariginiup) have different assemblages to each other. Generally, the Bassendean Dunes and East Wanneroo Interdunal Dunes wetlands are becoming more similar with each other, although such conclusions are based on a very limited set of wetlands. The Spearwood Dunes contain wetlands with two distinct trajectories, those migrating towards initial Lake Joondalup compositions (Loch McNess, Lake Goollelal and Lake Nowergup), and those migrating towards initial Loch McNess compositions (Lake Joondalup and Lake Yonderup). Nonetheless, each wetland has a distinct assemblage of macroinvertebrates but, aquatic macroinvertebrate communities have shifted during the monitoring period. Recent monitoring suggests that Loch McNess and Melaleuca Park 173  are becoming more similar to others wetlands. For instance, Loch McNess has shifted dramatically towards early Lake Joondalup composition. Lake Goollelal has displayed a similar, although not as dramatic, shift in composition. During the monitoring period, Melaleuca Park 173 is becoming increasingly similar to the assemblages at Lake Jandabup and Lake Mariginiup, which are also shifting towards Melaleuca Park 173. The communities at Lake Joondalup and Lake Yonderup have been shifting towards the early communities of Loch McNess. Lake Nowergup has shown some variation in community composition, but the current trajectory shows little change to the 1996 assemblage.
 
 Most wetlands have lost families since the period 1996-2000, with the exception of Lake Goollelal and Loch McNess (Figure \ref{fig:InvertRich}). The richness of the Lake Joondalup assemblage has not dramatically declined either. There are 11 families of aquatic macroinvertebrates that have not been recorded from the monitored wetlands in the past 5 years and seven families currently present that were not recorded in the initial 1996-2000 (excluding singletons; Table \ref{tab:ExtinctTab}). The richness of Acari (mites and ticks) has declined by 4 families while the Coleopteran Haliplidae and the Hemipteran Mesoveliidae are no absent from Lake Joondalup and Lake Yonderup. The Mollusc Sphaeriidae, probably a regionally endemic species (REPORT 85167), has been absent from Lake Nowergup since 1998, while Ancylidae has become abundant (possibly due to augmentation - see REPORT 85167). The insects, Corduliidae (Odonata), Ecnomidae (Trichoptera), Haliplidae (Coleoptera) and Mesoveliidae (Hemiptera) are all species with widespread distributions in the Swan Coastal Plain (REPORT 85167), but are now not found in the monitored wetlands reported here.
 
-```{r InvertOrd, fig.cap="\\label{fig:InvertOrd}Ordination plot of all samples collect at each wetland during the survey period (1996-2018). Arrows represnt change from first survey to last survey. Wetlands include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Lake Mariginiup (MAR), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON).", results = 'asis'}
+```{r InvertOrd, fig.cap="\\label{fig:InvertOrd}Unconstrained ordination plot of all samples collect at each wetland during the survey period (1996-2018). Arrows represnt change from first survey to last survey. Wetlands include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Lake Mariginiup (MAR), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON).", results = 'asis'}
 load("invertebrate_data.RData")
 complete.invert.plot
 ```

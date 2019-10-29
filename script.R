@@ -37,6 +37,10 @@ for (i in 1:length(wetlands)) {
   }
 }
 
+# All veg analysis - be careful of mcmc control iof testing. Takes a long time
+
+source("All_vegetation/all_veg_analysis.R")
+
 ####################
 # Vegetaton plots  #
 ####################
