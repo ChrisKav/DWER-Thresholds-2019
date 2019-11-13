@@ -19,7 +19,7 @@ Y <- comm$Nowergup_Nth
 wat.obs <- data.ls$'61611247'
 ahd <- AHD.data.list$Nowergup.AHD
 ahd.p <- Params.data.list$Nowergup.params
-WL_group <- "surface"
+WL_group <- "ground2"
 gw.plot <- Site.GW.plots$nower.p
 a.ele <- 15.9
 b.ele <- 16.851
