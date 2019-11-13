@@ -26,6 +26,9 @@ b.ele <- 16.851
 c.ele <- 17.849
 d.ele <- 18.867
 
+#Remove all data earlier than 2001
+Y <- subset(Y, year >= 2001)
+
 # 1. Build HMSC object
 Y2 <- comm_prep(Y)
 studyDesign <- Y2[[2]]
