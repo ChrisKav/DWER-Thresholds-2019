@@ -7,7 +7,7 @@ Site.GW.plots
 dev.off()
 
 wetlands <- read.csv("wetlands.csv", header=FALSE)[,1]
-wetlands <- wetlands[c(14)]
+wetlands <- wetlands[c(10, 11)]
 wetlands <- droplevels(wetlands)
 
 ########################
