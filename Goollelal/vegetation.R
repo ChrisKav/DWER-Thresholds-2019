@@ -137,6 +137,8 @@ lvsplot(vegfit.mod3, biplot=FALSE)
 mod1.ext <- boral.extract(vegfit.mod1, XData)
 mod3.ext <- boral.extract(vegfit.mod3, XData)
 
+mod1.ext$lv$Year <- as.factor(mod1.ext$lv$Year)
+
 veg.ord1 <- boral.plots(mod1.ext)
 veg.ord2 <- boral.plots(mod3.ext)
 

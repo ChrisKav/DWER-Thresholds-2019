@@ -19,12 +19,15 @@ Y <- comm$Nowergup_Nth
 wat.obs <- data.ls$'61611247'
 ahd <- AHD.data.list$Nowergup.AHD
 ahd.p <- Params.data.list$Nowergup.params
-WL_group <- "surface"
+WL_group <- "ground2"
 gw.plot <- Site.GW.plots$nower.p
 a.ele <- 15.9
 b.ele <- 16.851
 c.ele <- 17.849
 d.ele <- 18.867
+
+#Remove all data earlier than 2001
+Y <- subset(Y, year >= 2001)
 
 # 1. Build HMSC object
 Y2 <- comm_prep(Y)
@@ -133,6 +136,8 @@ sapply(colnames(vegfit.mod3$X), coefsplot, vegfit.mod3)
 
 mod1.ext <- boral.extract(vegfit.mod1, XData)
 mod3.ext <- boral.extract(vegfit.mod3, XData)
+
+mod1.ext$lv$Year <- as.factor(mod1.ext$lv$Year)
 
 veg.ord1 <- boral.plots(mod1.ext)
 veg.ord2 <- boral.plots(mod3.ext)
