@@ -57,7 +57,7 @@ The region experiences a Mediterranean-type climate with hot  dry summers and co
 
 ## Scope of study
 
-The Department of Water and Environmental Regulation (DWER) has environmental conditions set on its management of Gnangara groundwater resources, specified in Ministerial Statement 819 (published on 4 December 2009) (ATTACH AS Appendix 1). Schedule 1 of Ministerial Statement 819 specifies minimum water level criteria or thresholds that the department must meet at staff gauges and/or monitoring bores at 14 wetlands and 16 bushland sites in the area covered by the Gnangara groundwater allocation plan, north of Perth (Figure \ref{fig:Map}). Due to groundwater declines caused by groundwater abstraction and declining rainfall, DWER has been unable to meet the criteria levels at approximately half of the sites in recent years. DWER is currently in the process of preparing a draft Gnangara groundwater allocation plan for public comment. Implementation of the plan will reduce public and private groundwater abstraction in the plan area by a total of up to 44 GL/yr in 2028. Even with these reductions in abstraction, modelling projects the department will still not be able to achieve the current ‘absolute minimum’ levels at around half of the criteria sites and compliance rates will remain very similar to current rates because the expectations are for a continued drying climate regime into the future.
+The Department of Water and Environmental Regulation (DWER) has environmental conditions set on its management of Gnangara groundwater resources, specified in Ministerial Statement 819 (published on 4 December 2009) (ATTACH AS Appendix 1). Schedule 1 of Ministerial Statement 819 specifies minimum water level criteria or thresholds that the department must meet at staff gauges and/or monitoring bores at 14 wetlands and 16 bushland sites in the area covered by the Gnangara groundwater allocation plan, north of Perth (Figure \ref{fig:Map}). Due to groundwater declines caused by groundwater abstraction and declining rainfall, DWER has been unable to meet the criteria levels at approximately half of the sites in recent years. DWER is currently in the process of preparing a draft Gnangara groundwater allocation plan for public comment. Implementation of the plan will reduce public and private groundwater abstraction in the plan area by a total of up to 44 GL/yr in 2028. Even with these reductions in abstraction, modelling predicts the department will still not be able to achieve the current ‘absolute minimum’ levels at around half of the criteria sites and compliance rates will remain very similar to current rates because the expectations are for a continued drying climate regime into the future.
 
 DWER are therefore proposing to alter the water level criteria at sites where the modelling projects absolute minimum levels will not be met in the future. The department has developed a new set of water level criteria (or minimum ‘thresholds’, in line with the Environmental Protection Authority’s recommended terminology (GET REFERENCE EPA 2018a)). The proposed minimum thresholds have been based on what groundwater modelling has indicated can likely be met at the respective criteria sites following reductions in groundwater abstraction, and (in some areas) planned land use changes. Reductions to groundwater abstraction will come into effect in 2028, while land use changes have started to occur in some areas already and will happen progressively over the plan period.
 
@@ -84,11 +84,11 @@ To understand the shifts that have occurred in aquatic and vegetation communitie
 
 [INSERT PART ABOUT REVISED MANAGEMENT OBJECTIVES]
 
-```{r Map, fig.cap="\\label{fig:Map}Location of Gnangara Mound and wetland and terrestrial sites investigated in this report.", results = 'asis'}
+```{r Map, fig.cap="\\label{fig:Map}Gnangara groundwater allocation plan area and location of wetland and terrestrial sites investigated in this report.", results = 'asis'}
 knitr::include_graphics('map.png')
 ```
 
-```{r RainfallPlot, fig.cap="\\label{fig:RainfallPlot}Left: Annual rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018. Dotted line represent average annual rainfall for the entire period. Solid line represents a 5-year moving average of annual rainfall data. Right: }Monthly rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018.", results = 'asis'}
+```{r RainfallPlot, fig.cap="\\label{fig:RainfallPlot}Left: Annual rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018. Red dots represent toal rainfall for a given year and dotted line represents average annual rainfall for the entire period. Solid line represents a 5-year moving average of annual rainfall data. Right: }Monthly rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018.", results = 'asis'}
 load("rainfall_trends.RData")
 ggarrange(rain.plot,rain.month, ncol = 2)
 ```
@@ -97,7 +97,37 @@ ggarrange(rain.plot,rain.month, ncol = 2)
 
 # Methods
 
-[TABLE OF WETLANDS <- THE DUNE COMPLEX THEY BELONG TO, WHETHER VEG/INVERT MONITORING, COORDINATES ]
+The surface geology of the Gnangara Mound is a reflection of processes that have shaped the Swan Coastal Plain over the last two million years due to changing sea levels. The Gnangara Mound, which is bordered by the 2.5 billion year old granites and gneiss of the Darling Scarp in the east, is composed of aeolian, lacustrine, fluvial and estuarine deposits. The sediments increase in age from the west coast to the Darling Scarp in the east. The Quindalup Dune System was formed 4,500 to 6,000 years ago and consists of calcareous sand dunes that trend north-south along the coast. The Spearwood Dune System is an aeolian calcareous dune system that is the surface expression of the Tamala Limestone formation formed in the Pleistocene. Wetlands are found in the swales of the dunes that run parallel to the coast. The Bassendean Dune System is composed of highly permeable white silaceous sands deposited in the middle Pleisticene that are interdispersed with areas of poorly drained soils that are subjected to seasonal waterlogging. The wetlands found in each of these dunal systems are largely distinct from one another, with Bassendean wetlands generally having tanin rich and acidic waters, and Spearwood waters being clearer and alkaline. 
+
+Nineteen wetlands from the Bassendean and Spearwood Dune systems are analysed in this report to assess the impacts of revised groundwater thresholds (Table \ref{tab:WetMeta}).
+
+```{r WetMeta, echo=FALSE, results='asis'}
+  cat(' Table: \\label{tab:WetMeta}Summary of wetlands.
+  
+|  Wetland | Dunal System | Veg/Invert Monitoring | Coordinates |
+| :------------: |:------------: |:-----------:|:-----------:|
+|Lake Goollelal|Urban Spearwood Dunes|Veg & Invert|31.817&deg;S 115.815&deg;E|
+|Loch McNess|Peri-Urban Spearwood Dunes|Veg & Invert|31.548&deg;S 115.682&deg;E|
+|Lake Yonderup|Peri-Urban Spearwood Dunes|Veg & Invert|31.555&deg;S 115.686&deg;E|
+|Lake Joondalup|Urban Spearwood Dunes|Veg & Invert|31.743&deg;S 115.779&deg;E|
+|Lake Mariginiup|East Wanneroo Interdunal|Veg & Invert|31.729&deg;S 115.815&deg;E|
+|Lake Jandabup|East Wanneroo Interdunal|Veg & Invert|31.746&deg;S 115.847&deg;E|
+|Lake Nowergup|Peri-Urban Spearwood Dunes|Veg & Invert|31.630&deg;S 115.732&deg;E|
+|Lake Wilgarup|Spearwood Dunes|Veg|31.575&deg;S 115.690&deg;E|
+|Pipidinny Swamp|Spearwood Dunes|Veg|31.580&deg;S 115.683&deg;E|
+|Lexia 186|Bassendean Dunes|Veg|31.743&deg;S 115.963&deg;E|
+|Melaleuca Park 173|Bassendean Dunes|Veg & Invert|31.704&deg;S 115.963&deg;E|
+|Melaleuca Park 78|Bassendean Dunes|Veg|31.704&deg;S 115.915&deg;E|
+|MM59B - Whiteman Park East|Bassendean Dunes|Veg|31.804&deg;S 115.954&deg;E|
+|PM9 - Pinjar North|Bassendean Dunes|Veg|31.612&deg;S 115.843&deg;E|
+|WM1 - Pinjar|Bassendean Dunes|Veg|31.655&deg;S 115.855&deg;E|
+|WM2 - Melaleuca Park north|Bassendean Dunes|Veg|31.662&deg;S 115.895&deg;E|
+|Lake Gwelup|East Wanneroo Interdunal |Veg|31.878  &deg;S 115.791  &deg;E|
+|Quin Brook|Bassendean Dunes|Veg|31.450&deg;S 115.812&deg;E|
+|Gingin Brook|Bassendean Dunes|Veg|31.348&deg;S 115.717&deg;E|
+')
+
+```
 
 ## Vegetation monitoring
 
@@ -230,7 +260,7 @@ Ordination reveals that Plot A has a distinct assemblage to the other plots but 
 
 The mean family richness of aquatic invertebrates is 22 for Lake Goollelal (Figure \ref{fig:GoollelalRichInv}). Since 2008, family richness has mostly been stable and above the long term average. There are stable populations of Amphisopidae, Calanoida, Ceinidae, Chironominae, Corixidae, Cyprididae and Amphisopidae at the lake (Figure \ref{fig:GoollelalStratInv}). Other taxa are not currently recorded in the lake include Ceratopogonidae, Chydoridae, Oligochaeta and Pionidae. The absence of the Chydoridae (Cladocera) is notable given the abundance in early monitoring years. There was a major shift in the assemblage composition in 2006-2007, with ordination revealing two main groups of annual data; those collected pre 2007, and those collected post 2007 (Figure \ref{fig:GoollelalOrdInv}). However, recent high water levels and low nutrients appear to shifting the assemblages back towards pre-2007 compositions (see @Judd2019).
 
-### Revised water level threshold effects
+### Ramifications of revised thresholds
 
 Revised thresholds will likely maintain ecological conditions similar to present (Table \ref{tab:GoollelalCompliance}).
 
@@ -356,7 +386,7 @@ Plots A and B have shifted in community composition dramatically during the moni
 
 Loch McNess is the most taxonomically rich of the Spearwood Dune wetlands, with about 27 macroinvertebrate families regularly found there (Figure \ref{fig:McNessRichInv}). However, the composition of the community is shifting (Figure \ref{fig:McNessOrdInv}). The communities were relatively stable in terms of composition until 2008 when water levels began to decline significantly (Figure \ref{fig:McNessWaterPlot}). The current trajectory suggests the dissimilarity between pre-2008 and contemporary communities will continue. The site is now dominated by common taxa of the Swan Coastal Plain such as Amphisopidae, Chironomidae larvae, Corixidae, Culicidae larvae, Cyclopoida (*Daphnia*), Dytiscidae, Notonectidae and Pionidae (Figure \ref{fig:McNessStratInv}). Some of these, namely Chironomidae and Culicidae larvae, are considered nuisance species. The Amphipod, Ceinidae, has not been collected in the lake since 2014 and the shrimp *Palamonetes australis* not recorded since 2010. This shift in macroinvertebrate assemblage indicates serious changes in ecological processes as the wetland transitions towards a nutrient enriched shallow lake.
 
-### Revised water level threshold effects
+### Ramifications of revised thresholds
 
 Managing the lake at the proposed thresholds will continue the deterioration of site values at Loch McNess (Table \ref{tab:McNessCompliance}).
 
@@ -482,7 +512,7 @@ The vegetation transect, established in 1997, is located 750 m south of the basi
 
 Taxonomic richness of the macroinvertebrate assemblage in Lake Yonderup has been declining since 2012 (Figure \ref{fig:YonderupRichInv}). Richness is now lower than previous records and the trend may suggests some shifts in ecological processes due to declining water levels. The composition of the Lake Yonderup macroinvertebrate community is variable (Figure \ref{fig:YonderupOrdInv}). Many taxa are not recorded every year, or are absent for periods, such as Ceinidae, Oligochaeta and Orthocladiinae. Other taxa have declined, or perhaps become locally extinct, including Dytiscidae and Hydrophilidae (Figure \ref{fig:YonderupStratInv}). Chironominae, Cyclopoida, Cyprididae and Leptoceridae have been recorded in nearly every sampling event at Lake Yonderup.
 
-### Revised water level threshold effects
+### Ramifications of revised thresholds
 
 Managing the lake at the proposed thresholds will continue the deterioration of site values at Lake Yonderup (Table \ref{tab:YonderupCompliance}).
 
@@ -603,7 +633,7 @@ All plots in both transects have displayed similar trends in community compositi
 
 Aquatic invertebrates have been sampled from Lake Joondalup every year since 1996. During this period, 16-30 families of aquatic invertebrates have been recorded per sampling event, except for the latest round in 2018 where family richness was only nine (Figure \ref{fig:JoondalupRichInv}). This exceptionally low family richness was likely due to the lack of insects and associated parasitic mites among the sampled communities. The phreatoicid isopod *Amphisopus palustris* was also absent in 2018 despite being collected every spring in Lake Joondalup (except 2004 ; Figure \ref{fig:JoondalupStratInv}). Furthermore, this reduced richness occurred during a period of relatively high surface water levels, suggesting other anthropogenic factors may be responsible for the decline of insect fauna within the lake. Otherwise, the lake hosts abundant populations of Ceinidae (amphipods), *Palaemonetes australis* (crustacean), *Calanoid copepods* and Cyprididae (ostracods). There is high variation in the composition of annual macroinvertebrate community composition making it difficult to interpret a trajectory of compositional change (Figure \ref{fig:JoondalupOrdInv}). There has been a general trend of community composition shifting away from the initial 1996 community.
 
-### Revised water level threshold effects
+### Ramifications of revised thresholds
 
 The water levels in the vicinity of Lake Joondalup are expected to increase up to 2.1 m by 2030 from 2013 levels based on the revised groundwater allocations. This increase in water level will continue the increasing trend being observed in the lake's surface water levels since 2015. Maintaining surface water levels above 16.2 mAHD at staff 6162572 will ensure permanent water habitat for fauna and flora and the visual amenity of the area (Table \ref{tab:JoondalupCompliance}). The diverse macrophytes inhabiting plot A and B of both transects are likely to persist and continue to provide a rich habitat for aquatic invertebrates. Although important native macrophytes and wetland species are likely to continue at relatively high cover abundances under the future scenario, there are some native species that are likely to decrease in cover abundance or disappear. This group mainly includes *Acacia* and *Banksia* species which provide important habitat for fauna up-slope of the lake. Further vegetation monitoring is required at these transects to determine vegetation compositional changes since 2015 to understand if the trajectory in compositional change is continuing.
 
@@ -746,7 +776,7 @@ Regression analysis reveals a number of native species that will increase in cov
 
 Lake Mariginiup has been sampled every year between 1996 and 2002, 2004 and 2009, 2012 and 2018, making it difficult to interpret trends in community change. Despite the acidification that has occurred in the lake, there is a remarkably high richness of invertebrates (Figure \ref{fig:MariginiupRichInv}) and seems to be a recovery since the 2012 sampling event where family richness was 13. Nonetheless, richness has been below average for the site since 2005 when acidification processes began affecting the lake. Recent increases in water levels may be promoting higher richness by increasing habitat availability and diversity. There has been a dramatic shift in macroinvertebrate community compositions between 2002 and 2004 (Figure \ref{fig:MariginiupOrdInv}). Recent data suggests the community may be returning to pre-2004 composition, which again may be attributable to increased surface waters and habitat availability. Some families have disappeared from the lake, including Amphisopidae, Ceinidae, Chydoridae and Cyprididae (Figure \ref{fig:MariginiupStratInv}).
 
-### Revised thresholds
+### Ramifications of revised thresholds
 
 The site values of Lake Mariginiup are likely to be maintained under the proposed threshold levels (Table \ref{tab:MariginiupCompliance}).
 
@@ -990,7 +1020,7 @@ There are two vegetation monitoring transects at Lake Nowergup, one in the north
 
 Aquatic invertebrate richness has been below average for Lake Nowergup since 2010, with 19 families detected for the last three sampling occasions (Figure \ref{fig:NowergupRichInv}). There is currently a trend of declining richness since 2008. This decline in richness is likely due to the loss of fringing macrophytes due to declining water levels and submerged macrophytes in the center of the lake which have also disappeared (GMEMP 2018). Loss of macrophytic habitat has coincided with elevated nutrient levels which would have also altered ecological processes and invertebrate assemblages. Ordination reveals a marked change in assemblage composition from 1996 to 2018 (Figure \ref{fig:NowergupOrdInv}). Communities appeared to shifted most dramatically from 2002 to 2006 which coincides with supplementation of surface waters by artificial watering. The current shift away from the 1996 community may be driven by the high nutrients being experienced at the lake. Changes can be associated to loss of Ceinidae, Amphisopidae, Notodromadidae and Chydoridae (Figure \ref{fig:NowergupStratInv}). As stated by Judd [-@Judd2019] "*The macroinvertebrate monitoring undertaken in 2018 confirms the trends of reduced richness and changing assemblages. The artificial maintenance regime at this wetland was clearly inadequate to maintain ecological integrity and has failed to prevent a loss of habitats, the consequence of lowered water levels. The resulting change in invertebrate assemblages may well be irreversible and steps to restore more representative assemblages must involve more than maintenance of minimum water levels.*"
 
-### Revised water level threshold effects
+### Ramifications of revised thresholds
 
 The site values of Lake Nowergup are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:NowergupCompliance}).
 
@@ -1126,7 +1156,7 @@ Groundwater levels have been recorded at the nearby bore 61618500 since 1997 (Fi
 
 A vegetation monitoring transect was established at Lake Wilgarup in 1997 and was last surveyed in 2012. Two additional sites were added to the transect in 2009 down-slope of Plot A. The sedges, *Baumea articulata*, *Baumea juncea* and *Baumea vaginalis* have all disappeared from the wetland during the monitoring period (Figure \ref{fig:WilgarupStrat}). Tuart trees (*Eucalyptus gomphocephala*) have migrated down slope during the monitoring period and were recorded in Plot A in 2005. Plots A, B and C display similar shifts in community composition during the monitoring period, while Plot D displayed a significant change in composition in 2004-2005 in response to fire (Figure \ref{fig:WilgarupOrd}). Under a scenario of continuing groundwater decline, regressional analysis reveals that a number of exotic species, including *Ehrharta longiflora* and *Bromus diandrus*, are likely to increase in cover abundances (Figure \ref{fig:WilgarupPost}).
 
-### Revised water level threshold effects
+### Ramifications of revised thresholds
 
 The site values of Lake Wilgarup are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:WilgarupCompliance}).
 
@@ -1202,7 +1232,7 @@ It is likely that water levels in Yanchep National Park will increase under the 
 
 The transect at Pipidinny Swamp consists of a series of depressions/swamps interspersed with tracks and grassy banks. The transect was established close to the bore but was only 20 m in length due to the terrain. Subsequently, only four *Melaleuca* trees could be included. Species richness and diversity on and around the transect was low, with *Acacia saligna* the dominant overstorey species, although *Melaleuca rhaphiophylla* appeared in good health (both on and around the transect). *Baumea articulata* was present, albeit in low abundance, several meters up slope from the surface water, and was in moderate health with a couple of dead stems present. No recruitment was recorded. The location's potential value as important habitat was indicated by the presence of a south west carpet python (*Morelia apilota*) in amongst the *Typha orientalis* during the 2019 survey. A number of exotic species are abundant at the site, including *Bromus diandrus*, *Ehrharta longiflora* and the potentially invasive native bullrush *Typha orientalis*.
 
-### Revised water level threshold effects
+### Ramifications of revised thresholds
 
 The site values of Pipidinny Swamp are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:PipidinnyCompliance}).
 
@@ -1270,7 +1300,7 @@ There has almost been a significant decline in groundwater levels at Lexia 186 f
 
 Vegetation monitoring has been occurring at Lexia 186 since 1997 with the last survey conducted in 2018 (Figure \ref{fig:Lexia186Strat}). Overall canopy health has remained stable with most *Melaleuca preissiana* in good or excellent condition and most *Banksia ilicifolia* with average condition [@Buller2018]. Exotic richness is very low at Lexia 186 and natives account for approximately 90 % of total cover abundance at the transect. Ordination reveals similar trajectories in compositional change for each plot that reflect the continual changes in cover abundances of species (Figure \ref{fig:Lexia186Ord}). Regression analyses did not reveal significant effects of groundwater levels on any of the species present at Lexia 186 (Figure \ref{fig:Lexia186Post}). This result suggests that community composition is changing due to other factors that are independent of groundwater. This is surprising given the significant declines in groundwater at the site.
 
-### Revised water level threshold effects
+### Ramifications of revised thresholds
 
 The site values of the Lexia 186 wetland are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:Lexia186Compliance}).
 
@@ -1352,7 +1382,7 @@ Ordination reveals distinct shifts in community composition since 1997 (Figure \
 
 Aquatic macroinvertebrate family richness has been declining since the late 2000's when water levels began declining (Figure \ref{fig:EMP173RichInv}). As water chemistry has changed little during this period, the decline in richness is likely due to the degradation of habitats caused by the lower surface waters and extended dry periods during summer (GMEMP 2019). Macroinvertebrate assemblage composition has shifted since the initial 2000 survey (Figure \ref{fig:EMP173OrdInv}). Since 2011, assemblage composition has been shifting away from the 2000 community, suggesting further shifts in composition are likely due to sustained low water levels. Taxa that have disappeared from the wetland include Chydoridae, Leptoceridae, Orthocladiinae and Unioncolidae (Figure \ref{fig:EMP173StratInv}).
 
-### Revised water level threshold effects
+### Ramifications of revised thresholds
 
 It is likely that management many of the site values of the Melaleuca Park wetland will be achievable given the projected decline in groundwater levels (Table \ref{tab:EMP173Compliance}).
 
@@ -1471,7 +1501,7 @@ The vegetation transect has been monitored at Melaleuca Park 78 since 1997 and w
 
 Bayesian regression modelling suggests a number of species associated with low groundwater levels (Figure \ref{fig:EMP78Post}). In particular, some natives, including *B. attenuata*, *Hibbertia subvaginata* and *M. preissiana*, are likely to increase in cover abundance under a scenario of further decreasing groundwaters. The cover abundance of exotics, including *Aira caryophyllea*, *Briza maxima*, *Ehrharta calycina*, *Hypochaeris glabra*, *Poa annua*, *Sonchus oleraceus* and *Ursinia anthemoides*, are also likely to increase in cover abundance withd declining groundwaters. Some of the species are groundwater dependent, such as the *Banksia* species, suggesting that despite being in decline, groundwater will remain important in determining the vegetation composition of the wetland It is also likely that the richness of exotic species will increase with groundwater decline as the site becomes invaded by exotics not currently recorded at the site.
 
-### Revised water level threshold effects
+### Ramifications of revised thresholds
 
 Further declines in groundwater levels will make it unlikely that site values will be maintained at Melaleuca Park 78 (Table \ref{tab:EMP78Compliance}).
 
@@ -1542,6 +1572,8 @@ Groundwater levels at Whiteman Park East have been declining since 1980, althoug
 
 The site contains a fairly sparse understorey and open mixed woodland canopy consisting of *Banksia* spp, *Allocasuarina fraseriana*, *Nuytsia floribunda* and *Eucalyptus todtiana*. *Banksia* species found at the site include *B. attenuata*, *B. ilicifolia* and *B. menziesii*. Vegetation is slightly degraded with signs of rabbits evident. Species richness and diversity are notably less than some of the other Pinjar sites and more exotic species, such as *Ursinia anthemoides*, are present at high cover abundances. Predominant native understorey species include *Scholtzia involucrata*, *Calytrix* spp. and *Patersonia occidentalis*. *Banksia* spp. health was mostly good, although some *B. attenuata* appeared to be approaching senescence, and a number of dead *Banksia* are also present. Recruitment was present but low.
 
+### Ramifications of revised thresholds
+
 ```{r MM59BWater, echo = FALSE, results = 'asis'}
 load("MM59B/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
@@ -1584,6 +1616,8 @@ WHERE IS VEGETARTION TRANSECT AT P50?
 
 Groundwater at PM9 have almost continually been in decline since 1980 from approximately 59 mAHD to 2016 levels around 53 mAHD (Figure \ref{fig:PM9WaterPlot}). The most significant rate of decline has been occurring since 1995 to 2016. Maximum and minimal seasonal water levels are 4 and 5 m lower now than in the 1994-1999 period, respectively (Table \ref{tab:PM9water}). Since 2016, no measurements at bore 61610804 have been made due to the operation of a nearby rifle range. It is unknown if groundwater levels have continued to decline since 2016 because no measurements have been recorded due to safety concerns regarding access to the bore. If the observed decline has continued, groundwater levels at the site may currently be below 52 mAHD, representing more than a 7 m decline since 1980.
 
+### Ramifications of revised thresholds
+
 ```{r PM9water, echo = FALSE, results = 'asis'}
 load("PM9/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
@@ -1615,6 +1649,8 @@ Groundwater levels at WM1 have declined up to 4.0 m since 1980, although recent 
 ### Vegetation character
 
 The area has been affected by fire in the past (sometime between early Jan 2015 and late February 2015) and some of the older *Banksias* on the transect have old fire scars. Vegetation structure and community composition of the site is typical *Banksia* woodland, consisting of overstorey species *B. attenuata*, *B. menziesii* and *B. ilicifolia* and a typically diverse dry land understorey of *Acacia pulchella*, *Adenanthos cygnorum*, *Jacksonia* spp and *Xanthorrhoea preissii*. Although not recorded in the transect, *Melaleuca preissiana* has been noted nearby. In general, *Banksia* health appears good despite several individuals having significant insect damage and yellow leaves. Previous reports have document the decline of vegetation at this site due to declining groundwater levels [@WaterandRiversCommission2004; @DepartmentofWater2008]. The trends included a general thinning of the understory, *B. attenuata* deaths, declining condition of *B. ilicifolia* and *B. menziessi*. *Eucalyptus todtiana* and *Corymbia calophylla* have also been reported to be declining in health in 2008 [@DepartmentofWater2008].
+
+### Ramifications of revised thresholds
 
 ```{r WM1Water, echo = FALSE, results = 'asis'}
 load("WM1/water_level.RData")
@@ -1659,6 +1695,8 @@ There has been periods of significant decline in groundwater levels from 68.8 mA
 
 The vegetation around monitoring bore WM2 has similar vegetation composition as WM1. The vegetation also appears to have been affected by fire in the summer of 2014/2015. The understorey is highly diverse, with *Acacia pulchella*, *Adenanthos cygnorum* and *Xanthorrhoea preissii* common. Canopy cover is quite open, with several mature *Banksias* present. Most *Banksias* were resprouts and/or young trees between 1 and 3 m tall. Several mature trees bore significant epicormic growth. New *Banksia* recruitment (mainly very small seedlings) for *Banksia attenuata* and *Banksia menziessi* has been observed.
 
+### Ramifications of revised thresholds
+
 ```{r WM2Water, echo = FALSE, results = 'asis'}
 load("WM2/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
@@ -1701,6 +1739,8 @@ Groundwater levels began to decline in 2000 at WM8 from approximately 66.0 mAHD 
 ### Vegetation character
 
 The vegetation community at WM8 is typical of *Banksia* woodland. There is a sparse understorey composed predominately of *Lyginia barbata*, *Scholtzia involucrata* and *Eremaea pauciflora*. The canopy is open and consists predominately of *Banksia attenuata* and *B. menziesii*. Tree health at the site was good although a number of dead mature *Banksias* were present. There is evidence of recent *Banksia attenuata* recruitment, mainly in the form of small seedlings. *Jacksonia floribunda* in notably poorer health than at the other Pinjar sites (WM1 and WM2). 
+
+### Ramifications of revised thresholds
 
 ```{r WM8Water, echo = FALSE, results = 'asis'}
 load("WM8/water_level.RData")
@@ -1745,7 +1785,7 @@ Lake water levels were first monitored in 1960, but regular monitoring has occur
 
 Vegetation monitoring at Lake Gwelup began in 2013 and was last conducted in 2017. The start of the transect was inundated by approximately 0.7 m of surface water during the 2017 survey. The wetland is dominated by exotic species such as *Cynodon dactylon* and *Ehrharta calycina* despite exotic cover abundance declining in the later surveys (Figure \ref{fig:GwelupStrat}). The overstorey is dominated by the natives *Eucalyptus rudis* and *Maleleuca rhaphiophyla* which are in good health [@Buller2018]. There was a dramatic shift in community composition between 2014 and 2017 due to inundation of the plots (Figure \ref{fig:GwelupOrd}). Bayesian regression analysis reveals that a number of exotic species will continue to decrease in cover abundances with the higher water levels (Figure \ref{fig:GwelupPost}).
 
-### Revised water level threshold effects
+### Ramifications of revised thresholds
 
 ```{r GwelupWaterPlot, fig.cap="\\label{fig:GwelupWaterPlot}Ground and surface water levels for Lake Gwelup recorded at bore 61610032 (red) and staff 6162504 (blue). The minimum recordable water level for the staff gaugue is 5.0 mAHD. Blue dots at 5.0 mAHD represent water levels below the minimum level measurable by the staff. Red segments on fitted line represent statistically significant periods of decline and blue represent statistically significant periods of increasing water levels.", results = 'asis'}
 load("Gwelup/water_level.RData")
@@ -1812,6 +1852,8 @@ The hydrology of Quin Brook is not well understood. Stretches of the brook are d
 
 Vegetation at Quin Brook is dominated by some key wetland species, including *Melaleuca rhaphiophyla*, *Eucalyptus rudis*, *Banksia littoralis* and *Melaleuca preissiana*. Vegetation monitoring, which began in 2009, indicates that the *Melaleuca* species have declined significantly in cover abundance to the point where it is no longer present in the higher levels of the transect (Figure \ref{fig:QuinStrat}). Cover abundance of *E. rudis* has remained relatively stable despite the health of individual trees declining [@Buller2019]. Other abundant species at the site include *Astartea scoparia*, *Hypocalymna angustifolium* and *Kunzea glabrescens*. All plots along the vegetation monitoring transect have shifted in composition since 2009, mainly due to the decline in *M. rhaphiophyla* and *M. preissiana* (Figure \ref{fig:QuinOrd}). Many species are likely to increase in cover abundances with groundwater level decline, including an exotic grass (probably *Vulpia* sp.), the exotic *Sonchus asper* and *Lotus angustissimus* (Figure \ref{fig:QuinPost}). Some natives associated with lower groundwater levels include *Senecio* sp., *Pteridium esculentum* and *Hypolaena exsulca*.
 
+### Ramifications of revised thresholds
+
 ```{r QuinBrookWater, echo = FALSE, results = 'asis'}
 load("Quin_Brook/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
@@ -1863,6 +1905,8 @@ Gingin Brook is a new proposed site in the Gingin water allocation plan (draft e
 
 Groundwaters at this site have significantly declined during the period between 1989 and 2015 by approximately 2.5 m (Figure \ref{fig:GinginWaterPlot}). Mean seasonal maximum and minimum groundwater levels have also decreased by 1.8 since 1994, with current monthly minimums generally occurring earlier in the year than in between 1994 and 1999 (Table \ref{tab:GinginWater}).
 
+### Ramifications of revised thresholds
+
 ```{r GinginWaterPlot, fig.cap="\\label{fig:GinginWaterPlot} Groundwater levels recorded at bore 61710078 that represent fluctuations in groundwaters at Gingin Brook. Red segments on fitted line represent statistically significant periods of declining groundwater levels.", results = 'asis'}
 load("Gingin/water_level.RData")
 gin.p
@@ -1895,7 +1939,5 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 ## Management objectives
 
 ## Conclusions
-
-(COMMENT ON MELALEUCA QUINQUENERVIA? MARIGINIUP)
 
 # References
