@@ -97,9 +97,9 @@ ggarrange(rain.plot,rain.month, ncol = 2)
 
 # Methods
 
-The surface geology of the Gnangara Mound is a reflection of processes that have shaped the Swan Coastal Plain over the last two million years due to changing sea levels. The Gnangara Mound, which is bordered by the 2.5 billion year old granites and gneiss of the Darling Scarp in the east, is composed of aeolian, lacustrine, fluvial and estuarine deposits. The sediments increase in age from the west coast to the Darling Scarp in the east. The Quindalup Dune System was formed 4,500 to 6,000 years ago and consists of calcareous sand dunes that trend north-south along the coast. The Spearwood Dune System is an aeolian calcareous dune system that is the surface expression of the Tamala Limestone formation formed in the Pleistocene. Wetlands are found in the swales of the dunes that run parallel to the coast. The Bassendean Dune System is composed of highly permeable white silaceous sands deposited in the middle Pleisticene that are interdispersed with areas of poorly drained soils that are subjected to seasonal waterlogging. The wetlands found in each of these dunal systems are largely distinct from one another, with Bassendean wetlands generally having tanin rich and acidic waters, and Spearwood waters being clearer and alkaline. 
+The surface geology of the Gnangara Mound is a reflection of processes that have shaped the Swan Coastal Plain over the last two million years due to changing sea levels. These processes determine the soils and sediments of the Swan Coastal Plain, which along with hydrological regimes, are important drivers of the ecology of each wetland. The Gnangara Mound, which is bordered by the 2.5 billion year old granite and gneiss of the Darling Scarp in the east, is composed of aeolian, lacustrine, fluvial and estuarine deposits that have created land forms which run parallel to the Scarp and coast. The sediments increase in age from the west coast to the Darling Scarp in the east. The Quindalup Dune System was formed 4,500 to 6,000 years ago (Holocene) and consists of calcareous sand dunes that trend north-south along the coast. Wetlands that occur in the Quindalup Dunes are usually non-groundwater dependent, such as estuaries, and therefore not covered by this report. The Spearwood Dune System is an aeolian calcareous dune system that is the surface expression of the Tamala Limestone formation formed in the Pleistocene. Wetlands are found in the swales of the dunes that run parallel to the coast and are usually elongated in shape. Some of the wetlands are permanently inundated and are deeper than elsewhere on the Gnangara Mound. The Bassendean Dune System is composed of highly permeable white siliceous sands deposited in the middle Pleistocene that are inter-dispersed with areas of poorly drained soils that are subjected to seasonal water logging. Bassendean wetlands typically vary on a theme of circular basin shapes. The wetlands found in each of these dunal systems are largely distinct from one another. For example, Bassendean wetlands generally have tannin rich and acidic waters, and Spearwood waters being clearer and alkaline. 
 
-Nineteen wetlands from the Bassendean and Spearwood Dune systems are analysed in this report to assess the impacts of revised groundwater thresholds (Table \ref{tab:WetMeta}).
+Nineteen wetlands from the Bassendean and Spearwood Dune systems are analysed in this report to assess the impacts of revised groundwater thresholds (Table \ref{tab:WetMeta}). [HOW DO THE WANNEROO WETLANDS FIT INTO THIS SYSTEM. NEED TO CONFIRM DUNAL SYSTEMS IN TABLE. GINGIN = Pinjarra Plain?]
 
 ```{r WetMeta, echo=FALSE, results='asis'}
   cat(' Table: \\label{tab:WetMeta}Summary of wetlands.
@@ -176,13 +176,9 @@ For each wetland, a series of habitat types are sampled using 250 $\mu$m mesh ne
 
 ## Statistical analyses
 
-Generalised additive models (GAMs) were used to model non-linear trends in water level time series data [@Wood2011]. Historical water level data for each of the wetlands in this report was accessed from the DWER website (http://www.water.wa.gov.au/maps-and-data/monitoring/water-information-reporting). To simplify modelling, mean monthly water levels were calculated and used for modelling. A cyclic cubic spline with 12 dimensions was used as a smooth term to ensure there was no discontinuity between Janurary and December water levels. To account for correlated errors, an ARMA process, nested within each year, was fitted to the rediduals using the R package *nlme* v 3.1-141 [@Pinheiro2019]. All GAMs were fitted using the R package *mgcv* v 1.8-30 [@Wood2019].
+Generalised additive models (GAMs) were used to model non-linear trends in water level time series data [@Wood2011]. Historical water level data for each of the wetlands in this report was accessed from the DWER website (http://www.water.wa.gov.au/maps-and-data/monitoring/water-information-reporting). To simplify modelling, mean monthly water levels were calculated and used for modelling. A cyclic cubic spline with 12 dimensions was used as a smooth term to ensure there was no discontinuity between January and December water levels. To account for correlated errors, an ARMA process, nested within each year, was fitted to the residuals using the R package *nlme* v 3.1-141 [@Pinheiro2019]. All GAMs were fitted using the R package *mgcv* v 1.8-30 [@Wood2019].
 
 A multivariate analysis was used to explore the effects of ground/surface water level on vegetation communities. This fits a multivariate generalised linear model to the data so that the effects of species covariates (including groundwater level) on each species can be modeled [@Hui2016]. Species abundances (vegetation and macroinvertebrates) were fitted to negative binomial distributions and the models fitted with two latent variables. The models were fitted and unconstrained model-based ordinations were carried out on the macroinvertebrate and vegetation data using the *boral* package v 1.7 [@Hui2018]. The resulting ordinations enable graphical representations of communities for each wetland to be made, with points closer to each other more similar in terms of taxonomic composition than those more distant. Wetland specific boral models were run using the mean fitted water level for each survey year as a covariate in order to understand species specific interactions with water levels. All analyses were conducted using R (version 3.6.1)
-
-## Managerial obligation assessment
-
-[DO WE TO HAVE A FORMAL WAY OF DOING THIS?]
 
 \newpage
 
@@ -248,7 +244,7 @@ Lake Goollelal, located within the Yellagonga Regional Park, is recognised as an
 
 Surface water levels recorded at Lake Goollelal reveal peak levels generally occur between September and November and lowest water levels between March and May (Table \ref{tab:GoollelalWater}). Annually, water levels have consistently varied by about 0.7 m during this period. Since 1995, there has been a general trend of decreasing surface water levels, although recent increases since 2016 show surface water at a similar depth to 1990 levels (Figure \ref{fig:GoollelalWaterPlot}). Surface water levels show similar trends to groundwater levels at a nearby bore (61611870) as the lake is largely fed by groundwater. Although the preferred minimum threshold of 26.0 mAHD has not been breached, it is likely the threshold is set too low as acidification of waters in the lake is a concern [@Quintero2018]. Proposed changes to the Ministerial Criteria include adopting a higher threshold level of 26.4 mAHD. Based on the modelling, the proposed threshold can be met at 2030.
 
-Lake Goollelal has stable water quality [@Judd2019]. Water pH, normally around 7.5, has only been recorded below 7 in 2007 while the risk of acidification remains low due to declining chloride:sulphate. Currently, the lake has low phosphorous, but is experiencing increasing levels of nitrogen, although levels are still below long-term averages.
+Lake Goollelal has stable water quality [@Judd2019]. Water pH, normally around 7.5, has only been recorded below 7 in 2007 while the current risk of acidification remains low due to declining chloride:sulphate. Currently, the lake has low phosphorous, but is experiencing increasing levels of nitrogen, although levels are still below long-term averages.
 
 ### Vegetation dynamics
 
@@ -262,7 +258,9 @@ The mean family richness of aquatic invertebrates is 22 for Lake Goollelal (Figu
 
 ### Ramifications of revised thresholds
 
-Revised thresholds will likely maintain ecological conditions similar to present (Table \ref{tab:GoollelalCompliance}).
+The proposed reductions in groundwater suggest that the current hydrological regime can be maintained. Adopting a minimum threshold of 26.4 mAHD (0.4 m higher than current threshold) will minimise the risk of acidification at Lake Goollelal. Under the 2030 scenario, vegetation composition is likely to remain distinct across the elevations of the basin, with *B. articulata* and *Lepidosperma gladiatum* persisting along the lake margin. The richness of exotic plant species in the higher areas of the basin are likely to persist or decline if surface water levels remain at, or greater than, present levels. Similarly, it is expected that the aquatic invertebrate community will remain stable as fringing vegetation preserves habitat availability and water quality.
+
+Revised thresholds will likely maintain ecological conditions similar to present (Table \ref{tab:GoollelalCompliance}). The most important impact of the revised thresholds is that it will ensure water levels remain at, or higher than, present levels which has positive implications for habitat availability and risk of acidification. The sustenance of permanent water will ensure that Lake Goollelal acts as a drought refuge for waterbirds, with seasonal fluctuations in water levels ensuring feeding habitats are available for waders during the summer months. The preservation of fringing vegetation, submerged macrophytes and deep water will also ensure the wetland continues to support important native fish species (*P. olorum* and *E. vittata*), a feature becoming rarer among wetlands in the Swan Coastal Plain. Conservation of these values will maintain the site as a place for public enjoyment and maintain the current landscape amenity values.
 
 ```{r GoollelalWater, echo = FALSE, results = 'asis'}
 load("Goollelal/water_level.RData")
@@ -350,14 +348,14 @@ ord.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-|* Waterbird habitat and drought refuge | | Yes |
-|* Supports good populations of native fish species, Swan River goby (*Pseudogobius olorum*) and the western pygmy perch (*Edelia vittata*) | | Yes  |
+|* Waterbird habitat and drought refuge |Permanent water will ensure site as drought refuge. Seasonal variation in water levels will preserve feeding habitats | Likely |
+|* Supports good populations of native fish species, Swan River goby (*Pseudogobius olorum*) and the western pygmy perch (*Edelia vittata*) |Maintenance of deep waters, fringing vegetation, submerged macrophytes and water quality will ensure the wetland remains an important habitat for these fish species | Likely  |
 | **Site management objectives** |||
-|* Conservation and public enjoyment of natural and modified landscapes||Yes|
-|* Protect and if possible enhance, fringing wetland vegetation including woodland and sedge vegetation||Yes|
-|* Maintain permanent, deep water for waterbird habitat and as a drought refuge||Yes|
-|* Maintain permanent water for fish and other dependent species||Yes|
-|* Maintain the landscape amenity values of the wetland||Yes|
+|* Conservation and public enjoyment of natural and modified landscapes|Fringing vegetation and woodlands will remain healthy and the site will continue to provide habitat for fauna. The site will continue to remain a place of public enjoyment.|Likely|
+|* Protect and if possible enhance, fringing wetland vegetation including woodland and sedge vegetation|Maintenance of surface water levels at, or slightly higher than, current levels will ensure that woodland and sedge vegetation remains healthy. The distribution of sedges may increase slightly|Likely|
+|* Maintain permanent, deep water for waterbird habitat and as a drought refuge|Current projections ensure that permanent and deep water will remain a  feature of the wetland. The capacity of the wetland to act as a drought refuge will continue. |Likely|
+|* Maintain permanent water for fish and other dependent species|Current projections ensure that permanent and deep water will remain a  feature of the wetland. Permanent water will preserve fish habitat and water quality.|Likely|
+|* Maintain the landscape amenity values of the wetland|Healthy vegetation and abundant bird life will remain a feature of the wetland if water levels are sustained at current levels, ensuring the amenity values of the wetland. |Likely|
 ')
   
 ```
@@ -378,7 +376,7 @@ Water quality at Loch McNess appears to have stabilised in the past couple of ye
 
 ### Vegetation dynamics
 
-A vegetation monitoring transect was established in 2004 with three plots (A, B, and C) plus an additional up-slope plot in 2009 (Plot D) and a plot down-slope of Plot A in 2010 (Plot E; Figure \ref{fig:McNessStrat}). The fringing vegetation is largely comprised of a *Melaleuca rhaphiophylla*/*Eucalyptus rudis* complex. Most trees are in average to good health [@Buller2019]. *Baumea juncea* is found in Plots A - D at relatively constant cover abundances. *Baumea articulata*, however, disappeared from Plot A in 2005 and was present in the new down-slope plot (Plot E) until 2014. Currently, *B. articulata* is probably not present at the site (Buller 2019 - personal observation) and the disappearance is likely doue to a combination of a fire in 2009 and declining water.
+A vegetation monitoring transect was established in 2004 with three plots (A, B, and C) plus an additional up-slope plot in 2009 (Plot D) and a plot down-slope of Plot A in 2010 (Plot E; Figure \ref{fig:McNessStrat}). The fringing vegetation is largely comprised of a *Melaleuca rhaphiophylla*/*Eucalyptus rudis* complex. Most trees are in average to good health [@Buller2019]. *Baumea juncea* is found in Plots A - D at relatively constant cover abundances. *Baumea articulata*, however, disappeared from Plot A in 2005 and was present in the new down-slope plot (Plot E) until 2014. Currently, *B. articulata* is probably not present at the site (Buller 2019 - personal observation) and the disappearance is likely due to a combination of a fire in 2009 and declining water.
 
 Plots A and B have shifted in community composition dramatically during the monitoring period as the vegetation responds to lower surface water levels in the lake and the impact of fire in 2004 and 2009 (@Buller2019; Figure \ref{fig:McNessOrd}). Regressional analysis reveals that the exotic *Avena barbata* and the native *Tricoryne elatior* will increase the most in cover abundance as water levels in the lake remain low or decline further (Figure \ref{fig:McNessPost}). The natives, *Carex fascicularis*, *Triglochin centrocarpa* and *M. rhaphiophylla* are most likely to decline dramatically at the wetland under a scenario of continued low water levels.
 
@@ -873,7 +871,7 @@ ord.plot
 | * Conservation of flora and fauna | ||
 | * Maintenance of the existing areas of fringing sedge vegetation | Likely to increase in cover abundance | Yes |
 | * Maintain invertebrate diversity through some lake bed drying in summer | |Yes |
-| * Maintain and if possible, enhance fringing woodland vegetation |*Acacia* woodland likely to decrease in cover abundance in transect. Can it move further upslope? ||')
+| * Maintain and if possible, enhance fringing woodland vegetation |*Acacia* woodland likely to decrease in cover abundance in transect. Can it move further up slope? ||')
 
 ```
 
@@ -885,7 +883,7 @@ Lake Jandabup is an artificially watered wetland that supports the most diverse 
 
 ### Hydrology and water quality
 
-Surface water levels of Lake Jandabup have only declined slightly since 1980 (Figure \ref{fig:JandabupWaterPlot}). Mean maximum seasonal water levels are now 0.2 m lower than in 1994-1999 but mean minimum seasonal water levels are 0.1 m higher than 1994-1999 levels and since 2009, the period of annual maximum to minimum water levels has increased (Table \ref{tab:JandabupWater}). Projected ground water levels in the vicininty of this wetland are predicted to increase by 3.4 m in 2030 due to proposed changes in abstraction. It is unlikely surface waters will need to be sustained artificially and that an increased threshold level can be proposed.
+Surface water levels of Lake Jandabup have only declined slightly since 1980 (Figure \ref{fig:JandabupWaterPlot}). Mean maximum seasonal water levels are now 0.2 m lower than in 1994-1999 but mean minimum seasonal water levels are 0.1 m higher than 1994-1999 levels and since 2009, the period of annual maximum to minimum water levels has increased (Table \ref{tab:JandabupWater}). Projected ground water levels in the vicinity of this wetland are predicted to increase by 3.4 m in 2030 due to proposed changes in abstraction. It is unlikely surface waters will need to be sustained artificially and that an increased threshold level can be proposed.
 
 The pH of Lake Jandabup has not exceeded 7.0 since 2011 and is currently between 6.1 and 6.6. Low water levels expose sediments at Lake Jandabup, making it susceptible to acidification. Alkalinity is currently very low, suggesting that the lake may be loosing its capacity to buffer pH changes. Deterioration of the chloride:sulphate ratio is also concerning. Maintaining high water levels may be essential to preventing the drying of sediments around the lake margin and subsequent acidification of this wetland. Typically, Lake Jandabup is a low nutrient wetland, however current total nitrogen and phosphorus levels are currently the highest recorded for the monitoring period.
 
@@ -1012,7 +1010,7 @@ Water quality in Lake Nowergup is remarkably stable given the declines in surfac
 
 ### Vegetation Dynamics
 
-There are two vegetation monitoring transects at Lake Nowergup, one in the northern part of the lake and one in the southern part. Both transects were established in 1996 and the northern one was last surveyed in 2016 while the southern one was last surveyed in 2018. In 2001, the orginal plots were realigned to better encompass wetland vegetation near the lake. Therefore, only post 2001 data is analysed here.
+There are two vegetation monitoring transects at Lake Nowergup, one in the northern part of the lake and one in the southern part. Both transects were established in 1996 and the northern one was last surveyed in 2016 while the southern one was last surveyed in 2018. In 2001, the original plots were realigned to better encompass wetland vegetation near the lake. Therefore, only post 2001 data is analysed here.
 
 ("Lake Nowergup South transect was realigned in 2001 due to a lack of wetland species in upland plots and to encompass wetland vegetation at the lake end of the transect (Bertuch et al., 2004)") - WHAT ARE THE IMPLICATIONS? May need to re-run analyses excluding years before 2001. Don't know plot elevations before 2001. Will write up once we have made a decision.
 
