@@ -237,7 +237,7 @@ uncon.mod <- boral(df,
               lv.control = list(num.lv = 2),
               mcmc.control = mcmc_control,
               row.ids = cbind(1:nrow(df), df.meta),
-              save.model=FALSE,
+              save.model=TRUE,
               model.name=NULL)
 
 lvsplot(uncon.mod, ind.spp = 20)
@@ -294,7 +294,7 @@ plot.data$Plot <- recode(plot.data$Plot, "Quin_Brook" = "Quin Brook")
 plot.data$Plot <- recode(plot.data$Plot, "Wilgarup" = "Lake Wilgarup")
 plot.data$Plot <- recode(plot.data$Plot, "Yonderup" = "Lake Yonderup")
 
-complete.invert.plot <- plot.data %>% 
+complete.veg.plot <- plot.data %>% 
   arrange(Year) %>% #sort ascending so that 2018 is plotted last
   ggplot() +
   theme_bw() +
@@ -305,6 +305,12 @@ complete.invert.plot <- plot.data %>%
         panel.grid.minor = element_blank(),
         panel.background = element_blank()) +
   labs(colour="Wetland")
+
+rescors<- get.residual.cor(uncon.mod)
+library(corrplot)
+cor.plot <- corrplot(rescors$sig.cor, type='lower',diag=FALSE,title='Residual correlations',mar=c(3,0.5,2,1), tl.srt=45)
+
+
 
 ############################# ALL water data
 
@@ -359,5 +365,5 @@ complete.invert.plot <- plot.data %>%
 #                   save.model=TRUE,
 #                   model.name=NULL)
 
-save(wetland.height.plot, uncon.mod, complete.invert.plot, file = "Complete_veg_analysis.RData")
+save(wetland.height.plot, uncon.mod, complete.veg.plot, cor.plot, file = "Complete_veg_analysis.RData")
 setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds")
