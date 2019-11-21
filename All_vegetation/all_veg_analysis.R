@@ -365,5 +365,5 @@ cor.plot <- corrplot(rescors$sig.cor, type='lower',diag=FALSE,title='Residual co
 #                   save.model=TRUE,
 #                   model.name=NULL)
 
-save(wetland.height.plot, uncon.mod, complete.veg.plot, cor.plot, file = "Complete_veg_analysis.RData")
+save(wetland.height.plot, ord.data, plot.data, uncon.mod, complete.veg.plot, cor.plot, file = "Complete_veg_analysis.RData")
 setwd("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds")
