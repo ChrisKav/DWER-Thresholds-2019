@@ -99,7 +99,7 @@ ggarrange(rain.plot,rain.month, ncol = 2)
 
 The surface geology of the Gnangara Mound is a reflection of processes that have shaped the Swan Coastal Plain over the last two million years due to changing sea levels. These processes determine the soils and sediments of the Swan Coastal Plain, which along with hydrological regimes, are important drivers of the ecology of each wetland. The Gnangara Mound, which is bordered by the 2.5 billion year old granite and gneiss of the Darling Scarp in the east, is composed of aeolian, lacustrine, fluvial and estuarine deposits that have created land forms which run parallel to the Scarp and coast. The sediments increase in age from the west coast to the Darling Scarp in the east. The Quindalup Dune System was formed 4,500 to 6,000 years ago (Holocene) and consists of calcareous sand dunes that trend north-south along the coast. Wetlands that occur in the Quindalup Dunes are usually non-groundwater dependent, such as estuaries, and therefore not covered by this report. The Spearwood Dune System is an aeolian calcareous dune system that is the surface expression of the Tamala Limestone formation formed in the Pleistocene. Wetlands are found in the swales of the dunes that run parallel to the coast and are usually elongated in shape. Some of the wetlands are permanently inundated and are deeper than elsewhere on the Gnangara Mound. The Bassendean Dune System is composed of highly permeable white siliceous sands deposited in the middle Pleistocene that are inter-dispersed with areas of poorly drained soils that are subjected to seasonal water logging. Bassendean wetlands typically vary on a theme of circular basin shapes. The wetlands found in each of these dunal systems are largely distinct from one another. For example, Bassendean wetlands generally have tannin rich and acidic waters, and Spearwood waters being clearer and alkaline. 
 
-Nineteen wetlands from the Bassendean and Spearwood Dune systems are analysed in this report to assess the impacts of revised groundwater thresholds (Table \ref{tab:WetMeta}). [HOW DO THE WANNEROO WETLANDS FIT INTO THIS SYSTEM. NEED TO CONFIRM DUNAL SYSTEMS IN TABLE. GINGIN = Pinjarra Plain?]
+Twenty wetlands from the Bassendean and Spearwood Dune systems are analysed in this report to assess the ecoogical and managerial impacts of revised groundwater thresholds (Table \ref{tab:WetMeta}). [HOW DO THE WANNEROO WETLANDS FIT INTO THIS SYSTEM. NEED TO CONFIRM DUNAL SYSTEMS IN TABLE. GINGIN = Pinjarra Plain?]
 
 ```{r WetMeta, echo=FALSE, results='asis'}
   cat(' Table: \\label{tab:WetMeta}Summary of wetlands.
@@ -121,7 +121,8 @@ Nineteen wetlands from the Bassendean and Spearwood Dune systems are analysed in
 |MM59B - Whiteman Park East|Bassendean Dunes|Veg|31.804&deg;S 115.954&deg;E|
 |PM9 - Pinjar North|Bassendean Dunes|Veg|31.612&deg;S 115.843&deg;E|
 |WM1 - Pinjar|Bassendean Dunes|Veg|31.655&deg;S 115.855&deg;E|
-|WM2 - Melaleuca Park north|Bassendean Dunes|Veg|31.662&deg;S 115.895&deg;E|
+|WM2 - Melaleuca Park North|Bassendean Dunes|Veg|31.662&deg;S 115.895&deg;E|
+|WM8 - Melaleuca Park|Bassendean Dunes|Veg|31.694&deg;S 115.930&deg;E|
 |Lake Gwelup|East Wanneroo Interdunal |Veg|31.878  &deg;S 115.791  &deg;E|
 |Quin Brook|Bassendean Dunes|Veg|31.450&deg;S 115.812&deg;E|
 |Gingin Brook|Bassendean Dunes|Veg|31.348&deg;S 115.717&deg;E|
@@ -183,6 +184,37 @@ A multivariate analysis was used to explore the effects of ground/surface water 
 \newpage
 
 # General observations
+
+Summary table (Table \ref{tabSumTable}).
+
+```{r SumTable, echo=FALSE, results='asis'}
+  cat(' Table: \\label{tab:SumTable}Summary of ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives at wetlands on Gnangara Mound.
+  
+|Wetland  | Current Threshold (mAHD) | Proposed Threshold (mAHD) | Ecological consequences |
+| :------------ | :-----------: | :------: | :------------ |
+|Lake Goollelal|26.0|26.4|The lake will remain permanately innundated at similar levels as present. Fringing vegetatiion will persist and provide habitat for the current diversity of aquatic invertebrates. The site will continue acting as a drought refuge for water birds and provide important habitat to important native fish species.|
+|Loch McNess|6.95|6.20||
+|Lake Yonderup|5.9|5.7||
+|Lake Joondalup|15.8|16.2||
+|Lake Mariginiup|41.5|42.1||
+|Lake Jandabup|44.3|44.3||
+|Lake Nowergup|16.8|16.0||
+|Lake Wilgarup|4.5|3.9||
+|Pipidinny Swamp|1.6|1.1||
+|Lexia 186|47.2|46.5||
+|Melaleuca Park 173|50.2|48.5||
+|Melaleuca Park 78|65.1|64.7||
+|MM59B - Whiteman Park East|36.3|36.2||
+|PM9 - Pinjar North|56.3|||
+|WM1 - Pinjar|55.7|53.7||
+|WM2 - Melaleuca Park North|66.5|64.7||
+|WM8 - Melaleuca Park|64.8|63.7||
+|Lake Gwelup||||
+|Quin Brook||||
+|Gingin Brook||||
+')
+  
+```
 
 ## Wetland vegetation
 
@@ -491,8 +523,7 @@ ord.plot
 ```
 
 \newpage
-
-## Lake Yonderup
+##Lake Yonderup
 
 Located to the south of Loch McNess and north of Lake Wilgarup in Yanchep National Park, Lake Yonderup has a high conservation value as it represents a largely undisturbed wetland with high macroinvertebrate richness and excellent water quality. The permanently filled lake is dependent on groundwater to maintain habitats and biophysical processes [@Froend2004a]. Like other lakes in the region, Lake Yonderup has experienced a consistent decline in surface water levels that has affected the condition and health of fringing vegetation and aquatic processes. A fire effected the fringing vegetation in 2004/2005 [@Rogan2006].
 
