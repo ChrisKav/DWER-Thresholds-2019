@@ -12,6 +12,8 @@ header-includes:
 - \usepackage{pdflscape}
 - \newcommand{\blandscape}{\begin{landscape}}
 - \newcommand{\elandscape}{\end{landscape}}
+- \usepackage{float}
+- \floatplacement{figure}{H}
 fig_caption: yes
 bibliography: References.bib
 csl: iso690-author-date-fr-no-abstract.csl
@@ -29,7 +31,7 @@ library(bookdown)
 library(dplyr)
 library(ggrepel)
 source("functions.R")
-knitr::opts_chunk$set(fig.path='Figs/',
+knitr::opts_chunk$set(fig.path='Figs/', fig.pos= "h",
                       echo=FALSE, warning=FALSE, message=FALSE)
 ```
 
@@ -40,8 +42,6 @@ load("Refined_data.RData")
 \newpage
 
 # Executive Summary
-
-[SUMMARY TABLE OF OUTCOMES]
 
 \newpage
 \tableofcontents
@@ -57,7 +57,7 @@ The region experiences a Mediterranean-type climate with hot  dry summers and co
 
 ## Scope of study
 
-The Department of Water and Environmental Regulation (DWER) has environmental conditions set on its management of Gnangara groundwater resources, specified in Ministerial Statement 819 (published on 4 December 2009) (ATTACH AS Appendix 1). Schedule 1 of Ministerial Statement 819 specifies minimum water level criteria or thresholds that the department must meet at staff gauges and/or monitoring bores at 14 wetlands and 16 bushland sites in the area covered by the Gnangara groundwater allocation plan, north of Perth (Figure \ref{fig:Map}). Due to groundwater declines caused by groundwater abstraction and declining rainfall, DWER has been unable to meet the criteria levels at approximately half of the sites in recent years. DWER is currently in the process of preparing a draft Gnangara groundwater allocation plan for public comment. Implementation of the plan will reduce public and private groundwater abstraction in the plan area by a total of up to 44 GL/yr in 2028. Even with these reductions in abstraction, modelling predicts the department will still not be able to achieve the current ‘absolute minimum’ levels at around half of the criteria sites and compliance rates will remain very similar to current rates because the expectations are for a continued drying climate regime into the future.
+The Department of Water and Environmental Regulation (DWER) has environmental conditions set on its management of Gnangara groundwater resources, specified in Ministerial Statement 819 (published on 4 December 2009). Schedule 1 of Ministerial Statement 819 specifies minimum water level criteria or thresholds that the department must meet at staff gauges and/or monitoring bores at 14 wetlands and 16 bushland sites in the area covered by the Gnangara groundwater allocation plan, north of Perth (Figure \ref{fig:Map}). Due to groundwater declines caused by groundwater abstraction and declining rainfall, DWER has been unable to meet the criteria levels at approximately half of the sites in recent years. DWER is currently in the process of preparing a draft Gnangara groundwater allocation plan for public comment. Implementation of the plan will reduce public and private groundwater abstraction in the plan area by a total of up to 44 GL/yr in 2028. Even with these reductions in abstraction, modelling predicts the department will still not be able to achieve the current ‘absolute minimum’ levels at around half of the criteria sites and compliance rates will remain very similar to current rates because the expectations are for a continued drying climate regime into the future.
 
 DWER are therefore proposing to alter the water level criteria at sites where the modelling projects absolute minimum levels will not be met in the future. The department has developed a new set of water level criteria (or minimum ‘thresholds’, in line with the Environmental Protection Authority’s recommended terminology (GET REFERENCE EPA 2018a)). The proposed minimum thresholds have been based on what groundwater modelling has indicated can likely be met at the respective criteria sites following reductions in groundwater abstraction, and (in some areas) planned land use changes. Reductions to groundwater abstraction will come into effect in 2028, while land use changes have started to occur in some areas already and will happen progressively over the plan period.
 
@@ -82,8 +82,6 @@ A detailed desktop review of all data collected during the *Gnangara Mound Envir
 
 To understand the shifts that have occurred in aquatic and vegetation communities and the role groundwater levels have had in driving ecological changes at each of the monitored sites, a detailed examination of each wetland is provided. For each wetland, a summary of historical groundwater/surface water levels and current water quality information is provided. Each wetland vegetation community has been modeled to understand the role of groundwater level on the abundance of plant species and a discussion is provided on the causes of historical and contemporary shifts in vegetation composition and the likely trajectory of change should the proposed threshold levels be adopted. A similar interpretation is provided for the aquatic macroinvertebrate communities. Considering the role of groundwater on vegetation structure and the historical shifts in aquatic assemblages, an assessment of the ecological consequences of the revised 2030 thresholds on the stated site values and site management objectives is provided for each wetland.
 
-[INSERT PART ABOUT REVISED MANAGEMENT OBJECTIVES]
-
 ```{r Map, fig.cap="\\label{fig:Map}Gnangara groundwater allocation plan area and location of wetland and terrestrial sites investigated in this report.", results = 'asis'}
 knitr::include_graphics('map.png')
 ```
@@ -95,37 +93,37 @@ ggarrange(rain.plot,rain.month, ncol = 2)
 
 \newpage
 
-# Methods
+# Methodology
 
 The surface geology of the Gnangara Mound is a reflection of processes that have shaped the Swan Coastal Plain over the last two million years due to changing sea levels. These processes determine the soils and sediments of the Swan Coastal Plain, which along with hydrological regimes, are important drivers of the ecology of each wetland. The Gnangara Mound, which is bordered by the 2.5 billion year old granite and gneiss of the Darling Scarp in the east, is composed of aeolian, lacustrine, fluvial and estuarine deposits that have created land forms which run parallel to the Scarp and coast. The sediments increase in age from the west coast to the Darling Scarp in the east. The Quindalup Dune System was formed 4,500 to 6,000 years ago (Holocene) and consists of calcareous sand dunes that trend north-south along the coast. Wetlands that occur in the Quindalup Dunes are usually non-groundwater dependent, such as estuaries, and therefore not covered by this report. The Spearwood Dune System is an aeolian calcareous dune system that is the surface expression of the Tamala Limestone formation formed in the Pleistocene. Wetlands are found in the swales of the dunes that run parallel to the coast and are usually elongated in shape. Some of the wetlands are permanently inundated and are deeper than elsewhere on the Gnangara Mound. The Bassendean Dune System is composed of highly permeable white siliceous sands deposited in the middle Pleistocene that are inter-dispersed with areas of poorly drained soils that are subjected to seasonal water logging. Bassendean wetlands typically vary on a theme of circular basin shapes. The wetlands found in each of these dunal systems are largely distinct from one another. For example, Bassendean wetlands generally have tannin rich and acidic waters, and Spearwood waters being clearer and alkaline. 
 
-Twenty wetlands from the Bassendean and Spearwood Dune systems are analysed in this report to assess the ecoogical and managerial impacts of revised groundwater thresholds (Table \ref{tab:WetMeta}). [HOW DO THE WANNEROO WETLANDS FIT INTO THIS SYSTEM. NEED TO CONFIRM DUNAL SYSTEMS IN TABLE. GINGIN = Pinjarra Plain?]
+Twenty wetlands from the Bassendean and Spearwood Dune systems are analysed in this report to assess the ecological and managerial impacts of revised groundwater thresholds (Figure \ref{fig:Map}) and Table \ref{tab:WetMeta}). [HOW DO THE WANNEROO WETLANDS FIT INTO THIS SYSTEM. NEED TO CONFIRM DUNAL SYSTEMS IN TABLE. GINGIN = Pinjarra Plain?]
 
 ```{r WetMeta, echo=FALSE, results='asis'}
   cat(' Table: \\label{tab:WetMeta}Summary of wetlands.
   
-|  Wetland | Dunal System | Veg/Invert Monitoring | Coordinates |
-| :------------: |:------------: |:-----------:|:-----------:|
-|Lake Goollelal|Urban Spearwood Dunes|Veg & Invert|31.817&deg;S 115.815&deg;E|
-|Loch McNess|Peri-Urban Spearwood Dunes|Veg & Invert|31.548&deg;S 115.682&deg;E|
-|Lake Yonderup|Peri-Urban Spearwood Dunes|Veg & Invert|31.555&deg;S 115.686&deg;E|
-|Lake Joondalup|Urban Spearwood Dunes|Veg & Invert|31.743&deg;S 115.779&deg;E|
-|Lake Mariginiup|East Wanneroo Interdunal|Veg & Invert|31.729&deg;S 115.815&deg;E|
-|Lake Jandabup|East Wanneroo Interdunal|Veg & Invert|31.746&deg;S 115.847&deg;E|
-|Lake Nowergup|Peri-Urban Spearwood Dunes|Veg & Invert|31.630&deg;S 115.732&deg;E|
-|Lake Wilgarup|Spearwood Dunes|Veg|31.575&deg;S 115.690&deg;E|
-|Pipidinny Swamp|Spearwood Dunes|Veg|31.580&deg;S 115.683&deg;E|
-|Lexia 186|Bassendean Dunes|Veg|31.743&deg;S 115.963&deg;E|
-|Melaleuca Park 173|Bassendean Dunes|Veg & Invert|31.704&deg;S 115.963&deg;E|
-|Melaleuca Park 78|Bassendean Dunes|Veg|31.704&deg;S 115.915&deg;E|
-|MM59B - Whiteman Park East|Bassendean Dunes|Veg|31.804&deg;S 115.954&deg;E|
-|PM9 - Pinjar North|Bassendean Dunes|Veg|31.612&deg;S 115.843&deg;E|
-|WM1 - Pinjar|Bassendean Dunes|Veg|31.655&deg;S 115.855&deg;E|
-|WM2 - Melaleuca Park North|Bassendean Dunes|Veg|31.662&deg;S 115.895&deg;E|
-|WM8 - Melaleuca Park|Bassendean Dunes|Veg|31.694&deg;S 115.930&deg;E|
-|Lake Gwelup|East Wanneroo Interdunal |Veg|31.878  &deg;S 115.791  &deg;E|
-|Quin Brook|Bassendean Dunes|Veg|31.450&deg;S 115.812&deg;E|
-|Gingin Brook|Bassendean Dunes|Veg|31.348&deg;S 115.717&deg;E|
+|  Wetland | Morphology |Dunal System | Veg/Invert Monitoring | Coordinates |
+| :------------: |:------------:|:------------: |:-----------:|:-----------:|
+|Lake Goollelal|Lake|Urban Spearwood Dunes|Veg & Invert|31.817&deg;S 115.815&deg;E|
+|Loch McNess|Lake|Peri-Urban Spearwood Dunes|Veg & Invert|31.548&deg;S 115.682&deg;E|
+|Lake Yonderup|Lake|Peri-Urban Spearwood Dunes|Veg & Invert|31.555&deg;S 115.686&deg;E|
+|Lake Joondalup|Lake|Urban Spearwood Dunes|Veg & Invert|31.743&deg;S 115.779&deg;E|
+|Lake Mariginiup|Lake|East Wanneroo Interdunal|Veg & Invert|31.729&deg;S 115.815&deg;E|
+|Lake Jandabup|Lake|East Wanneroo Interdunal|Veg & Invert|31.746&deg;S 115.847&deg;E|
+|Lake Nowergup|Lake|Peri-Urban Spearwood Dunes|Veg & Invert|31.630&deg;S 115.732&deg;E|
+|Lake Wilgarup|Was a lake|Spearwood Dunes|Veg|31.575&deg;S 115.690&deg;E|
+|Pipidinny Swamp|Dampland|Spearwood Dunes|Veg|31.580&deg;S 115.683&deg;E|
+|Lexia 186|Sumpland|Bassendean Dunes|Veg|31.743&deg;S 115.963&deg;E|
+|Melaleuca Park 173|Lake|Bassendean Dunes|Veg & Invert|31.704&deg;S 115.963&deg;E|
+|Melaleuca Park 78|Dampland|Bassendean Dunes|Veg|31.704&deg;S 115.915&deg;E|
+|MM59B - Whiteman Park East|Terrestrial|Bassendean Dunes|Veg|31.804&deg;S 115.954&deg;E|
+|PM9 - Pinjar North|Terrestrial|Bassendean Dunes|Veg|31.612&deg;S 115.843&deg;E|
+|WM1 - Pinjar|Terrestrial|Bassendean Dunes|Veg|31.655&deg;S 115.855&deg;E|
+|WM2 - Melaleuca Park North|Terrestrial|Bassendean Dunes|Veg|31.662&deg;S 115.895&deg;E|
+|WM8 - Melaleuca Park|Terrestrial|Bassendean Dunes|Veg|31.694&deg;S 115.930&deg;E|
+|Lake Gwelup|Lake|East Wanneroo Interdunal |Veg|31.878&deg;S 115.791&deg;E|
+|Quin Brook|Brook|Bassendean Dunes|Veg|31.450&deg;S 115.812&deg;E|
+|Gingin Brook|Brook|Bassendean Dunes|Veg|31.348&deg;S 115.717&deg;E|
 ')
 
 ```
@@ -183,68 +181,19 @@ A multivariate analysis was used to explore the effects of ground/surface water 
 
 \newpage
 
-# General observations
+# Trends throughout the Gnangara Mound
 
-Summary table (Table \ref{tabSumTable}).
+Each wetland monitored in the Gnangarra Mound vegetatition surveys represent unique assemblages of native vegetation, particularly wetlands such as Melaleuca Park 173, Lake Jandabup and Loch McNess (Figure \ref{fig:AllOrd} left). Generally, the wetlands occuring in the Bassedean Dunes are distict from those of the Spearwood Dunal System. However, annual monitoring reveals shifts in the composition of these assemblages, with evidence of some wetlands becoming increasingly similar to each other over time, probably in response to changing hydrological regimes. Lexia 186, Melaleuca Park 78 and Quin Brook appear to have vegetation communities with similar shifts in composition, suggesting the drying of these wetlands is a having a common influence on their vegetation structure. Similiarly, Lake Mariginiup and Lake Wilgarup, both of which are now experiencing seasonal dry periods, are experienceing dramatic shifts in composition. It is likely that the temporary drying of these once permanent bodies of water is driving similar changes in vegetation composition. 
 
-```{r SumTable, echo=FALSE, results='asis'}
-  cat(' Table: \\label{tab:SumTable}Summary of ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives at wetlands on Gnangara Mound.
-  
-|Wetland  | Current Threshold (mAHD) | Proposed Threshold (mAHD) | Ecological consequences |
-| :------------ | :-----------: | :------: | :------------ |
-|Lake Goollelal|26.0|26.4|The lake will remain permanately innundated at similar levels as present. Fringing vegetatiion will persist and provide habitat for the current diversity of aquatic invertebrates. The site will continue acting as a drought refuge for water birds and provide important habitat to important native fish species.|
-|Loch McNess|6.95|6.20||
-|Lake Yonderup|5.9|5.7||
-|Lake Joondalup|15.8|16.2||
-|Lake Mariginiup|41.5|42.1||
-|Lake Jandabup|44.3|44.3||
-|Lake Nowergup|16.8|16.0||
-|Lake Wilgarup|4.5|3.9||
-|Pipidinny Swamp|1.6|1.1||
-|Lexia 186|47.2|46.5||
-|Melaleuca Park 173|50.2|48.5||
-|Melaleuca Park 78|65.1|64.7||
-|MM59B - Whiteman Park East|36.3|36.2||
-|PM9 - Pinjar North|56.3|||
-|WM1 - Pinjar|55.7|53.7||
-|WM2 - Melaleuca Park North|66.5|64.7||
-|WM8 - Melaleuca Park|64.8|63.7||
-|Lake Gwelup||||
-|Quin Brook||||
-|Gingin Brook||||
-')
-  
-```
+The aquatic invertebrate assemblages form three distinct groups based on the dunal system of the wetland (Figure \ref{fig:AllOrd} right). The Spearwood Dunes (Lake Goollelal, Lake Joondalup, Loch McNess, Lake Nowergup and Lake Yonderup) form the most diverse group, while the Bassendean Dunes Wetlands (Melaleuca Park 173) and East Wanneroo Interdunal Wetlands (Lake Jandabup and Lake Mariginiup) have different assemblages to each other. Generally, the Bassendean Dunes and East Wanneroo Interdunal Dunes wetlands are becoming more similar with each other, although such conclusions are based on a very limited set of wetlands. The Spearwood Dunes contain wetlands with two distinct trajectories, those migrating towards initial Lake Joondalup compositions (Loch McNess, Lake Goollelal and Lake Nowergup), and those migrating towards initial Loch McNess compositions (Lake Joondalup and Lake Yonderup). Nonetheless, each wetland has a distinct assemblage of macroinvertebrates but, aquatic macroinvertebrate communities have shifted during the monitoring period. Recent monitoring suggests that Loch McNess and Melaleuca Park 173  are becoming more similar to others wetlands. For instance, Loch McNess has shifted dramatically towards early Lake Joondalup composition. Lake Goollelal has displayed a similar, although not as dramatic, shift in composition. During the monitoring period, Melaleuca Park 173 is becoming increasingly similar to the assemblages at Lake Jandabup and Lake Mariginiup, which are also shifting towards Melaleuca Park 173. The communities at Lake Joondalup and Lake Yonderup have been shifting towards the early communities of Loch McNess. Lake Nowergup has shown some variation in community composition, but the current trajectory shows little change to the 1996 assemblage.
 
-## Wetland vegetation
-
-Add some description of the results presented in Figure \ref{fig:Allvegheight} and Figure \ref{fig:AllVegOrd}.
-
-```{r Allvegheight, fig.cap="\\label{fig:Allvegheight}Range of depth to water level experienced by some plant species at a few sites with reliable water monitoring during the survey period.", results = 'asis'}
+```{r AllOrd, fig.cap="\\label{fig:AllOrd}Unconstrained ordination plot of vegetation (left) and aquaitic invertebrates (right) at each wetland site during the survey period (1996-2018). Arrows represnt change from first survey to last survey. Vegetation ordination includes native vegetation only. Wetlands included in invertebrate analysis include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Lake Mariginiup (MAR), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON).", results = 'asis'}
 load("All_vegetation/Complete_veg_analysis.RData")
-wetland.height.plot
-```
-
-```{r AllVegOrd, fig.cap="\\label{fig:AllVegOrd}Unconstrained ordination plot of all vegetation surveys at each wetland site during the survey period (1996-2018). Arrows represnt change from first survey to last survey.", results = 'asis'}
-load("All_vegetation/Complete_veg_analysis.RData")
-complete.invert.plot
-```
-
-## Aquatic invertebrate communities
-
-The aquatic invertebrate assemblages form three distinct groups based on the dunal system of the wetland (Figure \ref{fig:InvertOrd}). The Spearwood Dunes (Lake Goollelal, Lake Joondalup, Loch McNess, Lake Nowergup and Lake Yonderup) form the most diverse group, while the Bassendean Dunes Wetlands (Melaleuca Park 173) and East Wanneroo Interdunal Wetlands (Lake Jandabup and Lake Mariginiup) have different assemblages to each other. Generally, the Bassendean Dunes and East Wanneroo Interdunal Dunes wetlands are becoming more similar with each other, although such conclusions are based on a very limited set of wetlands. The Spearwood Dunes contain wetlands with two distinct trajectories, those migrating towards initial Lake Joondalup compositions (Loch McNess, Lake Goollelal and Lake Nowergup), and those migrating towards initial Loch McNess compositions (Lake Joondalup and Lake Yonderup). Nonetheless, each wetland has a distinct assemblage of macroinvertebrates but, aquatic macroinvertebrate communities have shifted during the monitoring period. Recent monitoring suggests that Loch McNess and Melaleuca Park 173  are becoming more similar to others wetlands. For instance, Loch McNess has shifted dramatically towards early Lake Joondalup composition. Lake Goollelal has displayed a similar, although not as dramatic, shift in composition. During the monitoring period, Melaleuca Park 173 is becoming increasingly similar to the assemblages at Lake Jandabup and Lake Mariginiup, which are also shifting towards Melaleuca Park 173. The communities at Lake Joondalup and Lake Yonderup have been shifting towards the early communities of Loch McNess. Lake Nowergup has shown some variation in community composition, but the current trajectory shows little change to the 1996 assemblage.
-
-Most wetlands have lost families since the period 1996-2000, with the exception of Lake Goollelal and Loch McNess (Figure \ref{fig:InvertRich} and @Judd2019). The richness of the Lake Joondalup assemblage has not dramatically declined either. There are 11 families of aquatic macroinvertebrates that have not been recorded from the monitored wetlands in the past 5 years and seven families currently present that were not recorded in the initial 1996-2000 (excluding singletons; Table \ref{tab:ExtinctTab}). The richness of Acari (mites and ticks) has declined by 4 families while the Coleopteran Haliplidae and the Hemipteran Mesoveliidae are no absent from Lake Joondalup and Lake Yonderup. The Mollusc Sphaeriidae, probably a regionally endemic species [@Sommer2008], has been absent from Lake Nowergup since 1998, while Ancylidae has become abundant (possibly due to augmentation - see @Sommer2008). The insects, Corduliidae (Odonata), Ecnomidae (Trichoptera), Haliplidae (Coleoptera) and Mesoveliidae (Hemiptera) are all species with widespread distributions in the Swan Coastal Plain [@Sommer2008], but are now not found in the monitored wetlands reported here.
-
-```{r InvertOrd, fig.cap="\\label{fig:InvertOrd}Unconstrained ordination plot of all samples collect at each wetland during the survey period (1996-2018). Arrows represnt change from first survey to last survey. Wetlands include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Lake Mariginiup (MAR), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON).", results = 'asis'}
 load("invertebrate_data.RData")
-complete.invert.plot
+ggarrange(complete.veg.plot, complete.invert.plot, ncol=2)
 ```
 
-```{r InvertRich, fig.cap="\\label{fig:InvertRich}Comparison of aquatic macroinvertebrate family richness of six wetlands between 5 year periods 1996-2000 and 2014-2018. Wetlands include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON). Dashed line equals null model where family richness has not changed. Wetlands above dashed line have increased family richness since the 1996-2000 period. Wetlands below dashed line have lower richness compared to 1996-2000.", results = 'asis'}
-load("invertebrate_data.RData")
-extc.rich
-```
+Most wetlands have lost families since the period 1996-2000, with the exception of Lake Goollelal and Loch McNess [@Judd2019]. The richness of the Lake Joondalup assemblage has not dramatically declined either. There are 11 families of aquatic macroinvertebrates that have not been recorded from the monitored wetlands in the past 5 years and seven families currently present that were not recorded in the initial 1996-2000 (excluding singletons; Table \ref{tab:ExtinctTab}). The richness of Acari (mites and ticks) has declined by 4 families while the Coleopteran Haliplidae and the Hemipteran Mesoveliidae are no absent from Lake Joondalup and Lake Yonderup. The Mollusc Sphaeriidae, probably a regionally endemic species [@Sommer2008], has been absent from Lake Nowergup since 1998, while Ancylidae has become abundant (possibly due to augmentation - see @Sommer2008). The insects, Corduliidae (Odonata), Ecnomidae (Trichoptera), Haliplidae (Coleoptera) and Mesoveliidae (Hemiptera) are all species with widespread distributions in the Swan Coastal Plain [@Sommer2008], but are now not found in the monitored wetlands reported here.
 
 ```{r ExtinctTab, echo=FALSE, results='asis'}
   cat(' Table: \\label{tab:ExtinctTab}Families of aquatic macroinvertebrates that have been lost in the last 5 years (2018-2014) compared to the first five year period (1996-2000). Singletons have been excluded.
@@ -278,22 +227,6 @@ Surface water levels recorded at Lake Goollelal reveal peak levels generally occ
 
 Lake Goollelal has stable water quality [@Judd2019]. Water pH, normally around 7.5, has only been recorded below 7 in 2007 while the current risk of acidification remains low due to declining chloride:sulphate. Currently, the lake has low phosphorous, but is experiencing increasing levels of nitrogen, although levels are still below long-term averages.
 
-### Vegetation dynamics
-
-The composition of vegetation at Lake Goollelal has been assessed 15 times between 1997 and 2019 at four plots along an established transect. Plot A represents fringing *Melaleuca rhaphiophylla*/*Eucalyptus rudis* vegetation and a stable community of the native sedges, *Baumea articulata* and *Lepidosperma gladiatum*. The *M. rhaphiophylla*/*E. rudis* complex continues throughout the transect, which has also remained relatively stable in terms of cover abundance since 2002. There is a high richness of exotic vegetation species present at the lake. Generally, these exotic species have increased in abundance during the survey period (Figure \ref{fig:GoollelalStrat}).
-
-Ordination reveals that Plot A has a distinct assemblage to the other plots but has displayed similar shifts in vegetation composition during the monitoring period (Figure \ref{fig:GoollelalOrd}). All plots show minor shifts in composition during the study period, with each plot be distinct from the others. Plot D displays a different pattern, probably due to the record of *B. articulata* in 1997 and the high cover abundance of exotic species. Bayesian regression analysis predicts many exotic species to increase in cover abundance with declining surface water levels (Figure \ref{fig:GoollelalPost}).
-
-### Aquatic invertebrates
-
-The mean family richness of aquatic invertebrates is 22 for Lake Goollelal (Figure \ref{fig:GoollelalRichInv}). Since 2008, family richness has mostly been stable and above the long term average. There are stable populations of Amphisopidae, Calanoida, Ceinidae, Chironominae, Corixidae, Cyprididae and Amphisopidae at the lake (Figure \ref{fig:GoollelalStratInv}). Other taxa are not currently recorded in the lake include Ceratopogonidae, Chydoridae, Oligochaeta and Pionidae. The absence of the Chydoridae (Cladocera) is notable given the abundance in early monitoring years. There was a major shift in the assemblage composition in 2006-2007, with ordination revealing two main groups of annual data; those collected pre 2007, and those collected post 2007 (Figure \ref{fig:GoollelalOrdInv}). However, recent high water levels and low nutrients appear to shifting the assemblages back towards pre-2007 compositions (see @Judd2019).
-
-### Ramifications of revised thresholds
-
-The proposed reductions in groundwater suggest that the current hydrological regime can be maintained. Adopting a minimum threshold of 26.4 mAHD (0.4 m higher than current threshold) will minimise the risk of acidification at Lake Goollelal. Under the 2030 scenario, vegetation composition is likely to remain distinct across the elevations of the basin, with *B. articulata* and *Lepidosperma gladiatum* persisting along the lake margin. The richness of exotic plant species in the higher areas of the basin are likely to persist or decline if surface water levels remain at, or greater than, present levels. Similarly, it is expected that the aquatic invertebrate community will remain stable as fringing vegetation preserves habitat availability and water quality.
-
-Revised thresholds will likely maintain ecological conditions similar to present (Table \ref{tab:GoollelalCompliance}). The most important impact of the revised thresholds is that it will ensure water levels remain at, or higher than, present levels which has positive implications for habitat availability and risk of acidification. The sustenance of permanent water will ensure that Lake Goollelal acts as a drought refuge for waterbirds, with seasonal fluctuations in water levels ensuring feeding habitats are available for waders during the summer months. The preservation of fringing vegetation, submerged macrophytes and deep water will also ensure the wetland continues to support important native fish species (*P. olorum* and *E. vittata*), a feature becoming rarer among wetlands in the Swan Coastal Plain. Conservation of these values will maintain the site as a place for public enjoyment and maintain the current landscape amenity values.
-
 ```{r GoollelalWater, echo = FALSE, results = 'asis'}
 load("Goollelal/water_level.RData")
 kable(sw.sum, digits = c(20,1,1,2,12,12,0),
@@ -312,6 +245,10 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 gool.p
 ```
 
+### Vegetation dynamics
+
+The composition of vegetation at Lake Goollelal has been assessed 15 times between 1997 and 2019 at four plots along an established transect. Plot A represents fringing *Melaleuca rhaphiophylla*/*Eucalyptus rudis* vegetation and a stable community of the native sedges, *Baumea articulata* and *Lepidosperma gladiatum*. The *M. rhaphiophylla*/*E. rudis* complex continues throughout the transect, which has also remained relatively stable in terms of cover abundance since 2002. There is a high richness of exotic vegetation species present at the lake. Generally, these exotic species have increased in abundance during the survey period (Figure \ref{fig:GoollelalStrat}).
+
 \newpage
 
 \blandscape
@@ -325,6 +262,8 @@ stratiplotter(vegfit.mod3)
 
 \newpage
 
+Ordination reveals that Plot A has a distinct assemblage to the other plots but has displayed similar shifts in vegetation composition during the monitoring period (Figure \ref{fig:GoollelalOrd}). All plots show minor shifts in composition during the study period, with each plot be distinct from the others. Plot D displays a different pattern, probably due to the record of *B. articulata* in 1997 and the high cover abundance of exotic species. Bayesian regression analysis predicts many exotic species to increase in cover abundance with declining surface water levels (Figure \ref{fig:GoollelalPost}).
+
 ```{r GoollelalOrd, fig.cap="\\label{fig:GoollelalOrd}Unconstrained ordination based on vegetation data for each surveyed year for Lake Goollelal. Plots are represented as different colours and consecutive years are joined by a line with first and last survey years labeled.", results = 'asis'}
 load("Goollelal/boral_models.RData")
 veg.ord1
@@ -334,6 +273,10 @@ veg.ord1
 load("Goollelal/Vegetation/beta_plot.RData")
 beta.plot
 ```
+
+### Aquatic invertebrates
+
+The mean family richness of aquatic invertebrates is 22 for Lake Goollelal (Figure \ref{fig:GoollelalRichInv}). Since 2008, family richness has mostly been stable and above the long term average. There are stable populations of Amphisopidae, Calanoida, Ceinidae, Chironominae, Corixidae, Cyprididae and Amphisopidae at the lake (Figure \ref{fig:GoollelalStratInv}). Other taxa are not currently recorded in the lake include Ceratopogonidae, Chydoridae, Oligochaeta and Pionidae. The absence of the Chydoridae (Cladocera) is notable given the abundance in early monitoring years. There was a major shift in the assemblage composition in 2006-2007, with ordination revealing two main groups of annual data; those collected pre 2007, and those collected post 2007 (Figure \ref{fig:GoollelalOrdInv}). However, recent high water levels and low nutrients appear to shifting the assemblages back towards pre-2007 compositions (see @Judd2019).
 
 \newpage
 
@@ -374,6 +317,12 @@ load("Goollelal/Invert_analysis.RData")
 ord.plot
 ```
 
+### Ramifications of revised thresholds
+
+The proposed reductions in groundwater suggest that the current hydrological regime can be maintained. Adopting a minimum threshold of 26.4 mAHD (0.4 m higher than current threshold) will minimise the risk of acidification at Lake Goollelal. Under the 2030 scenario, vegetation composition is likely to remain distinct across the elevations of the basin, with *B. articulata* and *Lepidosperma gladiatum* persisting along the lake margin. The richness of exotic plant species in the higher areas of the basin are likely to persist or decline if surface water levels remain at, or greater than, present levels. Similarly, it is expected that the aquatic invertebrate community will remain stable as fringing vegetation preserves habitat availability and water quality.
+
+Revised thresholds will likely maintain ecological conditions similar to present (Table \ref{tab:GoollelalCompliance}). The most important impact of the revised thresholds is that it will ensure water levels remain at, or higher than, present levels which has positive implications for habitat availability and risk of acidification. The sustenance of permanent water will ensure that Lake Goollelal acts as a drought refuge for waterbirds, with seasonal fluctuations in water levels ensuring feeding habitats are available for waders during the summer months. The preservation of fringing vegetation, submerged macrophytes and deep water will also ensure the wetland continues to support important native fish species (*P. olorum* and *E. vittata*), a feature becoming rarer among wetlands in the Swan Coastal Plain. Conservation of these values will maintain the site as a place for public enjoyment and maintain the current landscape amenity values.
+
 ```{r GoollelalCompliance, echo=FALSE, results='asis'}
   cat(' Table: \\label{tab:GoollelalCompliance}Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives at Lake Goollelal.
   
@@ -402,7 +351,7 @@ Loch McNess, located in Yanchep National Park, is a relatively undisturbed wetla
 
 Since early 2011, readings for the staff gauge (6162564) at Loch McNess have frequently been below the gauge's limit. It is therefore likely the decline in surface water levels have continued pasted the levels shown in Figure \ref{fig:McNessWaterPlot}. Nonetheless, surface water, which were remarkably stable before 2003 at 7 mAHD, have declined at least 1.5 m to present levels. These declines have been mirrored in surrounding bores (Figure \ref{fig:McNessWaterPlot}). Mean maximum and minimum seasonal water levels have decline by 0.9 m since 1994-2004 levels (Table \ref{tab:LochMcNessWater}). Changes in seasonal patterns are difficult to interpret due to staff gauge 6162564 being mostly dry since 2014, but during the period 2009-2014, minimum water levels were not being reached until May, compared to March in the decade 1994-2004. A recent increase in water level, as seen in surrounding wetlands during the last few seasons, has not been observed at Loch McNess. The dramatic decline in water levels is causing the terrestrialisation of the lake as much of the lake bed is now undergoing recruitment by fringing vegetation.
 
-The lake has been non-compliant with ministerial water levels since 2003 and water levels are now approximately 1.0 m below this threshold. Modelling of groundwater levels under proposed abstraction reductions will not provide sufficient increases in groundwater to make this wetland compliant with existing thresholds. Under the new plan, a proposed threshold of 8.0 mAHD at bore 61612104 will satisfy the proposed threshold of surface waters in the lake at 6.2 mAHD (0.75 m below existing threshold). [NOTE: This is a different bore to the bore at the transect, which 61640108 - there's about a 3 m difference between them!]
+The lake has been non-compliant with ministerial water levels since 2003 and water levels are now approximately 1.0 m below this threshold. Modelling of groundwater levels under proposed abstraction reductions will not provide sufficient increases in groundwater to make this wetland compliant with existing thresholds. Under the new plan, a proposed threshold of 8.0 mAHD at bore 61612104 will satisfy the proposed threshold of surface waters in the lake at 6.2 mAHD (0.75 m below existing threshold).
 
 Water quality at Loch McNess appears to have stabilised in the past couple of years. Normal pH is thought to be over 8.0 but has been below 8.0 since 2010. Current monitoring suggests a pH of 7.8, the highest since 2010 [@Judd2019]. Chloride:sulphate and alkalinity observations suggest that acidification is not a concern at the wetland. There has been a trend of increasing nitrogen levels in the wetland since 2010, but this trend has not continued for 2017-2018 despite current levels being double 1997-2007 levels. Current phosphate levels are an order of magnitude greater than 1999-2004 levels and require close monitoring.
 
@@ -506,24 +455,25 @@ ord.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-| * Undisturbed wetland | Sustained low water levels will continue to cause a shift in vegetation composition | No  |
-| * Unusual hydrologic regime   |  |  |
-| * Rich aquatic fauna || No |
-| * Vegetation largely intact, provides a range of habitat types ||No|
-| * Supports good populations of water birds and acts as a drought refuge |||
+| * Undisturbed wetland | Sustained low water levels will continue to cause a shift in vegetation composition as once innundated regions of the lake become terretrialised. The dissapearance of *B. articulata*, an important fringing sedge, marks a significant change in composition of the wetland vegetation. | Unlikely  |
+| * Unusual hydrologic regime   | Surface water levels appeared to reach a tipping point in 2003. There has been significant disruption of once stable water levels which will not return to normal under predicted reduced abstraction | No |
+| * Rich aquatic fauna |Declining water levels has not disrupted the richness of the aquatic invertebrate assemblage. However, there has been an associate shift in the composition of the lake assemblage. The proposed thresholds will prevent the assemblage returning to pre-2003 compositon, and instead will sustain an assemblage composed of common taxa and nuisence species. | Disrupted |
+| * Vegetation largely intact, provides a range of habitat types |The health of fringing *M. rhaphiophylla* and *E. rudis* appears good, despite the lower water levels. Loss of *B. articulata* will alter fringing faunal habitat. Loss of islands in lake may effect the Rakali population. | Likely |
+| * Supports good populations of water birds and acts as a drought refuge |Revised threshold will sustain permanent water at the site. Permanent water is fundamental to the lake acting as a drought refuge for birds.|Yes|
 | * Excellent water quality ||No|
 | **Site management objectives** |||
 | * Maintain the environmental quality of the lake | ||
 | * Maintain North Loch NcNess’ pristine state | | No  |
 | * Continue to use south Loch McNess for low key recreation | | ||
 | * Maintain east Loch McNess in a natural state, to restore, where possible, natural flow |||
-| * Maintain the existing hydrological regime | The loss of stable water levels (once a characteristic of the lake) have deteriorated to the point where water levels have declined by 1.5 m and are susceptible to further declines under a drying climate.| No |
+| * Maintain the existing hydrological regime | The loss of stable water levels (once a characteristic of the lake) has deteriorated to the point where water levels have declined more than 1.0 m and are susceptible to further declines under a drying climate despite the revised thresholds.| No |
 ')
   
 ```
 
 \newpage
-##Lake Yonderup
+
+## Lake Yonderup
 
 Located to the south of Loch McNess and north of Lake Wilgarup in Yanchep National Park, Lake Yonderup has a high conservation value as it represents a largely undisturbed wetland with high macroinvertebrate richness and excellent water quality. The permanently filled lake is dependent on groundwater to maintain habitats and biophysical processes [@Froend2004a]. Like other lakes in the region, Lake Yonderup has experienced a consistent decline in surface water levels that has affected the condition and health of fringing vegetation and aquatic processes. A fire effected the fringing vegetation in 2004/2005 [@Rogan2006].
 
@@ -1961,9 +1911,36 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 
 ## Overview
 
-## Vegetation
+Summary table (Table \ref{tab:SumTable}).
 
-## Aquatic Invertebrates
+```{r SumTable, echo=FALSE, results='asis'}
+  cat(' Table: \\label{tab:SumTable}Summary of ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives at wetlands on Gnangara Mound.
+  
+|Wetland  | Current Threshold (mAHD) | Proposed Threshold (mAHD) | Ecological consequences |
+| :------------ | :-----------: | :------: | :------------ |
+|Lake Goollelal|26.0|26.4|The lake will remain permanently inundated at similar levels as present. Fringing vegetation will persist and provide habitat for the current diversity of aquatic invertebrates. The site will continue acting as a drought refuge for water birds and provide important habitat to important native fish species.|
+|Loch McNess|6.95|6.20|Declines in groundwater have caused major shifts in vegetation and aquatic invertebrate communities. In particular, the unique assemblage of macroinvertebrates present within the lake has been replaced by common taxa and nuisence species. Declining water levels have also caused the dissapearance of *B. articulata*, an important fringing macrophyte. Declining water levels have also caused significant increases in nutrient levels and sustained low water levels are likely to have serious consequences for an important population of Rakali. Under the revised abstraction plans, these ecological shifts are likely to persist into the future and typical characteristics and ecological processes once a feature of the system before the 2003 water level decline will not return. |
+|Lake Yonderup|5.9|5.7||
+|Lake Joondalup|15.8|16.2||
+|Lake Mariginiup|41.5|42.1||
+|Lake Jandabup|44.3|44.3||
+|Lake Nowergup|16.8|16.0||
+|Lake Wilgarup|4.5|3.9||
+|Pipidinny Swamp|1.6|1.1||
+|Lexia 186|47.2|46.5||
+|Melaleuca Park 173|50.2|48.5||
+|Melaleuca Park 78|65.1|64.7||
+|MM59B - Whiteman Park East|36.3|36.2||
+|PM9 - Pinjar North|56.3|||
+|WM1 - Pinjar|55.7|53.7||
+|WM2 - Melaleuca Park North|66.5|64.7||
+|WM8 - Melaleuca Park|64.8|63.7||
+|Lake Gwelup||||
+|Quin Brook||||
+|Gingin Brook||||
+')
+  
+```
 
 ## Management objectives
 
