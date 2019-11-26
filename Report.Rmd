@@ -1136,7 +1136,7 @@ A vegetation monitoring transect was established at Lake Wilgarup in 1997 and wa
 
 ### Ramifications of revised thresholds
 
-The site values of Lake Wilgarup are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:WilgarupCompliance}).
+The site values of Lake Wilgarup are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:WilgarupCompliance}). Vegetation composition has shifted from one dominated by wetland sepcies, such as *B. articulata*, to a terrestrial community dominated by *E. gomphocephala*. Increases in groundwater are unlikely to have an impact on the vegetation unless permanent water can be restored.
 
 ```{r WilgarupWater, echo = FALSE, results = 'asis'}
 load("Wilgarup/water_level.RData")
@@ -1186,12 +1186,12 @@ beta.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-| * One of few remaining undisturbed wetlands within the region|  | Not any more |
-| * Rich and unusual vegetation (dense monospecific stands of sedges) |  | No  |
-| * Likely to support diverse fauna |||
+| * One of few remaining undisturbed wetlands within the region| Declining groundwater and fire render this wetland highly disturbed. The vegetation composition nonlonger reflects that of a wetland as the site has become highly terrestialised. | Extremely unlikely |
+| * Rich and unusual vegetation (dense monospecific stands of sedges) | These sedges are locally extinct. | Extremely unlikely  |
+| * Likely to support diverse fauna |A rich woodlan fauna likely exsists at the site, however, this assembalge would not reflect the rich wetlnd fauna that would have once occupied the site. |Extremely unlikely |
 | **Site management objectives** |||
-| * Maintain the environmental quality of Lake Wilgarup| ||
-| * Maintain the existing extent and variety of wetland vegetation | | No |')
+| * Maintain the environmental quality of Lake Wilgarup| The quality of Lake Wilgarup as a Swan Coastal Plain wetland has been permanently comprimised. As it is extremely unlikely that permanent water will become a feature of Lake Wilgarup in the future, the site will not retain its environemntal quality. |Extremely unlikely |
+| * Maintain the existing extent and variety of wetland vegetation | Wetland vegetation has probably been permenantly destroyed by declining waterlevels and fire. The terrestrial woodlands that now inhabit the site are unlikely to facilitiate the return of wetland vegetation unless permanent water is restored to the site. | Extremely unlikely  |')
 ```
 
 \newpage
@@ -1927,8 +1927,8 @@ Summary table (Table \ref{tab:SumTable}).
 |Lake Joondalup|15.8|16.2|The proposed thresholds will see water levels maintained at levels higher than current levels. This will have a positive impacts for fringinge sedge vegetation and fish and bird habitat. There is the possibility that terrestrial vegetation occuring at higher elevations in the absin, may be squeezed as further migration up-slope become hampered by surrounding urbanisation. Nutrient enrichment remains an issue for the lake and further increases in nutrient levels may cause a shift in ecological processes and change the character of the lake. |
 |Lake Mariginiup|41.5|42.1|The predicted increases in water levels may be sufficient to halt acidification of the lake. It is possible to restore the water quality of the lake, but this requires the sediments to have sufficient capacity to buffer the acidification once re-wetted. Nonetheless, if acidification cannot be reveresed, the current assemblage of macro-invertebrates is likely to persist. The proposed changes to groundwater levels will enhance the extent of habitat available to wading birds and, over a period of decades, restore *E. rudis* woodland. Given the decline in water level and the acidification that has occured, it is unlikely that the native fish *P. olorum* is locally extinct from the lake and will not return unless water quality is restored and it is able to immigrate back to the lake. |
 |Lake Jandabup|44.3|44.3|Acidification is currently causing a decrease in richness of the aquatic macroinvertebrate communities, and the proposed changes in water level are not likely to effect this process. Otherwise, the poredicted increases in surface water levels will have a beneficial effect on native vegetation, sedges and wader bird habitat. Elevated nutrient levels may continue to remain a concern.|
-|Lake Nowergup|16.8|16.0||
-|Lake Wilgarup|4.5|3.9||
+|Lake Nowergup|16.8|16.0|Declining surface water levels at this wetland are going to contribute further to the ecological decline of this wetland. Areas of wetland vegetation are very likely to become terrestrialised, while the extent of exsisting sedge vegetation is going to be greatly reduced. The capacity of this wetland to act as a drought refuge for birds will be diminished and habitat for native fish species will be at increased risk of disappearance.|
+|Lake Wilgarup|4.5|3.9|Lake Wilgarup, as a wetland, has been severely compromised by a combination of declining groundwater levels and fire. The site no longer resembles a wetland and is dominated by terrestrial woodland vegetation. The proposed changes to groundwater level are unlikely to prevent further terrestrialisation of this site.|
 |Pipidinny Swamp|1.6|1.1||
 |Lexia 186|47.2|46.5||
 |Melaleuca Park 173|50.2|48.5||
