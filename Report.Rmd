@@ -992,9 +992,7 @@ Water quality in Lake Nowergup is remarkably stable given the declines in surfac
 
 ### Vegetation Dynamics
 
-There are two vegetation monitoring transects at Lake Nowergup, one in the northern part of the lake and one in the southern part. Both transects were established in 1996 and the northern one was last surveyed in 2016 while the southern one was last surveyed in 2018. In 2001, the original plots were realigned to better encompass wetland vegetation near the lake. Therefore, only post 2001 data is analysed here.
-
-("Lake Nowergup South transect was realigned in 2001 due to a lack of wetland species in upland plots and to encompass wetland vegetation at the lake end of the transect (Bertuch et al., 2004)") - WHAT ARE THE IMPLICATIONS? May need to re-run analyses excluding years before 2001. Don't know plot elevations before 2001. Will write up once we have made a decision.
+There are two vegetation monitoring transects at Lake Nowergup, one in the northern part of the lake and one in the southern part. Both transects were established in 1996 and the northern one was last surveyed in 2016 while the southern one was last surveyed in 2018. In 2001, the original plots were realigned to better encompass wetland vegetation near the lake. Therefore, only post 2001 data is analysed here. In both transects, there has been a recent shift in vegetation composition of the down-slope plots (A and B) transitioning towards the higher, more terrestrial plots (C and D; Figure \ref{fig:NowergupOrd}). This shift has been driven by declines of *B. articulata* and *M. rhaphiophyla* and the increase of *E. rudis* (Figure \ref{fig:NowergupNthStrat} and \ref{fig:NowergupSthStrat}). Further declines in water level are likely to decrease the abundance of fringing vegetation *B. articulata* and *Typha orientalis*. Other native species, including *E. rudis*, *Lepidosperma longitudinale* and *Rhagodia baccata* are likely to increase in abundance (Figure \ref{fig:NowergupPost}), particularly at lower elevations of the basin.
 
 ### Macroinvertebrates Dynamic
 
@@ -1002,7 +1000,7 @@ Aquatic invertebrate richness has been below average for Lake Nowergup since 201
 
 ### Ramifications of revised thresholds
 
-The site values of Lake Nowergup are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:NowergupCompliance}).
+Many of the site values of Lake Nowergup are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:NowergupCompliance}). Declining water levels have, and will continue to, cause a significant decline in macroinvertebrate richness and shift in assembalge composition away from what was once typical of this wetland. This deterioration of the macroinvertebrate community is probably driven by a decline in habitatm availablity for these organisms, although increased nutrient levels may also be faciliting this process. Although many native vegetation species are predicted to increase in cover abundance with declining water levels, there is a substantial decline in fringing wetland vegetation an sedges. This continued terrestrialisation of the vegetation community will further impact the macroinvertebrate communities as many of these species (eg. *B. articulata*) provide important habitat for many macroinvertebrate species and reduce the effect of nutrient enrichment.
 
 ```{r NowergupWater, echo = FALSE, results = 'asis'}
 load("Nowergup_Nth/water_level.RData")
@@ -1111,15 +1109,15 @@ ord.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-| * As a permanent deep-water wetland acts as a major drought refuge for waterbirds | How much lower will water levels go? |  |
-| * Supports dependent invertebrates and fish species (one native, Swan River Goby (*Pseudogobius olorum*); and one exotic, Mosquito fish (*Gambusia holbrooki*) | Dependent on extent of reduced water area and depth |  |
-| * Large areas of sedges minimize impact of nutrient enrichment on aquatic fauna |Likely to be jeopardised with declining water levels||
+| * As a permanent deep-water wetland acts as a major drought refuge for waterbirds | REALLY DEPENDS ON HOW SHALLOW THE LAKE WILL BECOME. ANY INFORMATION? | UNKNOWN |
+| * Supports dependent invertebrates and fish species (one native, Swan River Goby (*Pseudogobius olorum*); and one exotic, Mosquito fish (*Gambusia holbrooki*) | Dependent on extent of reduced water area and depth COMMENTS? | UNKNOWN |
+| * Large areas of sedges minimize impact of nutrient enrichment on aquatic fauna |Likely to be jeopardised with declining water levels. Modelling predicts a decline in *B. articualta* and *T. orientalis* as water levels recede further.|Very unlikely|
 | **Site management objectives** |||
-| * Wildlife and conservation, scientific study and preservation of features of archaeological, historic or scientific interest | ||
-| * Maintain the existing areas of fringing sedge vegetation | Fringing vegetation will need to migrate down-slope | No |
-| * Maintain deep, permanent water as a bird habitat and drought refuge and to protect aquatic invertebrates and fish dependent on permanent water |Declining water levels will jeopardise the lake as a drought refuge | No|
-| * Maintain the existing extent of *Baumea* fringe between *Typha* stands and the fringing woodland |||
-| * Provide some area of wading bird habitat at the end of summer, although it is recognized that this is limited by the shape of the wetland.|||')
+| * Wildlife and conservation, scientific study and preservation of features of archaeological, historic or scientific interest | NOT SURE?|COMMENTS?|
+| * Maintain the existing areas of fringing sedge vegetation | Exsisting areas of sedge vegetation are likely to become terrestrialised. Sedges will be required to migrate down-slope with receding surface water levels and are likely to be reduced in extent. | Very unlikely |
+| * Maintain deep, permanent water as a bird habitat and drought refuge and to protect aquatic invertebrates and fish dependent on permanent water |The decline of surface water levels will reduce the areas of deep water and jeopardise the habitat available to birds and fish. The function of the lake as a drought refuge for birds will diminish. | At a reduced capacity|
+| * Maintain the existing extent of *Baumea* fringe between *Typha* stands and the fringing woodland |Modelling predicts *B. articulata* and *T. orientalis* to decline further. Existing stands are likely to disapear and will need to establish down-slope. The extent of these stands will decrease.|Very unlikely|
+| * Provide some area of wading bird habitat at the end of summer, although it is recognized that this is limited by the shape of the wetland.|UNKNOWN DEpends on seasonal variation allowing areas of mudflats suitable for waders to establish. IS THIS LIKELY?|UNKNOWN|')
 ```
 
 \newpage
