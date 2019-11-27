@@ -1362,7 +1362,7 @@ Aquatic macroinvertebrate family richness has been declining since the late 2000
 
 ### Ramifications of revised thresholds
 
-It is likely that management many of the site values of the Melaleuca Park wetland will be achievable given the projected decline in groundwater levels (Table \ref{tab:EMP173Compliance}).
+It is unlikely that management many of the site values of the Melaleuca Park 173 wetland will be achievable given the projected decline in groundwater levels and loss of permanent water (Table \ref{tab:EMP173Compliance}). The vegetation modeling presented here suggests that vegetation from higher elevations of the basin are likely to migrate down-slope as water levels continue to decline. The macroinvertebrate assemblage at Melaleuca Park 173 is displaying similar shifts as the other wetlands that have low pH, such as Lake Jandabup and Lake Mariginiup, which is largely being driven by declining richness. 
 
 ```{r EMP173WaterPlot, fig.cap="\\label{fig:EMP173WaterPlot}Ground and surface water levels for Melaleuca Park 173 recorded at bore 61613213 (red) and staff 6162628 (blue). The minimum recordable water level for the staff gaugue is 50.4 mAHD. Blue dots at 50.4 mAHD represent water levels below the minimum level measurable by the staff. Red segments on fitted line represent statistically significant periods of declining water levels. Current and proposed threshold levels for bore 61613213 are represented by dotted and dashed lines, respectively.", results = 'asis'}
 load("EMP_173/water_level.RData")
@@ -1451,14 +1451,14 @@ ord.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-|* Unique hydrology | | |
-|* High vertebrate and macro invertebrate species richness | | |
-|* Contains most northern population of black stripe minnow (*Galaxiella nigrostriata*)|||
+|* Unique hydrology |Permanent water is no longer a feature of this wetland. The proposed threshold of 48.5 m will continue the transformation of the site into a seasonally innundate wetland | Very unlikley |
+|* High vertebrate and macro invertebrate species richness |Aquatic vertebrate and invertebrate richness has declined significantly. Native fish species are probably no longer at the wetland and macroinvertebrate surveys show a clear decline in riochness of taxa. Proposed water level changes are not sufficient to reverse this trend. |Very unlikely |
+|* Contains most northern population of black stripe minnow (*Galaxiella nigrostriata*)|Probably locally extinct from the wetland due to loss of permanent water.|Very unlikely|
 |**Site management objectives** |||
-|* Maintain wildlife and landscape values of the wetlands|||
-|* Maintain the existing areas of wetland and stream vegetation they support|||
-|* To protect invertebrate communities dependent on the wetland and stream||No|
-|* To protect the fish species, *Galaxiella nigrostriata*||No|')
+|* Maintain wildlife and landscape values of the wetlands|The functioning of this wetland has changed markedly from a permanently innundated wetland to a seasonally innundated dampland. This has had a significant effect on the flora and fauna of the site. Nonetheless, the high native vegetation richness of the site is liekly to persist and provided habitat for wildlife. |Likely|
+|* Maintain the existing areas of wetland and stream vegetation they support|Permanent water is unlikely to become a feature of this wetland under the revised abstraction plan. Seasonal innundation is likely to continue and will maintain many of the components of exsisting wetland vegetation. |Likely|
+|* To protect invertebrate communities dependent on the wetland and stream|Declining waters are attirbuted to the marked decline inaquatic macroinvertebrate richness. The proposed changes to abstraction are unlikely to reverse this trend.|Unlikely|
+|* To protect the fish species, *Galaxiella nigrostriata*|The proposed abstraction plan suggests the wetland will not become permanently innundated, a necessity for fish. Because surface waters will continue to disappear seasoanlly, the wetland will not provide the habitat required for any fish species. *G. nigrostriata* is likely to be locally extinct from this wetland. |Extremely unlikely|')
 ```
 
 \newpage
@@ -1931,7 +1931,7 @@ Summary table (Table \ref{tab:SumTable}).
 |Lake Wilgarup|4.5|3.9|Lake Wilgarup, as a wetland, has been severely compromised by a combination of declining groundwater levels and fire. The site no longer resembles a wetland and is dominated by terrestrial woodland vegetation. The proposed changes to groundwater level are unlikely to prevent further terrestrialisation of this site.|
 |Pipidinny Swamp|1.6|1.1|Aquatic macroinvertebrate communities have been seriosly comprimised at Pipidinny Swamp due to falling water levels. Although the proposed changes to abstraction may cause water levels to be managed at levels higher than currently exsists, this state will be much lower than pre-2000 levels. The proposed changes to abstraction are unlikley restore the aquatic macroinvertebrate communities to what was once typical of the swamp, and exotic plants will remain a feature of the vegetation community. Nonetheless, fringing vegetation is likely to persist and continue to provide habitat for aquatic fauna.|
 |Lexia 186|47.2|46.5|A significant shift in hydrological regime has occured at Lexia 186. The site has been transformed from a seasonally water logged dampland to a system where saturation of surface sediments no longer occurs. Despite the declining ground water levels, shifts in vegetation composition are likely to be driven by other processes. The site has retained the high richness of native species and is still an important habitat for fauna. The proposed changes to the threshold are likely to maintain the system at a state that currently exsists.|
-|Melaleuca Park 173|50.2|48.5||
+|Melaleuca Park 173|50.2|48.5|The proposed threshold will see the wetland managed in a state similar to what currently exsists. The wetland has shifted from a permanently innundate wetland to a seasonally innundated dampland, hence there has been shifts in vegetation and aquatic fauna. The site is no longer provides habitat to the fish species, an important value of the wetland. Fringing vegetation is likely to continue shifting in composition as key wetland species are lost and more terrestrial species migrate down-slope. The aquatic fauna is likley to persist with much less diversity as available habitats are diminished and change.|
 |Melaleuca Park 78|65.1|64.7||
 |MM59B - Whiteman Park East|36.3|36.2||
 |PM9 - Pinjar North|56.3|||
