@@ -606,7 +606,7 @@ Recent monitoring suggests pH has been increasing from 6.8 in 2016 up to 8.4 in 
 
 Vegetation surveys have been conducted along a northern (Figure \ref{fig:JoondalupNthStrat}) and southern (Figure \ref{fig:JoondalupSthStrat}) transect at Lake Joondalup since 1996 and were last surveyed in 2015. *Melaleuca raphiophylla* dominates the overstorey of plots in the northern transect while exotic species are abundant in the understory vegetation. There has been an increasing trend in cover abundance of the exotics *Bromus diandrus*, *Ehrharta longiflora*, *Euphorbia terracina*, *Fumaria muralis* and *Peargonium capitatum* in recent years. Fires in 2003 reduced the canopy condition and abundance of *M. raphiophylla* in the southern transect, and despite the slightly higher cover abundance of native species, native and exotic species richness is equal along the transect. The site also contains healthy stands of *Baumea articulate* in the submerged regions of the transect.
 
-All plots in both transects have displayed similar trends in community compositional change during the survey periods (Figure \ref{fig:JoondalupOrd}). In the southern transect, latent model ordination reveals separation of the plots along the first axis, with a general temporal trend along the second axis, except for a period around 2003 - 2006 where there was a hiatus. This hiatus may be associated with the 2003 bushfire and represents a recovery period where species composition changed little. The trajectory for plot A is different, however, as the trend away from the original 1996 survey has reversed and the contemporary community is now becoming more like the 1996 communities. Similar patterns have been observed in the northern transect despite the transect not being impacted by the 2003 fire event. A number of native species are likely to increase in cover abundance at the transects if water levels remain at present levels or increase further, including *Baumea articulata* (Figure \ref{fig:JoondalupPost}). Other natives are likely to decline in cover abundance under a similar scenario of high water levels, including a number of *Acacia saligna*, *Banksia menziesii* and *Banksia prionotes*.
+All plots in both transects have displayed similar trends in community compositional change during the survey periods (Figure \ref{fig:JoondalupOrd}). In the southern transect, ordination reveals separation of the plots along the first axis, with a general temporal trend along the second axis, except for a period around 2003 - 2006 where there was a hiatus. This hiatus may be associated with the 2003 bushfire and represents a recovery period where species composition changed little. The trajectory for plot A is different, however, as the trend away from the original 1996 survey has reversed and the contemporary community is now becoming more like the 1996 communities. Similar patterns have been observed in the northern transect despite the transect not being impacted by the 2003 fire event. A number of native species are likely to increase in cover abundance at the transects if water levels remain at present levels or increase further, including *Baumea articulata* (Figure \ref{fig:JoondalupPost}). Other natives are likely to decline in cover abundance under a similar scenario of high water levels, including a number of *Acacia saligna*, *Banksia menziesii* and *Banksia prionotes*.
 
 ### Aquatic Invertebrates
 
@@ -723,14 +723,15 @@ ord.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-| Water bird habitat and drought refuge | The proposed increases in groundwater levels around the lake will ensure the site remains an important water bird habitat. The proposed increases will also ensure the lake is permanently inundated, which will ensure the lake is a drought refuge for water birds. | Yes |
-| Diverse range of macrophytes    | The current diversity of macrophytes, including *B. articulata*, *B. juncea* and *L. longitudinale*, will continue. There is the possibility of these species extending into current terrestrial regions of the lake. | Yes |
+| Water bird habitat and drought refuge | The proposed increases in groundwater levels around the lake will ensure the site remains an important water bird habitat. The proposed increases will also ensure the lake is permanently inundated, which will ensure the lake is a drought refuge for water birds. Seasonal variation in surface water height will also ensure expansive mudflats, an importan feeding habitat for many visiting birds, remain.| Very likely |
+| Diverse range of macrophytes    | The current diversity of macrophytes, including *B. articulata*, *B. juncea* and *L. longitudinale*, will continue. There is the possibility of these species extending into current terrestrial regions of the lake. | Very likely |
 | **Site management objectives** |||
-|Conservation and public enjoyment of natural and modified landscapes | |Yes|
-|Conserve existing wetland vegetation, including sedge beds, fringing woodland and aquatic macrophytes | The predicted increases in groundwater levels will ensure the current wetland at a state similar to 2015. It is possible that sustained increases in groundwater levels will extend the range of these species around the lake by ‘migrating’ up slope. | Yes |
-|Maintain and if possible, enhance the aquatic fauna of the lake | | |Yes|
-|In conjunction with Lake Goollelal, to support the full range of habitats for avian fauna | The maintenance of permanent surface water and wetland vegetation will continue to provide a diverse habitat for different avian species. [NEED TO COMMENT ON AQ INVERTS AS FOOD]  | Yes |
-|Ensure the landscape and amenity values of the lake are maintained, except under very low rainfall climatic conditions | | Yes|')
+|Conservation and public enjoyment of natural and modified landscapes | The wetland should retain the current natural and modified assets. |Very likely|
+|Conserve existing wetland vegetation, including sedge beds, fringing woodland and aquatic macrophytes | The predicted increases in groundwater levels will ensure the current wetland at a state similar to 2015. It is possible that sustained increases in groundwater levels will extend the range of these species around the lake by ‘migrating’ up slope. | Very likely |
+|Maintain and if possible, enhance the aquatic fauna of the lake |Aquatic vertebrates, including native fish, are likely to persist in the lake, given that permanent innundation will remain a feature of the lake. Although acdification is unlikely, there are issues around water quality and nutrient enrichment. If nutrients continue to rise, local extinctions of fish populations may occur. There are already unusual trends in macroinvertebrate diversity occuring which may be early warnings of significant ecological shifts that may occur due to nutrient enrichment | |Unknown|
+|In conjunction with Lake Goollelal, to support the full range of habitats for avian fauna | The maintenance of permanent surface water and wetland vegetation will continue to provide a diverse habitat for different avian species. Extensive mudflats should continue to form during periods of low water level, which are also an important feeding habitat for birds.  | Very likely |
+|Ensure the landscape and amenity values of the lake are maintained, except under very low rainfall climatic conditions | NOT SURE HOW TO COMMENT ON THIS | Very likely|')
+
 ```
 
 \newpage
@@ -747,7 +748,7 @@ Acidification has effected the water quality at Lake Mariginiup. Since 2005, the
 
 ### Vegetation dynamics
 
-Vegetation composition and shifts in composition are similar along the length of the transect at Lake Mariginiup which was established in 1996 (Figure \ref{fig:MariginiupStrat}). *Baumea articulata* was present at high cover abundance throughout the transect until the early 2000's, but has since disappeared from the transect as surface water levels declined (*B. articulata* still occurs in other regions of the wetland). *Eucalyptus rudis* has declined in the lower parts of the plots and *Melaleuca rhaphiophyla* is no longer present at the transect. There has been a general increase in the cover abundances of exotics throughout the monitoring period. There was a shift in community composition at all three plots around 2005 which was driven by increases in *Exocarpus sparteus* and *Jacksonia furcellata* and some exotics, such as *Ehrharta calycina*, *Ehrhatah longiflora*, *Lotus suaveolens* and *Ursinnia anthemoides*.
+Vegetation composition and shifts in composition are similar along the length of the transect at Lake Mariginiup which was established in 1996 (Figure \ref{fig:MariginiupStrat}). *Baumea articulata* was present at high cover abundance throughout the transect until the early 2000's, but has since disappeared from the transect as surface water levels declined (*B. articulata* still occurs in other regions of the wetland). *Eucalyptus rudis* has declined in the lower parts of the plots and *Melaleuca rhaphiophyla* is no longer present in the transect. There has been a general increase in the cover abundances of exotics throughout the monitoring period. There was a shift in community composition at all three plots around 2005 which was driven by increases in *Exocarpus sparteus* and *Jacksonia furcellata* and some exotics, such as *Ehrharta calycina*, *Ehrhatah longiflora*, *Lotus suaveolens* and *Ursinnia anthemoides*.
 
 Regression analysis reveals a number of native species that will increase in cover abundance with increasing surface water levels (Figure \ref{fig:MariginiupPost}). Species likely to increase in cover abundance include *Angianthus* sp., *Epilobium billardierianum*, *Isolepis cernua*, *Juncus* sp., *Lepyrodia muirii*, *Lobelia alata* and *Villarsia capitata*. Other natives, including *Acacia cyclops*, *Acacia saligna* and *E. sparteus*, are likely to decrease in cover abundance as water levels increase.
 
@@ -757,7 +758,7 @@ Lake Mariginiup has been sampled every year between 1996 and 2002, 2004 and 2009
 
 ### Ramifications of revised thresholds
 
-The site values of Lake Mariginiup are likely to be maintained under the proposed threshold levels (Table \ref{tab:MariginiupCompliance}).
+As a result of land use change and reductions in local abstraction, water levels are expected to rise beyond 2028. Adopting a preferred minimum peak threshold of 42.1 mAHD will require water levels to rise hgiher than what has been recorded since 1980 in order to be compliant. Thus it is difficult to predict the ecological consequences as the lake has never been monitored at those levels (Table \ref{tab:MariginiupCompliance}). It is unlikely that large areas of the wetland will continue to dry during summer under the proposed 2030 scenario. The greater innundation of Lake Mariginiup will likely allieviete acidification issues as sediment are re-wetted and sediment processes return to normal. Artificial augmentation of surface waters at Lake Jandabup have shown that returning a wetland to a 'more' normal hydrological regime can reverse the effects of acidification, although this process is dependent on a number of factors, including  whether the sufficient buffering capacity of the sediments remain [@Sommer2009].  
 
 ```{r MariginiupWater, echo = FALSE, results = 'asis'}
 load("Mariginiup/water_level.RData")
@@ -845,14 +846,14 @@ ord.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-| * Rich aquatic fauna (Swan River Goby, *Pseudogobius olorum*) |  | Yes |
-| * Wading bird habitat | Will increased surface waters decline in summer enough to provide important mud flat habitat? |  |
-| * Good water quality || Yes |
+| * Rich aquatic fauna (Swan River Goby, *Pseudogobius olorum*) |  Given the declines in water quality and the seasonal drying of the wetland, it is unlikely the lake still provides habitat for *P. olorum*. It is probable the Lake Mariginiup population is now extinct.| Very unlikely |
+| * Wading bird habitat | Rising water levels may be high enough to reverse the terrestrialisation currently occuring at the wetland. Seasonal maximum water levels need to be sufficient to prevent macrophytes growing while seasonal minimums need to be low enough to provide shallow wading habitat. It is likelt that these requirments will be met at locations throughout the basin | Likely |
+| * Good water quality |Water quality is currently comporomised as sediments become dry and are oxidised, causing significant acidification issues. The return of good water quality relies on having the sediments with sufficient buffering capacity remaining to reverse the decline of pH as they are re-wtted.  | Possible |
 | **Site management objectives** |||
-| * Conservation of flora and fauna | ||
-| * Maintenance of the existing areas of fringing sedge vegetation | Likely to increase in cover abundance | Yes |
-| * Maintain invertebrate diversity through some lake bed drying in summer | |Yes |
-| * Maintain and if possible, enhance fringing woodland vegetation |*Acacia* woodland likely to decrease in cover abundance in transect. Can it move further up slope? ||')
+| * Conservation of flora and fauna |The lake has undergone significant shifts in wetland vegetation and aquatic fauna composition. Many native flora species are predicted to increase in cover abundance throughout the wetland under a scenario of rising surface water levels. The significant decline of *E. rudis* is likely to continue and will take decades to return if re-establishment occurs post 2030. The decline of *E. rudis* woodlands would have had a significant impact for the many fauna that rely on the trees for habitat. The wetland will remain an important site for water birds post if the proposed thresholds are achieved. Given the likely extinction of the Lake Mariginiup population of *P. olorum*, it is unlikely this fish will return unless water quality is restored and the fish is able to immigrate. |Unlikely|
+| * Maintenance of the existing areas of fringing sedge vegetation | Fringing sedge vegetation, including *B. articulata*, is likey to increase in cover abundance as water levels rise. It is likely this habitat will occur at higher elevations than present and will continue to provide important habitat for macroinvertebrates. | Liklely |
+| * Maintain invertebrate diversity through some lake bed drying in summer | NOT SURE WHAT THIS MEANS |Yes |
+| * Maintain and if possible, enhance fringing woodland vegetation |There has been a significant decline in *E. rudis* woodland surrounding Lake Mariginiup. Although elevated water levels will be beneficial to *E. rudis*, the trees are slow growing and will require decades to return. *Acacia* woodland is predicted here to decrease in cover abundance along the transect if water levels increase. |Possible|')
 
 ```
 
@@ -860,17 +861,17 @@ ord.plot
 
 ## Lake Jandabup
 
-Lake Jandabup is an artificially watered wetland that supports the most diverse sedge and macrophyte vegetation communities in the Bassendean Dune wetlands [@Judd2019]. Lake Jandabup has a high conservation value as it is one of the few 'eastern circular wetlands' to not be be permanently acidic. Low rainfall and groundwater abstraction impacts are thought to have caused an acidification event in 1998 and 1999 but restoration of water levels has returned the pH to normal levels [@Judd2019]. The waters usually have low levels of nutrients and clear waters that supports a diverse aquatic invertebrate community. The abundance of invertebrates and fringing vegetation habitats also allow the wetland to support high numbers of resident and visiting water birds [@Bamford2003].
+Lake Jandabup is an artificially watered wetland that supports the most diverse sedge and macrophyte vegetation communities in the Bassendean Dune wetlands [@Judd2019]. Lake Jandabup has a high conservation value as it is one of the few 'eastern circular wetlands' to not be be permanently acidic. Low rainfall and groundwater abstraction impacts are thought to have caused an acidification event in 1998 and 1999 but restoration of water levels by artificial augmentation has returned the pH to normal levels [@Judd2019]. The waters usually have low levels of nutrients and clear waters that supports a diverse aquatic invertebrate community. The current trajectory of the macroinvertebrate community suggests the assemblage is transitioning towards a state that will be similar to the communities of Lake Mariginiup and Melaleuca Park 173. All of these wetlands have waters with pH <7 suggesting acidification is having a significant influence on the composition of these communities. The abundance of invertebrates and fringing vegetation habitats also allow the wetland to support high numbers of resident and visiting water birds [@Bamford2003].
 
 ### Hydrology and water quality
 
-Surface water levels of Lake Jandabup have only declined slightly since 1980 (Figure \ref{fig:JandabupWaterPlot}). Mean maximum seasonal water levels are now 0.2 m lower than in 1994-1999 but mean minimum seasonal water levels are 0.1 m higher than 1994-1999 levels and since 2009, the period of annual maximum to minimum water levels has increased (Table \ref{tab:JandabupWater}). Projected ground water levels in the vicinity of this wetland are predicted to increase by 3.4 m in 2030 due to proposed changes in abstraction. It is unlikely surface waters will need to be sustained artificially and that an increased threshold level can be proposed.
+Surface water levels of Lake Jandabup have only declined slightly since 1980 (Figure \ref{fig:JandabupWaterPlot}). Mean maximum seasonal water levels are now 0.2 m lower than in 1994-1999 but mean minimum seasonal water levels are 0.1 m higher than 1994-1999 levels and since 2009, the period of annual maximum to minimum water levels has increased (Table \ref{tab:JandabupWater}). Projected ground water levels in the vicinity of this wetland are predicted to increase by 3.4 m in 2030 due to proposed changes in abstraction and proposed changes to the ministerial criteria suggest adopting the current absolute minimum peak of 44.3 mAHD. It is unlikely surface waters will need to be sustained artificially and that an increased threshold level can be proposed.
 
 The pH of Lake Jandabup has not exceeded 7.0 since 2011 and is currently between 6.1 and 6.6. Low water levels expose sediments at Lake Jandabup, making it susceptible to acidification. Alkalinity is currently very low, suggesting that the lake may be loosing its capacity to buffer pH changes. Deterioration of the chloride:sulphate ratio is also concerning. Maintaining high water levels may be essential to preventing the drying of sediments around the lake margin and subsequent acidification of this wetland. Typically, Lake Jandabup is a low nutrient wetland, however current total nitrogen and phosphorus levels are currently the highest recorded for the monitoring period.
 
 ### Vegetation dynamics
 
-The Lake Jandabup wetland consists of a diverse community of native vegetation. In the 2017-2018 season, 43 native species were recorded with only 14% of the total cover abundance belonging to exotic species [@Buller2019]. There are four overstorey species present at the wetland, including *Banksia attenuata*, *Banksia ilicifolia*, *Banksia menziesii*, *Eucalyptus rudis* and *Maleleuca preissiana* (Figure \ref{fig:JandabupStrat}), all of which have been increasing in health. A dense understorey of *A. scoparia*, *B. elegans* and *H. angustifolium* exists at plots A and B. There has been a continual shift in community composition of Lake Jandabup throughout the monitoring period that reflects changes in invasive species cover abundances (Figure \ref{fig:JandabupOrd}). A number of species are predicted to increase in cover abundance with increasing water levels, particularly *Euchilopsis linearis* which is currently present in the lower parts of the basin (Figure \ref{fig:JandabupPost}). 
+The Lake Jandabup wetland consists of a diverse community of native vegetation. In the 2017-2018 season, 43 native species were recorded with only 14% of the total cover abundance belonging to exotic species [@Buller2019]. There are four overstorey species present at the wetland, including *Banksia attenuata*, *Banksia ilicifolia*, *Banksia menziesii*, *Eucalyptus rudis* and *Maleleuca preissiana* (Figure \ref{fig:JandabupStrat}), all of which have been increasing in health. A dense understorey of *A. scoparia*, *B. elegans* and *H. angustifolium* exists at the lower elevated plots A and B. There has been a continual shift in community composition of Lake Jandabup throughout the monitoring period that reflects changes in invasive species cover abundances (Figure \ref{fig:JandabupOrd}). A number of species are predicted to increase in cover abundance with increasing water levels, particularly *Euchilopsis linearis* which is currently present in the lower parts of the basin (Figure \ref{fig:JandabupPost}). 
 
 ### Aquatic invertebrates
 
@@ -878,7 +879,7 @@ Family richness of aquatic macroinvertebrates in Lake Jandabup is distinct and h
 
 ### Revised water level threshold effects
 
-The site values of Lake Jandabup are likely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:JandabupCompliance}).
+Many of the site values of Lake Jandabup are likely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:JandabupCompliance}). Maintaing surface water levels at the current levels will minmise the risk of further acidification by ensuring sediments remain wet. It is predicted here that many native vegetation species are likely to increase in cover abundance given higher water levels. If water levels raise to the point were artificial augmentation is no longer required, restortion of the hydrological regime may facilitate the expansion of wader habitat as seasonal variation in surface water levels increases towards 0.8 m. The current low pH of the wetland is driving the aquatic macroinvertebrate community away from pre-2000 compositions and towards an composed of a less diverse, acidiphile community that is likely to also occure at Lake Mariginiup and Melaleuca Park 173. Careful monitoring of nutrient levels is required also as increased nitrogen levels may also be driving the shift in this aquatic community.
 
 ```{r JandabupWater, echo = FALSE, results = 'asis'}
 load("Jandabup/water_level.RData")
@@ -966,15 +967,15 @@ ord.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-|* Most diverse sedge and macrophyte vegetation of all Bassendean dune wetlands, including unusual species | |  |
-|* Supports wide range of waterbirds, especially waders | |  |
-|* Extremely good water quality with low nutrients|||
+|* Most diverse sedge and macrophyte vegetation of all Bassendean dune wetlands, including unusual species |The diverse sedge communities are likely to persist as higher water levels provide aditional habitat. WHAT ARE THE UNUSUAL SPECIES??? | Likely |
+|* Supports wide range of waterbirds, especially waders |Provided that seasonal variation in water levels is restored, extensive habitat for waders will continue being a feature of this wetland as seasonal high waters prevent macrophyte encroachment of wader habitat during periods of minimum water levels. Seasonal variation in water levels has decreased from about 0.8 m to 0.5 m. Restoration of hydrological regime is likely to restore seasonal variation to pre-2000 levels and extend feeding habitat for waders. | Likely  |
+|* Extremely good water quality with low nutrients|Water quality has been comprimised by reduced buffering capacity that makes the wetland suceptable to acidification. Sediments need to be prevented from drying to prevent further acidification. Nutrient levels are also rising and may be causing shifts in the aquatic invertebrate assemblages.The proposed changes to the threshold levels will minimise the risk of further acidification but elevated nutrient levels will remain a concern. |Unlikely|
 | **Site management objectives** |||
-|* Conservation of flora and fauna||Yes|
-|* Maintenance of the current extent of wading bird habitat||Yes|
-|* No expansion in the areas of sedge vegetation, but maintenance of existing areas|Modeling does not suggest sedge vegetation is likely to increase|Yes|
-|* Removal of mosquito fish from the lake|||
-|* Maintenance of high species richness of aquatic macroinvertebrates, macrophytes and sedge vegetation|||')
+|* Conservation of flora and fauna|Native plant species are predicted to increase in abundance if water levels continue to increase. This will have a beneficial effect for other terrestrial fauna that inhabit the wetland. Wader bird habitat is also likely to remain a feature of this wetland. Elevated nutrient levels and low pH are a concern as the aquatic macroinvertebrate community transitions towards a less diverse, acidiphilic composition. |Likely for waders and vegetation. Unlikely for aquatic inverts unless pH is restored.|
+|* Maintenance of the current extent of wading bird habitat|Greater seasonal variation and higher surface water levels are likely to maintain or expand current feeding habitat for waders. |Very likely|
+|* No expansion in the areas of sedge vegetation, but maintenance of existing areas|Modeling does not suggest sedge vegetation is likely to increase although higher water levels are likely to provide additional habitat for fringing vegetation.|Likely|
+|* Removal of mosquito fish from the lake|NOT SURE |NOT SURE|
+|* Maintenance of high species richness of aquatic macroinvertebrates, macrophytes and sedge vegetation|The proposed changes will maintain the rich macrophytic and sedge vegetation. Acidification is reducing the richness of the aquatic macroinvertebrate community, and unless pH can be restores, this community is likely to continue to transition to an acidiphilic community. |Likely for macrophytes and sedges. Unlikely for aquatic macroinvertebrates|')
 ```
 
 \newpage
@@ -991,9 +992,7 @@ Water quality in Lake Nowergup is remarkably stable given the declines in surfac
 
 ### Vegetation Dynamics
 
-There are two vegetation monitoring transects at Lake Nowergup, one in the northern part of the lake and one in the southern part. Both transects were established in 1996 and the northern one was last surveyed in 2016 while the southern one was last surveyed in 2018. In 2001, the original plots were realigned to better encompass wetland vegetation near the lake. Therefore, only post 2001 data is analysed here.
-
-("Lake Nowergup South transect was realigned in 2001 due to a lack of wetland species in upland plots and to encompass wetland vegetation at the lake end of the transect (Bertuch et al., 2004)") - WHAT ARE THE IMPLICATIONS? May need to re-run analyses excluding years before 2001. Don't know plot elevations before 2001. Will write up once we have made a decision.
+There are two vegetation monitoring transects at Lake Nowergup, one in the northern part of the lake and one in the southern part. Both transects were established in 1996 and the northern one was last surveyed in 2016 while the southern one was last surveyed in 2018. In 2001, the original plots were realigned to better encompass wetland vegetation near the lake. Therefore, only post 2001 data is analysed here. In both transects, there has been a recent shift in vegetation composition of the down-slope plots (A and B) transitioning towards the higher, more terrestrial plots (C and D; Figure \ref{fig:NowergupOrd}). This shift has been driven by declines of *B. articulata* and *M. rhaphiophyla* and the increase of *E. rudis* (Figure \ref{fig:NowergupNthStrat} and \ref{fig:NowergupSthStrat}). Further declines in water level are likely to decrease the abundance of fringing vegetation *B. articulata* and *Typha orientalis*. Other native species, including *E. rudis*, *Lepidosperma longitudinale* and *Rhagodia baccata* are likely to increase in abundance (Figure \ref{fig:NowergupPost}), particularly at lower elevations of the basin.
 
 ### Macroinvertebrates Dynamic
 
@@ -1001,7 +1000,7 @@ Aquatic invertebrate richness has been below average for Lake Nowergup since 201
 
 ### Ramifications of revised thresholds
 
-The site values of Lake Nowergup are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:NowergupCompliance}).
+Many of the site values of Lake Nowergup are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:NowergupCompliance}). Declining water levels have, and will continue to, cause a significant decline in macroinvertebrate richness and shift in assembalge composition away from what was once typical of this wetland. This deterioration of the macroinvertebrate community is probably driven by a decline in habitatm availablity for these organisms, although increased nutrient levels may also be faciliting this process. Although many native vegetation species are predicted to increase in cover abundance with declining water levels, there is a substantial decline in fringing wetland vegetation an sedges. This continued terrestrialisation of the vegetation community will further impact the macroinvertebrate communities as many of these species (eg. *B. articulata*) provide important habitat for many macroinvertebrate species and reduce the effect of nutrient enrichment.
 
 ```{r NowergupWater, echo = FALSE, results = 'asis'}
 load("Nowergup_Nth/water_level.RData")
@@ -1110,15 +1109,15 @@ ord.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-| * As a permanent deep-water wetland acts as a major drought refuge for waterbirds | How much lower will water levels go? |  |
-| * Supports dependent invertebrates and fish species (one native, Swan River Goby (*Pseudogobius olorum*); and one exotic, Mosquito fish (*Gambusia holbrooki*) | Dependent on extent of reduced water area and depth |  |
-| * Large areas of sedges minimize impact of nutrient enrichment on aquatic fauna |Likely to be jeopardised with declining water levels||
+| * As a permanent deep-water wetland acts as a major drought refuge for waterbirds | REALLY DEPENDS ON HOW SHALLOW THE LAKE WILL BECOME. ANY INFORMATION? | UNKNOWN |
+| * Supports dependent invertebrates and fish species (one native, Swan River Goby (*Pseudogobius olorum*); and one exotic, Mosquito fish (*Gambusia holbrooki*) | Dependent on extent of reduced water area and depth COMMENTS? | UNKNOWN |
+| * Large areas of sedges minimize impact of nutrient enrichment on aquatic fauna |Likely to be jeopardised with declining water levels. Modelling predicts a decline in *B. articualta* and *T. orientalis* as water levels recede further.|Very unlikely|
 | **Site management objectives** |||
-| * Wildlife and conservation, scientific study and preservation of features of archaeological, historic or scientific interest | ||
-| * Maintain the existing areas of fringing sedge vegetation | Fringing vegetation will need to migrate down-slope | No |
-| * Maintain deep, permanent water as a bird habitat and drought refuge and to protect aquatic invertebrates and fish dependent on permanent water |Declining water levels will jeopardise the lake as a drought refuge | No|
-| * Maintain the existing extent of *Baumea* fringe between *Typha* stands and the fringing woodland |||
-| * Provide some area of wading bird habitat at the end of summer, although it is recognized that this is limited by the shape of the wetland.|||')
+| * Wildlife and conservation, scientific study and preservation of features of archaeological, historic or scientific interest | NOT SURE?|COMMENTS?|
+| * Maintain the existing areas of fringing sedge vegetation | Exsisting areas of sedge vegetation are likely to become terrestrialised. Sedges will be required to migrate down-slope with receding surface water levels and are likely to be reduced in extent. | Very unlikely |
+| * Maintain deep, permanent water as a bird habitat and drought refuge and to protect aquatic invertebrates and fish dependent on permanent water |The decline of surface water levels will reduce the areas of deep water and jeopardise the habitat available to birds and fish. The function of the lake as a drought refuge for birds will diminish. | At a reduced capacity|
+| * Maintain the existing extent of *Baumea* fringe between *Typha* stands and the fringing woodland |Modelling predicts *B. articulata* and *T. orientalis* to decline further. Existing stands are likely to disapear and will need to establish down-slope. The extent of these stands will decrease.|Very unlikely|
+| * Provide some area of wading bird habitat at the end of summer, although it is recognized that this is limited by the shape of the wetland.|UNKNOWN DEpends on seasonal variation allowing areas of mudflats suitable for waders to establish. IS THIS LIKELY?|UNKNOWN|')
 ```
 
 \newpage
@@ -1137,7 +1136,7 @@ A vegetation monitoring transect was established at Lake Wilgarup in 1997 and wa
 
 ### Ramifications of revised thresholds
 
-The site values of Lake Wilgarup are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:WilgarupCompliance}).
+The site values of Lake Wilgarup are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:WilgarupCompliance}). Vegetation composition has shifted from one dominated by wetland sepcies, such as *B. articulata*, to a terrestrial community dominated by *E. gomphocephala*. Increases in groundwater are unlikely to have an impact on the vegetation unless permanent water can be restored.
 
 ```{r WilgarupWater, echo = FALSE, results = 'asis'}
 load("Wilgarup/water_level.RData")
@@ -1187,12 +1186,12 @@ beta.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-| * One of few remaining undisturbed wetlands within the region|  | Not any more |
-| * Rich and unusual vegetation (dense monospecific stands of sedges) |  | No  |
-| * Likely to support diverse fauna |||
+| * One of few remaining undisturbed wetlands within the region| Declining groundwater and fire render this wetland highly disturbed. The vegetation composition nonlonger reflects that of a wetland as the site has become highly terrestialised. | Extremely unlikely |
+| * Rich and unusual vegetation (dense monospecific stands of sedges) | These sedges are locally extinct. | Extremely unlikely  |
+| * Likely to support diverse fauna |A rich woodlan fauna likely exsists at the site, however, this assembalge would not reflect the rich wetlnd fauna that would have once occupied the site. |Extremely unlikely |
 | **Site management objectives** |||
-| * Maintain the environmental quality of Lake Wilgarup| ||
-| * Maintain the existing extent and variety of wetland vegetation | | No |')
+| * Maintain the environmental quality of Lake Wilgarup| The quality of Lake Wilgarup as a Swan Coastal Plain wetland has been permanently comprimised. As it is extremely unlikely that permanent water will become a feature of Lake Wilgarup in the future, the site will not retain its environemntal quality. |Extremely unlikely |
+| * Maintain the existing extent and variety of wetland vegetation | Wetland vegetation has probably been permenantly destroyed by declining waterlevels and fire. The terrestrial woodlands that now inhabit the site are unlikely to facilitiate the return of wetland vegetation unless permanent water is restored to the site. | Extremely unlikely  |')
 ```
 
 \newpage
@@ -1209,11 +1208,11 @@ It is likely that water levels in Yanchep National Park will increase under the 
 
 ### Vegetation character
 
-The transect at Pipidinny Swamp consists of a series of depressions/swamps interspersed with tracks and grassy banks. The transect was established close to the bore but was only 20 m in length due to the terrain. Subsequently, only four *Melaleuca* trees could be included. Species richness and diversity on and around the transect was low, with *Acacia saligna* the dominant overstorey species, although *Melaleuca rhaphiophylla* appeared in good health (both on and around the transect). *Baumea articulata* was present, albeit in low abundance, several meters up slope from the surface water, and was in moderate health with a couple of dead stems present. No recruitment was recorded. The location's potential value as important habitat was indicated by the presence of a south west carpet python (*Morelia apilota*) in amongst the *Typha orientalis* during the 2019 survey. A number of exotic species are abundant at the site, including *Bromus diandrus*, *Ehrharta longiflora* and the potentially invasive native bullrush *Typha orientalis*.
+The transect at Pipidinny Swamp consists of a series of depressions/swamps interspersed with tracks and grassy banks. The transect was established close to the bore but was only 20 m in length due to the terrain. Subsequently, only four *Melaleuca* trees could be included. Species richness and diversity on and around the transect was low, with *Acacia saligna* the dominant overstorey species, although *Melaleuca rhaphiophylla* appeared in good health (both on and around the transect). *Baumea articulata* was present, albeit in low abundance, several meters up slope from the surface water, and was in moderate health with a couple of dead stems present. No recruitment was recorded. The location's potential value as important habitat was indicated by the presence of a south west carpet python (*Morelia apilota*) in amongst the *Typha orientalis* during the 2019 survey. A number of exotic species are abundant at the site, including *Bromus diandrus*, *Ehrharta longiflora* and the potentially invasive native bullrush *T. orientalis*.
 
 ### Ramifications of revised thresholds
 
-The site values of Pipidinny Swamp are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:PipidinnyCompliance}).
+The proposed reductions to abstraction are not likely to restore surface water levels to pre-2000 levels at Pipidinny Swamp which will effect the capacity maintaining the site values (Table \ref{tab:PipidinnyCompliance}). Features that charactersied this wetland before the significant decline in water levels are unlikely to return given the predicted outcomes of reduce abstraction as water levels will be maintained at levels much lower than was once typical of the wetland. However, the water levels are predicted to be slightly higher than current levels, which will have a beneficial effect on fringing vegetation health. Given the location of this swamp in an increasingly urbanised region and the altered hydrological regime, it is likely that exotic vegetation species will remain a feature of this swamp.
 
 ```{r PipidinnyWater, echo = FALSE, results = 'asis'}
 load("Pipidinny/water_level.RData")
@@ -1261,27 +1260,27 @@ pipi.p
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site management objectives** |||
-| * Improve groundwater levels to increase area of permanent deep water habitat for fauna|Water levels are currently more than 1 m lower than pre-2000 levels. Proposed changes to abstraction are unlikely to restore the swamp to these water levels |No|
-| * Improve groundwater levels to maintain fringing vegetation to support a range of habitat types for macroinvertebrates | I have no data | Unlikely  |')
+| * Improve groundwater levels to increase area of permanent deep water habitat for fauna|Water levels are currently more than 1 m lower than pre-2000 levels. Proposed changes to abstraction are unlikely to restore the swamp to pre-2000 levels but are likely to maintin slightly higher levels than currently exsist. The slighlty deeper waters will provide additional habitat for aquatic fauna than currently exsists. |Possible|
+| * Improve groundwater levels to maintain fringing vegetation to support a range of habitat types for macroinvertebrates | Fringing vegetation is likely to persist with higher surface water levels, although this prediction is not based on empirical data. If fringing *B. articulata* and *T. orientalis* continue to coccur, additional habitat for aquatic macroinvertebrates may become available. | Possible |')
 ```
 
 \newpage
 
 ## Lexia 186
 
-The Lexia 186 wetland has a high conservation value because it consists of a largely undisturbed sumpland habitat with a diverse vegetation community that provides significant habitat for fauna [@Froend2004]. The Lexia system of wetlands is composed of three separate wetlands, Lexia 86, Lexia 94 and Lexia 186. Lexia 186 was normally a seasonally waterlogged basin (Dampland), however, prolonged decline of groundwater levels mean water levels are below the level of the basin all year. There has been dramatic shifts in fringing vegetation health and composition as the basin sediments dry and oxidise. 
+The Lexia 186 wetland has a high conservation value because it consists of a largely undisturbed sumpland habitat with a diverse vegetation community that provides significant habitat for fauna [@Froend2004]. The Lexia system of wetlands is composed of three separate wetlands, Lexia 86, Lexia 94 and Lexia 186. Lexia 186 was normally a seasonally waterlogged basin (Dampland), however, prolonged decline of groundwater levels mean water levels are now below the level of the basin all year. There has been dramatic shifts in fringing vegetation health and composition as the basin sediments dry and oxidise. 
 
 ### Hydrology
 
-There has almost been a significant decline in groundwater levels at Lexia 186 from 1996 to 2015 by approximately 1 m and a significant increases in water levels since 2015 by 0.5 m (Figure \ref{fig:Lexia186WaterPlot}). Nonetheless, current mean maximum and minimum water levels are 1.2 and 0.8 m below 1994-1999 levels and seasonally minimums are occurring earlier in the year (Table \ref{tab:Lexia186Water}). Groundwater levels at Lexia 186 have been non-compliant since 2000. Proposed reductions in groundwater abstraction are not projected to increase water levels in the dampland, therefore a threshold 0.7m below the current threshold has been proposed for 2030. This projection will maintain groundwater at similar levels to the period between 2010-2015.
+There has almost been a significant decline in groundwater levels at Lexia 186 from 1996 to 2015 by approximately 1 m and a significant increases in water levels since 2015 by 0.5 m (Figure \ref{fig:Lexia186WaterPlot}). Nonetheless, current mean maximum and minimum water levels are 1.2 and 0.8 m below 1994-1999 levels and seasonally minimums are occurring earlier in the year (Table \ref{tab:Lexia186Water}). Groundwater levels at Lexia 186 have been non-compliant since 2000. Proposed reductions in groundwater abstraction are not projected to increase water levels in the dampland, therefore a threshold 0.7 m below the current threshold has been proposed for 2030. This projection will maintain groundwater at similar levels to the period between 2010-2015.
 
 ### Vegetation dynamics
 
-Vegetation monitoring has been occurring at Lexia 186 since 1997 with the last survey conducted in 2018 (Figure \ref{fig:Lexia186Strat}). Overall canopy health has remained stable with most *Melaleuca preissiana* in good or excellent condition and most *Banksia ilicifolia* with average condition [@Buller2018]. Exotic richness is very low at Lexia 186 and natives account for approximately 90 % of total cover abundance at the transect. Ordination reveals similar trajectories in compositional change for each plot that reflect the continual changes in cover abundances of species (Figure \ref{fig:Lexia186Ord}). Regression analyses did not reveal significant effects of groundwater levels on any of the species present at Lexia 186 (Figure \ref{fig:Lexia186Post}). This result suggests that community composition is changing due to other factors that are independent of groundwater. This is surprising given the significant declines in groundwater at the site.
+Vegetation monitoring has been occurring at Lexia 186 since 1997 with the last survey conducted in 2018 (Figure \ref{fig:Lexia186Strat}). Overall canopy health has remained stable with most *Melaleuca preissiana* in good or excellent condition and most *Banksia ilicifolia* with average condition [@Buller2018]. Exotic richness is very low at Lexia 186 and natives account for approximately 90 % of total cover abundance at the transect. Ordination reveals similar trajectories in compositional change for each plot that reflect the continual changes in cover abundances of species (Figure \ref{fig:Lexia186Ord}). Regression analyses did not reveal significant effects of groundwater levels on any of the species present at Lexia 186 (Figure \ref{fig:Lexia186Post}). This result suggests that community composition is changing due to other factors that are independent of groundwater level. This is surprising given the significant declines in groundwater at the site. Vegetation may being altered by other processes such as altered sediment processes and acidification.
 
 ### Ramifications of revised thresholds
 
-The site values of the Lexia 186 wetland are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:Lexia186Compliance}).
+The site values of the Lexia 186 wetland are unlikely to be maintained under the proposed changes to groundwater abstraction (Table \ref{tab:Lexia186Compliance}). There has been a significant shift from a seasonally waterlogged basin to a system that is now permentntly dry. The proposed reductions in abstraction are not going to restore this important characteristic of the wetland. Instead, predicted changes in water level suggest maintainence of conditions similar to what the site has experienced since 2011. It is likely that vegetation will undergo further shifts in composition, although it is not clear that these shifts are attributed to declining groundwater levels or other processes. Nonetheless, further monitoring will provide additional information as to whether the vegetation is likely to continue to change further. 
 
 ```{r Lexia186Water, echo = FALSE, results = 'asis'}
 load("Lexia_186/water_level.RData")
@@ -1330,13 +1329,13 @@ beta.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-| * Undisturbed by typical impacts |  | No |
-| * Supports diverse vegetation    |  |  |
-| * Significant fauna habitat |||
+| * Undisturbed by typical impacts |Extensive native vegetation remains a feature of this site despite the significant shifts in composition during the monitoring period. Modelling suggests these shifts are not attributed to changes in groundwater levels. | Likely |
+| * Supports diverse vegetation  | The proposed thresholds are likely to maintain the high richness of native vegetation of the site, although it is markedly different to 1997 baseline conditions.  | Very likley|
+| * Significant fauna habitat |The continued diverse native vegetation will continue to provide a rich habitat for fauna. |Very likely|
 | **Site management objectives** |||
-| * Conserve ecological values | |No|
-| * Protect vegetation assemblages in and fringing the wetland | |  |
-| * Protect invertebrate communities dependent on the wetland | | |')
+| * Conserve ecological values |Despite the altered hydrological regime, the site has maintained may of the ecological values that make this site important. These values are likely to persist given the proposed changes to the threshold levels. Nonetheless, the site has been fundamentally altered as it is no longer a seasonally waterlogged dampland and altered sediment processes are likely contributing to the shift in vegetation community being observed. |Possible|
+| * Protect vegetation assemblages in and fringing the wetland | WHAT FRINGING VEGETATION?  | ??? |
+| * Protect invertebrate communities dependent on the wetland |Given the likely persistence of native vegetation at the ite, terrestrial invertebrates will continue to inhabit the site, although this prediction is not based on any empirical evidence. Invertebrates typical of damplands are likely to have been effected by the declining ground water levels. | UNKNOWN |')
 ```
 
 \newpage
@@ -1363,7 +1362,7 @@ Aquatic macroinvertebrate family richness has been declining since the late 2000
 
 ### Ramifications of revised thresholds
 
-It is likely that management many of the site values of the Melaleuca Park wetland will be achievable given the projected decline in groundwater levels (Table \ref{tab:EMP173Compliance}).
+It is unlikely that management many of the site values of the Melaleuca Park 173 wetland will be achievable given the projected decline in groundwater levels and loss of permanent water (Table \ref{tab:EMP173Compliance}). The vegetation modeling presented here suggests that vegetation from higher elevations of the basin are likely to migrate down-slope as water levels continue to decline. The macroinvertebrate assemblage at Melaleuca Park 173 is displaying similar shifts as the other wetlands that have low pH, such as Lake Jandabup and Lake Mariginiup, which is largely being driven by declining richness. 
 
 ```{r EMP173WaterPlot, fig.cap="\\label{fig:EMP173WaterPlot}Ground and surface water levels for Melaleuca Park 173 recorded at bore 61613213 (red) and staff 6162628 (blue). The minimum recordable water level for the staff gaugue is 50.4 mAHD. Blue dots at 50.4 mAHD represent water levels below the minimum level measurable by the staff. Red segments on fitted line represent statistically significant periods of declining water levels. Current and proposed threshold levels for bore 61613213 are represented by dotted and dashed lines, respectively.", results = 'asis'}
 load("EMP_173/water_level.RData")
@@ -1452,14 +1451,14 @@ ord.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-|* Unique hydrology | | |
-|* High vertebrate and macro invertebrate species richness | | |
-|* Contains most northern population of black stripe minnow (*Galaxiella nigrostriata*)|||
+|* Unique hydrology |Permanent water is no longer a feature of this wetland. The proposed threshold of 48.5 m will continue the transformation of the site into a seasonally innundate wetland | Very unlikley |
+|* High vertebrate and macro invertebrate species richness |Aquatic vertebrate and invertebrate richness has declined significantly. Native fish species are probably no longer at the wetland and macroinvertebrate surveys show a clear decline in riochness of taxa. Proposed water level changes are not sufficient to reverse this trend. |Very unlikely |
+|* Contains most northern population of black stripe minnow (*Galaxiella nigrostriata*)|Probably locally extinct from the wetland due to loss of permanent water.|Very unlikely|
 |**Site management objectives** |||
-|* Maintain wildlife and landscape values of the wetlands|||
-|* Maintain the existing areas of wetland and stream vegetation they support|||
-|* To protect invertebrate communities dependent on the wetland and stream||No|
-|* To protect the fish species, *Galaxiella nigrostriata*||No|')
+|* Maintain wildlife and landscape values of the wetlands|The functioning of this wetland has changed markedly from a permanently innundated wetland to a seasonally innundated dampland. This has had a significant effect on the flora and fauna of the site. Nonetheless, the high native vegetation richness of the site is liekly to persist and provided habitat for wildlife. |Likely|
+|* Maintain the existing areas of wetland and stream vegetation they support|Permanent water is unlikely to become a feature of this wetland under the revised abstraction plan. Seasonal innundation is likely to continue and will maintain many of the components of exsisting wetland vegetation. |Likely|
+|* To protect invertebrate communities dependent on the wetland and stream|Declining waters are attirbuted to the marked decline inaquatic macroinvertebrate richness. The proposed changes to abstraction are unlikely to reverse this trend.|Unlikely|
+|* To protect the fish species, *Galaxiella nigrostriata*|The proposed abstraction plan suggests the wetland will not become permanently innundated, a necessity for fish. Because surface waters will continue to disappear seasoanlly, the wetland will not provide the habitat required for any fish species. *G. nigrostriata* is likely to be locally extinct from this wetland. |Extremely unlikely|')
 ```
 
 \newpage
@@ -1482,7 +1481,7 @@ Bayesian regression modelling suggests a number of species associated with low g
 
 ### Ramifications of revised thresholds
 
-Further declines in groundwater levels will make it unlikely that site values will be maintained at Melaleuca Park 78 (Table \ref{tab:EMP78Compliance}).
+The current site values are likely to be maintained despite the predicted decreases in groundwater levels at Melaleuca Park 78 (Table \ref{tab:EMP78Compliance}). The site will continue to contain a rich native consortium of vegetation that will provide habitat for fauna and important wetland species, such as *M. preissiana*, will persist. There is evidence that the site has recovered substantially from past bushfire events.
 
 ```{r EMP78WaterPlot, fig.cap="\\label{fig:EMP78WaterPlot} Groundwater levels recorded at bore 61613231 in the vicinity of the Melaleuca Park 78 wetland. Red segments on fitted line represent statistically significant periods of decline and blue represent statistically significant periods of increasing water levels.", results = 'asis'}
 load("EMP_78/water_level.RData")
@@ -1532,10 +1531,10 @@ beta.plot
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
  :------------ |:----------- |:------:|
 |**Site values** |||
-|* Supports wetland vegetation | | |
+|* Supports wetland vegetation | The site is composed of *Banksia* woodland and many groundwater dependent plant species typical of dampland habitats. Monitoring suggests that the community is relatively stable and has recovered from past fire events. Given the proposed changes in abstraction, it is likely that these species will continue to persist and the rich native consortium of vegetation will persist. |Very likely |
 |**Site management objectives** |||
-|* Maintain wildlife and landscape values of the wetlands|||
-|* Maintain the existing areas of wetlands and wetland vegetation|||')
+|* Maintain wildlife and landscape values of the wetlands|The site will retain the *Banksia* woodlands as a feature and continue to provide habitat to wildlife.| Very likely|
+|* Maintain the existing areas of wetlands and wetland vegetation|Some deep rooted wetland species, such as *Adenanthos cygnorum, whicha re susceptable to groundwater declines, are predicted to increase in cover abundance given a scenario of low ground water levels. It is likely that the site will retain many of key wetland species, but it is unlikley *B. articulata* will return. |Likely|')
 
 ```
 
@@ -1576,10 +1575,10 @@ mm59b.p
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
 | **Site values** |||
-| * Selected to represent water levels over area of undisturbed phreatophytic vegetation |  |  |
-| * Banksia woodland <8m depth to groundwater |  |  |
+| * Selected to represent water levels over area of undisturbed phreatophytic vegetation |The site contains some important wetland species, including *Banksia* species, *E. todtiana*, *N. floribunda*, S. involucrate* and *Calytrix* sp. However, the site is compromised by predation from rabbits and high abudnance of exotic species.  | Unlikely |
+| * Banksia woodland <8m depth to groundwater | *Banksia* woodland appears in good helath currentlow groundwater levels are not causing water stress. Given the proposed threshold will require groundwater levels to be higher than current levels, it is likely that *Banksia* woodland will remain healthy.| Likely |
 | **Site management objectives** |||
-| * To protect terrestrial vegetation | ||')
+| * To protect terrestrial vegetation |The high predation from rabbits probably pose the greatest threat to the vegetation currently found at the site. |Possible|')
 
 ```
 
@@ -1925,16 +1924,16 @@ Summary table (Table \ref{tab:SumTable}).
 |Lake Goollelal|26.0|26.4|The lake will remain permanently inundated at similar levels as present. Fringing vegetation will persist and provide habitat for the current diversity of aquatic invertebrates. The site will continue acting as a drought refuge for water birds and provide important habitat to important native fish species.|
 |Loch McNess|6.95|6.20|Declines in groundwater have caused major shifts in vegetation and aquatic invertebrate communities. In particular, the unique assemblage of macroinvertebrates present within the lake has been replaced by common taxa and nuisance species. Declining water levels have also caused the disappearance of *B. articulata*, an important fringing macrophyte. Declining water levels have also caused significant increases in nutrient levels and sustained low water levels are likely to have serious consequences for an important population of Rakali. Under the revised abstraction plans, these ecological shifts are likely to persist into the future and typical characteristics and ecological processes once a feature of the system before the 2003 water level decline will not return. |
 |Lake Yonderup|5.9|5.7|The stable hydrological regime is not likely to return to this wetland if the wetland remains non-compliant with the current ministerial threshold. Nonetheless, the aquatic macroinvertebrate community has remained relatively stable in composition, a feature likely to persist if further declines do not occur. Further declines in water level before 2028 may cause significant changes in water quality, especially nitrogen levels, which may impact aquatic invertebrate communities before the revised thresholds are applicable. Higher water levels than current (approximate minimum levels of 5.5 mAHD) may have beneficial effects for surrounding *Banksia* woodland and fringing vegetation. |
-|Lake Joondalup|15.8|16.2||
-|Lake Mariginiup|41.5|42.1||
-|Lake Jandabup|44.3|44.3||
-|Lake Nowergup|16.8|16.0||
-|Lake Wilgarup|4.5|3.9||
-|Pipidinny Swamp|1.6|1.1||
-|Lexia 186|47.2|46.5||
-|Melaleuca Park 173|50.2|48.5||
-|Melaleuca Park 78|65.1|64.7||
-|MM59B - Whiteman Park East|36.3|36.2||
+|Lake Joondalup|15.8|16.2|The proposed thresholds will see water levels maintained at levels higher than current levels. This will have a positive impacts for fringinge sedge vegetation and fish and bird habitat. There is the possibility that terrestrial vegetation occuring at higher elevations in the absin, may be squeezed as further migration up-slope become hampered by surrounding urbanisation. Nutrient enrichment remains an issue for the lake and further increases in nutrient levels may cause a shift in ecological processes and change the character of the lake. |
+|Lake Mariginiup|41.5|42.1|The predicted increases in water levels may be sufficient to halt acidification of the lake. It is possible to restore the water quality of the lake, but this requires the sediments to have sufficient capacity to buffer the acidification once re-wetted. Nonetheless, if acidification cannot be reveresed, the current assemblage of macro-invertebrates is likely to persist. The proposed changes to groundwater levels will enhance the extent of habitat available to wading birds and, over a period of decades, restore *E. rudis* woodland. Given the decline in water level and the acidification that has occured, it is unlikely that the native fish *P. olorum* is locally extinct from the lake and will not return unless water quality is restored and it is able to immigrate back to the lake. |
+|Lake Jandabup|44.3|44.3|Acidification is currently causing a decrease in richness of the aquatic macroinvertebrate communities, and the proposed changes in water level are not likely to effect this process. Otherwise, the poredicted increases in surface water levels will have a beneficial effect on native vegetation, sedges and wader bird habitat. Elevated nutrient levels may continue to remain a concern.|
+|Lake Nowergup|16.8|16.0|Declining surface water levels at this wetland are going to contribute further to the ecological decline of this wetland. Areas of wetland vegetation are very likely to become terrestrialised, while the extent of exsisting sedge vegetation is going to be greatly reduced. The capacity of this wetland to act as a drought refuge for birds will be diminished and habitat for native fish species will be at increased risk of disappearance.|
+|Lake Wilgarup|4.5|3.9|Lake Wilgarup, as a wetland, has been severely compromised by a combination of declining groundwater levels and fire. The site no longer resembles a wetland and is dominated by terrestrial woodland vegetation. The proposed changes to groundwater level are unlikely to prevent further terrestrialisation of this site.|
+|Pipidinny Swamp|1.6|1.1|Aquatic macroinvertebrate communities have been seriosly comprimised at Pipidinny Swamp due to falling water levels. Although the proposed changes to abstraction may cause water levels to be managed at levels higher than currently exsists, this state will be much lower than pre-2000 levels. The proposed changes to abstraction are unlikley restore the aquatic macroinvertebrate communities to what was once typical of the swamp, and exotic plants will remain a feature of the vegetation community. Nonetheless, fringing vegetation is likely to persist and continue to provide habitat for aquatic fauna.|
+|Lexia 186|47.2|46.5|A significant shift in hydrological regime has occured at Lexia 186. The site has been transformed from a seasonally water logged dampland to a system where saturation of surface sediments no longer occurs. Despite the declining ground water levels, shifts in vegetation composition are likely to be driven by other processes. The site has retained the high richness of native species and is still an important habitat for fauna. The proposed changes to the threshold are likely to maintain the system at a state that currently exsists.|
+|Melaleuca Park 173|50.2|48.5|The proposed threshold will see the wetland managed in a state similar to what currently exsists. The wetland has shifted from a permanently innundate wetland to a seasonally innundated dampland, hence there has been shifts in vegetation and aquatic fauna. The site is no longer provides habitat to the fish species, an important value of the wetland. Fringing vegetation is likely to continue shifting in composition as key wetland species are lost and more terrestrial species migrate down-slope. The aquatic fauna is likley to persist with much less diversity as available habitats are diminished and change.|
+|Melaleuca Park 78|65.1|64.7| Despite the dramatic declines in groundwater, the site still retains a high richness of native vegetation species. Some wetland species have disappeared, notably *B. articulata*, however, it is predicted that many key wetland species will remain at the site despite the predicted declines in groundwater levels under the planned abstraction changes. The proposed threshold will retain many of the values that currently exsist at the site.|
+|MM59B - Whiteman Park East|36.3|36.2|No long term vegetation monitoring exsists at this site. Current vegetation is impacted by predation from rabbits and despite the declineing groundwater levels, the vegetation appears in good health. The proposed threshold will require water levels to be substantially higher than current levels, suggesting the health of the woodland will persist.|
 |PM9 - Pinjar North|56.3|||
 |WM1 - Pinjar|55.7|53.7||
 |WM2 - Melaleuca Park North|66.5|64.7||
