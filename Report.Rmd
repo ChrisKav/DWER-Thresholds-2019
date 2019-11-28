@@ -3,11 +3,11 @@ title: "Review of 2030 Proposed Revised Water Thresholds - Gnangara Mound"
 author: "Christopher Kavazos, Grant Buller, Pierre Horwitz, Ray Froend"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
-  pdf_document: default
+  word_document: default
   papersize: a4
   html_document:
     df_print: paged
-  word_document: default
+  pdf_document: default
 header-includes:
 - \usepackage{pdflscape}
 - \newcommand{\blandscape}{\begin{landscape}}
@@ -1611,8 +1611,8 @@ Groundwater levels began to decline in 2000 at WM8 from approximately 66.0 mAHD 
 
 ### Site summary
 
-```{r WM2Compliance, echo=FALSE, results='asis'}
-  cat(' Table: \\label{tab:MM59BCompliance}Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives for WM2.
+```{r WM8Compliance, echo=FALSE, results='asis'}
+  cat(' Table: \\label{tab:MM59BCompliance}Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives for WM8.
 
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
 | :------------ | :----------- | :------: |
@@ -1815,7 +1815,7 @@ The aquatic invertebrate assemblages form three distinct groups based on the dun
 ```{r AllOrd, fig.cap="\\label{fig:AllOrd}Unconstrained ordination plot of vegetation (left) and aquaitic invertebrates (right) at each wetland site during the survey period (1996-2018). Arrows represnt change from first survey to last survey. Vegetation ordination includes native vegetation only. Wetlands included in invertebrate analysis include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Lake Mariginiup (MAR), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON).", results = 'asis'}
 load("All_vegetation/Complete_veg_analysis.RData")
 load("invertebrate_data.RData")
-ggarrange(complete.veg.plot, complete.invert.plot, ncol=2)
+ggarrange(complete.veg.plot, complete.invert.plot, nrow=2)
 ```
 
 Most wetlands have lost families since the period 1996-2000, with the exception of Lake Goollelal and Loch McNess [@Judd2019]. The richness of the Lake Joondalup assemblage has not dramatically declined either. There are 11 families of aquatic macroinvertebrates that have not been recorded from the monitored wetlands in the past 5 years and seven families currently present that were not recorded in the initial 1996-2000 (excluding singletons; Table \ref{tab:ExtinctTab}). The richness of Acari (mites and ticks) has declined by 4 families while the Coleopteran Haliplidae and the Hemipteran Mesoveliidae are no absent from Lake Joondalup and Lake Yonderup. The Mollusc Sphaeriidae, probably a regionally endemic species [@Sommer2008], has been absent from Lake Nowergup since 1998, while Ancylidae has become abundant (possibly due to augmentation - see @Sommer2008). The insects, Corduliidae (Odonata), Ecnomidae (Trichoptera), Haliplidae (Coleoptera) and Mesoveliidae (Hemiptera) are all species with widespread distributions in the Swan Coastal Plain [@Sommer2008], but are now not found in the monitored wetlands reported here.
