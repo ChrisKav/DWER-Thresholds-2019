@@ -1611,7 +1611,7 @@ Groundwater levels began to decline in 2000 at WM8 from approximately 66.0 mAHD 
 
 ### Site summary
 
-```{r WM1Compliance, echo=FALSE, results='asis'}
+```{r WM2Compliance, echo=FALSE, results='asis'}
   cat(' Table: \\label{tab:MM59BCompliance}Ecological consequences of revised thresholds in terms of compliance of stated site values and site management objectives for WM2.
 
 |  | Likely effect of 2030 revised thresholds | Future Compliance |
