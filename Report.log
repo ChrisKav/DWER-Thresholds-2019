@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.23)  28 NOV 2019 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.23)  29 NOV 2019 07:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1959,47 +1959,60 @@ Package pdftex.def Info: Figs/GinginWaterPlot-1.pdf  used on input line 5246.
                                                   \fi \fi 
 l.5271 \newpage
                 <./Figs/GinginWaterPlot-1.pdf>]
-<Figs/AllOrd-1.pdf, id=2151, 469.755pt x 325.215pt>
-File: Figs/AllOrd-1.pdf Graphic file (type pdf)
-<use Figs/AllOrd-1.pdf>
-Package pdftex.def Info: Figs/AllOrd-1.pdf  used on input line 5323.
+<Figs/AllVegOrd-1.pdf, id=2150, 469.755pt x 325.215pt>
+File: Figs/AllVegOrd-1.pdf Graphic file (type pdf)
+<use Figs/AllVegOrd-1.pdf>
+Package pdftex.def Info: Figs/AllVegOrd-1.pdf  used on input line 5296.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [133pdfTeX warning (ext4): destination with the same identifier (name{table.39}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5333 
-       ] [134pdfTeX warning (ext4): destination with the same identifier (name{
-figure.80}) has been already used, duplicate ignored
+l.5302 
+       ]
+<Figs/AllInvOrd-1.pdf, id=2159, 469.755pt x 325.215pt>
+File: Figs/AllInvOrd-1.pdf Graphic file (type pdf)
+<use Figs/AllInvOrd-1.pdf>
+Package pdftex.def Info: Figs/AllInvOrd-1.pdf  used on input line 5332.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[134pdfTeX warning (ext4): destination with the same identifier (name{figure.80
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5380 \end{longtable}
-                       <./Figs/AllOrd-1.pdf>] [135] [136
+l.5341 
+        <./Figs/AllVegOrd-1.pdf>] [135pdfTeX warning (ext4): destination with t
+he same identifier (name{figure.81}) has been already used, duplicate ignored
 
-] [137] [138] [139] [140] [141] [142] [143] [144
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.5532 \begin
+             {minipage}[t]{0.31\columnwidth}\centering <./Figs/AllInvOrd-1.pdf>
+] [136] [137] [138
+
+] [139] [140] [141] [142] [143] [144] [145] [146
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5889.
-[145]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5889.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6098.
+[147]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6098.
 (./Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5889.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5889.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6098.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6098.
 
 Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: B1B9938F8A1B2E199943B76241926673;15177.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5889.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6098.
  ) 
 Here is how much of TeX's memory you used:
- 14931 strings out of 494553
- 223741 string characters out of 6176513
- 381065 words of memory out of 5000000
- 17699 multiletter control sequences out of 15000+600000
+ 14939 strings out of 494553
+ 223923 string characters out of 6176513
+ 381329 words of memory out of 5000000
+ 17704 multiletter control sequences out of 15000+600000
  54864 words of font info for 121 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  32i,18n,38p,717b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2013,10 +2026,10 @@ an/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></home/barefootbushman/
 yTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></home/barefootbushman/.TinyTeX
 /texmf-dist/fonts/type1/public/lm/lmri10.pfb></home/barefootbushman/.TinyTeX/te
 xmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on Report.pdf (145 pages, 4212683 bytes).
+Output written on Report.pdf (147 pages, 4217770 bytes).
 PDF statistics:
- 2383 PDF objects out of 2487 (max. 8388607)
- 2049 compressed objects within 21 object streams
- 523 named destinations out of 1000 (max. 500000)
- 11529 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 2395 PDF objects out of 2487 (max. 8388607)
+ 2057 compressed objects within 21 object streams
+ 526 named destinations out of 1000 (max. 500000)
+ 11534 words of extra memory for PDF output out of 12000 (max. 10000000)
 

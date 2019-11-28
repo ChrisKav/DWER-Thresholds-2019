@@ -1808,34 +1808,56 @@ kable(sw.sum, digits = c(20,1,1,2,12,12,0),
 
 # Trends across wetlands on the Gnangara Mound
 
-Each wetland monitored in the Gnangarra Mound vegetation surveys represent unique assemblages of native vegetation, particularly wetlands such as Melaleuca Park 173, Lake Jandabup and Loch McNess (Figure \ref{fig:AllOrd} left). Generally, the wetlands occurring in the Bassedean Dunes are distinct from those of the Spearwood Dunal System. However, annual monitoring reveals shifts in the composition of these assemblages, with evidence of some wetlands becoming increasingly similar to each other over time, probably in response to changing hydrological regimes. Lexia 186, Melaleuca Park 78 and Quin Brook appear to have vegetation communities with similar shifts in composition, suggesting the drying of these wetlands is a having a common influence on their vegetation structure. Similarly, Lake Mariginiup and Lake Wilgarup, both of which are now experiencing seasonal dry periods, are experiencing dramatic shifts in composition. It is likely that the temporary drying of these once permanent bodies of water is driving similar changes in vegetation composition. 
+Each wetland monitored in the Gnangarra Mound vegetation surveys represent unique assemblages of native vegetation, particularly wetlands such as Melaleuca Park 173, Lake Jandabup and Loch McNess (Figure \ref{fig:AllVegOrd}). Generally, the wetlands occurring in the Bassedean Dunes are distinct from those of the Spearwood Dunal System. However, annual monitoring reveals shifts in the composition of these assemblages, with evidence of some wetlands becoming increasingly similar to each other over time, probably in response to changing hydrological regimes. Lexia 186, Melaleuca Park 78 and Quin Brook appear to have vegetation communities with similar shifts in composition, suggesting the drying of these wetlands is a having a common influence on their vegetation structure. Similarly, Lake Mariginiup and Lake Wilgarup, both of which are now experiencing seasonal dry periods, are experiencing dramatic shifts in composition. It is likely that the temporary drying of these once permanent bodies of water is driving similar changes in vegetation composition.
 
-The aquatic invertebrate assemblages form three distinct groups based on the dunal system of the wetland (Figure \ref{fig:AllOrd} right). The Spearwood Dunes (Lake Goollelal, Lake Joondalup, Loch McNess, Lake Nowergup and Lake Yonderup) form the most diverse group, while the Bassendean Dunes Wetlands (Melaleuca Park 173) and East Wanneroo Interdunal Wetlands (Lake Jandabup and Lake Mariginiup) have different assemblages to each other. Generally, the Bassendean Dunes and East Wanneroo Interdunal Dunes wetlands are becoming more similar with each other, although such conclusions are based on a very limited set of wetlands. The Spearwood Dunes contain wetlands with two distinct trajectories, those migrating towards initial Lake Joondalup compositions (Loch McNess, Lake Goollelal and Lake Nowergup), and those migrating towards initial Loch McNess compositions (Lake Joondalup and Lake Yonderup). Nonetheless, each wetland has a distinct assemblage of macroinvertebrates but, aquatic macroinvertebrate communities have shifted during the monitoring period. Recent monitoring suggests that Loch McNess and Melaleuca Park 173  are becoming more similar to others wetlands. For instance, Loch McNess has shifted dramatically towards early Lake Joondalup composition. Lake Goollelal has displayed a similar, although not as dramatic, shift in composition. During the monitoring period, it is becoming apparent that Melaleuca Park 173, Lake Jandabup and Lake Mariginiup are converging in terms of macroinvertebrate assemblages. The communities at Lake Joondalup and Lake Yonderup have been shifting towards the early communities of Loch McNess. Lake Nowergup has shown some variation in community composition, but the current trajectory shows little change to the 1996 assemblage.
-
-```{r AllOrd, fig.cap="\\label{fig:AllOrd}Unconstrained ordination plot of vegetation (left) and aquaitic invertebrates (right) at each wetland site during the survey period (1996-2018). Arrows represnt change from first survey to last survey. Vegetation ordination includes native vegetation only. Wetlands included in invertebrate analysis include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Lake Mariginiup (MAR), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON).", results = 'asis'}
+```{r AllVegOrd, fig.cap="\\label{fig:AllVegOrd}Unconstrained ordination plot of vegetation at each wetland site during the survey period (1996-2018). Arrows represnt change from first survey to last survey. Vegetation ordination includes native vegetation only.", results = 'asis'}
 load("All_vegetation/Complete_veg_analysis.RData")
-load("invertebrate_data.RData")
-ggarrange(complete.veg.plot, complete.invert.plot, nrow=2)
+complete.veg.plot
 ```
 
-Most wetlands have lost families since the period 1996-2000, with the exception of Lake Goollelal and Loch McNess [@Judd2019]. The richness of the Lake Joondalup assemblage has not dramatically declined either. There are 11 families of aquatic macroinvertebrates that have not been recorded from the monitored wetlands in the past 5 years and seven families currently present that were not recorded in the initial 1996-2000 (excluding singletons; Table \ref{tab:ExtinctTab}). The richness of Acari (mites and ticks) has declined by 4 families while the Coleopteran Haliplidae and the Hemipteran Mesoveliidae are no absent from Lake Joondalup and Lake Yonderup. The Mollusc Sphaeriidae, probably a regionally endemic species [@Sommer2008], has been absent from Lake Nowergup since 1998, while Ancylidae has become abundant (possibly due to augmentation - see @Sommer2008). The insects, Corduliidae (Odonata), Ecnomidae (Trichoptera), Haliplidae (Coleoptera) and Mesoveliidae (Hemiptera) are all species with widespread distributions in the Swan Coastal Plain [@Sommer2008], but are now not found in the monitored wetlands reported here.
+The aquatic invertebrate assemblages form three distinct groups based on the dunal system of the wetland (Figure \ref{fig:AllInvOrd}). The Spearwood Dunes (Lake Goollelal, Lake Joondalup, Loch McNess, Lake Nowergup and Lake Yonderup) form the most diverse group, while the Bassendean Dunes Wetlands (Melaleuca Park 173) and East Wanneroo Interdunal Wetlands (Lake Jandabup and Lake Mariginiup) have different assemblages to each other. Generally, the Bassendean Dunes and East Wanneroo Interdunal Dunes wetlands are becoming more similar with each other, although such conclusions are based on a very limited set of wetlands. The Spearwood Dunes contain wetlands with two distinct trajectories, those migrating towards initial Lake Joondalup compositions (Loch McNess, Lake Goollelal and Lake Nowergup), and those migrating towards initial Loch McNess compositions (Lake Joondalup and Lake Yonderup). Nonetheless, each wetland has a distinct assemblage of macroinvertebrates but, aquatic macroinvertebrate communities have shifted during the monitoring period. Recent monitoring suggests that Loch McNess and Melaleuca Park 173  are becoming more similar to others wetlands. For instance, Loch McNess has shifted dramatically towards early Lake Joondalup composition. Lake Goollelal has displayed a similar, although not as dramatic, shift in composition. During the monitoring period, it is becoming apparent that Melaleuca Park 173, Lake Jandabup and Lake Mariginiup are converging in terms of macroinvertebrate assemblages. The communities at Lake Joondalup and Lake Yonderup have been shifting towards the early communities of Loch McNess. Lake Nowergup has shown some variation in community composition, but the current trajectory shows little change to the 1996 assemblage.
+
+```{r AllInvOrd, fig.cap="\\label{fig:AllInvOrd}Unconstrained ordination plot of aquatic invertebrates at each wetland site during the survey period (1996-2018). Arrows represnt change from first survey to last survey. Vegetation ordination includes native vegetation only. Wetlands included in invertebrate analysis include Lake Goollelal (GOO), Lake Jandabup (JAN), Lake Joondalup (JOO), Lake Mariginiup (MAR), Loch McNess (MCS), Melaleuca Park 173 (MEL), Lake Nowergup (NOW) and Lake Yonderup (YON).", results = 'asis'}
+load("invertebrate_data.RData")
+complete.invert.plot
+```
+
+Patterns of changing assemblages and declining richness are complemented by an analysis of monitoring data for macroinvertebrates (Table \ref{tab:ExtinctTab}).  The limitations of these data are that they are only once-off sampling for the season of spring each year, and only at usually three sites representing three different habitats, so the presence of taxa is a more reliable indicator than the absence of taxa. Nevertheless, patterns are discernible and if repeated over a sequence of years, and if they can be shown at more than one wetland, then they warrant closer attention. For the dataset examined, two patterns were determined. Some taxa were regularly present in the samples, in most years in the early period of monitoring (between 1996 and 2006) but have since become less frequently observed, and are now actually absent in the samples in the last 5-15 years). Other taxa were extremely common in the early period of monitoring (between 1996 and 2006) but have since become much rarer or absent in the samples in the last 5-15 years).
+
+Lakes Nowergup, Yonderup and Loch McNess have a large number of taxa in one of these two groups (8, 9 and 10 taxa overall, respectively). Two insect groups have shown the same pattern of decline – Scirtidae beetles (from 4 of the six wetlands) and the Cordulidae damsel flies (also from 4 of the six wetlands). The insects, Corduliidae (Odonata), Ecnomidae (Trichoptera), Haliplidae (Coleoptera) and Mesoveliidae (Hemiptera) are all species with widespread distributions in the Swan Coastal Plain [@Sommer2008], but are now not found in the monitored wetlands reported here.
 
 ```{r ExtinctTab, echo=FALSE, results='asis'}
-  cat(' Table: \\label{tab:ExtinctTab}Families of aquatic macroinvertebrates that have been lost in the last 5 years (2018-2014) compared to the first five year period (1996-2000). Singletons have been excluded.
+  cat(' Table: \\label{tab:ExtinctTab}Taxa that have gone from regularly rare to absent and taxa that have gone from common to rare, or absent during spring monitoring.
   
-|  Taxa | Gained | Lost |
+|  Lake | Taxa that have gone from regularly rare to absent | Taxa that have gone from common to rare or absent |
 | :------------: |:------------: |:-----------:|
-|**Mollusca**|Ancylidae|Sphaeriidae|
-|**Acarina**||Limnesiidae|
-|||Oribatida|
-|||Oxidae|
-|||Unioncolidae|
-|**Insecta**|Veliidae|Corduliidae|
-||Scirtidae|Ecnomidae|
-|||Haliplidae|
-|||Mesoveliidae|
-|**Ostracoda**||Notodromadidae|
-|**Cladocera**|Moinidae|Macrothricidae|
+|Lake Goollelal|Scirtidae (beetle) last seen in 2004|Hydrophilidae (beetle) last seen 2014 |
+|Lake Joondalup|Cordulidae (damsel fly) last seen 2011 ||
+||Haliplidae (beetle) last seen 2010 || 
+||Scirtidae (beetle) last seen 2010||
+|Lake Nowergup|Sphaeridae (bivalve) last seen 2002 |Ceinidae (amphipod) last seen 2007|
+||Arrenuridae (mite) last seen 2007 |Notodromadidae (ostracod) last seen 2005|
+||Limnesiidae (mite) last seen 2007 ||
+Cordulidae (damsel fly) last seen spring 2011 ||
+||Scirtidae (beetle) last seen in spring – 2004 ||
+||Chydoridae (Cladoceran) last seen 2011| |
+|Lake Yonderup|Hirudinea (Leech) last seen 2003 ||
+||Ancylidae (limpet) last seen 2011 ||
+||Physidae (snail) last seen 2012 ||
+||Cordulidae (damsel fly) last seen spring 2008 ||
+||Lestidae (damsel fly) last seen spring 2006 ||
+||Libellulidae (damsel fly) last seen spring 2005 ||
+||Mesovelidae (bug) last seen 2006 \n||
+||Dytiscidae (beetle) last seen 2014 ||
+||Macrothricidae (cladoceran) last seen 2013||
+|Loch McNess|Limnesiidae (mite) last seen 2007 |Palaemonidae (shrimp) last seen 2010|
+||Oxiidae (mite) last seen 2008 |Hydroptilidae (purse caddis) last seen 2014|
+||Unioncolidae (mite) last seen 2006 ||
+||Parastacidae (crayfish) last seen 2003 ||
+||Caenidae (mayfly) last seen 2010 ||
+||Simuliidae (blackfly) last seen 2003 ||
+||Calanoida (zoopl.) last seen 2009 ||
+||Macrothricidae (cladoceran) last seen 2007||
 ')
   
 ```
