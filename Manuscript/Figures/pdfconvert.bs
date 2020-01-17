@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for i in *.pdf; do
+   pdftoppm -png -rx 500 -ry 500 $i ${i%.pdf*}
+done
