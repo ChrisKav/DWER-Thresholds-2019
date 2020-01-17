@@ -3,11 +3,11 @@ title: "Review of 2030 Proposed Revised Water Thresholds - Gnangara Mound"
 author: "Christopher Kavazos, Grant Buller, Pierre Horwitz, Ray Froend"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
-  word_document: default
+  pdf_document: default
   papersize: a4
   html_document:
     df_print: paged
-  pdf_document: default
+  word_document: default
 header-includes:
 - \usepackage{pdflscape}
 - \newcommand{\blandscape}{\begin{landscape}}
