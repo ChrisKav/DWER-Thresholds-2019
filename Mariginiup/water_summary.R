@@ -80,7 +80,7 @@ mari.p <- ggplot(Mariginup.AHD, aes(x=Date, y=AHD, group=group)) +
                                            group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Mariginup.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Mariginup.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(Mariginup.params, mapping=aes(x=Date, y=incr2), color="green") +
   geom_line(Mariginup.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(41.5, 42.1), linetype= c("dotted", "dashed")) +

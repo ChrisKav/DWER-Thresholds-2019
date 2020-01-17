@@ -142,7 +142,7 @@ AHD.plots <- Map(function(x,y,i){
     geom_ribbon(y, mapping=aes(ymin=lower2, ymax=upper2, x=Date), alpha=0.2,
                 inherit.aes=FALSE, fill="black") +
     geom_line(y, mapping=aes(x=Date, y=p3)) +
-    geom_line(y, mapping=aes(x=Date, y=incr2), color="blue") +
+    geom_line(y, mapping=aes(x=Date, y=incr2), color="green") +
     geom_line(y, mapping=aes(x=Date, y=decr2), color = "red") +
     labs(x = "Year", y = expression(AHD ~ (m)))
   p <- p + ggtitle(paste(i))
@@ -169,7 +169,7 @@ gool.p <- ggplot(Goollelal.AHD, aes(x=Date, y=AHD, group=group)) +
                                             group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Goollelal.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Goollelal.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(Goollelal.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(Goollelal.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 gool.p <- gool.p + ggtitle("Goollelal")
@@ -197,7 +197,7 @@ mcness.p <- ggplot(McNess.AHD, aes(x=Date, y=AHD, group=group)) +
                                          group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(McNess.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(McNess.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(McNess.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(McNess.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 mcness.p <- mcness.p + ggtitle("Loch McNess")
@@ -223,7 +223,7 @@ yond.p <- ggplot(Yonderup.AHD, aes(x=Date, y=AHD, group=group)) +
                                            group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Yonderup.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Yonderup.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(Yonderup.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(Yonderup.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 yond.p <- yond.p + ggtitle("Yonderup")
@@ -251,7 +251,7 @@ joon.p <- ggplot(Joondalup.AHD, aes(x=Date, y=AHD, group=group)) +
                                             group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Joondalup.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Joondalup.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(Joondalup.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(Joondalup.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 joon.p <- joon.p + ggtitle("Joondalup")
@@ -277,7 +277,7 @@ marig.p <- ggplot(Mariginup.AHD, aes(x=Date, y=AHD, group=group)) +
                                             group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Mariginup.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Mariginup.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(Mariginup.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(Mariginup.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 marig.p <- marig.p + ggtitle("Mariginup")
@@ -303,7 +303,7 @@ jand.p <- ggplot(Jandabup.AHD, aes(x=Date, y=AHD, group=group)) +
                                            group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Jandabup.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Jandabup.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(Jandabup.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(Jandabup.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 jand.p <- jand.p + ggtitle("Jandabup")
@@ -331,7 +331,7 @@ nower.p <- ggplot(Nowergup.AHD, aes(x=Date, y=AHD, group=group)) +
                                            group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Nowergup.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Nowergup.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(Nowergup.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(Nowergup.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 nower.p <- nower.p + ggtitle("Nowergup")
@@ -355,7 +355,7 @@ wilg.p <- ggplot(Wilgarup.AHD, aes(x=Date, y=AHD, group=group)) +
                                            group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Wilgarup.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Wilgarup.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(Wilgarup.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(Wilgarup.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 wilg.p <- wilg.p + ggtitle("Wilgarup")
@@ -380,7 +380,7 @@ pipi.p <- ggplot(Pipidinny.AHD, aes(x=Date, y=AHD, group=group)) +
                                             group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Pipidinny.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Pipidinny.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(Pipidinny.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(Pipidinny.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 pipi.p <- pipi.p + ggtitle("Pipidinny")
@@ -404,7 +404,7 @@ lex186.p <- ggplot(Lexia186.AHD, aes(x=Date, y=AHD, group=group)) +
                                            group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Lexia186.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Lexia186.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(Lexia186.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(Lexia186.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 lex186.p <- lex186.p + ggtitle("Lexia186")
@@ -430,7 +430,7 @@ emp173.p <- ggplot(EMP173.AHD, aes(x=Date, y=AHD, group=group)) +
                                          group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(EMP173.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(EMP173.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(EMP173.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(EMP173.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 emp173.p <- emp173.p + ggtitle("EMP173")
@@ -454,7 +454,7 @@ emp78.p <- ggplot(EMP78.AHD, aes(x=Date, y=AHD, group=group)) +
                                         group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(EMP78.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(EMP78.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(EMP78.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(EMP78.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 emp78.p <- emp78.p + ggtitle("EMP78")
@@ -478,7 +478,7 @@ MM59B.p <- ggplot(MM59B.AHD, aes(x=Date, y=AHD, group=group)) +
                                         group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(MM59B.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(MM59B.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(MM59B.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(MM59B.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 MM59B.p <- MM59B.p + ggtitle("MM59B")
@@ -502,7 +502,7 @@ PM9.p <- ggplot(PM9.AHD, aes(x=Date, y=AHD, group=group)) +
                                       group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(PM9.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(PM9.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(PM9.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(PM9.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 PM9.p <- PM9.p + ggtitle("PM9")
@@ -526,7 +526,7 @@ WM1.p <- ggplot(WM1.AHD, aes(x=Date, y=AHD, group=group)) +
                                       group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(WM1.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(WM1.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(WM1.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(WM1.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 WM1.p <- WM1.p + ggtitle("WM1")
@@ -550,7 +550,7 @@ WM2.p <- ggplot(WM2.AHD, aes(x=Date, y=AHD, group=group)) +
                                       group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(WM2.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(WM2.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(WM2.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(WM2.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 WM2.p <- WM2.p + ggtitle("WM2")
@@ -574,7 +574,7 @@ WM8.p <- ggplot(WM8.AHD, aes(x=Date, y=AHD, group=group)) +
                                       group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(WM8.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(WM8.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(WM8.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(WM8.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 WM8.p <- WM8.p + ggtitle("WM8")
@@ -600,7 +600,7 @@ gwel.p <- ggplot(Gwelup.AHD, aes(x=Date, y=AHD, group=group)) +
                                          group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Gwelup.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Gwelup.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(Gwelup.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(Gwelup.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 gwel.p <- gwel.p + ggtitle("Gwelup")
@@ -624,7 +624,7 @@ quin.p <- ggplot(QuinBrook.AHD, aes(x=Date, y=AHD, group=group)) +
                                             group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(QuinBrook.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(QuinBrook.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(QuinBrook.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(QuinBrook.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 quin.p <- quin.p + ggtitle("QuinBrook")
@@ -648,7 +648,7 @@ gin.p <- ggplot(Gingin.AHD, aes(x=Date, y=AHD, group=group)) +
                                          group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Gingin.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Gingin.params, mapping=aes(x=Date, y=incr2, group=group), color="blue") +
+  geom_line(Gingin.params, mapping=aes(x=Date, y=incr2, group=group), color="green") +
   geom_line(Gingin.params, mapping=aes(x=Date, y=decr2, group=group), color = "red") +
   labs(x = "Year", y = expression(AHD ~ (m)))
 gin.p <- gin.p + ggtitle("Gingin")
