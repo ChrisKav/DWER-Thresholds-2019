@@ -76,7 +76,7 @@ quin.p <- ggplot(QuinBrook.AHD, aes(x=Date, y=AHD, group=group)) +
                                          group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(QuinBrook.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(QuinBrook.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(QuinBrook.params, mapping=aes(x=Date, y=incr2), color="green") +
   geom_line(QuinBrook.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   theme(axis.line = element_line(colour = "black"),

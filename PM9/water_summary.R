@@ -78,7 +78,7 @@ pm9.p <- ggplot(PM9.AHD, aes(x=Date, y=AHD, group=group)) +
                                            group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(PM9.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(PM9.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(PM9.params, mapping=aes(x=Date, y=incr2), color="green") +
   geom_line(PM9.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(56.3), linetype= c("dotted")) +

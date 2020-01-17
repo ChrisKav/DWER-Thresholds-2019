@@ -80,7 +80,7 @@ mcness.p <- ggplot(McNess.AHD, aes(x=Date, y=AHD, group=group)) +
                                             group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(McNess.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(McNess.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(McNess.params, mapping=aes(x=Date, y=incr2), color="green") +
   geom_line(McNess.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(6.95, 6.2, 8.0), linetype= c("dotted", "dashed", "dashed")) +

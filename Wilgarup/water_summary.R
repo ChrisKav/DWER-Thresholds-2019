@@ -78,7 +78,7 @@ wilg.p <- ggplot(Wilgarup.AHD, aes(x=Date, y=AHD, group=group)) +
                                            group=group), alpha=0.2,
               inherit.aes=FALSE, fill="black") +
   geom_line(Wilgarup.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(Wilgarup.params, mapping=aes(x=Date, y=incr2), color="blue") +
+  geom_line(Wilgarup.params, mapping=aes(x=Date, y=incr2), color="green") +
   geom_line(Wilgarup.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(4.5, 3.9), linetype= c("dotted", "dashed")) +
