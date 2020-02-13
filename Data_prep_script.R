@@ -59,9 +59,9 @@ data <- data[!data[,1] %in% 	"6162623", ] # Not converging in GAMM model
 data <- data[!data[,1] %in% 	"6162629", ] # Most readings below staff gaugue or dry
 #data[,3] <- excel_numeric_to_date(data[,3])
 data[,3] <- as.Date(data[,3], "%d %b %Y")
-#data[,7] <- gsub("<", "", paste(data[,7]))
-data <- data[!grepl('<',data$WaterLevelsDiscreteForSiteFlatF.Reading.Value),]
-data <- data[!grepl('0',data$WaterLevelsDiscreteForSiteFlatF.Reading.Value),]
+data[,7] <- gsub("<", "", paste(data[,7]))
+#data <- data[!grepl('<',data$WaterLevelsDiscreteForSiteFlatF.Reading.Value),]
+#data <- data[!grepl('0',data$WaterLevelsDiscreteForSiteFlatF.Reading.Value),]
 data[,7] <- gsub("~", "", paste(data[,7]))
 data[,7] <- gsub(">", "", paste(data[,7]))
 data[,7] <- as.numeric(data[,7])
