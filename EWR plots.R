@@ -19,8 +19,14 @@ Damp78_EWR_plot <- ggplot(Damp78_EWR) +
   geom_hline(yintercept=Damp78.thresh, linetype="dotted") +
   geom_hline(yintercept=Damp78.prop, linetype="dashed") +
   geom_errorbar(data=Damp78_FroendEWR , aes(y=NULL, ymax=EWR_AHD, ymin=EWR_AHD, x=Species), width=0.5, color="blue") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
+  annotate("text", x = 0, y = Damp78.thresh, vjust=-0.75, hjust= -0.25, label = "Current") + 
+  annotate("text", x = 0, y = Damp78.prop, vjust=+1.5, hjust= -0.2, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 #EPP173
@@ -43,8 +49,14 @@ Epp173_EWR_plot <- ggplot(Epp173_EWR) +
   geom_hline(yintercept=Epp173.thresh, linetype="dotted") +
   geom_hline(yintercept=Epp173.prop, linetype="dashed") +
   geom_errorbar(data=Epp173_FroendEWR , aes(y=NULL, ymax=EWR_AHD, ymin=EWR_AHD, x=Species), width=0.5, color="blue") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
+  annotate("text", x = 0, y =Epp173.thresh, vjust=-0.75, hjust= -0.25, label = "Current") + 
+  annotate("text", x = 0, y = Epp173.prop, vjust=+1.5, hjust= -0.2, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 #Goollelal
@@ -66,8 +78,14 @@ Gooll_EWR_plot <- ggplot(Gooll_EWR) +
   geom_hline(yintercept=Gooll.thresh, linetype="dotted") +
   geom_hline(yintercept=Gooll.prop, linetype="dashed") +
   geom_errorbar(data=Gooll_FroendEWR , aes(y=NULL, ymax=EWR_AHD, ymin=EWR_AHD, x=Species), width=0.5, color="blue") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
+  annotate("text", x = 0, y = Gooll.thresh, vjust=+1.25, hjust= -0.25, label = "Current") + 
+  annotate("text", x = 0, y = Gooll.prop, vjust=-0.5, hjust= -0.2, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 # Jandabup
@@ -86,10 +104,14 @@ Janda_EWR_plot <- ggplot(Janda_EWR) +
   geom_segment(aes(x=Species, xend=Species, y=mean_max, yend=mean_min), size=8, color="orange") +
   geom_segment(aes(x=Species, xend=Species, y=absolute_max, yend=absolute_min), size=3, color="red") +
   geom_hline(yintercept=Janda.thresh, linetype="dotted") +
-  geom_hline(yintercept=Janda.prop, linetype="dashed") +
   geom_errorbar(data=Janda_FroendEWR , aes(y=NULL, ymax=EWR_AHD, ymin=EWR_AHD, x=Species), width=0.5, color="blue") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
+    annotate("text", x = 0, y = Janda.thresh, vjust=-0.75, hjust= -0.25, label = "Current") +
+  theme(axis.line = element_line(colour = "black"),
+          panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          panel.border = element_blank(),
+          panel.background = element_blank()) +
+  labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 #Joondalup
@@ -111,8 +133,14 @@ Joonda_EWR_plot <- ggplot(Joonda_EWR) +
   geom_hline(yintercept=Joonda.thresh, linetype="dotted") +
   geom_hline(yintercept=Joonda.prop, linetype="dashed") +
   geom_errorbar(data=Joonda_FroendEWR , aes(y=NULL, ymax=EWR_AHD, ymin=EWR_AHD, x=Species), width=0.5, color="blue") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
+  annotate("text", x = 0, y = Joonda.thresh, vjust=+1.5, hjust= -0.25, label = "Current") + 
+  annotate("text", x = 0, y = Joonda.prop, vjust=-0.5, hjust= -0.2, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 #Lexia186
@@ -135,8 +163,14 @@ Lex186_EWR_plot <- ggplot(Lex186_EWR) +
   geom_hline(yintercept=Lex186.thresh, linetype="dotted") +
   geom_hline(yintercept=Lex186.prop, linetype="dashed") +
   geom_errorbar(data=Lex186_FroendEWR , aes(y=NULL, ymax=EWR_AHD, ymin=EWR_AHD, x=Species), width=0.5, color="blue") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
+    annotate("text", x = 0, y = Lex186.thresh, vjust=-0.75, hjust= -0.25, label = "Current") + 
+  annotate("text", x = 0, y = Lex186.prop, vjust=-0.5, hjust= -0.2, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 # McNess
@@ -157,8 +191,14 @@ McNess_EWR_plot <- ggplot(McNess_EWR) +
   geom_hline(yintercept=McNess.thresh, linetype="dotted") +
   geom_hline(yintercept=McNess.prop, linetype="dashed") +
   #geom_errorbar(data=McNess_FroendEWR , aes(y=NULL, ymax=EWR_AHD, ymin=EWR_AHD, x=Species), width=0.5, color="blue") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
+    annotate("text", x = 0, y = McNess.thresh, vjust=-0.75, hjust= -0.25, label = "Current") + 
+  annotate("text", x = 0, y = McNess.prop, vjust=-0.5, hjust= -0.2, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 # Mariginiup
@@ -178,8 +218,14 @@ Marig_EWR_plot <- ggplot(Marig_EWR) +
   geom_hline(yintercept=Marig.thresh, linetype="dotted") +
   geom_hline(yintercept=Marig.prop, linetype="dashed") +
   geom_errorbar(data=Marig_FroendEWR , aes(y=NULL, ymax=EWR_AHD, ymin=EWR_AHD, x=Species), width=0.5, color="blue") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
+  annotate("text", x = 0, y = Marig.thresh, vjust=-0.75, hjust= -0.25, label = "Current") + 
+  annotate("text", x = 0, y = Marig.prop, vjust=+1.5, hjust= -0.2, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 # Nowergup
@@ -201,8 +247,14 @@ Nower_EWR_plot <- ggplot(Nower_EWR) +
   geom_hline(yintercept=Nower.thresh, linetype="dotted") +
   geom_hline(yintercept=Nower.prop, linetype="dashed") +
   geom_errorbar(data=Nower_FroendEWR , aes(y=NULL, ymax=EWR_AHD, ymin=EWR_AHD, x=Species), width=0.5, color="blue") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
+  annotate("text", x = 0, y = Nower.thresh, vjust=-0.75, hjust= -0.25, label = "Current") + 
+  annotate("text", x = 0, y = Nower.prop, vjust=+1.5, hjust= -0.2, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 #Wilgarup
@@ -223,8 +275,14 @@ Wilga_EWR_plot <- ggplot(Wilga_EWR) +
   geom_hline(yintercept=Wilga.thresh, linetype="dotted") +
   geom_hline(yintercept=Wilga.prop, linetype="dashed") +
   geom_errorbar(data=Wilga_FroendEWR , aes(y=NULL, ymax=EWR_AHD, ymin=EWR_AHD, x=Species), width=0.5, color="blue") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
+    annotate("text", x = 0, y = Wilga.thresh, vjust=-0.75, hjust= -0.25, label = "Current") + 
+  annotate("text", x = 0, y = Wilga.prop, vjust=-0.5, hjust= -0.2, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 # Yonderup
@@ -235,7 +293,7 @@ Species <- c("B.juncea", "B.littoralis", "M.rhaphiophylla")
 Yonda_EWR <- cbind.data.frame(Species, Yonda_EWR)
 Yonda.thresh <- 5.9
 Yonda.prop <- 5.7
-EWR_AHD <- c(NA, NA, NA, NA)
+EWR_AHD <- c(NA, NA, NA)
 Yonda_FroendEWR <- cbind.data.frame(Species, EWR_AHD)
 
 Yonda_EWR_plot <- ggplot(Yonda_EWR) +
@@ -244,75 +302,13 @@ Yonda_EWR_plot <- ggplot(Yonda_EWR) +
   geom_hline(yintercept=Yonda.thresh, linetype="dotted") +
   geom_hline(yintercept=Yonda.prop, linetype="dashed") +
   #geom_errorbar(data=Yonda_FroendEWR , aes(y=NULL, ymax=EWR_AHD, ymin=EWR_AHD, x=Species), width=0.5, color="blue") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
+  annotate("text", x = 0, y = Yonda.thresh, vjust=-0.75, hjust= -0.25, label = "Current") + 
+  annotate("text", x = 0, y = Yonda.prop, vjust=-0.35, hjust= -0.2, label = "Proposed") + 
+  theme(axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank()) +
+  labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
-
-
-
-
-
-
-
-
-M.rhaphiophyla <- c(0.0006,-2.14, 1.03, -4.49)
-M.preissiana <- c(-0.54, -2.62, 1.03, -5.04)
-E.rudis <- c(-0.7, -3.26, 1.03, -6.44)
-B.littoralis <- c(-0.39, -1.92, 0.43, -3.09)
-B.articulata <- c(0.28, -1.22, 0.81, -2.59)
-T.orientalis <- c(0.74, -0.95, 1.49, -1.9)
-A.fascicularis <- c(-0.35, -2.26, 1.03, -4.6)
-
-EWR.new <- rbind(M.rhaphiophyla, M.preissiana, E.rudis, B.littoralis , B.articulata, T.orientalis, A.fascicularis)
-colnames(EWR.new) <- c("mean_max", "mean_min", "absolute_max", "absolute_min")
-Species <- data.frame(row.names(EWR.new))
-EWR.new <- cbind(Species, EWR.new)
-colnames(EWR.new)[1] <- "Species"
-row.names(EWR.new) <- NULL
-
-#WM1
-
-WM1.thresh <- 55.7
-WM1.prop <- 53.7
-WM1.ground <- 60.58
-
-WM1.tresh <- WM1.thresh - WM1.ground
-WM1.prop <- WM1.prop - WM1.ground
-
-ggplot(EWR.new) +  
-  geom_hline(yintercept=0, color="green") +
-  geom_segment(aes(x=Species, xend=Species, y=absolute_max, yend=absolute_min), size=3, color="red") +
-  geom_segment(aes(x=Species, xend=Species, y=mean_max, yend=mean_min), size=5, color="orange") +
-  geom_hline(yintercept=WM1.tresh, linetype="dotted") +
-  geom_hline(yintercept=WM1.prop, linetype="dashed") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
-  theme(axis.text.x=element_text(angle=90, face="italic"))
-
-#Loch McNess
-
-McNess.thresh <- 8.0
-McNess.prop <- 8.0
-McNess.ground <- 8.78
-
-McNess.tresh <- McNess.thresh - McNess.ground
-McNess.prop <- McNess.prop - McNess.ground
-
-EWR.McNess <- rbind(M.rhaphiophyla, E.rudis, B.littoralis , B.articulata)
-colnames(EWR.McNess) <- c("mean_max", "mean_min", "absolute_max", "absolute_min")
-Species <- data.frame(row.names(EWR.McNess))
-EWR.McNess <- cbind(Species, EWR.McNess)
-colnames(EWR.McNess)[1] <- "Species"
-row.names(EWR.McNess) <- NULL
-
-
-ggplot(EWR.McNess) +  
-  geom_hline(yintercept=0, color="green") +
-  geom_segment(aes(x=Species, xend=Species, y=absolute_max, yend=absolute_min), size=3, color="red") +
-  geom_segment(aes(x=Species, xend=Species, y=mean_max, yend=mean_min), size=5, color="orange") +
-  geom_hline(yintercept=McNess.tresh, linetype="dotted") +
-  geom_hline(yintercept=McNess.prop, linetype="dashed") +
-  theme_bw() +
-  labs(y = "Depth (m)") +
-  theme(axis.text.x=element_text(angle=90, face="italic"))
