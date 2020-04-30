@@ -3,11 +3,11 @@ title: "Review of 2030 Proposed Revised Water Thresholds - Gnangara Mound"
 author: "Christopher Kavazos, Grant Buller, Pierre Horwitz, Ray Froend"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
-  pdf_document: default
+  word_document: default
   papersize: a4
   html_document:
     df_print: paged
-  word_document: default
+  pdf_document: default
 header-includes:
 - \usepackage{pdflscape}
 - \newcommand{\blandscape}{\begin{landscape}}
@@ -83,7 +83,7 @@ A detailed desktop review of all data collected during the *Gnangara Mound Envir
 To understand the shifts that have occurred in aquatic and vegetation communities and the role groundwater levels have had in driving ecological changes at each of the monitored sites, a detailed examination of each wetland is provided. For each wetland, a summary of historical groundwater/surface water levels and current water quality information is provided. Each wetland vegetation community has been modeled to understand the role of groundwater level on the abundance of plant species and a discussion is provided on the causes of historical and contemporary shifts in vegetation composition and the likely trajectory of change should the proposed threshold levels be adopted. A similar interpretation is provided for the aquatic macroinvertebrate communities. Considering the role of groundwater on vegetation structure and the historical shifts in aquatic assemblages, an assessment of the ecological consequences of the revised 2030 thresholds on the stated site values and site management objectives is provided for each wetland.
 
 ```{r Map, fig.cap="\\label{fig:Map}Gnangara groundwater allocation plan area and location of wetland and terrestrial sites investigated in this report.", results = 'asis'}
-knitr::include_graphics('map.png')
+#knitr::include_graphics('map.png')
 ```
 
 ```{r RainfallPlot, fig.cap="\\label{fig:RainfallPlot}Left: Annual rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018. Red dots represent toal rainfall for a given year and dotted line represents average annual rainfall for the entire period. Solid line represents a 5-year moving average of annual rainfall data. Right: }Monthly rainfall data reported for Perth Airport (BOM Site 9021) for 1950 - 2018.", results = 'asis'}

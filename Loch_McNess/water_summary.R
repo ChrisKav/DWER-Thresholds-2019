@@ -71,17 +71,19 @@ McNess.params[[1]]$group <- "surface"
 McNess.params[[2]]$group <- "ground"
 McNess.params <- rbind(McNess.params[[1]], McNess.params[[2]])
 
+McNess.AHD[McNess.AHD == 0] <- 6.26
+
 mcness.p <- ggplot(McNess.AHD, aes(x=Date, y=AHD, group=group)) +
   theme_bw() +
   theme(legend.position = "none") +
   geom_line(aes(colour=group)) +
   geom_point(McNess.AHD, mapping=aes(x=Date, y=AHD, colour=group), size=1) +
-  geom_ribbon(McNess.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
-                                            group=group), alpha=0.2,
-              inherit.aes=FALSE, fill="black") +
-  geom_line(McNess.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(McNess.params, mapping=aes(x=Date, y=incr2), color="green") +
-  geom_line(McNess.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  #geom_ribbon(McNess.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+  #                                          group=group), alpha=0.2,
+  #            inherit.aes=FALSE, fill="black") +
+  #geom_line(McNess.params, mapping=aes(x=Date, y=p3)) +
+  #geom_line(McNess.params, mapping=aes(x=Date, y=incr2), color="green") +
+  #geom_line(McNess.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(6.95, 6.2, 8.0), linetype= c("dotted", "dashed", "dashed")) +
   annotate("text", x = as.Date("1985-01-01"), y = 6.95, vjust=+1.5, label = "Current") + 

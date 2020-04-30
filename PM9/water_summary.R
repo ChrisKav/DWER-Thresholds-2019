@@ -74,12 +74,12 @@ pm9.p <- ggplot(PM9.AHD, aes(x=Date, y=AHD, group=group)) +
   theme(legend.position = "none") +
   geom_line(aes(colour=group)) +
   geom_point(PM9.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
-  geom_ribbon(PM9.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
-                                           group=group), alpha=0.2,
-              inherit.aes=FALSE, fill="black") +
-  geom_line(PM9.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(PM9.params, mapping=aes(x=Date, y=incr2), color="green") +
-  geom_line(PM9.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  #geom_ribbon(PM9.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+  #                                        group=group), alpha=0.2,
+  #            inherit.aes=FALSE, fill="black") +
+  #geom_line(PM9.params, mapping=aes(x=Date, y=p3)) +
+  #geom_line(PM9.params, mapping=aes(x=Date, y=incr2), color="green") +
+  #geom_line(PM9.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(56.3), linetype= c("dotted")) +
   annotate("text", x = as.Date("2015-01-01"), y = 56.3, vjust=+1.5, label = "Current") + 

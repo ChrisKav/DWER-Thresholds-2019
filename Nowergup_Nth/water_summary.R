@@ -13,7 +13,7 @@ library(lubridate)
 
 load("/home/barefootbushman/Desktop/DWER Thresholds analysis/DWER_Thresholds/Refined_data.RData")
 
-wat.obs <- data.ls$'61611247'
+wat.obs <- data.ls$'6162567'
 
 # Water level summary
 
@@ -81,17 +81,17 @@ nower.p <- ggplot(Nowergup.AHD, aes(x=Date, y=AHD, group=group)) +
   theme(legend.position = "none") +
   geom_line(aes(colour=group)) +
   geom_point(Nowergup.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
-  geom_ribbon(Nowergup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
-                                            group=group), alpha=0.2,
-              inherit.aes=FALSE, fill="black") +
-  geom_line(Nowergup.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(Nowergup.params, mapping=aes(x=Date, y=incr2), color="green") +
-  geom_line(Nowergup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  #geom_ribbon(Nowergup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+  #                                          group=group), alpha=0.2,
+  #            inherit.aes=FALSE, fill="black") +
+  #geom_line(Nowergup.params, mapping=aes(x=Date, y=p3)) +
+  #geom_line(Nowergup.params, mapping=aes(x=Date, y=incr2), color="green") +
+  #geom_line(Nowergup.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(16.8, 16.0, 18), linetype= c("dotted", "dashed", "dashed")) +
-  annotate("text", x = as.Date("2021-01-01"), y = 16, vjust=-0.8, label = "Proposed") +
-  annotate("text", x = as.Date("2021-01-01"), y = 18, vjust=-1, label = "Proposed") +
-  annotate("text", x = as.Date("2021-01-01"), y = 16.8, vjust=+2, label = "Current") + 
+  annotate("text", x = as.Date("1988-01-01"), y = 16, vjust=+1.5, label = "Proposed summer minimum") +
+  annotate("text", x = as.Date("1992-01-01"), y = 18, vjust=-1, label = "Proposed summer minimum (groundwater)") +
+  annotate("text", x = as.Date("2017-01-01"), y = 16.8, vjust=+2.5, label = "Current spring peak") + 
   theme(axis.line = element_line(colour = "black"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),

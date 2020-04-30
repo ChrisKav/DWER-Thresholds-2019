@@ -74,12 +74,12 @@ WM2.p <- ggplot(WM2.AHD, aes(x=Date, y=AHD, group=group)) +
   theme(legend.position = "none") +
   geom_line(aes(colour=group)) +
   geom_point(WM2.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
-  geom_ribbon(WM2.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
-                                           group=group), alpha=0.2,
-              inherit.aes=FALSE, fill="black") +
-  geom_line(WM2.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(WM2.params, mapping=aes(x=Date, y=incr2), color="green") +
-  geom_line(WM2.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  #geom_ribbon(WM2.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+  #                                         group=group), alpha=0.2,
+  #            inherit.aes=FALSE, fill="black") +
+  #geom_line(WM2.params, mapping=aes(x=Date, y=p3)) +
+  #geom_line(WM2.params, mapping=aes(x=Date, y=incr2), color="green") +
+  #geom_line(WM2.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(66.5,64.7), linetype= c("dotted", "dashed")) +
   annotate("text", x = as.Date("2019-01-01"), y = 66.5, vjust=+1.5, label = "Current") + 

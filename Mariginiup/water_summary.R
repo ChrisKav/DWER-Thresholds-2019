@@ -76,16 +76,16 @@ mari.p <- ggplot(Mariginup.AHD, aes(x=Date, y=AHD, group=group)) +
   theme(legend.position = "none") +
   geom_line(aes(colour=group)) +
   geom_point(Mariginup.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
-  geom_ribbon(Mariginup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
-                                           group=group), alpha=0.2,
-              inherit.aes=FALSE, fill="black") +
-  geom_line(Mariginup.params, mapping=aes(x=Date, y=p3, group=group)) +
-  geom_line(Mariginup.params, mapping=aes(x=Date, y=incr2), color="green") +
-  geom_line(Mariginup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  #geom_ribbon(Mariginup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+  #                                         group=group), alpha=0.2,
+  #            inherit.aes=FALSE, fill="black") +
+  #geom_line(Mariginup.params, mapping=aes(x=Date, y=p3, group=group)) +
+  #geom_line(Mariginup.params, mapping=aes(x=Date, y=incr2), color="green") +
+  #geom_line(Mariginup.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(41.5, 42.1), linetype= c("dotted", "dashed")) +
-  annotate("text", x = as.Date("2018-01-01"), y = 41.5, vjust=-2, label = "Current") + 
-  annotate("text", x = as.Date("2018-01-01"), y = 42.1, vjust=-1, label = "Proposed") +
+  annotate("text", x = as.Date("2014-01-01"), y = 41.5, vjust=-2, label = "Current spring peak") + 
+  annotate("text", x = as.Date("2014-01-01"), y = 42.1, vjust=-1, label = "Proposed spring peak") +
   theme(axis.line = element_line(colour = "black"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),

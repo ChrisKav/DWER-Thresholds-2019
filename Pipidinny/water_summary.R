@@ -76,12 +76,12 @@ pipi.p <- ggplot(Pipidinny.AHD, aes(x=Date, y=AHD, group=group)) +
   theme(legend.position = "none") +
   geom_line(aes(colour=group)) +
   geom_point(Pipidinny.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
-  geom_ribbon(Pipidinny.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
-                                           group=group), alpha=0.2,
-              inherit.aes=FALSE, fill="black") +
-  geom_line(Pipidinny.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(Pipidinny.params, mapping=aes(x=Date, y=incr2), color="green") +
-  geom_line(Pipidinny.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  #geom_ribbon(Pipidinny.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+  #                                         group=group), alpha=0.2,
+  #            inherit.aes=FALSE, fill="black") +
+  #geom_line(Pipidinny.params, mapping=aes(x=Date, y=p3)) +
+  #geom_line(Pipidinny.params, mapping=aes(x=Date, y=incr2), color="green") +
+  #geom_line(Pipidinny.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(1.6, 1.1), linetype= c("dotted", "dashed")) +
   annotate("text", x = as.Date("1995-01-01"), y = 1.1, vjust=+2, label = "Proposed") +

@@ -74,12 +74,12 @@ mm59b.p <- ggplot(MM59B.AHD, aes(x=Date, y=AHD, group=group)) +
   theme(legend.position = "none") +
   geom_line(aes(colour=group)) +
   geom_point(MM59B.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
-  geom_ribbon(MM59B.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
-                                           group=group), alpha=0.2,
-              inherit.aes=FALSE, fill="black") +
-  geom_line(MM59B.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(MM59B.params, mapping=aes(x=Date, y=incr2), color="green") +
-  geom_line(MM59B.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  #geom_ribbon(MM59B.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+  #                                         group=group), alpha=0.2,
+  #            inherit.aes=FALSE, fill="black") +
+  #geom_line(MM59B.params, mapping=aes(x=Date, y=p3)) +
+  #geom_line(MM59B.params, mapping=aes(x=Date, y=incr2), color="green") +
+  #geom_line(MM59B.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(36.3,36.2), linetype= c("dotted", "dashed")) +
   annotate("text", x = as.Date("1981-01-01"), y = 36.3, vjust=-1.0, label = "Current") + 

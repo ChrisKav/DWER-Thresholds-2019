@@ -100,12 +100,12 @@ joon.p <- ggplot(Joondalup.AHD, aes(x=Date, y=AHD)) +
   theme_bw() +
   geom_line(colour="deepskyblue1") +
   geom_point(Joondalup.AHD, mapping=aes(x=Date, y=AHD), colour="deepskyblue1", size=1) +
-  geom_ribbon(Joondalup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
-                                         group=group), alpha=0.2,
-              inherit.aes=FALSE, fill="black") +
-  geom_line(Joondalup.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(Joondalup.params, mapping=aes(x=Date, y=incr2), color="green") +
-  geom_line(Joondalup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  #geom_ribbon(Joondalup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+  #                                       group=group), alpha=0.2,
+  #            inherit.aes=FALSE, fill="black") +
+  #geom_line(Joondalup.params, mapping=aes(x=Date, y=p3)) +
+  #geom_line(Joondalup.params, mapping=aes(x=Date, y=incr2), color="green") +
+  #geom_line(Joondalup.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(15.8, 16.2), linetype= c("dotted", "dashed")) +
   annotate("text", x = as.Date("1982-01-01"), y = 16.2, vjust=+1.5, label = "Proposed") +

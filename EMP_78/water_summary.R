@@ -74,12 +74,12 @@ emp78.p <- ggplot(EMP78.AHD, aes(x=Date, y=AHD, group=group)) +
   theme(legend.position = "none") +
   geom_line(aes(colour=group)) +
   geom_point(EMP78.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
-  geom_ribbon(EMP78.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
-                                           group=group), alpha=0.2,
-              inherit.aes=FALSE, fill="black") +
-  geom_line(EMP78.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(EMP78.params, mapping=aes(x=Date, y=incr2), color="green") +
-  geom_line(EMP78.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  #geom_ribbon(EMP78.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+  #                                         group=group), alpha=0.2,
+  #            inherit.aes=FALSE, fill="black") +
+  #geom_line(EMP78.params, mapping=aes(x=Date, y=p3)) +
+  #geom_line(EMP78.params, mapping=aes(x=Date, y=incr2), color="green") +
+  #geom_line(EMP78.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   geom_hline(yintercept = c(65.1, 64.7), linetype= c("dotted", "dashed")) +
   annotate("text", x = as.Date("2000-01-01"), y = 64.7, vjust=-1, label = "Proposed") +

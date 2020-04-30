@@ -2,7 +2,6 @@ library(reshape2)
 library(ggplot2)
 
 #Dampland 78
-
 Damp78_EWR <- cbind(c(67.71, 68.33, 69.61, 70.15), c(67.74,	67.96,	69.5,	69.5), c(67.59,	67.59,	69.86,	70.59))
 Damp78_EWR <- t(Damp78_EWR)
 colnames(Damp78_EWR) <- c("absolute_min", "mean_min", "mean_max", "absolute_max")
@@ -30,7 +29,6 @@ Damp78_EWR_plot <- ggplot(Damp78_EWR) +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 #EPP173
-
 Epp173_EWR <- cbind(c(50.99,	51.01,	51.57,	51.57), c(50.39,	50.59,	50.84,	50.87), c(51.54,	51.54,	51.57,	51.57),
                     c(50.75,	50.78,	51.56,	51.57), c(51.37,	51.38,	51.75,	51.57), c(51.56,	51.56,	51.57,	51.57))
 Epp173_EWR <- t(Epp173_EWR)
@@ -60,7 +58,6 @@ Epp173_EWR_plot <- ggplot(Epp173_EWR) +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 #Goollelal
-
 Gooll_EWR <- cbind(c(26.6,	26.6,	26.71,	26.74), c(26.76,	26.77,	27.01,	27.02), c(26.65,	26.65,	26.78,	26.78),
                    c(26.6,	26.6,	27.02,	27.02), c(26.6,	26.6,	26.65,	26.65))
 Gooll_EWR <- t(Gooll_EWR)
@@ -115,7 +112,6 @@ Janda_EWR_plot <- ggplot(Janda_EWR) +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 #Joondalup
-
 Joonda_EWR <- cbind(c(16.7,	17.02,	18.1,	19.1), c(17.24,	17.78,	19, 19.2), c(18.14,	18.45,	18.97,	19.2),
                    c(16.7,	16.84,	19.23, 20.83), c(NA, NA, NA, NA))
 Joonda_EWR <- t(Joonda_EWR)
@@ -144,7 +140,6 @@ Joonda_EWR_plot <- ggplot(Joonda_EWR) +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 #Lexia186
-
 Lex186_EWR <- cbind(c(49.92,	49.93,	50.62,	50.64), c(49.93,	49.93,	50.54,	50.58), c(49.92,	49.95,	50.64,	50.64),
                     c(50.09,	50.11,	50.54,	50.54), c(49.95,	49.95,	50.61,	50.62), c(49.92,	49.93,	50.63,	50.64))
 Lex186_EWR <- t(Lex186_EWR)
@@ -229,7 +224,6 @@ Marig_EWR_plot <- ggplot(Marig_EWR) +
   theme(axis.text.x=element_text(angle=90, face="italic"))
 
 # Nowergup
-
 Nower_EWR <- cbind(c(16.03,	16.39,	17.17,	18), c(16.58,	16.99,	17.22,	17.5), c(15.43,	16.64,	18.53,	19.13),
                     c(16.11,	16.52,	17.52,	18), c(14.77,	16.59,	17.32,	19.31), c(14.5,	14.95,	16.21,	16.97))
 Nower_EWR <- t(Nower_EWR)
@@ -311,4 +305,3 @@ Yonda_EWR_plot <- ggplot(Yonda_EWR) +
         panel.background = element_blank()) +
   labs(y = "Elevation (mAHD)") +
   theme(axis.text.x=element_text(angle=90, face="italic"))
-

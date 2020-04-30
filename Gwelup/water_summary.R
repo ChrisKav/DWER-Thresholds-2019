@@ -76,12 +76,12 @@ gwel.p <- ggplot(Gwelup.AHD, aes(x=Date, y=AHD, group=group)) +
   theme(legend.position = "none") +
   geom_line(aes(colour=group)) +
   geom_point(Gwelup.AHD, mapping=aes(x=Date, y=AHD, colour=group)) +
-  geom_ribbon(Gwelup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
-                                           group=group), alpha=0.2,
-              inherit.aes=FALSE, fill="black") +
-  geom_line(Gwelup.params, mapping=aes(x=Date, y=p3)) +
-  geom_line(Gwelup.params, mapping=aes(x=Date, y=incr2), color="green") +
-  geom_line(Gwelup.params, mapping=aes(x=Date, y=decr2), color = "red") +
+  #geom_ribbon(Gwelup.params, mapping=aes(ymin=lower2, ymax=upper2, x=Date, 
+  #                                         group=group), alpha=0.2,
+  #           inherit.aes=FALSE, fill="black") +
+  #geom_line(Gwelup.params, mapping=aes(x=Date, y=p3)) +
+  #geom_line(Gwelup.params, mapping=aes(x=Date, y=incr2), color="green") +
+  #geom_line(Gwelup.params, mapping=aes(x=Date, y=decr2), color = "red") +
   labs(x = "Year", y = expression("Water Level" ~ (mAHD))) +
   theme(axis.line = element_line(colour = "black"),
         panel.grid.major = element_blank(),
